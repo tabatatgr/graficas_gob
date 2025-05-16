@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Highlight.js estilo -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+<!-- Highlight.js script -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficas Python</title>
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .code-card {
+      background: #fff;
+      border: 1px solid #DDD;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      max-height: 600px;
+    }
+    .code-header {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #EEE;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .code-content {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    max-height: 480px;
+    background: #fdfdfd; /* o el mismo fondo que usa el tema */
+    }
+    .btn {
+      display: inline-block;
+      align-self: center;
+      background-color: #671335;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 0.25rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background-color: #671335;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gráficas Python</h1>
+    <p>Copia y pega el siguiente código en tu proyecto de Python para generar una gráfica SVG con estilo personalizado</p>
+
+    <div class="code-card">
+      <div class="code-header">Gráfica de barras agrupadas y apiladas</div>
+      <div class="code-content">
+    <pre><code class="language-python">
+    # Configurar las fuentes SVG como texto editable
+plt.rcParams['svg.fonttype'] = 'none'
+
+# Ruta relativa para las fuentes
+font_dirs = [Path("fonts/arial")]
+font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+    font_manager.fontManager.addfont(font_file)
+
+# Crear una instancia de FontProperties para Arial
+arial_font = font_manager.FontProperties(fname=str(font_files[0]))
+
+
+def agrupadasyapiladas(dataframes):
+    """
+    Genera una gráfica de barras apiladas agrupadas para múltiples DataFrames.
+
+    Args:
+        dataframes (list of pd.DataFrame): Lista de DataFrames con los datos de los grupos de subgrupos apilados.
+        font_size (int): Tamaño de la fuente para los elementos de la gráfica.
+    """
+
+    font_config = {
+        'family': 'Arial',  # Cambiar a Arial
+        'titulo': {'size': 36, 'weight': 'medium', 'color': '#000000'},
+        'eje_y': {'size': 18, 'weight': 'medium', 'color': '#000000'},
+        'eje_x': {'size': 18, 'weight': 'medium', 'color': '#000000'},
+        'etiquetas_eje_y': {'size': 24, 'weight': 'medium', 'color': '#767676'},
+        'etiquetas_eje_x': {'size': 24, 'weight': 'semibold', 'color': '#767676'},
+        'capsula_valor': {'size': 9, 'weight': 'medium', 'color': '#10302C'},
+        'capsula_max': {'size': 12, 'weight': 'medium', 'color': 'white'},
+        'porcentaje': {'size': 10, 'weight': 'medium', 'color': '#4C6A67'},
+        'leyenda': {'size': 14, 'weight': 'medium', 'color': '#767676'}  # Nueva categoría para la leyenda
+    }
+
+    # Configuración de los grupos y subgrupos
+    grupos = dataframes[0].index.tolist()
+    subgrupos_list = [df.columns.tolist() for df in dataframes]
+
+    # Obtener colores desde la función colores()
+    lista_colores = ["#006157", "#767676", "#671435", "#9B2247", "#9D792A", "#D5B162", "#10302C", "#E6D194", "#018477", "#FF6666", "#00008B", "#854991"]
+    colores_por_grupo = []
+    color_index = 0
+    for subgrupos in subgrupos_list:
+        colores_por_grupo.append(lista_colores[color_index:color_index + len(subgrupos)])
+        color_index += len(subgrupos)
+
+    # Configuración visual
+    factor_ancho = 0.4  # Factor ajustable para determinar el ancho total
+    ancho_total = len(grupos) * factor_ancho  # Ancho total dinámico basado en el número de grupos
+    max_subgrupos = max(len(df.columns) for df in dataframes)
+    ancho_barra = ancho_total / (len(dataframes) * max_subgrupos)
+    desplazamiento = -ancho_total / 2 + ancho_barra / 2  # Ajustar el desplazamiento inicial
+
+    # Configurar el tamaño de la figura en píxeles
+    ancho_px = 1480
+    alto_px = 520
+    dpi = 100  # Resolución en píxeles por pulgada
+    ancho_in = ancho_px / dpi
+    alto_in = alto_px / dpi
+
+    # Crear la figura con el tamaño especificado
+    fig, ax = plt.subplots(figsize=(ancho_in, alto_in), dpi=dpi)
+    x_pos = np.arange(len(grupos))
+
+    # Dibujar barras apiladas para cada DataFrame
+    for df, colores, offset in zip(dataframes, colores_por_grupo, range(len(dataframes))):
+        bottom = np.zeros(len(grupos))  # Inicializar con ceros
+        total_grupo = df.sum(axis=1)  # Total acumulado por grupo
+        for subgrupo, color in zip(df.columns, colores):
+            valores = df[subgrupo]
+            ax.bar(
+                x_pos + desplazamiento,
+                valores,
+                width=ancho_barra,
+                bottom=bottom,
+                color=color,
+                label=subgrupo,
+            )
+            # Calcular el tamaño dinámico de la fuente basado en el ancho de la barra
+            font_size_dynamic = max(1, min(12, int(ancho_barra * 40)))
+
+            # Agregar etiquetas dentro de las barras
+            for i, valor in enumerate(valores):
+                porcentaje = (valor / total_grupo.iloc[i]) * 100 if total_grupo.iloc[i] != 0 else 0
+                ax.text(
+                    x_pos[i] + desplazamiento,
+                    bottom[i] + valor / 2,  # Posición vertical centrada en la barra
+                    f"{int(valor):,} ({porcentaje:.1f}%)",  # Formato con comas y porcentaje
+                    ha='center',
+                    va='center',
+                    fontsize=font_config['capsula_valor']['size'],  # Usar configuración de font_config
+                    fontweight=font_config['capsula_valor']['weight'],
+                    color='white' if porcentaje > 10 else 'black'  # Cambiar color según contraste
+                )
+            bottom += np.array(valores)  # Sumar para el siguiente apilamiento
+
+        # Agregar acumulados encima de las barras apiladas
+        factor_separacion = max(bottom) * 0.05  # Ajusta el multiplicador según sea necesario
+        for i, total in enumerate(bottom):
+            ax.text(
+                x_pos[i] + desplazamiento,
+                total + factor_separacion,  # Usar el factor de separación
+                f"{int(total):,}",  # Formato con comas
+                ha="center",
+                va="bottom",
+                fontsize=font_config['capsula_max']['size'],
+                fontweight=font_config['capsula_max']['weight'],
+                color=colores[1] if len(colores) > 1 else 'black',  # Segundo color del grupo
+                bbox=dict(boxstyle="round,pad=0.35,rounding_size=0.99", fc="white", ec=colores[0], alpha=1.0)  # Cápsula
+            )
+
+        desplazamiento += ancho_barra  # Incrementar el desplazamiento para el siguiente grupo
+
+    # Modificar la posición de la leyenda
+    ax.legend(
+        loc='upper center',
+        bbox_to_anchor=(0.5, 1.5),
+        frameon=False,
+        prop={'size': font_config['leyenda']['size'], 'weight': font_config['leyenda']['weight']},
+        ncol=max(1, len(dataframes)),  # Ajustar dinámicamente el número de columnas
+    )
+
+    # Desactivar o activar bordes
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(True)
+
+    # Asignar grosor a los ejes visibles
+    ax.spines['bottom'].set_linewidth(2)
+
+    # Mantener las líneas del grid
+    ax.grid(axis='y', linestyle='-', color='#000000', alpha=0.2, linewidth=0.75)
+
+    # Formatear los números del eje Y con comas
+    ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{int(x):,}"))
+
+    # Configurar las etiquetas del eje Y
+    ax.tick_params(axis='y', labelsize=font_config['eje_y']['size'], labelcolor=font_config['eje_y']['color'])
+    ax.yaxis.label.set_size(font_config['eje_y']['size'])
+    ax.yaxis.label.set_weight(font_config['eje_y']['weight'])
+    ax.yaxis.label.set_color(font_config['eje_y']['color'])
+
+    ax.set_xticks(x_pos)  # Centrar las etiquetas del eje X
+    ax.set_xticklabels(grupos, fontsize=font_config['eje_x']['size'], fontweight=font_config['eje_x']['weight'], color=font_config['eje_x']['color'])
+    ax.set_ylabel('Valores', fontsize=font_config['etiquetas_eje_y']['size'], fontweight=font_config['etiquetas_eje_y']['weight'], color=font_config['etiquetas_eje_y']['color'])
+    plt.tight_layout()
+
+    # Guardar la gráfica como archivo SVG
+    plt.savefig("grafica_agrupadasyapiladas.svg", format="svg", bbox_inches='tight', dpi=dpi)
+    plt.show()
+
+# Llamar a la función con una lista de DataFrames
+agrupadasyapiladas(dataframes_a_graficar)</code></pre>
+    <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/agrupadasyapiladas" target="_blank">
+  Ver carpeta en GitHub
+    </a>
+  </div>
+</body>
+</html>
