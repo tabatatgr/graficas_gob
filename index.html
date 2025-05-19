@@ -2,12 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo de Gráficas - Agencia Digital</title>
+  <meta name="description" content="Catálogo de gráficas y proyectos de la Agencia Digital.">
+  <meta name="keywords" content="gráficas, visualizaciones, Python, R, datos">
+  <meta name="author" content="Agencia Digital">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineamientos de estilos - Agencia Digital</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 2em;
+      padding-top: 70px;
       background-color: #f9f9f9;
       color: #222;
       line-height: 1.6;
@@ -15,6 +20,24 @@
     h1, h2 {
       text-align: center;
       font-weight: 600;
+    }
+    .barra-logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--Guinda-GOB-MX, #611232);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .barra-logo img {
+      height: 44px;
+      max-height: 100%;
+      display: block;
     }
     .grafica {
       margin: 3em 0;
@@ -33,13 +56,12 @@
     .proyectos ul {
       list-style: none;
       padding: 0;
-      max-width: 400px;
-      margin: auto;
+      text-align: center;
     }
     .proyectos li {
       background: #fff;
       margin: 0.5em 0;
-      padding: 0.8em 1em;
+      padding: 10px 20px;
       border-radius: 6px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
       transition: background 0.2s ease;
@@ -48,27 +70,105 @@
       background: #f0f0f0;
     }
     .proyectos a {
+      display: inline-block;
+      border-radius: 5px;
       text-decoration: none;
-      color: #0066cc;
+      color: #333;
       font-weight: 500;
+    }
+    .proyectos h3 {
+      text-align: center;
+      margin-top: 1.5em;
+      font-weight: 500;
+      color: #444;
+    }
+        .menu-dropdown-wrapper {
+    position: relative;
+    margin-left: auto;   /* <-- Esto lo empuja a la derecha */
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    }
+    .menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0;
+    }
+    .menu-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 16px 8px;
+    gap: 8px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 2.75px 9px 0px rgba(109, 109, 109, 0.19);
+    z-index: 1000;
+    min-width: 160px;
+    }
+    .menu-dropdown a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 4px 0;
+    }
+    .menu-dropdown a:hover {
+    font-weight: 500;
+    color: #611232;
     }
   </style>
 </head>
 <body>
-  <h1>Catálogo de Gráficas</h1>
+    <header class="barra-logo">
+    <img src="imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
+    <div class="menu-dropdown-wrapper">
+        <button class="menu-toggle">
+            <img src="imagenes/menu.svg" alt="Menu" width="30" height="30">
+        </button>
+        <div class="menu-dropdown" id="menuDropdown">
+            <a href="index.html">Inicio</a>
+            <a href="graficas-python.html">Python</a>
+            <a href="graficas-r.html">RStudio</a>
+    </div>
+  </div>
+</header>
+
+  <h1>Lineamientos de estilos</h1>
   <p style="text-align: center;">Explora visualizaciones y proyectos de la Agencia de Transformación Digital y Telecomunicaciones.</p>
 
   <div class="grafica">
-    <h2>Gráfica destacada</h2>
-    <img src="1.svg" alt="Gráfica 1">
+    <img src="imagenes/1.svg" alt="Gráfica de ejemplo 1 que muestra datos de tendencias">
     <br><br>
-    <img src="2.svg" alt="Gráfica 2">
+    <img src="imagenes/2.svg" alt="Gráfica de ejemplo 2 que muestra datos comparativos">
   </div>
 
   <div class="proyectos">
     <h2>Proyectos</h2>
     <ul>
+      <li><a href="graficas-python.html" target="_blank">Python</a></li>
+      <li><a href="graficas-r.html" target="_blank">RStudio</a></li>
     </ul>
   </div>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuDropdown = document.getElementById('menuDropdown');
+
+  menuToggle.addEventListener('click', function() {
+    menuDropdown.style.display = menuDropdown.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  // Opcional: cerrar el menú al hacer clic fuera
+  document.addEventListener('click', function(event) {
+    if (!menuDropdown.contains(event.target) && !menuToggle.contains(event.target)) {
+      menuDropdown.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
