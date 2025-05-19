@@ -123,11 +123,64 @@
         max-height: 300px;
       }
     }
+    .menu-dropdown-wrapper {
+  position: relative;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0;
+  padding-left: 8px; /* 👈 mejor control que margin */
+}
+
+
+.menu-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  padding: 16px 8px;
+  gap: 8px;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 2.75px 9px 0px rgba(109, 109, 109, 0.19);
+  z-index: 1000;
+  min-width: 160px;
+}
+
+.menu-dropdown a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+.menu-dropdown a:hover {
+  font-weight: 500;
+  color: #611232;
+}
+
   </style>
 </head>
 <body>
   <header class="barra-logo">
     <img src="imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
+      <div class="menu-dropdown-wrapper">
+    <button class="menu-toggle">
+      <img src="imagenes/menu.svg" alt="Menu" width="30" height="30">
+    </button>
+    <div class="menu-dropdown" id="menuDropdown">
+      <a href="index.html">Inicio</a>
+      <a href="graficas-python.html">Python</a>
+      <a href="graficas-r.html">RStudio</a>
+    </div>
+  </div>
   </header>
 
   <div class="container">
@@ -366,6 +419,7 @@ def areaplot(data):
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(True)
     ax.spines['bottom'].set_linewidth(2)
     ax.grid(axis='y', linestyle='-', color='white', alpha=0.8, linewidth=1.25)
     ax.grid(axis='x', linestyle='-', color='white', alpha=0.3, linewidth=0.75)
@@ -384,7 +438,7 @@ def areaplot(data):
             fontweight=font_config['capsula_valor']['weight'],
             color=font_config['capsula_valor']['color'],
             bbox=dict(
-                boxstyle="round,pad=0.6,rounding_size=1",
+                boxstyle="round,pad=0.6,rounding_size=0.99",
                 facecolor='white',
                 edgecolor=color_borde,
                 linewidth=1.8
@@ -571,35 +625,25 @@ def areaplot2(df, columna_fecha, tipografia=None):
     ax.set_xlabel(columna_fecha, fontdict=font_config['etiquetas_eje_x'])
     ax.set_ylabel("Valores", fontdict=font_config['etiquetas_eje_y'])
 
-    # Rotar las etiquetas del eje X
-    plt.xticks(rotation=45, fontsize=font_config['eje_x']['size'], color=font_config['eje_x']['color'])
-    plt.yticks(fontsize=font_config['eje_y']['size'], color=font_config['eje_y']['color'])
-    
-    # Posicionar la leyenda debajo del título y arriba de la gráfica
-    ax.legend(
-        loc='upper center',
-        bbox_to_anchor=(0.5, 1.1),
-        ncol=len(columnas_a_graficar),
-        frameon=False,  # Opcional: eliminar el fondo de la leyenda
-        prop=font_manager.FontProperties(
-            family=font_config['family'],
-            size=font_config['leyenda']['size'],
-            weight=font_config['leyenda']['weight']
-        )
-    )
+    # Configurar las etiquetas del eje X
+    ax.tick_params(axis='x', labelsize=font_config['etiquetas_eje_x']['size'], labelcolor=font_config['etiquetas_eje_x']['color'])
+    ax.tick_params(axis='y', labelsize=font_config['etiquetas_eje_y']['size'], labelcolor=font_config['etiquetas_eje_y']['color'])
 
+    # Posicionar el eje X en y=0
+    ax.spines['bottom'].set_position(('data', 0))
+
+    # Rotar las etiquetas del eje X
+    plt.xticks(rotation=90)
+    
     # Desactivar o activar bordes
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_visible(False)
     ax.spines['bottom'].set_visible(True)
-
+    
     # Asignar grosor a los ejes visibles
     ax.spines['bottom'].set_linewidth(2)  # Grosor del eje inferior
-
-    # Formatear los números del eje Y con comas
-    ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{int(x):,}"))
-
+    
     # Mantener las líneas del grid
     ax.grid(axis='y', linestyle='-', color='#000000', alpha=0.2, linewidth=0.75)
     ax.grid(axis='x', linestyle='-', color='#000000', alpha=0.2, linewidth=0.75)
@@ -626,7 +670,7 @@ def areaplot2(df, columna_fecha, tipografia=None):
 # Llamar a la función con el DataFrame df, la columna 'Fecha' y la fuente personalizada
 areaplot2(dataframe_a_graficar, columna_fecha=columna_eje_x, tipografia=arial_font) 
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot2" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -806,7 +850,7 @@ def barras_apiladas_horizontales(data_vertical, bar_width=0.6):
 
 barras_apiladas_horizontales(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20apiladas%20horizontales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -989,14 +1033,14 @@ def barras_apiladas_verticales(data, bar_width=0.6):
 
 barras_apiladas_verticales(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20apiladas%20verticales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
   </div>
 </div>
 
-    <div class="flex-container">
+ <div class="flex-container">
     <div class="code-card">
       <div class="code-header">Barras horizontales</div>
       <div class="code-content">
@@ -1100,43 +1144,50 @@ def barras_horizontales(victimas_por_entidad, bar_height=0.6):
             lw = 1.5
 
         # Cápsula con valor
-        ax.text(valor + x_max * 0.01, y_pos, f"{valor:,}",
-                va='center', ha='left',
-                fontsize=font_config['capsula_valor']['size'],
-                fontfamily=font_config['family'],
-                fontweight=font_config['capsula_valor']['weight'],
-                color=text_color,
-                bbox=dict(boxstyle="round,pad=0.3,rounding_size=0.7",
+        ax.text(
+            total_valor + offset_capsula, y_pos, f"{valor:,}",
+            bbox=dict(boxstyle="round,pad=0.3,rounding_size=0.7",
                           facecolor=bbox_color,
                           edgecolor=edge_col,
-                          linewidth=lw))
+                          linewidth=lw),
+            ha='left',
+            va='center',
+            fontsize=font_config['capsula_valor']['size'],
+            fontfamily=font_config['family'],
+            fontweight=font_config['capsula_valor']['weight'],
+            color=text_color
+        )
 
         # Porcentaje
-        ax.text(valor + x_max * 0.08, y_pos, f"{porcentaje}%",
-                va='center', ha='left',
-                fontsize=font_config['porcentaje']['size'],
-                fontfamily=font_config['family'],
-                fontweight=font_config['porcentaje']['weight'],
-                color=font_config['porcentaje']['color'])
+        ax.text(
+            total_valor + offset_porcentaje, y_pos, f"{porcentaje}%",
+            color=font_config['porcentaje']['color'],
+            fontsize=font_config['porcentaje']['size'],
+            fontfamily=font_config['family'],
+            fontweight=font_config['porcentaje']['weight'],
+            ha='left',
+            va='center'
+        )
 
     # Eje Y (etiquetas)
     ax.set_yticks(y_positions)
-    ax.set_yticklabels(entidades,
-                       fontsize=font_config['eje_y']['size'],
-                       fontfamily=font_config['family'],
-                       fontweight=font_config['eje_y']['weight'])
+    ax.set_yticklabels(
+        entidades,
+        fontsize=font_config['eje_y']['size'],
+        fontfamily=font_config['family'],
+        fontweight=font_config['eje_y']['weight']
+    )
 
     ax.set_xlim(0, x_max)
-    ax.set_ylim(len(entidades) - 0.5, -0.5)
+    ax.invert_yaxis()
 
-    # Limpiar bordes
     for spine in ax.spines.values():
         spine.set_visible(False)
     ax.tick_params(
         axis='x',
         labelsize=font_config['eje_x']['size'],  # Tamaño de la fuente
         labelcolor=font_config['eje_x']['color']  # Color de la fuente
-    )        
+    )
     ax.grid(False)
 
     plt.tight_layout()
@@ -1147,7 +1198,7 @@ def barras_horizontales(victimas_por_entidad, bar_height=0.6):
 
 barras_horizontales(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20horizontales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -1207,106 +1258,95 @@ def barras_verticales(victimas_por_entidad, bar_width=0.6):
         'etiquetas_eje_x': {'size': 24, 'weight': 'semibold', 'color': '#767676'},
         'capsula_valor': {'size': 12, 'weight': 'medium', 'color': '#10302C'},
         'capsula_max': {'size': 12, 'weight': 'medium', 'color': 'white'},
-        'porcentaje': {'size': 14, 'weight': uniformizacion/barras horizontales/fonts'medium', 'color': '#4C6A67'},
+        'porcentaje': {'size': 14, 'weight': 'medium', 'color': '#4C6A67'},
         'leyenda': {'size': 20, 'weight': 'medium', 'color': '#767676'}  # Nueva categoría para la leyenda
     }
 
-    # Ordenar datos
-    sorted_data = dict(sorted(victimas_por_entidad.items(), key=lambda item: item[1], reverse=True))
-    entidades = list(sorted_data.keys())
-    valores = list(sorted_data.values())
-    total = sum(valores)
-    max_valor = max(valores)
-    
-    # Calcular límites del eje Y dinámicamente
-    y_max = max_valor * 1.5
+    categorias = ['Hombre', 'Mujer', 'No identificado']
+    data['Total'] = data[categorias].sum(axis=1)
+    sorted_data = data.sort_values(by='Total', ascending=False)
+    entidades = sorted_data.index.tolist()
+
+    max_valor = sorted_data['Total'].max()
+    total = sorted_data['Total'].sum()
+
+    y_max = max_valor * 1.15
     y_interval = calcular_intervalo(max_valor)
-    
-    # Crear figura
-    fig, ax = plt.subplots(figsize=(16, 6), dpi=300) #ajustar figsize según necesidades
+
+    fig, ax = plt.subplots(figsize=(16, 6), dpi=300)
     fig.patch.set_facecolor('white')
     ax.set_facecolor('white')
 
-    # Calcular los límites horizontales
-    x_min = -0.5
-    x_max = len(entidades) - 0.5
-
-    # Líneas horizontales de referencia
     y_ticks = np.arange(0, y_max + y_interval, y_interval)
-    line_widths = [0.75 if y < y_max else 2 for y in y_ticks]
-    line_colors = ['#B9B9B9' if y < y_max else 'black' for y in y_ticks]
+    for y in y_ticks:
+        lw = 2 if y == y_max else 0.75
+        lc = 'black' if y == y_max else '#B9B9B9'
+        ax.axhline(y, color=lc, linewidth=lw)
 
-    total = sum(sorted_data.values())
-
-    for y, lw, lc in zip(y_ticks, line_widths, line_colors):
-        ax.axhline(y, xmin=0, xmax=1, color=lc, linewidth=lw)
-
-    # Línea de base (y = 0)
     ax.axhline(0, color='black', linewidth=2, zorder=1)
 
-    # Espaciado capsulas y porcentajes
     offset_capsula = y_max * 0.05  
-    offset_porcentaje = y_max * 0.15  
+    offset_porcentaje = y_max * 0.15 
+    bar_positions = np.arange(len(entidades))
 
-    # Espaciado entre barras 
-    spacing_factor = 1
-    bar_positions = np.arange(len(entidades)) * spacing_factor
+    colores = {
+        'Hombre': '#4C6A67',
+        'Mujer': '#627B78',
+        'No identificado': '#6F8583'
+    }
+    categorias = list(colores.keys())
 
-    # Dibujar barras
-    for i, (entidad, valor) in enumerate(sorted_data.items()):
-        porcentaje = round((valor / total) * 100, 1)
-        x_pos = bar_positions[i] 
-        
-        if valor == max_valor:
-            # Barra más alta (original)
-            for alpha in np.linspace(0.3, 1, 10):
-                ax.bar(x_pos, valor, width=bar_width, 
-                       color='#8B0000', alpha=alpha, 
-                       edgecolor='none', zorder=2)
-            
-            # Cápsula roja
-            ax.text(x_pos, valor + offset_capsula, f"{valor:,}",  # Ajusté ligeramente el offset
-                    ha='center', va='bottom',  # Cambiado a 'bottom' para mejor alineación
-                    fontsize=font_config['capsula_max']['size'],
-                    fontfamily=font_config['family'],
-                    fontweight=font_config['capsula_max']['weight'],
-                    color=font_config['capsula_max']['color'],
-                    bbox=dict(boxstyle="round,pad=0.3,rounding_size=0.99", 
-                             facecolor='#8B0000',
-                             edgecolor='none'))
+    for i, entidad in enumerate(entidades):
+        row = sorted_data.loc[entidad]
+        x_pos = bar_positions[i]
+        y_bottom = 0
+
+        for cat in categorias:
+            valor = row[cat]
+            ax.bar(x_pos, valor, width=bar_width, bottom=y_bottom,
+                   color=colores[cat], edgecolor='none', zorder=2)
+            y_bottom += valor
+
+        total_valor = row['Total']
+        porcentaje = round((total_valor / total) * 100, 1)
+
+        # Estilo de texto
+        texto_kwargs = dict(
+            ha='center',
+            va='bottom',
+            fontsize=font_config['capsula_valor']['size'],
+            fontfamily=font_config['family'],
+            fontweight=font_config['capsula_valor']['weight'],
+            color=font_config['capsula_valor']['color']
+        )
+
+        # Ajuste de estilo de cápsula según el valor
+        if total_valor <= 5:
+            boxstyle = "round,pad=0.4,rounding_size=0.59"
+        elif total_valor <= 50:
+            boxstyle = "round,pad=0.3,rounding_size=0.7"
+        elif total_valor <= 100:
+            boxstyle = "round,pad=0.3,rounding_size=0.79"
         else:
-            # Barras normales (original)
-            for alpha in np.linspace(0.1, 0.8, 10):
-                ax.bar(x_pos, valor, width=bar_width, 
-                       color='#10302C', alpha=alpha, 
-                       edgecolor='none', zorder=2)
-                
-                if valor <= 5:
-                        boxstyle = "round,pad=0.4,rounding_size=0.59"
-                elif valor <= 50:
-                        boxstyle = "round,pad=0.3,rounding_size=0.7"
-                elif valor <= 100:
-                        boxstyle = "round,pad=0.3,rounding_size=0.79"
-                else:
-                        boxstyle = "round,pad=0.3,rounding_size=0.9"
-            
-            # Cápsula verde 
-            ax.text(
-                x_pos, valor + offset_capsula, f"{valor:,}",
-                ha='center', va='bottom',
-                fontsize=font_config['capsula_valor']['size'],
-                fontfamily=font_config['family'],
-                fontweight=font_config['capsula_valor']['weight'],
-                color=font_config['capsula_valor']['color'],
-                bbox=dict(
-                    boxstyle=boxstyle,
-                    facecolor='white',
-                    edgecolor='#002F2A',
-                    linewidth=1.5))
-        
-        # Porcentaje 
+            boxstyle = "round,pad=0.3,rounding_size=0.9"
+
+        bbox_props = dict(
+            boxstyle=boxstyle,
+            facecolor='white',
+            edgecolor='#002F2A',
+            linewidth=1.5
+        )
+
+        # Cápsula con total
         ax.text(
-            x_pos, valor + offset_porcentaje, f"{porcentaje}%",
+            x_pos, total_valor + offset_capsula, f"{int(total_valor):,}",
+            bbox=bbox_props,
+            **texto_kwargs
+        )
+
+        # Porcentaje encima
+        ax.text(
+            x_pos, total_valor + offset_porcentaje, f"{porcentaje}%",
             color=font_config['porcentaje']['color'],
             fontsize=font_config['porcentaje']['size'],
             fontfamily=font_config['family'],
@@ -1315,45 +1355,33 @@ def barras_verticales(victimas_por_entidad, bar_width=0.6):
             va='bottom'
         )
 
-    # Configuración de ejes
+    # Eje X
     ax.set_xticks(bar_positions)
-    ax.set_xticklabels(entidades, rotation=90, 
-                      fontsize=font_config['eje_x']['size'],
-                      fontfamily=font_config['family'],
-                      fontweight=font_config['eje_x']['weight'])
+    ax.set_xticklabels(
+        entidades, rotation=90,
+        fontsize=font_config['eje_x']['size'],
+        fontfamily=font_config['family'],
+        fontweight=font_config['eje_x']['weight']
+    )
 
-    # Ajustar límites para el nuevo espaciado
     ax.set_ylim(0, y_max)
-    ax.set_xlim(-0.5, len(bar_positions) * spacing_factor - 0.5)
- 
-
-    # Configuración de ejes X con spacing correcto
-    ax.set_xticks(bar_positions)
-    ax.set_xticklabels(entidades, rotation=90, # puede ser 54
-                    fontsize=font_config['eje_x']['size'],
-                    fontfamily=font_config['family'],
-                    fontweight=font_config['eje_x']['weight'])
-
-    # Ajustar límites del eje X con base en posiciones reales
     ax.set_xlim(bar_positions[0] - bar_width, bar_positions[-1] + bar_width)
 
-    
-    # Eliminar bordes y marcos
+    # Limpiar bordes y ticks
     for spine in ax.spines.values():
         spine.set_visible(False)
-    
     ax.tick_params(axis='both', which='both', length=0)
     ax.grid(False)
 
     plt.tight_layout()
-        
+
     # Guardar la gráfica como archivo SVG
     plt.savefig("barras_verticales.svg", format="svg", bbox_inches='tight')
     plt.show()
 
 barras_verticales(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20verticales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -1567,7 +1595,7 @@ def lineal(df, columna_fecha, columna_grafica, columna_linea, tipografia=None):
 # Ejemplo de uso
 lineal(dataframe_a_graficar, columna_fecha="Fecha", columna_grafica="Columna1", columna_linea="Columna3")
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/linea" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -1596,6 +1624,31 @@ plt.rcParams['svg.fonttype'] = 'none'
 
 # Ruta relativa para las fuentes
 font_dirs = [Path("fonts/arial")]
+font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+    font_manager.fontManager.addfont(font_file)
+
+# Crear una instancia de FontProperties para Arial
+arial_font = font_manager.FontProperties(fname=str(font_files[0]))
+
+def snapshot(data):
+    """
+    Genera un gráfico de área apilada con los datos proporcionados en un DataFrame.
+
+    Parámetros:
+    - data: DataFrame que contiene las columnas 'fechas', 'comisiones', 'fiscalias' y 'portal'.
+    """
+    font_config = {
+        'family': 'Arial',  # Cambiar a Arial
+        'titulo': {'size': 36, 'weight': 'medium', 'color': '#000000'},
+        'eje_y': {'size': 24, 'weight': 'medium', 'color': '#000000'},
+        'eje_x': {'size': 24, 'weight': 'medium', 'color': '#000000'},
+        'etiquetas_eje_y': {'size': 24, 'weight': 'medium', 'color': '#767676'},
+        'etiquetas_eje_x': {'size': 24, 'weight': 'semibold', 'color': '#767676'},
+        'capsula_valor': {'size': 20, 'weight': 'medium', 'color': '#10302C'},
+        'capsula_max': {'size': 12, 'weight': 'medium', 'color': 'white'},
+        'porcentaje': {'size': 20, 'weight
 font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
 
 for font_file in font_files:
@@ -1756,7 +1809,7 @@ def snapshot(data):
 
 snapshot(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/snapshot" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -1768,7 +1821,7 @@ snapshot(dataframe_a_graficar)
       <div class="code-header">Treemap</div>
       <div class="code-content">
       <div class="svg-container">
-        <img src="Python/treemap/treemap.ipynb">
+        <img src="Python/treemap/treemap.svg">
     </div>
 <pre><code class="language-python">
 from pathlib import Path
@@ -1788,7 +1841,7 @@ font_dirs = [Path("fonts/arial")]
 font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
 
 for font_file in font_files:
-    font_manager.fontManager.addfont(font_file)
+    font_manager.addfont(font_file)
 
 # Crear una instancia de FontProperties para Arial
 arial_font = font_manager.FontProperties(fname=str(font_files[0]))
@@ -1894,15 +1947,65 @@ def treemap(victimas_por_entidad):
 
 treemap(dataframe_a_graficar)
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/treemap" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
   </div>
 </div>
 
- 
+ <div class="flex-container">
+    <div class="code-card">
+      <div class="code-header">Barras de tendencia</div>
+      <div class="code-content">
+      <div class="svg-container">
+        <img src="Python/grafica_barras_tendencias/CDMX_grafica_barras_tendencias.svg">
+    </div>
+<pre><code class="language-python">
+# Crear una gráfica por estado
+for estado in estados:
+    fig, ax = plt.subplots(figsize=(12, 6))
+    df_estado = df[df['estado'] == estado]
+    pivot_df = df_estado.pivot(index='fecha', columns='indicador', values='valor').fillna(0)
+    pivot_df[['Con datos', 'Sin datos']].plot(kind='bar', stacked=True, color=["#584290", "#b1adcf"], ax=ax, width=1)
+
+    ax.set_title(f'{estado} - Casos con y sin datos', fontsize=14, fontweight='bold')
+    ax.set_xlabel('Fecha')
+    ax.set_ylabel('Número de casos')
+    ax.set_xticks(range(0, len(pivot_df), 12))
+    ax.set_xticklabels([date.strftime('%Y') for date in pivot_df.index[::12]], rotation=45, fontsize=8)
+    ax.legend(title='')
+    ax.grid(False)
+    plt.tight_layout()
+    plt.show()
+
+    file_base = os.path.join(output_dir, f"{estado.replace(' ', '_')}_grafica_barras_tendencias")
+    fig.savefig(f"{file_base}.png", format="png", bbox_inches='tight', dpi=300)
+    fig.savefig(f"{file_base}.svg", format="svg", bbox_inches='tight', dpi=300)
+    plt.close(fig)
+</code></pre>
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/grafica_barras_tendencias" target="_blank">
+        Ver carpeta en GitHub
+      </a>
+    </div>
+  </div>
+</div>
 
 </div>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuDropdown = document.getElementById('menuDropdown');
+
+  menuToggle.addEventListener('click', function() {
+    menuDropdown.style.display = menuDropdown.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  // Opcional: cerrar el menú al hacer clic fuera
+  document.addEventListener('click', function(event) {
+    if (!menuDropdown.contains(event.target) && !menuToggle.contains(event.target)) {
+      menuDropdown.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
