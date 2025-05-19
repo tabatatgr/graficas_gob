@@ -46,19 +46,19 @@
     }
     .flex-container {
       display: flex;
-      gap: 2rem;
-      align-items: flex-start;
       flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: flex-start;
     }
 
     .svg-container img {
+      width: 100%;
       max-width: 100%;
       height: auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      max-height: 480px;
+      max-height: 200px; /* o el valor que ya tienes */
+      object-fit: contain;
       margin-bottom: 1rem;
+      display: block;
     }
 
     h1 {
@@ -73,15 +73,21 @@
       color: #444;
     }
     .code-card {
+      width: 1000px;
+      min-width: 320px;
+      max-width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
       background: #fff;
       border: 1px solid #DDD;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       padding: 16px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
       margin-bottom: 2rem;
+      overflow: hidden;
     }
     .code-header {
       position: sticky;
@@ -94,11 +100,12 @@
       font-size: 16px;
     }
     .code-content {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    overflow-y: auto;
-    max-height: 480px;
-    background: #fdfdfd; /* o el mismo fondo que usa el tema */
+      flex: 1 1 auto;
+      overflow-y: auto;
+      max-height: 350px;
+      background: #fdfdfd;
+      border-radius: 0.5rem;
+      padding: 1rem;
     }
     .btn {
       display: inline-block;
@@ -320,7 +327,7 @@ ggplot(datos, aes(x = fecha, y = valor, fill = categoria)) +
   labs(x = "", y = "") +
   tema_python_atdt()
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/areaplot2" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/barras_apiladas" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -390,7 +397,7 @@ ggplot(datos, aes(x = fecha, y = valor, fill = categoria)) +
   ) +
   coord_flip()
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20apiladas%20horizontales" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/barras_apiladas_horizontales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -456,7 +463,7 @@ grafica <- ggplot(datos, aes(x = fecha, y = total_def)) +
   tema_python_atdt() +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank())
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20apiladas%20verticales" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/barras_vertical" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -489,7 +496,7 @@ tema_python_atdt <- function() {
       axis.text.x = element_text(angle = 90, hjust = 1),
       panel.grid.major.x = element_blank(),
       panel.grid.minor = element_blank(),
-      panel.grid.major.y = element_line(color = "#000000", linewidth = 0.4, linetype = "solid"),
+      panel.grid.major.y = element_line(color = "#000000", linewidth = 0.4, linetite = "solid"),
       axis.ticks = element_blank(),
       legend.position = "none",
       plot.background = element_rect(fill = "transparent", color = NA),
@@ -525,7 +532,7 @@ grafica <- ggplot(datos, aes(x = fecha, y = total_def)) +
         panel.grid.major.y = element_blank()) +
   coord_flip()
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20horizontales" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/barras_horizontales" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -566,7 +573,7 @@ grafica <- ggplot(datos_sum, aes(x = mes, y = valor, fill = indicador)) +
   scale_x_date(date_breaks = "2 years", date_labels = "%Y") +
   theme_personalizado
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/barras%20verticales" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/barras_tendencias" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -617,7 +624,7 @@ grafica <- ggplot(datos, aes(x = fecha)) +
   scale_y_continuous(labels = dollar_format()) +
   tema_estilo_multilinea()
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/linea" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/multilineas" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -675,7 +682,7 @@ ggplot(df_largo, aes(x = Fecha, y = valor, color = variable)) +
   tema_estilo_multilinea() +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank())
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/snapshot" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/multilineas" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -733,7 +740,7 @@ graf5 <- ggplot(sim_mun, aes(x = promedio_diario_2023_2024, y = promedio_diario_
       axis.text.x = element_text(angle = 0, vjust = 1, hjust = 1)
   )
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/treemap" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/scatter" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -791,7 +798,7 @@ ggplot(df, aes(x = Fecha, y = y)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/grafica_barras_tendencias" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/step" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
@@ -829,7 +836,7 @@ ggplot(data, aes(area = total, fill = color, label = etiqueta)) +
   scale_fill_identity() +
   theme_void()
 </code></pre>
-      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/grafica_barras_tendencias" target="_blank">
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/rstudio/treemap" target="_blank">
         Ver carpeta en GitHub
       </a>
     </div>
