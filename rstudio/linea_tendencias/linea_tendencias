@@ -1,0 +1,73 @@
+# Configuración preliminar
+library(tidyverse)
+library(ggtext)
+library(janitor)
+library(magrittr)
+library(fs)
+library(zip)
+library(lubridate)
+library(readxl)
+library(reticulate)
+library(writexl)
+library(extrafont) 
+library(ggrepel)
+library(ggplot2)
+
+options(scipen = 999)
+
+
+# Crear datos simulados
+set.seed(123)
+
+# Años y países
+years <- 2013:2024
+countries <- c("Sudáfrica", "Colombia", "Turquía", "Brasil", "Chile", 
+               "Filipinas", "Iran", "Argentina", "Egipto", "México")
+
+# Simulación de precios
+generate_prices <- function(base, drop = 0.02, noise = 0.1) {
+  prices <- base * (1 - drop)^(0:(length(years) - 1)) + rnorm(length(years), 0, noise)
+  round(pmax(prices, 0.3), 2)
+}
+
+# Crear dataframe
+precios_filtrados <- do.call(rbind, lapply(countries, function(pais) {
+  base_price <- runif(1, 8, 15)
+  if (pais == "México") {
+    prices <- generate_prices(base_price, drop = 0.07, noise = 0.1)  # caída más fuerte
+  } else {
+    prices <- generate_prices(base_price)
+  }
+  data.frame(entity_name = pais, data_year = years, data_value = prices)
+}))
+
+# Agregar color
+precios_filtrados <- precios_filtrados %>%
+  mutate(color_entidad = ifelse(entity_name == "México", "México", "Otras"))
+
+
+source("tema_agencia_lineas (2).R")
+
+
+precios_filtrados %<>%
+  mutate(color_entidad = ifelse(entity_name == "México", "México", "Otras"))
+
+
+g1_clean <- ggplot(precios_filtrados, aes(x = data_year, y = data_value, group = entity_name)) +
+  geom_line(aes(color = color_entidad, alpha = color_entidad), linewidth = 0.8) +
+  scale_color_manual(values = c("México" = "#8B0000", "Otras" = "#10302C")) +
+  scale_alpha_manual(values = c("México" = 1, "Otras" = 0.3), guide = "none") +
+  scale_y_continuous(labels = scales::label_dollar()) +
+  scale_x_continuous(breaks = seq(2013, 2024, 1))+
+  labs(y = NULL, x = NULL) +
+  tema_atdt() +
+  theme(
+    panel.background = element_rect(fill = "transparent", color = NA),
+    plot.background = element_rect(fill = "transparent", color = NA),
+    legend.background = element_rect(fill = "transparent"),
+    legend.box.background = element_rect(fill = "transparent")
+  )
+
+
+ggsave("bar_chart.png", g1_clean, bg = "transparent", width = 1800 / 300, height = 450 / 300, dpi = 300)
+# ggsave(filename = "bar_chart.svg", plot = g1_clean, width = 15, height = 7, device = "svg")
