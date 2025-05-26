@@ -1,0 +1,55 @@
+
+# Degradados
+degradados <- c("#22534C", "#10302C", "#4C6A67", "#6F8583", "#A57F2C", "#E6D194",
+                "#767676", "#DDDDDD", "#5E000E", "#830B1A")
+
+# - > Colores categóricos
+# Al gráficar datos que comparen países u otros sectores se utilizarán estos 
+# degradados. (En caso de requerir colores adiciones, se solicitan a diseño)
+
+categoricos <- c("#018477","#00AF9D","#5E000E","#830B1A","#59c959","#ACE5AC",
+                 "#BD0000","#C51228","#FFC0CC","#FF6666","#00008B","#3939C4",
+                 "#65087C", "#854991")
+
+
+# Tema-función ATDT (con tipografía Montserrat)
+tema_atdt <- function() {
+  # sysfonts::font_add_google("Poppins", "Poppins") # Nota: Se puede cambiar por "Montserrat"
+  # showtext_auto()
+  
+  theme_linedraw() + 
+    theme(
+      # text = element_text(family = "Poppins", color = "grey35"),
+      # plot.title = element_text(size = 20, face = "bold", margin = margin(10, 4, 5, 4), 
+      #                           family = "Poppins", color = "black"),
+      # plot.subtitle = element_text(size = 16, face = "plain", color = "#666666", 
+      #                              margin = margin(5, 5, 5, 5), 
+      #                              family = "Poppins"),
+      # plot.caption = element_text(hjust = 0, size = 10, family = "Poppins"),
+      
+      # Solo líneas horizontales en el grid
+      panel.grid.major.x = element_blank(),  # Elimina líneas verticales mayores
+      panel.grid.minor.x = element_blank(),  # Elimina líneas verticales menores
+      panel.grid.major.y = element_line(linetype = 2),  # Mantiene líneas horizontales mayores
+      panel.grid.minor.y = element_blank(),
+      panel.background = element_rect(fill = "transparent", color = NA),
+      
+      # Ajuste del borde del panel a un gris más tenue
+      panel.border = element_rect(color = "#E5E5E5", fill = NA, size = 0.8),
+      
+      # Ocultar leyendas
+      legend.position = "none",
+      
+      # Ocultar solo los nombres de los ejes, pero mantener las etiquetas de valores
+      axis.title = element_blank(),
+      axis.text.x = element_text(size = 8, face = "bold", family = "Arial", 
+                                 vjust = 0.5, hjust = 1, color = "#767676"),  # Negrita y rotación en eje X
+      axis.text.y = element_text(size = 8, face = "bold", family = "Arial",
+                                 color = "#767676"),  
+      axis.ticks = element_blank(),
+      
+      strip.background = element_rect(fill = "#525252"),
+      strip.text.x = element_text(size = 8, face = "bold", family = "Arial"),
+      strip.text.y = element_text(size = 8, face = "bold", family = "Arial")
+    )
+}
