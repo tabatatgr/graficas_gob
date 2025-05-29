@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="882.28pt" height="1075.4pt" version="1.1" viewBox="0 0 882.28 1075.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <path d="m0 1075.4h882.28v-1075.4h-882.28z" fill="#fff"/>
+ <path d="m215.49 1036.1h627.09v-953.89h-627.09z" fill="#fff"/>
+ <path d="m215.49 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <defs>
+  <path id="c" d="m0 0v3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="215.494687" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 215.49 1061.6)" x="215.494687" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">0</text>
+ <path d="m312.64 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="312.638195" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 312.64 1061.6)" x="312.638195" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">2,000</text>
+ <path d="m409.78 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="409.781703" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 409.78 1061.6)" x="409.781703" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">4,000</text>
+ <path d="m506.93 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="506.925211" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 506.93 1061.6)" x="506.925211" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">6,000</text>
+ <path d="m604.07 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="604.068719" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 604.07 1061.6)" x="604.068719" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">8,000</text>
+ <path d="m701.21 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="701.212226" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 701.21 1061.6)" x="701.212226" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">10,000</text>
+ <path d="m798.36 1036.1v-953.89" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="798.355734" y="1036.13451" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 798.36 1061.6)" x="798.355734" y="1061.63451" font-family="'Poppins'" font-size="25px" font-weight="500" text-anchor="middle">12,000</text>
+ <defs>
+  <path id="b" d="m0 0h-3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="215.494687" y="121.991843" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 130.13)" x="141.994687" y="130.131843" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-01-2025</text>
+ <use x="215.494687" y="201.48251" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 209.62)" x="141.994687" y="209.62251" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-12-2025</text>
+ <use x="215.494687" y="280.973177" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 289.11)" x="141.994687" y="289.113177" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-03-2025</text>
+ <use x="215.494687" y="360.463843" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 368.6)" x="141.994687" y="368.603843" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-10-2025</text>
+ <use x="215.494687" y="439.95451" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 448.09)" x="141.994687" y="448.09451" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-05-2025</text>
+ <use x="215.494687" y="519.445177" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 527.59)" x="141.994687" y="527.585177" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-08-2025</text>
+ <use x="215.494687" y="598.935843" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 607.08)" x="141.994687" y="607.075843" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">30-06-2025</text>
+ <use x="215.494687" y="678.42651" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 686.57)" x="141.994687" y="686.56651" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">30-09-2025</text>
+ <use x="215.494687" y="757.917177" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 766.06)" x="141.994687" y="766.057177" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">31-07-2025</text>
+ <use x="215.494687" y="837.407843" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 845.55)" x="141.994687" y="845.547843" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">30-11-2025</text>
+ <use x="215.494687" y="916.89851" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 925.04)" x="141.994687" y="925.03851" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">30-04-2025</text>
+ <use x="215.494687" y="996.389177" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 141.99 1004.5)" x="141.994687" y="1004.529177" font-family="'Poppins'" font-size="22px" font-weight="500" text-anchor="end">28-02-2025</text>
+ <path d="m215.49 86.221h166.5v71.542h-166.5z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m382 86.221h159.51v71.542h-159.51z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m541.51 86.221h169.71v71.542h-169.71z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 165.71h176.27v71.542h-176.27z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m391.76 165.71h152.81v71.542h-152.81z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m544.57 165.71h140.91v71.542h-140.91z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 245.2h138.67v71.542h-138.67z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m354.17 245.2h164.22v71.542h-164.22z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m518.39 245.2h157.37v71.542h-157.37z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 324.69h154.6v71.542h-154.6z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m370.1 324.69h144.16v71.542h-144.16z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m514.26 324.69h136.15v71.542h-136.15z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 404.18h156.35v71.542h-156.35z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m371.85 404.18h125.02v71.542h-125.02z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m496.87 404.18h146.54v71.542h-146.54z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 483.67h148v71.542h-148z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m363.49 483.67h133.86v71.542h-133.86z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m497.36 483.67h120.36v71.542h-120.36z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 563.17h133.14v71.542h-133.14z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m348.63 563.17h131.34v71.542h-131.34z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m479.97 563.17h121.14v71.542h-121.14z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 642.66h128.08v71.542h-128.08z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m343.58 642.66h131.58v71.542h-131.58z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m475.16 642.66h119.78v71.542h-119.78z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 722.15h122.69v71.542h-122.69z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m338.19 722.15h121.87v71.542h-121.87z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m460.05 722.15h133.91v71.542h-133.91z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 801.64h138.14v71.542h-138.14z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m353.63 801.64h105.69v71.542h-105.69z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m459.32 801.64h118.71v71.542h-118.71z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 881.13h113.76v71.542h-113.76z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m329.25 881.13h113.12v71.542h-113.12z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m442.37 881.13h124.15v71.542h-124.15z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <path d="m215.49 960.62h110.74v71.542h-110.74z" clip-path="url(#a)" fill="#8b0000"/>
+ <path d="m326.24 960.62h110.6v71.542h-110.6z" clip-path="url(#a)" fill="#b22222"/>
+ <path d="m436.84 960.62h115.41v71.542h-115.41z" clip-path="url(#a)" fill="#cd5c5c"/>
+ <text transform="rotate(-0 298.75 126.29)" x="298.746674" y="126.293562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,428</text>
+ <text transform="rotate(-0 461.75 126.29)" x="461.75348" y="126.293562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,284</text>
+ <text transform="rotate(-0 626.36 126.29)" x="626.363154" y="126.293562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,494</text>
+ <text transform="rotate(-0 215.49 127.23)" x="215.494687" y="127.227156" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">10.1%  </text>
+ <text transform="rotate(-0 728.32 127.68)" x="728.320462" y="127.680593" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">10,206</text>
+ <text transform="rotate(-0 303.63 205.78)" x="303.628135" y="205.784229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,629</text>
+ <text transform="rotate(-0 468.16 205.78)" x="468.164951" y="205.784229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,146</text>
+ <text transform="rotate(-0 615.02 205.78)" x="615.021649" y="205.784229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,901</text>
+ <text transform="rotate(-0 215.49 206.72)" x="215.494687" y="206.717822" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">9.6%  </text>
+ <text transform="rotate(-0 702.58 207.17)" x="702.577433" y="207.17126" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">9,676</text>
+ <text transform="rotate(-0 284.83 285.27)" x="284.830866" y="285.274895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,855</text>
+ <text transform="rotate(-0 436.28 285.27)" x="436.277595" y="285.274895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,381</text>
+ <text transform="rotate(-0 597.07 285.27)" x="597.074386" y="285.274895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,240</text>
+ <text transform="rotate(-0 215.49 286.21)" x="215.494687" y="286.208489" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">9.4%  </text>
+ <text transform="rotate(-0 692.86 286.66)" x="692.863082" y="286.661927" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">9,476</text>
+ <text transform="rotate(-0 292.8 364.77)" x="292.796634" y="364.765562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,183</text>
+ <text transform="rotate(-0 442.18 364.77)" x="442.179063" y="364.765562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,968</text>
+ <text transform="rotate(-0 582.33 364.77)" x="582.332859" y="364.765562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,803</text>
+ <text transform="rotate(-0 215.49 365.7)" x="215.494687" y="365.699156" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">8.9%  </text>
+ <text transform="rotate(-0 667.51 366.15)" x="667.508626" y="366.152593" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">8,954</text>
+ <text transform="rotate(-0 293.67 444.26)" x="293.670925" y="444.256229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,219</text>
+ <text transform="rotate(-0 434.36 444.26)" x="434.359011" y="444.256229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,574</text>
+ <text transform="rotate(-0 570.14 444.26)" x="570.141348" y="444.256229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,017</text>
+ <text transform="rotate(-0 215.49 445.19)" x="215.494687" y="445.189822" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">8.8%  </text>
+ <text transform="rotate(-0 660.51 445.64)" x="660.514294" y="445.64326" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">8,810</text>
+ <text transform="rotate(-0 289.49 523.75)" x="289.493755" y="523.746895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">3,047</text>
+ <text transform="rotate(-0 430.42 523.75)" x="430.424698" y="523.746895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,756</text>
+ <text transform="rotate(-0 557.54 523.75)" x="557.536978" y="523.746895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,478</text>
+ <text transform="rotate(-0 215.49 524.68)" x="215.494687" y="524.680489" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">8.2%  </text>
+ <text transform="rotate(-0 634.82 525.13)" x="634.819836" y="525.133927" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">8,281</text>
+ <text transform="rotate(-0 282.06 603.24)" x="282.062276" y="603.237562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,741</text>
+ <text transform="rotate(-0 414.3 603.24)" x="414.298876" y="603.237562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,704</text>
+ <text transform="rotate(-0 540.54 603.24)" x="540.536865" y="603.237562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,494</text>
+ <text transform="rotate(-0 215.49 604.17)" x="215.494687" y="604.171156" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">7.9%  </text>
+ <text transform="rotate(-0 618.21 604.62)" x="618.208296" y="604.624593" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">7,939</text>
+ <text transform="rotate(-0 279.54 682.73)" x="279.536545" y="682.728229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,637</text>
+ <text transform="rotate(-0 409.37 682.73)" x="409.368843" y="682.728229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,709</text>
+ <text transform="rotate(-0 535.05 682.73)" x="535.048256" y="682.728229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,466</text>
+ <text transform="rotate(-0 215.49 683.66)" x="215.494687" y="683.661822" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">7.8%  </text>
+ <text transform="rotate(-0 612.04 684.12)" x="612.039683" y="684.11526" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">7,812</text>
+ <text transform="rotate(-0 276.84 762.22)" x="276.840813" y="762.218895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,526</text>
+ <text transform="rotate(-0 399.12 762.22)" x="399.120203" y="762.218895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,509</text>
+ <text transform="rotate(-0 527.01 762.22)" x="527.009631" y="762.218895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,757</text>
+ <text transform="rotate(-0 215.49 763.15)" x="215.494687" y="763.152489" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">7.7%  </text>
+ <text transform="rotate(-0 611.07 763.61)" x="611.068248" y="763.605927" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">7,792</text>
+ <text transform="rotate(-0 284.56 841.71)" x="284.563722" y="841.709562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,844</text>
+ <text transform="rotate(-0 406.48 841.71)" x="406.478824" y="841.709562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,176</text>
+ <text transform="rotate(-0 518.68 841.71)" x="518.679575" y="841.709562" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,444</text>
+ <text transform="rotate(-0 215.49 842.64)" x="215.494687" y="842.643156" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">7.4%  </text>
+ <text transform="rotate(-0 595.14 843.1)" x="595.136713" y="843.096593" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">7,464</text>
+ <text transform="rotate(-0 272.37 921.2)" x="272.372211" y="921.200229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,342</text>
+ <text transform="rotate(-0 385.81 921.2)" x="385.811543" y="921.200229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,329</text>
+ <text transform="rotate(-0 504.45 921.2)" x="504.448051" y="921.200229" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,556</text>
+ <text transform="rotate(-0 215.49 922.13)" x="215.494687" y="922.133822" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">7.2%  </text>
+ <text transform="rotate(-0 583.63 922.59)" x="583.625207" y="922.58726" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">7,227</text>
+ <text transform="rotate(-0 270.87 1000.7)" x="270.866487" y="1000.690895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,280</text>
+ <text transform="rotate(-0 381.54 1000.7)" x="381.537228" y="1000.690895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,277</text>
+ <text transform="rotate(-0 494.54 1000.7)" x="494.539414" y="1000.690895" fill="#ffffff" font-family="'Poppins'" font-size="18px" font-weight="500" text-anchor="middle">2,376</text>
+ <text transform="rotate(-0 215.49 1001.6)" x="215.494687" y="1001.624489" fill="#4c6a67" font-family="'Poppins'" font-size="22px" font-weight="600" text-anchor="end">6.9%  </text>
+ <text transform="rotate(-0 569.35 1002.1)" x="569.345112" y="1002.077927" fill="#10302c" font-family="'Poppins'" font-size="24px" font-weight="700">6,933</text>
+ <path d="m67.184 35.28h48v-16.8h-48z" fill="#8b0000"/>
+ <text transform="rotate(-0 134.38 35.28)" x="134.384438" y="35.28" fill="#767676" font-family="'Poppins'" font-size="24px" font-weight="500">Desaparecidos</text>
+ <path d="m365.01 35.28h48v-16.8h-48z" fill="#b22222"/>
+ <text transform="rotate(-0 432.21 35.28)" x="432.205688" y="35.28" fill="#767676" font-family="'Poppins'" font-size="24px" font-weight="500">Localizados</text>
+ <path d="m621.49 35.28h48v-16.8h-48z" fill="#cd5c5c"/>
+ <text transform="rotate(-0 688.69 35.28)" x="688.694438" y="35.28" fill="#767676" font-family="'Poppins'" font-size="24px" font-weight="500">No localizados</text>
+ <defs>
+  <clipPath id="a">
+   <rect x="215.49" y="82.247" width="627.09" height="953.89"/>
+  </clipPath>
+ </defs>
+</svg>
