@@ -1969,6 +1969,47 @@ for estado in estados:
   </div>
 </div>
 
+
+ <div class="flex-container">
+    <div class="code-card">
+      <div class="code-header">Barra previa</div>
+      <div class="code-content">
+      <div class="svg-container">
+        <img src="Python/grafica_barras_tendencias/CDMX_grafica_barras_tendencias.svg">
+    </div>
+<pre><code class="language-python">
+<!-- INICIO_CODIGO:barra_previa -->
+<pre><code class="language-python">
+# EXPORTAR: barra_previa
+
+barras_apiladas(df1f, 
+                nombre="barra_previa", 
+                bar_height=0.9, 
+                font='Montserrat',
+                fontsize_valor_total=30,
+                ordenar_por='etiqueta',
+                orden='ascendente',
+                valor_barra=False, 
+                porcentaje_barra=False,
+                porcentaje_total=False,
+                orientacion='vertical',
+                quitar_capsula=True,
+                agregar_datos=[(pd.Timestamp(2005, 1, 1), "Previo", (192, 313, "38%"))],
+                asignar_etiquetas='porcentaje',
+                grillas=False,
+                paleta_colores=["#10302C", "#E6E6E6"]
+                )
+</code></pre>
+<!-- FIN_CODIGO:barra_previa -->
+</code></pre>
+      <a class="btn" href="https://github.com/tabonitaa/graficas_gob/tree/main/Python/grafica_barras_tendencias" target="_blank">
+        Ver carpeta en GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+
 </div>
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
@@ -1987,3 +2028,4 @@ for estado in estados:
 </script>
 </body>
 </html>
+
