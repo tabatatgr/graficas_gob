@@ -22,6 +22,7 @@ bloques = {
     "barras_apiladas": {"ruta": "Python/barras_apiladas/barras_apiladas.ipynb", "tipo": "ipynb"},
     "barra_previa": {"ruta": "Python/barras_apiladas/barras_apiladas.ipynb", "tipo": "ipynb"},
     "barras_verticales_simples": {"ruta": "Python/barras_apiladas/barras_apiladas.ipynb", "tipo": "ipynb"},
+    "barras_verticales_simples": {"ruta": "Python/barras_apiladas/barras_apiladas.ipynb", "tipo": "ipynb"},
     # Agrega más bloques aquí
 }
 

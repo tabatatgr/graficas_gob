@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="856.87pt" height="1072.7pt" version="1.1" viewBox="0 0 856.87 1072.7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <path d="m0 1072.7h856.87v-1072.7h-856.87z" fill="#fff"/>
+ <path d="m219.2 1035.1h580.75v-1027.9h-580.75z" fill="#fff"/>
+ <path d="m219.2 1035.1v-1027.9" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <defs>
+  <path id="c" d="m0 0v3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="219.19875" y="1035.08" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 219.2 1060.6)" x="219.19875" y="1060.630781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">0</text>
+ <path d="m345.05 1035.1v-1027.9" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="345.047049" y="1035.08" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 345.05 1060.6)" x="345.047049" y="1060.630781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">500</text>
+ <path d="m470.9 1035.1v-1027.9" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="470.895349" y="1035.08" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 470.9 1060.6)" x="470.895349" y="1060.630781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">1,000</text>
+ <path d="m596.74 1035.1v-1027.9" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="596.743648" y="1035.08" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 596.74 1060.6)" x="596.743648" y="1060.630781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">1,500</text>
+ <path d="m722.59 1035.1v-1027.9" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="722.591947" y="1035.08" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 722.59 1060.6)" x="722.591947" y="1060.630781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">2,000</text>
+ <defs>
+  <path id="b" d="m0 0h-3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="219.19875" y="1019.019375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 1027.3)" x="212.19875" y="1027.346719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Aguascalientes</text>
+ <use x="219.19875" y="986.898125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 995.23)" x="212.19875" y="995.225469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Baja California</text>
+ <use x="219.19875" y="954.776875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 963.1)" x="212.19875" y="963.104219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Baja California Sur</text>
+ <use x="219.19875" y="922.655625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 930.82)" x="212.19875" y="930.817969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Campeche</text>
+ <use x="219.19875" y="890.534375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 898.86)" x="212.19875" y="898.861719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Chiapas</text>
+ <use x="219.19875" y="858.413125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 866.58)" x="212.19875" y="866.575469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Chihuahua</text>
+ <use x="219.19875" y="826.291875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 834.45)" x="212.19875" y="834.454219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Ciudad de México</text>
+ <use x="219.19875" y="794.170625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 802.33)" x="212.19875" y="802.332969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Coahuila</text>
+ <use x="219.19875" y="762.049375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 770.21)" x="212.19875" y="770.211719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Colima</text>
+ <use x="219.19875" y="729.928125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 738.03)" x="212.19875" y="738.025156" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Durango</text>
+ <use x="219.19875" y="697.806875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 705.97)" x="212.19875" y="705.969219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Estado de México</text>
+ <use x="219.19875" y="665.685625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 674.01)" x="212.19875" y="674.012969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Guanajuato</text>
+ <use x="219.19875" y="633.564375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 641.73)" x="212.19875" y="641.726719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Guerrero</text>
+ <use x="219.19875" y="601.443125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 609.77)" x="212.19875" y="609.770469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Hidalgo</text>
+ <use x="219.19875" y="569.321875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 577.48)" x="212.19875" y="577.484219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Jalisco</text>
+ <use x="219.19875" y="537.200625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 545.36)" x="212.19875" y="545.362969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Michoacán</text>
+ <use x="219.19875" y="505.079375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 513.24)" x="212.19875" y="513.241719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Morelos</text>
+ <use x="219.19875" y="472.958125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 481.29)" x="212.19875" y="481.285469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Nayarit</text>
+ <use x="219.19875" y="440.836875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 449)" x="212.19875" y="448.999219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Nuevo León</text>
+ <use x="219.19875" y="408.715625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 416.88)" x="212.19875" y="416.877969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Oaxaca</text>
+ <use x="219.19875" y="376.594375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 384.76)" x="212.19875" y="384.756719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Puebla</text>
+ <use x="219.19875" y="344.473125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 352.64)" x="212.19875" y="352.635469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Querétaro</text>
+ <use x="219.19875" y="312.351875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 320.51)" x="212.19875" y="320.514219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Quintana Roo</text>
+ <use x="219.19875" y="280.230625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 288.39)" x="212.19875" y="288.392969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">San Luis Potosí</text>
+ <use x="219.19875" y="248.109375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 256.27)" x="212.19875" y="256.271719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Sinaloa</text>
+ <use x="219.19875" y="215.988125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 224.15)" x="212.19875" y="224.150469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Sonora</text>
+ <use x="219.19875" y="183.866875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 192.03)" x="212.19875" y="192.029219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Tabasco</text>
+ <use x="219.19875" y="151.745625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 160.07)" x="212.19875" y="160.072969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Tamaulipas</text>
+ <use x="219.19875" y="119.624375" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 127.79)" x="212.19875" y="127.786719" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Tlaxcala</text>
+ <use x="219.19875" y="87.503125" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 95.665)" x="212.19875" y="95.665469" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Veracruz</text>
+ <use x="219.19875" y="55.381875" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 63.544)" x="212.19875" y="63.544219" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Yucatán</text>
+ <use x="219.19875" y="23.260625" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 212.2 31.423)" x="212.19875" y="31.422969" font-family="'Montserrat'" font-size="22px" font-weight="500" text-anchor="end">Zacatecas</text>
+ <path d="m219.2 1033.5h308.58v-28.909h-308.58z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 1001.4h392.39v-28.909h-392.39z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 969.23h241.63v-28.909h-241.63z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 937.11h350.87v-28.909h-350.87z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 904.99h309.59v-28.909h-309.59z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 872.87h300.78v-28.909h-300.78z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 840.75h459.09v-28.909h-459.09z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 808.63h287.94v-28.909h-287.94z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 776.5h437.45v-28.909h-437.45z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 744.38h55.625v-28.909h-55.625z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 712.26h142.46v-28.909h-142.46z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 680.14h336.77v-28.909h-336.77z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 648.02h108.23v-28.909h-108.23z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 615.9h398.18v-28.909h-398.18z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 583.78h47.067v-28.909h-47.067z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 551.66h376.54v-28.909h-376.54z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 519.53h307.82v-28.909h-307.82z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 487.41h244.4v-28.909h-244.4z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 455.29h449.78v-28.909h-449.78z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 423.17h57.89v-28.909h-57.89z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 391.05h449.28v-28.909h-449.28z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 358.93h360.43v-28.909h-360.43z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 326.81h218.72v-28.909h-218.72z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 294.69h111.5v-28.909h-111.5z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 262.56h406.49v-28.909h-406.49z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 230.44h386.86v-28.909h-386.86z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 198.32h227.79v-28.909h-227.79z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 166.2h122.07v-28.909h-122.07z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 134.08h330.98v-28.909h-330.98z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 101.96h265.54v-28.909h-265.54z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 69.836h94.638v-28.909h-94.638z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m219.2 37.715h323.18v-28.909h-323.18z" clip-path="url(#a)" fill="#10302c"/>
+ <path d="m556.62 1031.4h68.697q16 0 16-16v7.2781q0-16-16-16h-68.697q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 543.62 1024.5)" x="543.617544" y="1024.499063" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,226    </text>
+ <text transform="rotate(-0 649.21 1025)" x="649.209301" y="1025.047031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.5%</text>
+ <path d="m640.43 999.26h68.897q16 0 16-16v7.2781q0-16-16-16h-68.897q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 627.43 992.38)" x="627.432511" y="992.377813" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,559    </text>
+ <text transform="rotate(-0 733.02 992.93)" x="733.024268" y="992.925781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.4%</text>
+ <path d="m489.67 967.14h58.338q16 0 16-16v7.2781q0-16-16-16h-58.338q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 476.67 960.26)" x="476.666248" y="960.256562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">960    </text>
+ <text transform="rotate(-0 582.26 960.8)" x="582.258005" y="960.804531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">2.7%</text>
+ <path d="m598.9 935.02h70.719q16 0 16-16v7.2781q0-16-16-16h-70.719q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 585.9 928.14)" x="585.902572" y="928.135312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,394    </text>
+ <text transform="rotate(-0 691.49 928.68)" x="691.494329" y="928.683281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.9%</text>
+ <path d="m557.62 902.9h69.578q16 0 16-16v7.2781q0-16-16-16h-69.578q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 544.62 896.01)" x="544.62433" y="896.014062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,230    </text>
+ <text transform="rotate(-0 650.22 896.56)" x="650.216087" y="896.562031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.5%</text>
+ <path d="m548.81 870.77h64.838q16 0 16-16v7.2781q0-16-16-16h-64.838q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 535.81 863.89)" x="535.814949" y="863.892812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,195    </text>
+ <text transform="rotate(-0 641.41 864.44)" x="641.406706" y="864.440781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.4%</text>
+ <path d="m707.13 838.65h71.138q16 0 16-16v7.2781q0-16-16-16h-71.138q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 694.13 831.77)" x="694.13211" y="831.771562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,824    </text>
+ <text transform="rotate(-0 799.72 832.32)" x="799.723867" y="832.319531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">5.2%</text>
+ <path d="m535.98 806.53h67.759q16 0 16-16v7.2781q0-16-16-16h-67.759q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 522.98 799.65)" x="522.978423" y="799.650312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,144    </text>
+ <text transform="rotate(-0 628.57 800.2)" x="628.57018" y="800.198281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.2%</text>
+ <path d="m685.49 774.41h69.797q16 0 16-16v7.2781q0-16-16-16h-69.797q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 672.49 767.53)" x="672.486202" y="767.529063" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,738    </text>
+ <text transform="rotate(-0 778.08 768.08)" x="778.077959" y="768.077031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.9%</text>
+ <path d="m303.66 742.29h50.716q16 0 16-16v7.2781q0-16-16-16h-50.716q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 290.66 735.41)" x="290.662462" y="735.407812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">221    </text>
+ <text transform="rotate(-0 396.25 735.96)" x="396.254219" y="735.955781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">0.6%</text>
+ <path d="m390.5 710.17h56.656q16 0 16-16v7.2781q0-16-16-16h-56.656q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 377.5 703.29)" x="377.497788" y="703.286562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">566    </text>
+ <text transform="rotate(-0 483.09 703.83)" x="483.089546" y="703.834531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">1.6%</text>
+ <path d="m584.81 678.05h69.238q16 0 16-16v7.2781q0-16-16-16h-69.238q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 571.81 671.17)" x="571.807563" y="671.165313" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,338    </text>
+ <text transform="rotate(-0 677.4 671.71)" x="677.39932" y="671.713281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.8%</text>
+ <path d="m356.27 645.93h58.478q16 0 16-16v7.2781q0-16-16-16h-58.478q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 343.27 639.04)" x="343.267051" y="639.044062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">430    </text>
+ <text transform="rotate(-0 448.86 639.59)" x="448.858808" y="639.592031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">1.2%</text>
+ <path d="m646.22 613.8h69.256q16 0 16-16v7.2781q0-16-16-16h-69.256q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 633.22 606.92)" x="633.221533" y="606.922812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,582    </text>
+ <text transform="rotate(-0 738.81 607.47)" x="738.81329" y="607.470781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.5%</text>
+ <path d="m295.1 581.68h52.716q16 0 16-16v7.2781q0-16-16-16h-52.716q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 282.1 574.8)" x="282.104778" y="574.801562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">187    </text>
+ <text transform="rotate(-0 387.7 575.35)" x="387.696535" y="575.349531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">0.5%</text>
+ <path d="m624.58 549.56h71.619q16 0 16-16v7.2781q0-16-16-16h-71.619q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 611.58 542.68)" x="611.575625" y="542.680312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,496    </text>
+ <text transform="rotate(-0 717.17 543.23)" x="717.167382" y="543.228281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.2%</text>
+ <path d="m555.86 517.44h67.797q16 0 16-16v7.2781q0-16-16-16h-67.797q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 542.86 510.56)" x="542.862454" y="510.559062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,223    </text>
+ <text transform="rotate(-0 648.45 511.11)" x="648.454211" y="511.107031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.5%</text>
+ <path d="m492.43 485.32h52.256q16 0 16-16v7.2781q0-16-16-16h-52.256q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 479.43 478.44)" x="479.434911" y="478.437812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">971    </text>
+ <text transform="rotate(-0 585.03 478.99)" x="585.026668" y="478.985781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">2.7%</text>
+ <path d="m697.82 453.2h70.356q16 0 16-16v7.2781q0-16-16-16h-70.356q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 684.82 446.32)" x="684.819335" y="446.316562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,787    </text>
+ <text transform="rotate(-0 790.41 446.86)" x="790.411093" y="446.864531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">5.0%</text>
+ <path d="m305.93 421.08h56.497q16 0 16-16v7.2781q0-16-16-16h-56.497q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 292.93 414.2)" x="292.927731" y="414.195312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">230    </text>
+ <text transform="rotate(-0 398.52 414.74)" x="398.519488" y="414.743281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">0.6%</text>
+ <path d="m697.32 388.96h69.856q16 0 16-16v7.2781q0-16-16-16h-69.856q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 684.32 382.07)" x="684.315942" y="382.074062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,785    </text>
+ <text transform="rotate(-0 789.91 382.62)" x="789.907699" y="382.622031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">5.0%</text>
+ <path d="m608.47 356.83h69.778q16 0 16-16v7.2781q0-16-16-16h-69.778q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 595.47 349.95)" x="595.467043" y="349.952812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,432    </text>
+ <text transform="rotate(-0 701.06 350.5)" x="701.0588" y="350.500781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.0%</text>
+ <path d="m466.76 324.71h57.956q16 0 16-16v7.2781q0-16-16-16h-57.956q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 453.76 317.83)" x="453.761858" y="317.831562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">869    </text>
+ <text transform="rotate(-0 559.35 318.38)" x="559.353615" y="318.379531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">2.5%</text>
+ <path d="m359.54 292.59h58.678q16 0 16-16v7.2781q0-16-16-16h-58.678q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 346.54 285.71)" x="346.539107" y="285.710312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">443    </text>
+ <text transform="rotate(-0 452.13 286.26)" x="452.130864" y="286.258281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">1.3%</text>
+ <path d="m654.53 260.47h64.838q16 0 16-16v7.2781q0-16-16-16h-64.838q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 641.53 253.59)" x="641.527521" y="253.589062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,615    </text>
+ <text transform="rotate(-0 747.12 254.14)" x="747.119278" y="254.137031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.6%</text>
+ <path d="m634.9 228.35h68.497q16 0 16-16v7.2781q0-16-16-16h-68.497q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 621.9 221.47)" x="621.895186" y="221.467812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,537    </text>
+ <text transform="rotate(-0 727.49 222.02)" x="727.486943" y="222.015781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">4.3%</text>
+ <path d="m475.82 196.23h57.497q16 0 16-16v7.2781q0-16-16-16h-57.497q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 462.82 189.35)" x="462.822935" y="189.346562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">905    </text>
+ <text transform="rotate(-0 568.41 189.89)" x="568.414693" y="189.894531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">2.6%</text>
+ <path d="m370.11 164.11h58.156q16 0 16-16v7.2781q0-16-16-16h-58.156q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 357.11 157.23)" x="357.110364" y="157.225312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">485    </text>
+ <text transform="rotate(-0 462.7 157.77)" x="462.702121" y="157.773281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">1.4%</text>
+ <path d="m579.02 131.99h63.938q16 0 16-16v7.2781q0-16-16-16h-63.938q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 566.02 125.1)" x="566.018541" y="125.104062" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,315    </text>
+ <text transform="rotate(-0 671.61 125.65)" x="671.610298" y="125.652031" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.7%</text>
+ <path d="m513.58 99.864h69.738q16 0 16-16v7.2781q0-16-16-16h-69.738q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 500.58 92.983)" x="500.577425" y="92.982812" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,055    </text>
+ <text transform="rotate(-0 606.17 93.531)" x="606.169182" y="93.530781" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.0%</text>
+ <path d="m342.68 67.743h56.256q16 0 16-16v7.2781q0-16-16-16h-56.256q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 329.68 60.862)" x="329.675435" y="60.861562" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">376    </text>
+ <text transform="rotate(-0 435.27 61.41)" x="435.267192" y="61.409531" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">1.1%</text>
+ <path d="m571.22 35.622h71.138q16 0 16-16v7.2781q0-16-16-16h-71.138q-16 0-16 16v-7.2781q0 16 16 16z" fill="#fff" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 558.22 28.74)" x="558.215946" y="28.740312" fill="#10302c" font-family="'Montserrat'" font-size="20px" font-weight="700">1,284    </text>
+ <text transform="rotate(-0 663.81 29.288)" x="663.807703" y="29.288281" fill="#4c6a67" font-family="'Montserrat'" font-size="22px" font-weight="600">3.6%</text>
+ <defs>
+  <clipPath id="a">
+   <rect x="219.2" y="7.2" width="580.75" height="1027.9"/>
+  </clipPath>
+ </defs>
+</svg>
