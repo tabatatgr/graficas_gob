@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="857.44pt" height="556.23pt" version="1.1" viewBox="0 0 857.44 556.23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <path d="m-0 556.23h857.44v-556.23h-857.44v556.23z" opacity="0"/>
+ <path d="m113.11 367.87h668.48v-360.67h-668.48v360.67z" opacity="0"/>
+ <defs>
+  <path id="b" d="m0 0v3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="168.820729" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 168.82 393.42)" x="168.820729" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">2019</text>
+ <use x="280.234062" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 280.23 393.42)" x="280.234062" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">2020</text>
+ <use x="391.647396" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 391.65 393.42)" x="391.647396" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">2021</text>
+ <use x="503.060729" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 503.06 393.42)" x="503.060729" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">2022</text>
+ <use x="614.474062" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 614.47 393.42)" x="614.474062" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle">...</text>
+ <use x="725.887396" y="367.872" stroke="#000000" stroke-width=".8" xlink:href="#b"/>
+ <text transform="rotate(-0 725.89 393.42)" x="725.887396" y="393.422781" font-family="'Montserrat'" font-size="25px" font-weight="500" text-anchor="middle"></text>
+ <path d="m113.11 328.3h668.48" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <defs>
+  <path id="c" d="m0 0h-3.5" stroke="#000" stroke-width=".8"/>
+ </defs>
+ <use x="113.114063" y="328.295155" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 106.11 336.65)" x="106.114063" y="336.653437" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="22px" font-weight="500" text-anchor="end">-100,000</text>
+ <path d="m113.11 253.62h668.48" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="113.114063" y="253.621863" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 106.11 261.98)" x="106.114063" y="261.980145" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="22px" font-weight="500" text-anchor="end">-50,000</text>
+ <path d="m113.11 178.95h668.48" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="113.114063" y="178.948571" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 106.11 187.31)" x="106.114063" y="187.306853" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="22px" font-weight="500" text-anchor="end">0</text>
+ <path d="m113.11 104.28h668.48" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="113.114063" y="104.27528" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 106.11 112.63)" x="106.114063" y="112.633561" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="22px" font-weight="500" text-anchor="end">50,000</text>
+ <path d="m113.11 29.602h668.48" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75"/>
+ <use x="113.114063" y="29.601988" stroke="#000000" stroke-width=".8" xlink:href="#c"/>
+ <text transform="rotate(-0 106.11 37.96)" x="106.114063" y="37.960269" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="22px" font-weight="500" text-anchor="end">100,000</text>
+ <path d="m132.61 178.95h72.419v-74.673h-72.419z" clip-path="url(#a)" fill="#114a44"/>
+ <path d="m132.61 104.28h72.419v-29.869h-72.419z" clip-path="url(#a)" fill="#739489"/>
+ <path d="m132.61 178.95h72.419v29.869h-72.419z" clip-path="url(#a)" fill="#3d5c93"/>
+ <path d="m132.61 208.82h72.419v14.935h-72.419z" clip-path="url(#a)" fill="#7393b3"/>
+ <path d="m244.02 178.95h72.419v-44.804h-72.419z" clip-path="url(#a)" fill="#114a44"/>
+ <path d="m244.02 134.14h72.419v-14.935h-72.419z" clip-path="url(#a)" fill="#739489"/>
+ <path d="m244.02 178.95h72.419v59.739h-72.419z" clip-path="url(#a)" fill="#3d5c93"/>
+ <path d="m244.02 238.69h72.419v29.869h-72.419z" clip-path="url(#a)" fill="#7393b3"/>
+ <path d="m355.44 178.95h72.419v-59.739h-72.419z" clip-path="url(#a)" fill="#114a44"/>
+ <path d="m355.44 119.21h72.419v-44.804h-72.419z" clip-path="url(#a)" fill="#739489"/>
+ <path d="m355.44 178.95h72.419v14.935h-72.419z" clip-path="url(#a)" fill="#3d5c93"/>
+ <path d="m355.44 193.88h72.419v29.869h-72.419z" clip-path="url(#a)" fill="#7393b3"/>
+ <path d="m466.85 178.95h72.419v-29.869h-72.419z" clip-path="url(#a)" fill="#114a44"/>
+ <path d="m466.85 149.08h72.419v-14.935h-72.419z" clip-path="url(#a)" fill="#739489"/>
+ <path d="m466.85 178.95h72.419v44.804h-72.419z" clip-path="url(#a)" fill="#3d5c93"/>
+ <path d="m466.85 223.75h72.419v14.935h-72.419z" clip-path="url(#a)" fill="#7393b3"/>
+ <path d="m689.68 178.95h72.419v149.35h-72.419v-149.35z" clip-path="url(#a)" fill="none" stroke="#114a44" stroke-dasharray="3.5,5.775" stroke-width="3.5"/>
+ <path d="m113.11 178.95h668.48" clip-path="url(#a)" fill="none" stroke="#000" stroke-linecap="square"/>
+ <path d="m113.11 367.87h668.48" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8"/>
+ <text transform="rotate(-0 168.82 144.08)" x="168.820729" y="144.077785" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">50,000 (71.4%)</text>
+ <text transform="rotate(-0 168.82 91.806)" x="168.820729" y="91.80648" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (28.6%)</text>
+ <text transform="rotate(-0 168.82 196.35)" x="168.820729" y="196.349089" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <text transform="rotate(-0 168.82 218.75)" x="168.820729" y="218.751077" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <path d="m134.52 72.254h68.603q16 0 16-16v7.2781q0-16-16-16h-68.603q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 168.82 65.372)" x="168.820729" y="65.372256" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000  </text>
+ <path d="m134.8 250.63h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 168.82 243.75)" x="168.820729" y="243.745629" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <text transform="rotate(-0 280.23 159.01)" x="280.234062" y="159.012443" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (75.0%)</text>
+ <text transform="rotate(-0 280.23 129.14)" x="280.234062" y="129.143126" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (25.0%)</text>
+ <text transform="rotate(-0 280.23 211.28)" x="280.234062" y="211.283748" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000 (66.7%)</text>
+ <text transform="rotate(-0 280.23 256.09)" x="280.234062" y="256.087723" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (33.3%)</text>
+ <path d="m245.24 117.06h69.984q16 0 16-16v7.2781q0-16-16-16h-69.984q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 280.23 110.18)" x="280.234062" y="110.176231" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">40,000  </text>
+ <path d="m245.76 295.43h68.944q16 0 16-16v7.2781q0-16-16-16h-68.944q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 280.23 288.55)" x="280.234062" y="288.549604" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">60,000  </text>
+ <text transform="rotate(-0 391.65 151.55)" x="391.647396" y="151.545114" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000 (57.1%)</text>
+ <text transform="rotate(-0 391.65 99.274)" x="391.647396" y="99.27381" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (42.9%)</text>
+ <text transform="rotate(-0 391.65 188.88)" x="391.647396" y="188.88176" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <text transform="rotate(-0 391.65 211.28)" x="391.647396" y="211.283748" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <path d="m357.35 72.254h68.603q16 0 16-16v7.2781q0-16-16-16h-68.603q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 391.65 65.372)" x="391.647396" y="65.372256" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000  </text>
+ <path d="m357.63 250.63h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 391.65 243.75)" x="391.647396" y="243.745629" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <text transform="rotate(-0 503.06 166.48)" x="503.060729" y="166.479772" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <text transform="rotate(-0 503.06 144.08)" x="503.060729" y="144.077785" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <text transform="rotate(-0 503.06 203.82)" x="503.060729" y="203.816418" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (75.0%)</text>
+ <text transform="rotate(-0 503.06 233.69)" x="503.060729" y="233.685735" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (25.0%)</text>
+ <path d="m469.04 131.99h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 503.06 125.11)" x="503.060729" y="125.110889" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <path d="m468.07 265.56h69.984q16 0 16-16v7.2781q0-16-16-16h-69.984q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 503.06 258.68)" x="503.060729" y="258.680287" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">40,000  </text>
+ <text transform="rotate(-0 725.89 256.09)" x="725.887396" y="256.087723" fill="#114a44" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">100,000</text>
+ <path d="m687.07 355.17h77.625q16 0 16-16v7.2781q0-16-16-16h-77.625q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 725.89 348.29)" x="725.887396" y="348.288237" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">100,000  </text>
+ <path d="m54.065 465.05h24v-21.48h-24z" fill="#114a44"/>
+ <text transform="rotate(-0 97.265 462.53)" x="97.265313" y="462.5328" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Acomulado anterior </text>
+ <path d="m54.065 501h24v-21.48h-24z" fill="#739489"/>
+ <text transform="rotate(-0 97.265 498.48)" x="97.265313" y="498.48405" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Desaparecidos del periodo</text>
+ <path d="m54.065 536.96h24v-21.48h-24z" fill="#3d5c93"/>
+ <text transform="rotate(-0 97.265 534.44)" x="97.265313" y="534.4353" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Localizados de años anteriores</text>
+ <path d="m515.77 465.05h24v-21.48h-24z" fill="#7393b3"/>
+ <text transform="rotate(-0 558.97 462.53)" x="558.969063" y="462.5328" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Localizados del periodo</text>
+ <path d="m515.77 501h24v-21.48h-24v21.48z" fill="none" stroke="#114a44" stroke-dasharray="3.5,5.775" stroke-width="3.5"/>
+ <text transform="rotate(-0 558.97 498.48)" x="558.969063" y="498.48405" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Sin año de localización</text>
+ <defs>
+  <clipPath id="a">
+   <rect x="113.11" y="7.2" width="668.48" height="360.67"/>
+  </clipPath>
+ </defs>
+</svg>
