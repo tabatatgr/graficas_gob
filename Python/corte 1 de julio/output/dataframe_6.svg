@@ -1,0 +1,2143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2109.646875pt" height="1051.082344pt" viewBox="0 0 2109.646875 1051.082344" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-07-04T17:19:13.058512</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1051.082344 
+L 2109.646875 1051.082344 
+L 2109.646875 0 
+L 0 0 
+L 0 1051.082344 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 105.176875 1013.48 
+L 2102.446875 1013.48 
+L 2102.446875 7.2 
+L 105.176875 7.2 
+L 105.176875 1013.48 
+z
+" style="fill: none; opacity: 0"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="md2fe00bc8d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="152.730923" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="152.730923" y="1039.030781" transform="rotate(-0 152.730923 1039.030781)">2006</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="247.839018" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="247.839018" y="1039.030781" transform="rotate(-0 247.839018 1039.030781)">2007</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="342.947113" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="342.947113" y="1039.030781" transform="rotate(-0 342.947113 1039.030781)">2008</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="438.055208" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="438.055208" y="1039.030781" transform="rotate(-0 438.055208 1039.030781)">2009</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="533.163304" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="533.163304" y="1039.030781" transform="rotate(-0 533.163304 1039.030781)">2010</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="628.271399" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="628.271399" y="1039.030781" transform="rotate(-0 628.271399 1039.030781)">2011</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="723.379494" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="723.379494" y="1039.030781" transform="rotate(-0 723.379494 1039.030781)">2012</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="818.487589" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="818.487589" y="1039.030781" transform="rotate(-0 818.487589 1039.030781)">2013</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="913.595685" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="913.595685" y="1039.030781" transform="rotate(-0 913.595685 1039.030781)">2014</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1008.70378" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1008.70378" y="1039.030781" transform="rotate(-0 1008.70378 1039.030781)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1103.811875" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1103.811875" y="1039.030781" transform="rotate(-0 1103.811875 1039.030781)">2016</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1198.91997" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1198.91997" y="1039.030781" transform="rotate(-0 1198.91997 1039.030781)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1294.028065" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1294.028065" y="1039.030781" transform="rotate(-0 1294.028065 1039.030781)">2018</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1389.136161" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1389.136161" y="1039.030781" transform="rotate(-0 1389.136161 1039.030781)">2019</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1484.244256" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1484.244256" y="1039.030781" transform="rotate(-0 1484.244256 1039.030781)">2020</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1579.352351" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1579.352351" y="1039.030781" transform="rotate(-0 1579.352351 1039.030781)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1674.460446" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1674.460446" y="1039.030781" transform="rotate(-0 1674.460446 1039.030781)">2022</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1769.568542" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1769.568542" y="1039.030781" transform="rotate(-0 1769.568542 1039.030781)">2023</text>
+     </g>
+    </g>
+    <g id="xtick_19">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1864.676637" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1864.676637" y="1039.030781" transform="rotate(-0 1864.676637 1039.030781)">2024</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="1959.784732" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="1959.784732" y="1039.030781" transform="rotate(-0 1959.784732 1039.030781)">2025</text>
+     </g>
+    </g>
+    <g id="xtick_21">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#md2fe00bc8d" x="2054.892827" y="1013.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-weight: 500; font-size: 25px; font-family: 'Montserrat'; text-anchor: middle" x="2054.892827" y="1039.030781" transform="rotate(-0 2054.892827 1039.030781)"> </text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_22">
+      <path d="M 105.176875 741.710949 
+L 2102.446875 741.710949 
+" clip-path="url(#pb75c877fa0)" style="fill: none; stroke: #b9b9b9; stroke-width: 0.75; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_23">
+      <defs>
+       <path id="m9db7450959" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9db7450959" x="105.176875" y="741.710949" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-weight: 500; font-size: 22px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="98.176875" y="750.06923" transform="rotate(-0 98.176875 750.06923)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_24">
+      <path d="M 105.176875 465.540391 
+L 2102.446875 465.540391 
+" clip-path="url(#pb75c877fa0)" style="fill: none; stroke: #b9b9b9; stroke-width: 0.75; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m9db7450959" x="105.176875" y="465.540391" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-weight: 500; font-size: 22px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="98.176875" y="473.898672" transform="rotate(-0 98.176875 473.898672)">50,000</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_26">
+      <path d="M 105.176875 189.369833 
+L 2102.446875 189.369833 
+" clip-path="url(#pb75c877fa0)" style="fill: none; stroke: #b9b9b9; stroke-width: 0.75; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m9db7450959" x="105.176875" y="189.369833" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-weight: 500; font-size: 22px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="98.176875" y="197.728114" transform="rotate(-0 98.176875 197.728114)">100,000</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 121.820792 741.710949 
+L 183.641054 741.710949 
+L 183.641054 739.048665 
+L 121.820792 739.048665 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 121.820792 739.048665 
+L 183.641054 739.048665 
+L 183.641054 738.468707 
+L 121.820792 738.468707 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 121.820792 741.710949 
+L 183.641054 741.710949 
+L 183.641054 741.721996 
+L 121.820792 741.721996 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 216.928887 741.710949 
+L 278.749149 741.710949 
+L 278.749149 738.468707 
+L 216.928887 738.468707 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 216.928887 738.468707 
+L 278.749149 738.468707 
+L 278.749149 736.032882 
+L 216.928887 736.032882 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 216.928887 741.710949 
+L 278.749149 741.710949 
+L 278.749149 741.721996 
+L 216.928887 741.721996 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 216.928887 741.721996 
+L 278.749149 741.721996 
+L 278.749149 741.77723 
+L 216.928887 741.77723 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 312.036982 741.710949 
+L 373.857244 741.710949 
+L 373.857244 736.032882 
+L 312.036982 736.032882 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 312.036982 736.032882 
+L 373.857244 736.032882 
+L 373.857244 732.724359 
+L 312.036982 732.724359 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 312.036982 741.710949 
+L 373.857244 741.710949 
+L 373.857244 741.77723 
+L 312.036982 741.77723 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 312.036982 741.77723 
+L 373.857244 741.77723 
+L 373.857244 741.799323 
+L 312.036982 741.799323 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 407.145077 741.710949 
+L 468.965339 741.710949 
+L 468.965339 732.724359 
+L 407.145077 732.724359 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 407.145077 732.724359 
+L 468.965339 732.724359 
+L 468.965339 727.339033 
+L 407.145077 727.339033 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 407.145077 741.710949 
+L 468.965339 741.710949 
+L 468.965339 741.799323 
+L 407.145077 741.799323 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 407.145077 741.799323 
+L 468.965339 741.799323 
+L 468.965339 741.876651 
+L 407.145077 741.876651 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 502.253173 741.710949 
+L 564.073435 741.710949 
+L 564.073435 727.339033 
+L 502.253173 727.339033 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 502.253173 727.339033 
+L 564.073435 727.339033 
+L 564.073435 714.640711 
+L 502.253173 714.640711 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 502.253173 741.710949 
+L 564.073435 741.710949 
+L 564.073435 741.876651 
+L 502.253173 741.876651 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 502.253173 741.876651 
+L 564.073435 741.876651 
+L 564.073435 741.976073 
+L 502.253173 741.976073 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 597.361268 741.710949 
+L 659.18153 741.710949 
+L 659.18153 714.640711 
+L 597.361268 714.640711 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 597.361268 714.640711 
+L 659.18153 714.640711 
+L 659.18153 699.075738 
+L 597.361268 699.075738 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 597.361268 741.710949 
+L 659.18153 741.710949 
+L 659.18153 741.976073 
+L 597.361268 741.976073 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 597.361268 741.976073 
+L 659.18153 741.976073 
+L 659.18153 742.108635 
+L 597.361268 742.108635 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 692.469363 741.710949 
+L 754.289625 741.710949 
+L 754.289625 699.075738 
+L 692.469363 699.075738 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 692.469363 699.075738 
+L 754.289625 699.075738 
+L 754.289625 684.979993 
+L 692.469363 684.979993 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 692.469363 741.710949 
+L 754.289625 741.710949 
+L 754.289625 742.108635 
+L 692.469363 742.108635 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 692.469363 742.108635 
+L 754.289625 742.108635 
+L 754.289625 742.27986 
+L 692.469363 742.27986 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 787.577458 741.710949 
+L 849.39772 741.710949 
+L 849.39772 684.979993 
+L 787.577458 684.979993 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 787.577458 684.979993 
+L 849.39772 684.979993 
+L 849.39772 669.144373 
+L 787.577458 669.144373 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 787.577458 741.710949 
+L 849.39772 741.710949 
+L 849.39772 742.27986 
+L 787.577458 742.27986 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 787.577458 742.27986 
+L 849.39772 742.27986 
+L 849.39772 742.672022 
+L 787.577458 742.672022 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 882.685554 741.710949 
+L 944.505815 741.710949 
+L 944.505815 669.144373 
+L 882.685554 669.144373 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 882.685554 669.144373 
+L 944.505815 669.144373 
+L 944.505815 653.192762 
+L 882.685554 653.192762 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 882.685554 741.710949 
+L 944.505815 741.710949 
+L 944.505815 742.672022 
+L 882.685554 742.672022 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 882.685554 742.672022 
+L 944.505815 742.672022 
+L 944.505815 743.279598 
+L 882.685554 743.279598 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 977.793649 741.710949 
+L 1039.613911 741.710949 
+L 1039.613911 653.192762 
+L 977.793649 653.192762 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 977.793649 653.192762 
+L 1039.613911 653.192762 
+L 1039.613911 637.533891 
+L 977.793649 637.533891 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 977.793649 741.710949 
+L 1039.613911 741.710949 
+L 1039.613911 743.279598 
+L 977.793649 743.279598 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 977.793649 743.279598 
+L 1039.613911 743.279598 
+L 1039.613911 744.378756 
+L 977.793649 744.378756 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 1072.901744 741.710949 
+L 1134.722006 741.710949 
+L 1134.722006 637.533891 
+L 1072.901744 637.533891 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 1072.901744 637.533891 
+L 1134.722006 637.533891 
+L 1134.722006 616.948138 
+L 1072.901744 616.948138 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 1072.901744 741.710949 
+L 1134.722006 741.710949 
+L 1134.722006 744.378756 
+L 1072.901744 744.378756 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 1072.901744 744.378756 
+L 1134.722006 744.378756 
+L 1134.722006 745.417158 
+L 1072.901744 745.417158 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 1168.009839 741.710949 
+L 1229.830101 741.710949 
+L 1229.830101 616.948138 
+L 1168.009839 616.948138 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_47">
+    <path d="M 1168.009839 616.948138 
+L 1229.830101 616.948138 
+L 1229.830101 588.706936 
+L 1168.009839 588.706936 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_48">
+    <path d="M 1168.009839 741.710949 
+L 1229.830101 741.710949 
+L 1229.830101 745.417158 
+L 1168.009839 745.417158 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_49">
+    <path d="M 1168.009839 745.417158 
+L 1229.830101 745.417158 
+L 1229.830101 746.99133 
+L 1168.009839 746.99133 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_50">
+    <path d="M 1263.117935 741.710949 
+L 1324.938196 741.710949 
+L 1324.938196 588.706936 
+L 1263.117935 588.706936 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_51">
+    <path d="M 1263.117935 588.706936 
+L 1324.938196 588.706936 
+L 1324.938196 566.580151 
+L 1263.117935 566.580151 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_52">
+    <path d="M 1263.117935 741.710949 
+L 1324.938196 741.710949 
+L 1324.938196 746.99133 
+L 1263.117935 746.99133 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_53">
+    <path d="M 1263.117935 746.99133 
+L 1324.938196 746.99133 
+L 1324.938196 749.200694 
+L 1263.117935 749.200694 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_54">
+    <path d="M 1358.22603 741.710949 
+L 1420.046292 741.710949 
+L 1420.046292 566.580151 
+L 1358.22603 566.580151 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_55">
+    <path d="M 1358.22603 566.580151 
+L 1420.046292 566.580151 
+L 1420.046292 539.023853 
+L 1358.22603 539.023853 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_56">
+    <path d="M 1358.22603 741.710949 
+L 1420.046292 741.710949 
+L 1420.046292 749.200694 
+L 1358.22603 749.200694 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_57">
+    <path d="M 1358.22603 749.200694 
+L 1420.046292 749.200694 
+L 1420.046292 752.41532 
+L 1358.22603 752.41532 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_58">
+    <path d="M 1453.334125 741.710949 
+L 1515.154387 741.710949 
+L 1515.154387 539.023853 
+L 1453.334125 539.023853 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_59">
+    <path d="M 1453.334125 539.023853 
+L 1515.154387 539.023853 
+L 1515.154387 492.930987 
+L 1453.334125 492.930987 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_60">
+    <path d="M 1453.334125 741.710949 
+L 1515.154387 741.710949 
+L 1515.154387 752.41532 
+L 1453.334125 752.41532 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_61">
+    <path d="M 1453.334125 752.41532 
+L 1515.154387 752.41532 
+L 1515.154387 764.323794 
+L 1453.334125 764.323794 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_62">
+    <path d="M 1548.44222 741.710949 
+L 1610.262482 741.710949 
+L 1610.262482 492.930987 
+L 1548.44222 492.930987 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_63">
+    <path d="M 1548.44222 492.930987 
+L 1610.262482 492.930987 
+L 1610.262482 436.918074 
+L 1548.44222 436.918074 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_64">
+    <path d="M 1548.44222 741.710949 
+L 1610.262482 741.710949 
+L 1610.262482 764.323794 
+L 1548.44222 764.323794 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_65">
+    <path d="M 1548.44222 764.323794 
+L 1610.262482 764.323794 
+L 1610.262482 780.927168 
+L 1548.44222 780.927168 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_66">
+    <path d="M 1643.550315 741.710949 
+L 1705.370577 741.710949 
+L 1705.370577 436.918074 
+L 1643.550315 436.918074 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_67">
+    <path d="M 1643.550315 436.918074 
+L 1705.370577 436.918074 
+L 1705.370577 381.849665 
+L 1643.550315 381.849665 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_68">
+    <path d="M 1643.550315 741.710949 
+L 1705.370577 741.710949 
+L 1705.370577 780.927168 
+L 1643.550315 780.927168 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_69">
+    <path d="M 1643.550315 780.927168 
+L 1705.370577 780.927168 
+L 1705.370577 798.972152 
+L 1643.550315 798.972152 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_70">
+    <path d="M 1738.658411 741.710949 
+L 1800.478673 741.710949 
+L 1800.478673 381.849665 
+L 1738.658411 381.849665 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_71">
+    <path d="M 1738.658411 381.849665 
+L 1800.478673 381.849665 
+L 1800.478673 295.84463 
+L 1738.658411 295.84463 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_72">
+    <path d="M 1738.658411 741.710949 
+L 1800.478673 741.710949 
+L 1800.478673 798.972152 
+L 1738.658411 798.972152 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_73">
+    <path d="M 1738.658411 798.972152 
+L 1800.478673 798.972152 
+L 1800.478673 846.501105 
+L 1738.658411 846.501105 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_74">
+    <path d="M 1833.766506 741.710949 
+L 1895.586768 741.710949 
+L 1895.586768 295.84463 
+L 1833.766506 295.84463 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_75">
+    <path d="M 1833.766506 295.84463 
+L 1895.586768 295.84463 
+L 1895.586768 166.591285 
+L 1833.766506 166.591285 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_76">
+    <path d="M 1833.766506 741.710949 
+L 1895.586768 741.710949 
+L 1895.586768 846.501105 
+L 1833.766506 846.501105 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_77">
+    <path d="M 1833.766506 846.501105 
+L 1895.586768 846.501105 
+L 1895.586768 916.565576 
+L 1833.766506 916.565576 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_78">
+    <path d="M 1928.874601 741.710949 
+L 1990.694863 741.710949 
+L 1990.694863 166.591285 
+L 1928.874601 166.591285 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #114a44"/>
+   </g>
+   <g id="patch_79">
+    <path d="M 1928.874601 166.591285 
+L 1990.694863 166.591285 
+L 1990.694863 103.005776 
+L 1928.874601 103.005776 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #739489"/>
+   </g>
+   <g id="patch_80">
+    <path d="M 1928.874601 741.710949 
+L 1990.694863 741.710949 
+L 1990.694863 916.565576 
+L 1928.874601 916.565576 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #3d5c93"/>
+   </g>
+   <g id="patch_81">
+    <path d="M 1928.874601 916.565576 
+L 1990.694863 916.565576 
+L 1990.694863 952.56717 
+L 1928.874601 952.56717 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: #7393b3"/>
+   </g>
+   <g id="patch_82">
+    <path d="M 2023.982696 741.710949 
+L 2085.802958 741.710949 
+L 2085.802958 818.110772 
+L 2023.982696 818.110772 
+L 2023.982696 741.710949 
+z
+" clip-path="url(#pb75c877fa0)" style="fill: none; stroke-dasharray: 3.5,5.775; stroke-dashoffset: 0; stroke: #114a44; stroke-width: 3.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 105.176875 741.710949 
+L 2102.446875 741.710949 
+" clip-path="url(#pb75c877fa0)" style="fill: none; stroke: #000000; stroke-linecap: square"/>
+   </g>
+   <g id="patch_83">
+    <path d="M 105.176875 1013.48 
+L 2102.446875 1013.48 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="738.633244" transform="rotate(-0 152.730923 738.633244)">482</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="745.574026" transform="rotate(-0 152.730923 745.574026)">82.1%</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="737.012123" transform="rotate(-0 152.730923 737.012123)">105</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="743.952904" transform="rotate(-0 152.730923 743.952904)">17.9%</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="739.96991" transform="rotate(-0 152.730923 739.96991)">2</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="152.730923" y="746.910691" transform="rotate(-0 152.730923 746.910691)">100.0%</text>
+   </g>
+   <g id="text_31">
+    <g id="patch_84">
+     <path d="M 139.92936 718.683378 
+L 165.532485 718.683378 
+Q 177.532485 718.683378 177.532485 706.683378 
+L 177.532485 712.141972 
+Q 177.532485 700.141972 165.532485 700.141972 
+L 139.92936 700.141972 
+Q 127.92936 700.141972 127.92936 712.141972 
+L 127.92936 706.683378 
+Q 127.92936 718.683378 139.92936 718.683378 
+L 139.92936 718.683378 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="152.730923" y="713.522441" transform="rotate(-0 152.730923 713.522441)">  587  </text>
+   </g>
+   <g id="text_32">
+    <g id="patch_85">
+     <path d="M 149.56686 780.04873 
+L 155.894985 780.04873 
+Q 167.894985 780.04873 167.894985 768.04873 
+L 167.894985 773.507324 
+Q 167.894985 761.507324 155.894985 761.507324 
+L 149.56686 761.507324 
+Q 137.56686 761.507324 137.56686 773.507324 
+L 137.56686 768.04873 
+Q 137.56686 780.04873 149.56686 780.04873 
+L 149.56686 780.04873 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="152.730923" y="774.887793" transform="rotate(-0 152.730923 774.887793)">  2  </text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="738.343265" transform="rotate(-0 247.839018 738.343265)">587</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="745.284046" transform="rotate(-0 247.839018 745.284046)">57.1%</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="735.504232" transform="rotate(-0 247.839018 735.504232)">441</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="742.445013" transform="rotate(-0 247.839018 742.445013)">42.9%</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="739.96991" transform="rotate(-0 247.839018 739.96991)">2</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="746.910691" transform="rotate(-0 247.839018 746.910691)">16.7%</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="740.00305" transform="rotate(-0 247.839018 740.00305)">10</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="247.839018" y="746.943832" transform="rotate(-0 247.839018 746.943832)">83.3%</text>
+   </g>
+   <g id="text_41">
+    <g id="patch_86">
+     <path d="M 229.726518 716.247554 
+L 265.951518 716.247554 
+Q 277.951518 716.247554 277.951518 704.247554 
+L 277.951518 709.706148 
+Q 277.951518 697.706148 265.951518 697.706148 
+L 229.726518 697.706148 
+Q 217.726518 697.706148 217.726518 709.706148 
+L 217.726518 704.247554 
+Q 217.726518 716.247554 229.726518 716.247554 
+L 229.726518 716.247554 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="247.839018" y="711.086616" transform="rotate(-0 247.839018 711.086616)">  1,028  </text>
+   </g>
+   <g id="text_42">
+    <g id="patch_87">
+     <path d="M 241.734721 780.103965 
+L 253.943315 780.103965 
+Q 265.943315 780.103965 265.943315 768.103965 
+L 265.943315 773.562558 
+Q 265.943315 761.562558 253.943315 761.562558 
+L 241.734721 761.562558 
+Q 229.734721 761.562558 229.734721 773.562558 
+L 229.734721 768.103965 
+Q 229.734721 780.103965 241.734721 780.103965 
+L 241.734721 780.103965 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="247.839018" y="774.943027" transform="rotate(-0 247.839018 774.943027)">  12  </text>
+   </g>
+   <g id="text_43">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="737.125353" transform="rotate(-0 342.947113 737.125353)">1,028</text>
+   </g>
+   <g id="text_44">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="744.066134" transform="rotate(-0 342.947113 744.066134)">63.2%</text>
+   </g>
+   <g id="text_45">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="732.632058" transform="rotate(-0 342.947113 732.632058)">599</text>
+   </g>
+   <g id="text_46">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="739.572839" transform="rotate(-0 342.947113 739.572839)">36.8%</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="739.997527" transform="rotate(-0 342.947113 739.997527)">12</text>
+   </g>
+   <g id="text_48">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="746.938308" transform="rotate(-0 342.947113 746.938308)">75.0%</text>
+   </g>
+   <g id="text_49">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="740.041714" transform="rotate(-0 342.947113 740.041714)">4</text>
+   </g>
+   <g id="text_50">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="342.947113" y="746.982495" transform="rotate(-0 342.947113 746.982495)">25.0%</text>
+   </g>
+   <g id="text_51">
+    <g id="patch_88">
+     <path d="M 325.449847 712.93903 
+L 360.444379 712.93903 
+Q 372.444379 712.93903 372.444379 700.93903 
+L 372.444379 706.397624 
+Q 372.444379 694.397624 360.444379 694.397624 
+L 325.449847 694.397624 
+Q 313.449847 694.397624 313.449847 706.397624 
+L 313.449847 700.93903 
+Q 313.449847 712.93903 325.449847 712.93903 
+L 325.449847 712.93903 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="342.947113" y="707.778093" transform="rotate(-0 342.947113 707.778093)">  1,627  </text>
+   </g>
+   <g id="text_52">
+    <g id="patch_89">
+     <path d="M 336.490082 780.126058 
+L 349.404144 780.126058 
+Q 361.404144 780.126058 361.404144 768.126058 
+L 361.404144 773.584652 
+Q 361.404144 761.584652 349.404144 761.584652 
+L 336.490082 761.584652 
+Q 324.490082 761.584652 324.490082 773.584652 
+L 324.490082 768.126058 
+Q 324.490082 780.126058 336.490082 780.126058 
+L 336.490082 780.126058 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="342.947113" y="774.965121" transform="rotate(-0 342.947113 774.965121)">  16  </text>
+   </g>
+   <g id="text_53">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="735.471091" transform="rotate(-0 438.055208 735.471091)">1,627</text>
+   </g>
+   <g id="text_54">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="742.411873" transform="rotate(-0 438.055208 742.411873)">62.5%</text>
+   </g>
+   <g id="text_55">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="728.285134" transform="rotate(-0 438.055208 728.285134)">975</text>
+   </g>
+   <g id="text_56">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="735.225915" transform="rotate(-0 438.055208 735.225915)">37.5%</text>
+   </g>
+   <g id="text_57">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="740.008574" transform="rotate(-0 438.055208 740.008574)">16</text>
+   </g>
+   <g id="text_58">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="746.949355" transform="rotate(-0 438.055208 746.949355)">53.3%</text>
+   </g>
+   <g id="text_59">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="740.091425" transform="rotate(-0 438.055208 740.091425)">14</text>
+   </g>
+   <g id="text_60">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="438.055208" y="747.032206" transform="rotate(-0 438.055208 747.032206)">46.7%</text>
+   </g>
+   <g id="text_61">
+    <g id="patch_90">
+     <path d="M 418.630208 707.553705 
+L 457.480208 707.553705 
+Q 469.480208 707.553705 469.480208 695.553705 
+L 469.480208 701.012298 
+Q 469.480208 689.012298 457.480208 689.012298 
+L 418.630208 689.012298 
+Q 406.630208 689.012298 406.630208 701.012298 
+L 406.630208 695.553705 
+Q 406.630208 707.553705 418.630208 707.553705 
+L 418.630208 707.553705 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="438.055208" y="702.392767" transform="rotate(-0 438.055208 702.392767)">  2,602  </text>
+   </g>
+   <g id="text_62">
+    <g id="patch_91">
+     <path d="M 429.782943 780.203386 
+L 446.327474 780.203386 
+Q 458.327474 780.203386 458.327474 768.203386 
+L 458.327474 773.66198 
+Q 458.327474 761.66198 446.327474 761.66198 
+L 429.782943 761.66198 
+Q 417.782943 761.66198 417.782943 773.66198 
+L 417.782943 768.203386 
+Q 417.782943 780.203386 429.782943 780.203386 
+L 429.782943 780.203386 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="438.055208" y="775.042448" transform="rotate(-0 438.055208 775.042448)">  30  </text>
+   </g>
+   <g id="text_63">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="732.778428" transform="rotate(-0 533.163304 732.778428)">2,602</text>
+   </g>
+   <g id="text_64">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="739.71921" transform="rotate(-0 533.163304 739.71921)">53.1%</text>
+   </g>
+   <g id="text_65">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="719.243309" transform="rotate(-0 533.163304 719.243309)">2,299</text>
+   </g>
+   <g id="text_66">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="726.184091" transform="rotate(-0 533.163304 726.184091)">46.9%</text>
+   </g>
+   <g id="text_67">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="740.047238" transform="rotate(-0 533.163304 740.047238)">30</text>
+   </g>
+   <g id="text_68">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="746.988019" transform="rotate(-0 533.163304 746.988019)">62.5%</text>
+   </g>
+   <g id="text_69">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="740.179799" transform="rotate(-0 533.163304 740.179799)">18</text>
+   </g>
+   <g id="text_70">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="533.163304" y="747.120581" transform="rotate(-0 533.163304 747.120581)">37.5%</text>
+   </g>
+   <g id="text_71">
+    <g id="patch_92">
+     <path d="M 514.4801 694.855382 
+L 551.846507 694.855382 
+Q 563.846507 694.855382 563.846507 682.855382 
+L 563.846507 688.313976 
+Q 563.846507 676.313976 551.846507 676.313976 
+L 514.4801 676.313976 
+Q 502.4801 676.313976 502.4801 688.313976 
+L 502.4801 682.855382 
+Q 502.4801 694.855382 514.4801 694.855382 
+L 514.4801 694.855382 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="533.163304" y="689.694445" transform="rotate(-0 533.163304 689.694445)">  4,901  </text>
+   </g>
+   <g id="text_72">
+    <g id="patch_93">
+     <path d="M 524.306272 780.302807 
+L 542.020335 780.302807 
+Q 554.020335 780.302807 554.020335 768.302807 
+L 554.020335 773.761401 
+Q 554.020335 761.761401 542.020335 761.761401 
+L 524.306272 761.761401 
+Q 512.306272 761.761401 512.306272 773.761401 
+L 512.306272 768.302807 
+Q 512.306272 780.302807 524.306272 780.302807 
+L 524.306272 780.302807 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="533.163304" y="775.14187" transform="rotate(-0 533.163304 775.14187)">  48  </text>
+   </g>
+   <g id="text_73">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="726.429267" transform="rotate(-0 628.271399 726.429267)">4,901</text>
+   </g>
+   <g id="text_74">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="733.370049" transform="rotate(-0 628.271399 733.370049)">63.5%</text>
+   </g>
+   <g id="text_75">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="705.111662" transform="rotate(-0 628.271399 705.111662)">2,818</text>
+   </g>
+   <g id="text_76">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="712.052443" transform="rotate(-0 628.271399 712.052443)">36.5%</text>
+   </g>
+   <g id="text_77">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="740.096948" transform="rotate(-0 628.271399 740.096948)">48</text>
+   </g>
+   <g id="text_78">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="747.03773" transform="rotate(-0 628.271399 747.03773)">66.7%</text>
+   </g>
+   <g id="text_79">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="740.295791" transform="rotate(-0 628.271399 740.295791)">24</text>
+   </g>
+   <g id="text_80">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="628.271399" y="747.236572" transform="rotate(-0 628.271399 747.236572)">33.3%</text>
+   </g>
+   <g id="text_81">
+    <g id="patch_94">
+     <path d="M 610.549133 679.29041 
+L 645.993664 679.29041 
+Q 657.993664 679.29041 657.993664 667.29041 
+L 657.993664 672.749003 
+Q 657.993664 660.749003 645.993664 660.749003 
+L 610.549133 660.749003 
+Q 598.549133 660.749003 598.549133 672.749003 
+L 598.549133 667.29041 
+Q 598.549133 679.29041 610.549133 679.29041 
+L 610.549133 679.29041 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="628.271399" y="674.129472" transform="rotate(-0 628.271399 674.129472)">  7,719  </text>
+   </g>
+   <g id="text_82">
+    <g id="patch_95">
+     <path d="M 620.457336 780.435369 
+L 636.085461 780.435369 
+Q 648.085461 780.435369 648.085461 768.435369 
+L 648.085461 773.893963 
+Q 648.085461 761.893963 636.085461 761.893963 
+L 620.457336 761.893963 
+Q 608.457336 761.893963 608.457336 773.893963 
+L 608.457336 768.435369 
+Q 608.457336 780.435369 620.457336 780.435369 
+L 620.457336 780.435369 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="628.271399" y="775.274432" transform="rotate(-0 628.271399 775.274432)">  72  </text>
+   </g>
+   <g id="text_83">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="718.646781" transform="rotate(-0 723.379494 718.646781)">7,719</text>
+   </g>
+   <g id="text_84">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="725.587562" transform="rotate(-0 723.379494 725.587562)">75.2%</text>
+   </g>
+   <g id="text_85">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="690.281303" transform="rotate(-0 723.379494 690.281303)">2,552</text>
+   </g>
+   <g id="text_86">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="697.222084" transform="rotate(-0 723.379494 697.222084)">24.8%</text>
+   </g>
+   <g id="text_87">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="740.163229" transform="rotate(-0 723.379494 740.163229)">72</text>
+   </g>
+   <g id="text_88">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="747.10401" transform="rotate(-0 723.379494 747.10401)">69.9%</text>
+   </g>
+   <g id="text_89">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="740.447685" transform="rotate(-0 723.379494 740.447685)">31</text>
+   </g>
+   <g id="text_90">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="723.379494" y="747.388466" transform="rotate(-0 723.379494 747.388466)">30.1%</text>
+   </g>
+   <g id="text_91">
+    <g id="patch_96">
+     <path d="M 702.62676 665.194664 
+L 744.132228 665.194664 
+Q 756.132228 665.194664 756.132228 653.194664 
+L 756.132228 658.653258 
+Q 756.132228 646.653258 744.132228 646.653258 
+L 702.62676 646.653258 
+Q 690.62676 646.653258 690.62676 658.653258 
+L 690.62676 653.194664 
+Q 690.62676 665.194664 702.62676 665.194664 
+L 702.62676 665.194664 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="723.379494" y="660.033727" transform="rotate(-0 723.379494 660.033727)">  10,271  </text>
+   </g>
+   <g id="text_92">
+    <g id="patch_97">
+     <path d="M 712.166994 780.606595 
+L 734.591994 780.606595 
+Q 746.591994 780.606595 746.591994 768.606595 
+L 746.591994 774.065189 
+Q 746.591994 762.065189 734.591994 762.065189 
+L 712.166994 762.065189 
+Q 700.166994 762.065189 700.166994 774.065189 
+L 700.166994 768.606595 
+Q 700.166994 780.606595 712.166994 780.606595 
+L 712.166994 780.606595 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="723.379494" y="775.445657" transform="rotate(-0 723.379494 775.445657)">  103  </text>
+   </g>
+   <g id="text_93">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="711.598908" transform="rotate(-0 818.487589 711.598908)">10,271</text>
+   </g>
+   <g id="text_94">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="718.53969" transform="rotate(-0 818.487589 718.53969)">78.2%</text>
+   </g>
+   <g id="text_95">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="675.31562" transform="rotate(-0 818.487589 675.31562)">2,867</text>
+   </g>
+   <g id="text_96">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="682.256402" transform="rotate(-0 818.487589 682.256402)">21.8%</text>
+   </g>
+   <g id="text_97">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="740.248842" transform="rotate(-0 818.487589 740.248842)">103</text>
+   </g>
+   <g id="text_98">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="747.189623" transform="rotate(-0 818.487589 747.189623)">59.2%</text>
+   </g>
+   <g id="text_99">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="740.729379" transform="rotate(-0 818.487589 740.729379)">71</text>
+   </g>
+   <g id="text_100">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="818.487589" y="747.67016" transform="rotate(-0 818.487589 747.67016)">40.8%</text>
+   </g>
+   <g id="text_101">
+    <g id="patch_98">
+     <path d="M 798.072355 649.359045 
+L 838.902824 649.359045 
+Q 850.902824 649.359045 850.902824 637.359045 
+L 850.902824 642.817638 
+Q 850.902824 630.817638 838.902824 630.817638 
+L 798.072355 630.817638 
+Q 786.072355 630.817638 786.072355 642.817638 
+L 786.072355 637.359045 
+Q 786.072355 649.359045 798.072355 649.359045 
+L 798.072355 649.359045 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="818.487589" y="644.198107" transform="rotate(-0 818.487589 644.198107)">  13,138  </text>
+   </g>
+   <g id="text_102">
+    <g id="patch_99">
+     <path d="M 806.990324 780.998757 
+L 829.984855 780.998757 
+Q 841.984855 780.998757 841.984855 768.998757 
+L 841.984855 774.457351 
+Q 841.984855 762.457351 829.984855 762.457351 
+L 806.990324 762.457351 
+Q 794.990324 762.457351 794.990324 774.457351 
+L 794.990324 768.998757 
+Q 794.990324 780.998757 806.990324 780.998757 
+L 806.990324 780.998757 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="818.487589" y="775.83782" transform="rotate(-0 818.487589 775.83782)">  174  </text>
+   </g>
+   <g id="text_103">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="703.681098" transform="rotate(-0 913.595685 703.681098)">13,138</text>
+   </g>
+   <g id="text_104">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="710.62188" transform="rotate(-0 913.595685 710.62188)">82.0%</text>
+   </g>
+   <g id="text_105">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="659.422005" transform="rotate(-0 913.595685 659.422005)">2,888</text>
+   </g>
+   <g id="text_106">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="666.362786" transform="rotate(-0 913.595685 666.362786)">18.0%</text>
+   </g>
+   <g id="text_107">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="740.444923" transform="rotate(-0 913.595685 740.444923)">174</text>
+   </g>
+   <g id="text_108">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="747.385704" transform="rotate(-0 913.595685 747.385704)">61.3%</text>
+   </g>
+   <g id="text_109">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="741.229248" transform="rotate(-0 913.595685 741.229248)">110</text>
+   </g>
+   <g id="text_110">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="913.595685" y="748.170029" transform="rotate(-0 913.595685 748.170029)">38.7%</text>
+   </g>
+   <g id="text_111">
+    <g id="patch_100">
+     <path d="M 890.877716 633.407433 
+L 936.313653 633.407433 
+Q 948.313653 633.407433 948.313653 621.407433 
+L 948.313653 626.866027 
+Q 948.313653 614.866027 936.313653 614.866027 
+L 890.877716 614.866027 
+Q 878.877716 614.866027 878.877716 626.866027 
+L 878.877716 621.407433 
+Q 878.877716 633.407433 890.877716 633.407433 
+L 890.877716 633.407433 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="913.595685" y="628.246496" transform="rotate(-0 913.595685 628.246496)">  16,026  </text>
+   </g>
+   <g id="text_112">
+    <g id="patch_101">
+     <path d="M 900.313653 781.606332 
+L 926.877716 781.606332 
+Q 938.877716 781.606332 938.877716 769.606332 
+L 938.877716 775.064926 
+Q 938.877716 763.064926 926.877716 763.064926 
+L 900.313653 763.064926 
+Q 888.313653 763.064926 888.313653 775.064926 
+L 888.313653 769.606332 
+Q 888.313653 781.606332 900.313653 781.606332 
+L 900.313653 781.606332 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="913.595685" y="776.445395" transform="rotate(-0 913.595685 776.445395)">  284  </text>
+   </g>
+   <g id="text_113">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="695.705293" transform="rotate(-0 1008.70378 695.705293)">16,026</text>
+   </g>
+   <g id="text_114">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="702.646074" transform="rotate(-0 1008.70378 702.646074)">85.0%</text>
+   </g>
+   <g id="text_115">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="643.616764" transform="rotate(-0 1008.70378 643.616764)">2,835</text>
+   </g>
+   <g id="text_116">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="650.557545" transform="rotate(-0 1008.70378 650.557545)">15.0%</text>
+   </g>
+   <g id="text_117">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="740.748711" transform="rotate(-0 1008.70378 740.748711)">284</text>
+   </g>
+   <g id="text_118">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="747.689492" transform="rotate(-0 1008.70378 747.689492)">58.8%</text>
+   </g>
+   <g id="text_119">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="742.082615" transform="rotate(-0 1008.70378 742.082615)">199</text>
+   </g>
+   <g id="text_120">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1008.70378" y="749.023396" transform="rotate(-0 1008.70378 749.023396)">41.2%</text>
+   </g>
+   <g id="text_121">
+    <g id="patch_102">
+     <path d="M 987.44128 617.748563 
+L 1029.96628 617.748563 
+Q 1041.96628 617.748563 1041.96628 605.748563 
+L 1041.96628 611.207156 
+Q 1041.96628 599.207156 1029.96628 599.207156 
+L 987.44128 599.207156 
+Q 975.44128 599.207156 975.44128 611.207156 
+L 975.44128 605.748563 
+Q 975.44128 617.748563 987.44128 617.748563 
+L 987.44128 617.748563 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1008.70378" y="612.587625" transform="rotate(-0 1008.70378 612.587625)">  18,861  </text>
+   </g>
+   <g id="text_122">
+    <g id="patch_103">
+     <path d="M 995.406514 782.705491 
+L 1022.001045 782.705491 
+Q 1034.001045 782.705491 1034.001045 770.705491 
+L 1034.001045 776.164085 
+Q 1034.001045 764.164085 1022.001045 764.164085 
+L 995.406514 764.164085 
+Q 983.406514 764.164085 983.406514 776.164085 
+L 983.406514 770.705491 
+Q 983.406514 782.705491 995.406514 782.705491 
+L 995.406514 782.705491 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1008.70378" y="777.544554" transform="rotate(-0 1008.70378 777.544554)">  483  </text>
+   </g>
+   <g id="text_123">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="687.875857" transform="rotate(-0 1103.811875 687.875857)">18,861</text>
+   </g>
+   <g id="text_124">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="694.816639" transform="rotate(-0 1103.811875 694.816639)">83.5%</text>
+   </g>
+   <g id="text_125">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="625.494452" transform="rotate(-0 1103.811875 625.494452)">3,727</text>
+   </g>
+   <g id="text_126">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="632.435233" transform="rotate(-0 1103.811875 632.435233)">16.5%</text>
+   </g>
+   <g id="text_127">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="741.29829" transform="rotate(-0 1103.811875 741.29829)">483</text>
+   </g>
+   <g id="text_128">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="748.239071" transform="rotate(-0 1103.811875 748.239071)">72.0%</text>
+   </g>
+   <g id="text_129">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="743.151395" transform="rotate(-0 1103.811875 743.151395)">188</text>
+   </g>
+   <g id="text_130">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1103.811875" y="750.092176" transform="rotate(-0 1103.811875 750.092176)">28.0%</text>
+   </g>
+   <g id="text_131">
+    <g id="patch_104">
+     <path d="M 1079.895078 597.162809 
+L 1127.728672 597.162809 
+Q 1139.728672 597.162809 1139.728672 585.162809 
+L 1139.728672 590.621403 
+Q 1139.728672 578.621403 1127.728672 578.621403 
+L 1079.895078 578.621403 
+Q 1067.895078 578.621403 1067.895078 590.621403 
+L 1067.895078 585.162809 
+Q 1067.895078 597.162809 1079.895078 597.162809 
+L 1079.895078 597.162809 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1103.811875" y="592.001872" transform="rotate(-0 1103.811875 592.001872)">  22,588  </text>
+   </g>
+   <g id="text_132">
+    <g id="patch_105">
+     <path d="M 1092.704844 783.743893 
+L 1114.918906 783.743893 
+Q 1126.918906 783.743893 1126.918906 771.743893 
+L 1126.918906 777.202486 
+Q 1126.918906 765.202486 1114.918906 765.202486 
+L 1092.704844 765.202486 
+Q 1080.704844 765.202486 1080.704844 777.202486 
+L 1080.704844 771.743893 
+Q 1080.704844 783.743893 1092.704844 783.743893 
+L 1092.704844 783.743893 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1103.811875" y="778.582955" transform="rotate(-0 1103.811875 778.582955)">  671  </text>
+   </g>
+   <g id="text_133">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="677.582981" transform="rotate(-0 1198.91997 677.582981)">22,588</text>
+   </g>
+   <g id="text_134">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="684.523762" transform="rotate(-0 1198.91997 684.523762)">81.5%</text>
+   </g>
+   <g id="text_135">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="601.080974" transform="rotate(-0 1198.91997 601.080974)">5,113</text>
+   </g>
+   <g id="text_136">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="608.021756" transform="rotate(-0 1198.91997 608.021756)">18.5%</text>
+   </g>
+   <g id="text_137">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="741.817491" transform="rotate(-0 1198.91997 741.817491)">671</text>
+   </g>
+   <g id="text_138">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="748.758272" transform="rotate(-0 1198.91997 748.758272)">70.2%</text>
+   </g>
+   <g id="text_139">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="744.457681" transform="rotate(-0 1198.91997 744.457681)">285</text>
+   </g>
+   <g id="text_140">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1198.91997" y="751.398463" transform="rotate(-0 1198.91997 751.398463)">29.8%</text>
+   </g>
+   <g id="text_141">
+    <g id="patch_106">
+     <path d="M 1176.45747 568.921608 
+L 1221.38247 568.921608 
+Q 1233.38247 568.921608 1233.38247 556.921608 
+L 1233.38247 562.380202 
+Q 1233.38247 550.380202 1221.38247 550.380202 
+L 1176.45747 550.380202 
+Q 1164.45747 550.380202 1164.45747 562.380202 
+L 1164.45747 556.921608 
+Q 1164.45747 568.921608 1176.45747 568.921608 
+L 1176.45747 568.921608 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1198.91997" y="563.76067" transform="rotate(-0 1198.91997 563.76067)">  27,701  </text>
+   </g>
+   <g id="text_142">
+    <g id="patch_107">
+     <path d="M 1186.162939 785.318065 
+L 1211.677001 785.318065 
+Q 1223.677001 785.318065 1223.677001 773.318065 
+L 1223.677001 778.776658 
+Q 1223.677001 766.776658 1211.677001 766.776658 
+L 1186.162939 766.776658 
+Q 1174.162939 766.776658 1174.162939 778.776658 
+L 1174.162939 773.318065 
+Q 1174.162939 785.318065 1186.162939 785.318065 
+L 1186.162939 785.318065 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1198.91997" y="780.157127" transform="rotate(-0 1198.91997 780.157127)">  956  </text>
+   </g>
+   <g id="text_143">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="663.46238" transform="rotate(-0 1294.028065 663.46238)">27,701</text>
+   </g>
+   <g id="text_144">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="670.403161" transform="rotate(-0 1294.028065 670.403161)">87.4%</text>
+   </g>
+   <g id="text_145">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="575.896981" transform="rotate(-0 1294.028065 575.896981)">4,006</text>
+   </g>
+   <g id="text_146">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="582.837763" transform="rotate(-0 1294.028065 582.837763)">12.6%</text>
+   </g>
+   <g id="text_147">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="742.604577" transform="rotate(-0 1294.028065 742.604577)">956</text>
+   </g>
+   <g id="text_148">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="749.545358" transform="rotate(-0 1294.028065 749.545358)">70.5%</text>
+   </g>
+   <g id="text_149">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="746.34945" transform="rotate(-0 1294.028065 746.34945)">400</text>
+   </g>
+   <g id="text_150">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1294.028065" y="753.290231" transform="rotate(-0 1294.028065 753.290231)">29.5%</text>
+   </g>
+   <g id="text_151">
+    <g id="patch_108">
+     <path d="M 1271.550331 546.794823 
+L 1316.5058 546.794823 
+Q 1328.5058 546.794823 1328.5058 534.794823 
+L 1328.5058 540.253417 
+Q 1328.5058 528.253417 1316.5058 528.253417 
+L 1271.550331 528.253417 
+Q 1259.550331 528.253417 1259.550331 540.253417 
+L 1259.550331 534.794823 
+Q 1259.550331 546.794823 1271.550331 546.794823 
+L 1271.550331 546.794823 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1294.028065" y="541.633885" transform="rotate(-0 1294.028065 541.633885)">  31,707  </text>
+   </g>
+   <g id="text_152">
+    <g id="patch_109">
+     <path d="M 1276.703065 787.527429 
+L 1311.353065 787.527429 
+Q 1323.353065 787.527429 1323.353065 775.527429 
+L 1323.353065 780.986023 
+Q 1323.353065 768.986023 1311.353065 768.986023 
+L 1276.703065 768.986023 
+Q 1264.703065 768.986023 1264.703065 780.986023 
+L 1264.703065 775.527429 
+Q 1264.703065 787.527429 1276.703065 787.527429 
+L 1276.703065 787.527429 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1294.028065" y="782.366492" transform="rotate(-0 1294.028065 782.366492)">  1,356  </text>
+   </g>
+   <g id="text_153">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="652.398988" transform="rotate(-0 1389.136161 652.398988)">31,707</text>
+   </g>
+   <g id="text_154">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="659.339769" transform="rotate(-0 1389.136161 659.339769)">86.4%</text>
+   </g>
+   <g id="text_155">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="551.05544" transform="rotate(-0 1389.136161 551.05544)">4,989</text>
+   </g>
+   <g id="text_156">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="557.996221" transform="rotate(-0 1389.136161 557.996221)">13.6%</text>
+   </g>
+   <g id="text_157">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="743.709259" transform="rotate(-0 1389.136161 743.709259)">1,356</text>
+   </g>
+   <g id="text_158">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="750.65004" transform="rotate(-0 1389.136161 750.65004)">70.0%</text>
+   </g>
+   <g id="text_159">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="749.061445" transform="rotate(-0 1389.136161 749.061445)">582</text>
+   </g>
+   <g id="text_160">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1389.136161" y="756.002226" transform="rotate(-0 1389.136161 756.002226)">30.0%</text>
+   </g>
+   <g id="text_161">
+    <g id="patch_110">
+     <path d="M 1364.880692 519.238524 
+L 1413.391629 519.238524 
+Q 1425.391629 519.238524 1425.391629 507.238524 
+L 1425.391629 512.697118 
+Q 1425.391629 500.697118 1413.391629 500.697118 
+L 1364.880692 500.697118 
+Q 1352.880692 500.697118 1352.880692 512.697118 
+L 1352.880692 507.238524 
+Q 1352.880692 519.238524 1364.880692 519.238524 
+L 1364.880692 519.238524 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1389.136161" y="514.077587" transform="rotate(-0 1389.136161 514.077587)">  36,696  </text>
+   </g>
+   <g id="text_162">
+    <g id="patch_111">
+     <path d="M 1371.323661 790.742054 
+L 1406.948661 790.742054 
+Q 1418.948661 790.742054 1418.948661 778.742054 
+L 1418.948661 784.200648 
+Q 1418.948661 772.200648 1406.948661 772.200648 
+L 1371.323661 772.200648 
+Q 1359.323661 772.200648 1359.323661 784.200648 
+L 1359.323661 778.742054 
+Q 1359.323661 790.742054 1371.323661 790.742054 
+L 1371.323661 790.742054 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1389.136161" y="785.581117" transform="rotate(-0 1389.136161 785.581117)">  1,938  </text>
+   </g>
+   <g id="text_163">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="638.620838" transform="rotate(-0 1484.244256 638.620838)">36,696</text>
+   </g>
+   <g id="text_164">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="645.56162" transform="rotate(-0 1484.244256 645.56162)">81.5%</text>
+   </g>
+   <g id="text_165">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="514.230857" transform="rotate(-0 1484.244256 514.230857)">8,345</text>
+   </g>
+   <g id="text_166">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="521.171639" transform="rotate(-0 1484.244256 521.171639)">18.5%</text>
+   </g>
+   <g id="text_167">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="745.316572" transform="rotate(-0 1484.244256 745.316572)">1,938</text>
+   </g>
+   <g id="text_168">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="752.257353" transform="rotate(-0 1484.244256 752.257353)">47.3%</text>
+   </g>
+   <g id="text_169">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="756.622994" transform="rotate(-0 1484.244256 756.622994)">2,156</text>
+   </g>
+   <g id="text_170">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1484.244256" y="763.563776" transform="rotate(-0 1484.244256 763.563776)">52.7%</text>
+   </g>
+   <g id="text_171">
+    <g id="patch_112">
+     <path d="M 1460.708318 473.145658 
+L 1507.780193 473.145658 
+Q 1519.780193 473.145658 1519.780193 461.145658 
+L 1519.780193 466.604252 
+Q 1519.780193 454.604252 1507.780193 454.604252 
+L 1460.708318 454.604252 
+Q 1448.708318 454.604252 1448.708318 466.604252 
+L 1448.708318 461.145658 
+Q 1448.708318 473.145658 1460.708318 473.145658 
+L 1460.708318 473.145658 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1484.244256" y="467.984721" transform="rotate(-0 1484.244256 467.984721)">  45,041  </text>
+   </g>
+   <g id="text_172">
+    <g id="patch_113">
+     <path d="M 1463.333318 802.650529 
+L 1505.155193 802.650529 
+Q 1517.155193 802.650529 1517.155193 790.650529 
+L 1517.155193 796.109123 
+Q 1517.155193 784.109123 1505.155193 784.109123 
+L 1463.333318 784.109123 
+Q 1451.333318 784.109123 1451.333318 796.109123 
+L 1451.333318 790.650529 
+Q 1451.333318 802.650529 1463.333318 802.650529 
+L 1463.333318 802.650529 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1484.244256" y="797.489591" transform="rotate(-0 1484.244256 797.489591)">  4,094  </text>
+   </g>
+   <g id="text_173">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="615.574405" transform="rotate(-0 1579.352351 615.574405)">45,041</text>
+   </g>
+   <g id="text_174">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="622.515187" transform="rotate(-0 1579.352351 622.515187)">81.6%</text>
+   </g>
+   <g id="text_175">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="463.177968" transform="rotate(-0 1579.352351 463.177968)">10,141</text>
+   </g>
+   <g id="text_176">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="470.118749" transform="rotate(-0 1579.352351 470.118749)">18.4%</text>
+   </g>
+   <g id="text_177">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="751.270809" transform="rotate(-0 1579.352351 751.270809)">4,094</text>
+   </g>
+   <g id="text_178">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="758.21159" transform="rotate(-0 1579.352351 758.21159)">57.7%</text>
+   </g>
+   <g id="text_179">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="770.878919" transform="rotate(-0 1579.352351 770.878919)">3,006</text>
+   </g>
+   <g id="text_180">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1579.352351" y="777.8197" transform="rotate(-0 1579.352351 777.8197)">42.3%</text>
+   </g>
+   <g id="text_181">
+    <g id="patch_114">
+     <path d="M 1557.40782 417.132746 
+L 1601.296882 417.132746 
+Q 1613.296882 417.132746 1613.296882 405.132746 
+L 1613.296882 410.59134 
+Q 1613.296882 398.59134 1601.296882 398.59134 
+L 1557.40782 398.59134 
+Q 1545.40782 398.59134 1545.40782 410.59134 
+L 1545.40782 405.132746 
+Q 1545.40782 417.132746 1557.40782 417.132746 
+L 1557.40782 417.132746 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1579.352351" y="411.971808" transform="rotate(-0 1579.352351 411.971808)">  55,182  </text>
+   </g>
+   <g id="text_182">
+    <g id="patch_115">
+     <path d="M 1560.871882 819.253903 
+L 1597.83282 819.253903 
+Q 1609.83282 819.253903 1609.83282 807.253903 
+L 1609.83282 812.712497 
+Q 1609.83282 800.712497 1597.83282 800.712497 
+L 1560.871882 800.712497 
+Q 1548.871882 800.712497 1548.871882 812.712497 
+L 1548.871882 807.253903 
+Q 1548.871882 819.253903 1560.871882 819.253903 
+L 1560.871882 819.253903 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1579.352351" y="814.092965" transform="rotate(-0 1579.352351 814.092965)">  7,100  </text>
+   </g>
+   <g id="text_183">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="587.567949" transform="rotate(-0 1674.460446 587.567949)">55,182</text>
+   </g>
+   <g id="text_184">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="594.50873" transform="rotate(-0 1674.460446 594.50873)">84.7%</text>
+   </g>
+   <g id="text_185">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="407.637307" transform="rotate(-0 1674.460446 407.637307)">9,970</text>
+   </g>
+   <g id="text_186">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="414.578088" transform="rotate(-0 1674.460446 414.578088)">15.3%</text>
+   </g>
+   <g id="text_187">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="759.572496" transform="rotate(-0 1674.460446 759.572496)">7,100</text>
+   </g>
+   <g id="text_188">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="766.513277" transform="rotate(-0 1674.460446 766.513277)">68.5%</text>
+   </g>
+   <g id="text_189">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="788.203098" transform="rotate(-0 1674.460446 788.203098)">3,267</text>
+   </g>
+   <g id="text_190">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1674.460446" y="795.143879" transform="rotate(-0 1674.460446 795.143879)">31.5%</text>
+   </g>
+   <g id="text_191">
+    <g id="patch_116">
+     <path d="M 1652.688181 362.064337 
+L 1696.232712 362.064337 
+Q 1708.232712 362.064337 1708.232712 350.064337 
+L 1708.232712 355.52293 
+Q 1708.232712 343.52293 1696.232712 343.52293 
+L 1652.688181 343.52293 
+Q 1640.688181 343.52293 1640.688181 355.52293 
+L 1640.688181 350.064337 
+Q 1640.688181 362.064337 1652.688181 362.064337 
+L 1652.688181 362.064337 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1674.460446" y="356.903399" transform="rotate(-0 1674.460446 356.903399)">  65,152  </text>
+   </g>
+   <g id="text_192">
+    <g id="patch_117">
+     <path d="M 1651.854978 837.298887 
+L 1697.065915 837.298887 
+Q 1709.065915 837.298887 1709.065915 825.298887 
+L 1709.065915 830.757481 
+Q 1709.065915 818.757481 1697.065915 818.757481 
+L 1651.854978 818.757481 
+Q 1639.854978 818.757481 1639.854978 830.757481 
+L 1639.854978 825.298887 
+Q 1639.854978 837.298887 1651.854978 837.298887 
+L 1651.854978 837.298887 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1674.460446" y="832.13795" transform="rotate(-0 1674.460446 832.13795)">  10,367  </text>
+   </g>
+   <g id="text_193">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="560.033744" transform="rotate(-0 1769.568542 560.033744)">65,152</text>
+   </g>
+   <g id="text_194">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="566.974526" transform="rotate(-0 1769.568542 566.974526)">80.7%</text>
+   </g>
+   <g id="text_195">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="337.100585" transform="rotate(-0 1769.568542 337.100585)">15,571</text>
+   </g>
+   <g id="text_196">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="344.041366" transform="rotate(-0 1769.568542 344.041366)">19.3%</text>
+   </g>
+   <g id="text_197">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="768.594988" transform="rotate(-0 1769.568542 768.594988)">10,367</text>
+   </g>
+   <g id="text_198">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="775.535769" transform="rotate(-0 1769.568542 775.535769)">54.6%</text>
+   </g>
+   <g id="text_199">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="820.990066" transform="rotate(-0 1769.568542 820.990066)">8,605</text>
+   </g>
+   <g id="text_200">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1769.568542" y="827.930848" transform="rotate(-0 1769.568542 827.930848)">45.4%</text>
+   </g>
+   <g id="text_201">
+    <g id="patch_118">
+     <path d="M 1745.306042 276.059301 
+L 1793.831042 276.059301 
+Q 1805.831042 276.059301 1805.831042 264.059301 
+L 1805.831042 269.517895 
+Q 1805.831042 257.517895 1793.831042 257.517895 
+L 1745.306042 257.517895 
+Q 1733.306042 257.517895 1733.306042 269.517895 
+L 1733.306042 264.059301 
+Q 1733.306042 276.059301 1745.306042 276.059301 
+L 1745.306042 276.059301 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1769.568542" y="270.898364" transform="rotate(-0 1769.568542 270.898364)">  80,723  </text>
+   </g>
+   <g id="text_202">
+    <g id="patch_119">
+     <path d="M 1747.121276 884.82784 
+L 1792.015807 884.82784 
+Q 1804.015807 884.82784 1804.015807 872.82784 
+L 1804.015807 878.286434 
+Q 1804.015807 866.286434 1792.015807 866.286434 
+L 1747.121276 866.286434 
+Q 1735.121276 866.286434 1735.121276 878.286434 
+L 1735.121276 872.82784 
+Q 1735.121276 884.82784 1747.121276 884.82784 
+L 1747.121276 884.82784 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1769.568542" y="879.666903" transform="rotate(-0 1769.568542 879.666903)">  18,972  </text>
+   </g>
+   <g id="text_203">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="517.031227" transform="rotate(-0 1864.676637 517.031227)">80,723</text>
+   </g>
+   <g id="text_204">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="523.972008" transform="rotate(-0 1864.676637 523.972008)">77.5%</text>
+   </g>
+   <g id="text_205">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="229.471395" transform="rotate(-0 1864.676637 229.471395)">23,401</text>
+   </g>
+   <g id="text_206">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="236.412176" transform="rotate(-0 1864.676637 236.412176)">22.5%</text>
+   </g>
+   <g id="text_207">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="792.359465" transform="rotate(-0 1864.676637 792.359465)">18,972</text>
+   </g>
+   <g id="text_208">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="799.300246" transform="rotate(-0 1864.676637 799.300246)">59.9%</text>
+   </g>
+   <g id="text_209">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="879.786778" transform="rotate(-0 1864.676637 879.786778)">12,685</text>
+   </g>
+   <g id="text_210">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1864.676637" y="886.727559" transform="rotate(-0 1864.676637 886.727559)">40.1%</text>
+   </g>
+   <g id="text_211">
+    <g id="patch_120">
+     <path d="M 1838.237965 146.805957 
+L 1891.115309 146.805957 
+Q 1903.115309 146.805957 1903.115309 134.805957 
+L 1903.115309 140.264551 
+Q 1903.115309 128.264551 1891.115309 128.264551 
+L 1838.237965 128.264551 
+Q 1826.237965 128.264551 1826.237965 140.264551 
+L 1826.237965 134.805957 
+Q 1826.237965 146.805957 1838.237965 146.805957 
+L 1838.237965 146.805957 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1864.676637" y="141.645019" transform="rotate(-0 1864.676637 141.645019)">  104,124  </text>
+   </g>
+   <g id="text_212">
+    <g id="patch_121">
+     <path d="M 1842.701637 954.892311 
+L 1886.651637 954.892311 
+Q 1898.651637 954.892311 1898.651637 942.892311 
+L 1898.651637 948.350904 
+Q 1898.651637 936.350904 1886.651637 936.350904 
+L 1842.701637 936.350904 
+Q 1830.701637 936.350904 1830.701637 948.350904 
+L 1830.701637 942.892311 
+Q 1830.701637 954.892311 1842.701637 954.892311 
+L 1842.701637 954.892311 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1864.676637" y="949.731373" transform="rotate(-0 1864.676637 949.731373)">  31,657  </text>
+   </g>
+   <g id="text_213">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="452.404555" transform="rotate(-0 1959.784732 452.404555)">104,124</text>
+   </g>
+   <g id="text_214">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="459.345336" transform="rotate(-0 1959.784732 459.345336)">90.0%</text>
+   </g>
+   <g id="text_215">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="133.051968" transform="rotate(-0 1959.784732 133.051968)">11,512</text>
+   </g>
+   <g id="text_216">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="139.992749" transform="rotate(-0 1959.784732 139.992749)">10.0%</text>
+   </g>
+   <g id="text_217">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="827.3917" transform="rotate(-0 1959.784732 827.3917)">31,657</text>
+   </g>
+   <g id="text_218">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="834.332481" transform="rotate(-0 1959.784732 834.332481)">82.9%</text>
+   </g>
+   <g id="text_219">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="932.81981" transform="rotate(-0 1959.784732 932.81981)">6,518</text>
+   </g>
+   <g id="text_220">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Montserrat'; text-anchor: middle; fill: #ffffff" x="1959.784732" y="939.760592" transform="rotate(-0 1959.784732 939.760592)">17.1%</text>
+   </g>
+   <g id="text_221">
+    <g id="patch_122">
+     <path d="M 1934.741763 83.220447 
+L 1984.827701 83.220447 
+Q 1996.827701 83.220447 1996.827701 71.220447 
+L 1996.827701 76.679041 
+Q 1996.827701 64.679041 1984.827701 64.679041 
+L 1934.741763 64.679041 
+Q 1922.741763 64.679041 1922.741763 76.679041 
+L 1922.741763 71.220447 
+Q 1922.741763 83.220447 1934.741763 83.220447 
+L 1934.741763 83.220447 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1959.784732" y="78.05951" transform="rotate(-0 1959.784732 78.05951)">  115,636  </text>
+   </g>
+   <g id="text_222">
+    <g id="patch_123">
+     <path d="M 1937.637467 990.893905 
+L 1981.931998 990.893905 
+Q 1993.931998 990.893905 1993.931998 978.893905 
+L 1993.931998 984.352498 
+Q 1993.931998 972.352498 1981.931998 972.352498 
+L 1937.637467 972.352498 
+Q 1925.637467 972.352498 1925.637467 984.352498 
+L 1925.637467 978.893905 
+Q 1925.637467 990.893905 1937.637467 990.893905 
+L 1937.637467 990.893905 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="1959.784732" y="985.732967" transform="rotate(-0 1959.784732 985.732967)">  38,175  </text>
+   </g>
+   <g id="text_223">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Montserrat'; text-anchor: middle; fill: #114a44" x="2054.892827" y="782.37672" transform="rotate(-0 2054.892827 782.37672)">13,832</text>
+   </g>
+   <g id="text_224">
+    <g id="patch_124">
+     <path d="M 2032.992827 856.437507 
+L 2076.792827 856.437507 
+Q 2088.792827 856.437507 2088.792827 844.437507 
+L 2088.792827 849.896101 
+Q 2088.792827 837.896101 2076.792827 837.896101 
+L 2032.992827 837.896101 
+Q 2020.992827 837.896101 2020.992827 849.896101 
+L 2020.992827 844.437507 
+Q 2020.992827 856.437507 2032.992827 856.437507 
+L 2032.992827 856.437507 
+z
+" style="fill: none; stroke: #002f2a; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Montserrat'; text-anchor: middle" x="2054.892827" y="851.276569" transform="rotate(-0 2054.892827 851.276569)">  13,832  </text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb75c877fa0">
+   <rect x="105.176875" y="7.2" width="1997.27" height="1006.28"/>
+  </clipPath>
+ </defs>
+</svg>
