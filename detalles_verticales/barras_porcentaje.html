@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras de Porcentaje - Código y Visualización</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- La ruta al CSS ahora necesita subir un nivel -->
+    <link rel="stylesheet" href="../estilos.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <style>
+        body { padding-top: 80px; }
+        .contenedor-detalle {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contenedor-detalle img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 2em;
+        }
+        pre {
+            border-radius: 4px;
+            padding: 1em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .boton-volver {
+            display: inline-block;
+            margin-top: 2em;
+            text-decoration: none;
+            color: #611232;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="barra-logo">
+        <!-- La ruta a la imagen ahora necesita subir un nivel -->
+        <img src="../imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
+    </header>
+
+    <div class="contenedor-detalle">
+        <h1>Barras de Porcentaje</h1>
+        
+        <h2>Visualización</h2>
+        <img src="../Python/barras_verticales/output/barras_respecto_porcentaje_scour.svg" alt="Barras de Porcentaje">
+
+        <h2>Código Python</h2>
+        <pre><code class="language-python"># EXPORTAR: Barras verticales respecto al porcentaje
+
+barras_verticales(df5, 
+       nombre="barras_respecto_porcentaje", 
+       ancho_barra=0.9, 
+       tipo_letra='Montserrat',
+       valor_barra=True, 
+       tam_letra_valor_barra=20,
+       porce_barra=True, 
+       porce_total=True,
+       ordenar_por='etiqueta',
+       orden='ascendente',
+       graf_resp_porce=True,
+       paleta_colores=["#003366", "#107c41", "#d35400"],
+       color_porce_total="#a3173e",
+       color_valor_capsu="#6c757d",
+       color_borde_capsu="#b58900",
+       )</code></pre>
+
+        <a href="../graficas-barras-verticales.html" class="boton-volver">&larr; Volver a Barras Verticales</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
