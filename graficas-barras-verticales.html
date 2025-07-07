@@ -2,21 +2,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Gráficas de Barras</title>
+  <meta name="description" content="Catálogo de gráficas de barras verticales.">
+  <meta name="keywords" content="gráficas, visualizaciones, Python, R, datos, barras verticales">
+  <meta name="author" content="Agencia Digital">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficas de Barras Verticales - Agencia Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header class="barra-logo">
     <img src="imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
-    <!-- ...menú igual que en index.html... -->
+    <div class="menu-dropdown-wrapper">
+      <button class="menu-toggle">
+        <img src="imagenes/Menu.svg" alt="Menu" width="30" height="30">
+      </button>
+      <div class="menu-dropdown" id="menuDropdown">
+        <a href="index.html">Inicio</a>
+        <a href="graficas-python.html">Python</a>
+        <a href="graficas-r.html">RStudio</a>
+      </div>
+    </div>
   </header>
+
   <h1>Gráficas de Barras Verticales</h1>
+  <p style="text-align: center;">Ejemplos de diferentes tipos de gráficas de barras verticales generadas con Python.</p>
+
   <div class="catalogo-graficas">
     <div class="catalogo-grid">
-      <img src="Python/barras/output/barras_verticales_svgo.svg" alt="Barras verticales">
-      <!-- Agrega más imágenes o contenido aquí -->
+      <div class="grid-sizer"></div>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barras_verticales_scour.svg" alt="Barras verticales">
+        <span class="titulo-grafica">Barras Verticales Básicas</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/resaltar_etiquetas_barras_verticales_scour.svg" alt="Barras verticales">
+        <span class="titulo-grafica">Resaltado de etiquetas</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barras_apiladas_verticales_scour.svg" alt="Barras apiladas verticales">
+        <span class="titulo-grafica">Barras Apiladas</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/union_barras_verticales_scour.svg" alt="Unión de barras">
+        <span class="titulo-grafica">Unión de Barras</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/sustitucion_etiquetas_ejeX_en_barras_verticales_scour.svg" alt="Sustitución de etiquetas">
+        <span class="titulo-grafica">Sustitución de Etiquetas en el eje X</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barra_vertical_extra_scour.svg" alt="Barra extra">
+        <span class="titulo-grafica">Añadir Barra Extra</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/sustitucion_etiquetas_superiores_barras_verticales_scour.svg" alt="Etiquetas personalizadas">
+        <span class="titulo-grafica">Etiquetas Superiores Personalizadas</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barras_respecto_porcentaje_scour.svg" alt="Barras de porcentaje">
+        <span class="titulo-grafica">Barras de Porcentaje</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/ordenar_por_ejeY_scour.svg" alt="Ordenado por valor">
+        <span class="titulo-grafica">Ordenado por Valor</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barras_divergentes_verticales_scour.svg" alt="Barras divergentes">
+        <span class="titulo-grafica">Barras Divergentes</span>
+      </a>
+      <a href="#">
+        <img src="Python/barras_verticales/output/barras_divergentes_verticales_con_barra_extra_scour.svg" alt="Barras divergentes con anotación">
+        <span class="titulo-grafica">Barras Divergentes con Barra Extra</span>
+      </a>
     </div>
   </div>
-  <a href="index.html">Volver al catálogo</a>
+  <a href="index.html" class="boton-volver" style="display: block; text-align: center; margin: 2em auto; text-decoration: none; color: #611232; font-weight: 600;">Volver al catálogo principal</a>
+
+  <!-- Masonry.js y imagesLoaded desde CDN -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script>
+    // Menú desplegable
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuDropdown = document.getElementById('menuDropdown');
+
+    menuToggle.addEventListener('click', function() {
+      menuDropdown.style.display = menuDropdown.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!menuDropdown.contains(event.target) && !menuToggle.contains(event.target)) {
+        menuDropdown.style.display = 'none';
+      }
+    });
+
+    // Inicializar Masonry SOLO después de que las imágenes hayan cargado
+    document.addEventListener('DOMContentLoaded', function() {
+      var grid = document.querySelector('.catalogo-grid');
+      if (grid) {
+        imagesLoaded(grid, function() {
+          new Masonry(grid, {
+            itemSelector: 'a',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            gutter: 10
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
