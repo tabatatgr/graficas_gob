@@ -2,8 +2,21 @@ import subprocess
 import pandas as pd
 import numpy as np
 import locale 
+import re
+from matplotlib.colors import to_rgb, to_hex
+
 
 def limpiar_svg_con_scour(archivo_entrada, archivo_salida):
+    """
+    Optimiza un archivo SVG utilizando la herramienta de línea de comandos 'scour'.
+
+    Reduce el tamaño del archivo SVG eliminando datos innecesarios, acortando IDs
+    y aplicando otras optimizaciones sin afectar la apariencia visual.
+
+    Args:
+        archivo_entrada (str): Ruta al archivo SVG original.
+        archivo_salida (str): Ruta donde se guardará el archivo SVG optimizado.
+    """
     subprocess.run([
         'scour', '-i', archivo_entrada, '-o', archivo_salida,
         '--enable-viewboxing', '--enable-id-stripping',
@@ -11,6 +24,20 @@ def limpiar_svg_con_scour(archivo_entrada, archivo_salida):
     ], check=True)
 
 def formato_fechas(fechas):
+    """
+    Formatea una lista de fechas a un formato de cadena de texto legible y conciso.
+
+    La función adapta el formato según la variabilidad de las fechas en la lista:
+    - Si solo cambia el año, muestra solo el año (ej. "2023").
+    - Si cambia el mes o el año, muestra mes y año (ej. "Ene-2023").
+    - Si cambia el día, muestra día, mes y año (ej. "01-01-2023").
+
+    Args:
+        fechas (list): Una lista de objetos de fecha (ej. pd.Timestamp).
+
+    Returns:
+        list: Una lista de cadenas de texto con las fechas formateadas.
+    """
     fechas = pd.to_datetime(fechas)
     dias = set(f.day for f in fechas)
     meses = set(f.month for f in fechas)
@@ -25,19 +52,52 @@ def formato_fechas(fechas):
     else:
         return [f.strftime("%d-%m-%Y") for f in fechas]
 
-def get_text_color_for_bg(bg_color_hex):
-    """Determina si el texto debe ser negro o blanco según el color de fondo hexadecimal."""
+
+def get_text_color_for_bg(bg_color):
+    """
+    Determina si el color del texto debe ser blanco o negro para un contraste adecuado.
+
+    Calcula la luminosidad del color de fondo y devuelve negro ('#000000') para
+    fondos claros y blanco ('#ffffff') para fondos oscuros.
+
+    Args:
+        bg_color (str): El color de fondo en un formato reconocido por Matplotlib 
+                        (ej. '#RRGGBB', 'red', 'yellow').
+
+    Returns:
+        str: El código hexadecimal del color de texto ('#000000' o '#ffffff').
+    """
+    if not bg_color or bg_color.lower() == 'none':
+        return '#000000'
     try:
-        hex_color = bg_color_hex.lstrip('#')
-        if len(hex_color) != 6:
-            return '#ffffff'
-        r, g, b = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
-        luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
-        return '#000000' if luminance > 0.6 else '#ffffff'
-    except (ValueError, TypeError):
-        return '#ffffff'
+        # Convertir el color de fondo a RGB
+        rgb = to_rgb(bg_color)
+        # Calcular la luminosidad usando la fórmula estándar (YIQ)
+        luminance = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000
+        # Devolver negro para fondos claros, blanco para fondos oscuros
+        return '#000000' if luminance > 0.5 else '#ffffff'
+    except ValueError:
+        # Si el color no es válido, devolver negro por defecto
+        return '#000000'
     
 def unir_barras(df, num_barras, lado):
+    """
+    Une un número específico de barras de un DataFrame en una sola barra sumada.
+
+    Toma las primeras o las últimas 'num_barras' filas del DataFrame, las suma
+    para crear una nueva fila consolidada y la reemplaza en el DataFrame original.
+    La etiqueta de la nueva fila se genera a partir del rango de las etiquetas originales.
+
+    Args:
+        df (pd.DataFrame): El DataFrame de entrada con las barras a procesar.
+        num_barras (int): El número de barras a unir desde el borde especificado.
+        lado (str): El lado desde el cual unir las barras ('izquierda' o 'derecha').
+
+    Returns:
+        tuple: Un tuple conteniendo:
+            - pd.DataFrame: El DataFrame modificado con las barras unidas.
+            - str or None: La etiqueta de la nueva barra unida, o None si no se unió nada.
+    """
     if num_barras <= 1 or len(df) < num_barras:
         return df, None
         
