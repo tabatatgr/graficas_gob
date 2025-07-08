@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras Divergentes - Código y Visualización</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- La ruta al CSS ahora necesita subir un nivel -->
+    <link rel="stylesheet" href="../estilos.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <style>
+        body { padding-top: 80px; }
+        .contenedor-detalle {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contenedor-detalle img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 2em;
+        }
+        pre {
+            border-radius: 4px;
+            padding: 1em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .boton-volver {
+            display: inline-block;
+            margin-top: 2em;
+            text-decoration: none;
+            color: #611232;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="barra-logo">
+        <!-- La ruta a la imagen ahora necesita subir un nivel -->
+        <img src="../imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
+    </header>
+
+    <div class="contenedor-detalle">
+        <h1>Barras Divergentes</h1>
+        
+        <h2>Visualización</h2>
+        <img src="../Python/barras_verticales/output/barras_divergentes_verticales_scour.svg" alt="Barras Divergentes">
+
+        <h2>Código Python</h2>
+        <pre><code class="language-python"># EXPORTAR: Barras divergentes verticales
+
+barras_verticales(df6, 
+       nombre="barras_divergentes_verticales", 
+       ancho_barra=0.85, 
+       tipo_letra='Montserrat',
+       tam_letra_ejeX=35,
+       tam_letra_ejeY=30,
+       tam_letra_valor_capsu=18,
+       ordenar_por='etiqueta',
+       orden='ascendente',
+       tam_letra_valor_barra=20,
+       porce_barra=False,
+       porce_total=False,
+       aumenta_sep_eje_x=-0.25,
+       paleta_colores=["#10302C", "#E6E6E6", "#FF5733", "#C70039"],
+       color_valor_capsu="#3d5c93",
+       color_borde_capsu="#900c3f",
+       )</code></pre>
+
+        <a href="../graficas-barras-verticales.html" class="boton-volver">&larr; Volver a Barras Verticales</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

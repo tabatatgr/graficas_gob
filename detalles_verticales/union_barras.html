@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unión de Barras - Código y Visualización</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- La ruta al CSS ahora necesita subir un nivel -->
+    <link rel="stylesheet" href="../estilos.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <style>
+        body { padding-top: 80px; }
+        .contenedor-detalle {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contenedor-detalle img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 2em;
+        }
+        pre {
+            border-radius: 4px;
+            padding: 1em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .boton-volver {
+            display: inline-block;
+            margin-top: 2em;
+            text-decoration: none;
+            color: #611232;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header class="barra-logo">
+        <!-- La ruta a la imagen ahora necesita subir un nivel -->
+        <img src="../imagenes/logo_gob.svg" class="logo-izquierdo" alt="Logo del gobierno">
+    </header>
+
+    <div class="contenedor-detalle">
+        <h1>Unión de Barras</h1>
+        
+        <h2>Visualización</h2>
+        <img src="../Python/barras_verticales/output/union_barras_verticales_scour.svg" alt="Unión de Barras">
+
+        <h2>Código Python</h2>
+        <pre><code class="language-python"># EXPORTAR: Unión de barras
+
+barras_verticales(df2, 
+       nombre="union_barras_verticales", 
+       ancho_barra=0.8, 
+       tipo_letra='Montserrat',
+       valor_barra=True, 
+       tam_letra_valor_barra=14,
+       porce_barra=False, 
+       porce_total=True,
+       ordenar_por='etiqueta',
+       orden='ascendente',
+       area_min=500,
+       leyenda=True,
+       union_izq=8,
+)</code></pre>
+
+        <a href="../graficas-barras-verticales.html" class="boton-volver">&larr; Volver a Barras Verticales</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

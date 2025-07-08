@@ -32,10 +32,6 @@
     <h2>Catálogo de Gráficas</h2>
     <div class="catalogo-grid">
       <div class="grid-sizer"></div>
-      <a href="graficas-barras-verticales.html" title="Ver más series de tiempo">
-        <img src="Python/barras_verticales/output/barras_verticales_scour.svg" alt="Gráfica de series de tiempo">
-        <span class="titulo-grafica">Barras Verticales</span>
-      </a>
       <a href="graficas-tendencias.html" title="Ver más sobre tendencias">
         <img src="Python/agrupadasyapiladas/grafica_agrupadasyapiladas.svg" alt="Gráfica de tendencias">
         <span class="titulo-grafica">Tendencias</span>
@@ -51,6 +47,10 @@
       <a href="graficas-series.html" title="Ver más series de tiempo">
         <img src="Python/linea/linea.svg" alt="Gráfica de series de tiempo">
         <span class="titulo-grafica">Series de tiempo</span>
+      </a>
+      <a href="graficas-barras.html" class="grafica-ancha">
+        <img src="Python/barras/output/barras_verticales_svgo.svg" alt="Gráficas de barras">
+        <span class="titulo-grafica">Barras</span>
       </a>
       <!-- Puedes agregar más categorías aquí -->
     </div>
@@ -91,7 +91,7 @@
             itemSelector: 'a',
             columnWidth: '.grid-sizer',
             percentPosition: true,
-            gutter: 10
+            gutter: 16
           });
         });
       }
