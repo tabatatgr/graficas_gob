@@ -1,0 +1,29 @@
+# Archivos temporales
+temp/
+*.tmp
+*.temp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de Excel temporales
+~$*.xlsx
+~$*.xls
+
+# Logs
+*.log
+
+# Archivos de respaldo
+*.bak
+*.backup
+
+# Archivos de configuración local
+.env
+.vscode/settings.json

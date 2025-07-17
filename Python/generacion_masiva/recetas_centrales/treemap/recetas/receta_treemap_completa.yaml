@@ -1,0 +1,16 @@
+tipo_grafico: treemap
+archivo_datos: datos_treemap.csv
+titulo: "Gráfica Treemap de Víctimas"
+descripcion: "Treemap que muestra el número de víctimas por entidad federativa"
+archivo_salida: treemap_victimas
+
+# Parámetros de la función
+parametros:
+  nombre: treemap_victimas
+  font: Montserrat
+  fontsize_etiqueta: 26
+  fontsize_valor: 26
+  fontsize_porcentaje: 26
+  area_min: 0.001
+  columna_etiqueta: "ENTIDAD FEDERATIVA"
+  columna_valor: "NUMERO DE VICTIMAS"

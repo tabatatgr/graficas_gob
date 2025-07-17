@@ -1,0 +1,12 @@
+tipo_grafico: linea
+archivo_datos: ../datos_linea_test.csv
+titulo: "Gráfica de Línea Simple"
+descripcion: "Gráfica de línea simple con área sombreada"
+archivo_salida: linea_simple_functional
+
+# Parámetros de la función
+parametros:
+  nombre: linea_simple_functional
+  columna_fecha: fecha
+  columna_grafica: valores
+  columna_linea: referencia

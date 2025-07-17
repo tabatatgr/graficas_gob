@@ -1,0 +1,104 @@
+tipo_grafico: "barras_tendencias"
+
+metadata:
+  titulo: "Gráfico de Barras de Tendencias"
+  descripcion: "Gráfico de barras apiladas para mostrar tendencias temporales"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "barras_tendencias"
+  nombre: "barras_tendencias_basico"
+
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+  
+  # Configuración específica para barras de tendencias
+  columna_fecha: "fecha"      # Columna con las fechas
+  columna_indicador: "indicador"  # Columna con los indicadores/categorías
+  columna_valor: "valor"      # Columna con los valores
+  
+  # Filtros opcionales
+  filtros: []
+  
+  # Transformaciones opcionales
+  transformaciones: []
+
+parametros:
+  # Configuración básica
+  nombre: "barras_tendencias_basico"
+  font: "Arial"
+  
+  # Configuración de datos
+  columna_fecha: "fecha"
+  columna_indicador: "indicador"
+  columna_valor: "valor"
+  columna_filtro: null      # Ej: "estado" para filtrar por estado
+  valor_filtro: null        # Ej: "Jalisco" para filtrar por Jalisco
+  
+  # Configuración visual
+  ancho_figura: 12
+  alto_figura: 6
+  dpi: 300
+  ancho_barras: 0.9
+  
+  # Configuración de fechas
+  intervalo_etiquetas: 3    # Mostrar cada 3 meses
+  formato_fecha: "%b %Y"    # Formato mes y año
+  rotacion_etiquetas: 45
+  
+  # Configuración de fuentes
+  fontsize_etiquetas: 8
+  fontsize_titulo: 14
+  fontsize_ejes: 12
+  
+  # Configuración de elementos
+  mostrar_titulo: true
+  titulo_personalizado: null
+  mostrar_leyenda: true
+  mostrar_grid: false
+  
+  # Colores personalizados
+  paleta_colores:
+    - "#584290"
+    - "#b1adcf"
+    - "#4C6A67"
+    - "#8FA8A6"
+    - "#A3C9A8"
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["svg", "png"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta genera gráficos de barras apiladas para tendencias temporales"
+  - "Ideal para datos que muestran evolución de categorías a lo largo del tiempo"
+  - "Las fechas se muestran con intervalos configurables"
+  - "Soporta filtrado por columnas adicionales (ej: por estado)"
+  - "Las barras se apilan automáticamente por indicador"
+  - "Genera archivos PNG y SVG optimizado"
+  
+# Ejemplo de estructura de datos esperada
+ejemplo_datos:
+  descripcion: "El DataFrame debe estar en formato long con fechas, indicadores y valores"
+  estructura:
+    - "fecha: Fechas (formato datetime o string convertible)"
+    - "indicador: Categorías a apilar (ej: 'Con datos', 'Sin datos')"
+    - "valor: Valores numéricos"
+    - "estado: Columna opcional para filtrar (ej: por estado)"
+  ejemplo_csv: |
+    fecha,indicador,valor,estado
+    2020-01-01,Con datos,50,Jalisco
+    2020-01-01,Sin datos,10,Jalisco
+    2020-02-01,Con datos,55,Jalisco
+    2020-02-01,Sin datos,8,Jalisco

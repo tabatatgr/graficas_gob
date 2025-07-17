@@ -1,0 +1,92 @@
+tipo_grafico: "areaplot"
+
+metadata:
+  titulo: "Snapshot - Área con Barra Lateral"
+  descripcion: "Gráfico de área apilada con barra lateral que muestra snapshot de porcentajes"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "areaplot"
+  nombre: "snapshot_areaplot"
+
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+  columna_fechas: "fechas"
+  
+  # Filtros opcionales
+  filtros: []
+  
+  # Transformaciones opcionales
+  transformaciones: []
+
+parametros:
+  # Configuración básica
+  nombre: "snapshot_areaplot"
+  font: "Arial"
+  tamano_texto_snapshot: 10
+
+  
+  # Configuración de datos
+  columna_fechas: "fechas"
+  columnas_series: null
+  etiquetas_series: null
+  
+  # Configuración visual específica de snapshot
+  mostrar_capsulas: false
+  mostrar_snapshot: true       # ← Activar snapshot
+  snapshot_width_ratio: 4      # ← Ratio área:snapshot (4:1)
+  mostrar_leyenda: true        # ← Mostrar leyenda
+  
+  # Configuración de área
+  suavizado: true
+  puntos_suavizado: 300
+  mostrar_porcentajes: true    # ← Importante para snapshot
+  
+  # Dimensiones
+  ancho_figura: 16
+  alto_figura: 8
+  dpi: 300
+  
+  # Configuración de ejes
+  formato_fecha: "%b %Y"
+  rotacion_etiquetas: 90
+  
+  # Configuración de leyenda
+  posicion_leyenda: [0.5, 1.15]
+  ncol_leyenda: 3
+  
+  # Colores personalizados (esquema gubernamental)
+  paleta_colores:
+    - "#215F53"
+    - "#7570B3"
+    - "#C7EAE5"
+    - "#A3C9A8"
+    - "#8FA8A6"
+    - "#4C6A67"
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["svg", "png"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta genera un gráfico de área apilada con snapshot lateral"
+  - "El snapshot muestra los porcentajes totales de cada serie"
+  - "Ideal para comparar proporciones totales junto con evolución temporal"
+  - "Las áreas están normalizadas para mostrar proporciones"
+  - "El suavizado crea curvas fluidas"
+  - "La barra lateral suma exactamente 100%"
+  - "Incluye cápsulas con totales normalizados"
+  - "La leyenda se muestra arriba del gráfico"
+  
+

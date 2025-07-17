@@ -1,0 +1,198 @@
+# Receta para barras apiladas con ceros
+# Configuración basada en el ejemplo EXPORTAR: barras_apiladas_con_ceros
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Apiladas con Ceros"
+  descripcion: "Gráfico de barras verticales apiladas que maneja correctamente valores cero"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "barras_apiladas_con_ceros"
+  
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.65
+  font: "Montserrat"
+  fontsize_barra: 15
+  fontsize_valor_total: 20
+  
+  # ** CONFIGURACIÓN PRINCIPAL: SIN ORDENAMIENTO **
+  ordenar_por: false            # Mantiene el orden original de los datos
+  orden: "ascendente"
+  
+  # ** CONFIGURACIÓN PRINCIPAL: VALORES Y PORCENTAJES **
+  valor_barra: true             # Muestra valores absolutos dentro de barras
+  porcentaje_barra: true        # Muestra porcentajes dentro de barras
+  porcentaje_total: false       # No muestra porcentaje total arriba
+  valor_total: true             # Muestra totales arriba (por defecto)
+  
+  # ** CONFIGURACIÓN PRINCIPAL: FORMATO DE ETIQUETAS **
+  porcentaje_abajo: false       # Porcentajes al lado de valores, no debajo
+  area_min: 5                   # Área mínima muy pequeña para mostrar etiquetas
+  
+  # ** CONFIGURACIÓN PRINCIPAL: LEYENDA **
+  leyenda: true                 # Muestra leyenda
+  posicion_leyenda: "abajo"     # Leyenda en la parte inferior
+  ncol_leyenda: null            # Número de columnas automático
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
+  orientacion_etiqueta_x: "horizontal"  # Etiquetas horizontales en eje X
+  
+  # ** CONFIGURACIÓN PRINCIPAL: COLORES PERSONALIZADOS **
+  paleta_colores: ["#584290", "#8578B0", "#B1ADCF"]  # Paleta morada institucional
+  color_valor_barra: "#000000"  # Texto negro para las etiquetas de barras
+  
+  # Configuración de cápsulas
+  quitar_capsula: false
+  capsulas_cero: true
+  
+  # Configuración de datos adicionales
+  agregar_datos: null
+  asignar_etiquetas: null
+  
+  # Configuración de unión de barras
+  union_izquierda: 0
+  union_derecha: 0
+  
+  # Configuración de porcentajes
+  porcentaje_total_inicio: false
+  porcentaje_divergente: false
+  
+  # Configuración de espaciado
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración visual
+  grillas: true                 # Mantiene grillas por defecto
+  
+  # Configuración de ejes
+  y_limits: null
+  nombre_eje_x: null
+  nombre_eje_y: null
+  ejeY_negativo_a_positivo: false
+  resaltar_etiquetas: null
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica para manejo de ceros
+configuracion_ceros:
+  mostrar_etiquetas_cero: false
+  area_minima_etiqueta: 5
+  formato_combinado: "valor (porcentaje%)"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta maneja correctamente valores cero en barras apiladas"
+  - "Muestra tanto valores absolutos como porcentajes dentro de cada segmento"
+  - "Usa paleta de colores morada institucional"
+  - "Mantiene el orden original de los datos (sin ordenamiento)"
+  - "Etiquetas horizontales para mejor legibilidad"
+  - "Leyenda posicionada abajo para no interferir con los datos"
+  - "Área mínima muy pequeña (5) para mostrar etiquetas incluso en segmentos pequeños"
+  - "Texto negro para las etiquetas de barras para mejor contraste"
+  
+# Casos de uso
+casos_uso:
+  - "Datos institucionales con categorías fijas"
+  - "Comparación de completitud de datos por institución"
+  - "Análisis de distribución con valores cero"
+  - "Reportes de estado de información por dependencia"
+  - "Dashboards gubernamentales con datos categóricos"
+  - "Análisis de disponibilidad de datos por fuente"
+  - "Métricas de completitud de bases de datos"
+  
+# Estructura de datos esperada
+datos_esperados:
+  formato: "wide"
+  columnas:
+    - "Columna 1: categorías fijas (ej: Instituciones)"
+    - "Columna 2-N: valores que pueden incluir ceros"
+    
+  ejemplo:
+    - "Instituciones | Sin Datos | Con Datos (Sin Carpeta) | Con Datos (Con Carpeta)"
+    - "Fiscalías    | 47897     | 38524                   | 3284"
+    - "Comisiones   | 14527     | 17802                   | 0"
+    - "Portal       | 3209      | 5678                    | 0"
+    
+  caracteristicas:
+    - "Valores pueden ser cero"
+    - "Orden de categorías debe mantenerse"
+    - "Ideal para 3-5 categorías"
+    
+# Personalización avanzada
+personalizacion:
+  colores:
+    primario: "#584290"
+    secundario: "#8578B0" 
+    terciario: "#B1ADCF"
+    texto: "#000000"
+    
+  dimensiones:
+    altura_barra: 0.65
+    area_minima: 5
+    
+  etiquetas:
+    formato: "valor (porcentaje%)"
+    orientacion: "horizontal"
+    posicion_porcentaje: "al_lado"
+    
+  leyenda:
+    posicion: "abajo"
+    columnas: "automatico"
+    
+# Variantes recomendadas
+variantes:
+  solo_valores:
+    valor_barra: true
+    porcentaje_barra: false
+    
+  solo_porcentajes:
+    valor_barra: false
+    porcentaje_barra: true
+    
+  con_totales_porcentaje:
+    porcentaje_total: true
+    
+  ordenado_por_total:
+    ordenar_por: "valor"
+    orden: "descendente"
+    
+  etiquetas_verticales:
+    orientacion_etiqueta_x: null
+    
+  leyenda_arriba:
+    posicion_leyenda: "arriba"
+    
+# Validaciones
+validaciones:
+  - "Verificar que existan valores cero en los datos"
+  - "Confirmar que el orden de categorías es el deseado"
+  - "Validar que los colores tengan suficiente contraste"
+  - "Asegurar que las etiquetas sean legibles"

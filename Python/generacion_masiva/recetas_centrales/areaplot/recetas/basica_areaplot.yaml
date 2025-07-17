@@ -1,0 +1,86 @@
+tipo_grafico: "areaplot"
+
+metadata:
+  titulo: "Gráfico de Área Apilada"
+  descripcion: "Gráfico de área apilada con suavizado y cápsulas de totales"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "areaplot"
+  nombre: "areaplot_basico"
+
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+  # Configuración específica para areaplot
+  columna_fechas: "fechas"  # Nombre de la columna de fechas/categorías
+  
+  # Filtros opcionales
+  filtros: []
+  
+  # Transformaciones opcionales
+  transformaciones: []
+
+parametros:
+  # Configuración básica
+  nombre: "areaplot_basico"
+  font: "Arial"
+  
+  # Configuración de datos
+  columna_fechas: "fechas"
+  columnas_series: null  # Si es null, usa todas las columnas excepto fechas
+  etiquetas_series: null  # Si es null, usa los nombres de columnas
+  
+  # Configuración visual
+  mostrar_capsulas: true
+  suavizado: true
+  puntos_suavizado: 300
+  mostrar_porcentajes: false
+  mostrar_leyenda: true
+  mostrar_snapshot: false
+
+  # Dimensiones
+  ancho_figura: 16
+  alto_figura: 8
+  dpi: 100
+  
+  # Configuración de ejes
+  formato_fecha: "%b %Y"
+  rotacion_etiquetas: 90
+  
+  # Configuración de leyenda
+  posicion_leyenda: [0.5, 1.12]
+  ncol_leyenda: 3
+  
+  # Colores personalizados
+  paleta_colores:
+    - "#215F53"
+    - "#7570B3"
+    - "#C7EAE5"
+    - "#A3C9A8"
+    - "#8FA8A6"
+    - "#4C6A67"
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["svg"]
+  dpi: 100
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta genera un gráfico de área apilada suavizada"
+  - "Ideal para datos temporales con múltiples series"
+  - "Muestra cápsulas con totales de cada serie"
+  - "Las áreas se apilan automáticamente"
+  - "El suavizado crea curvas más fluidas"
+  - "El eje Y muestra porcentajes por defecto"
+  - "La leyenda se posiciona arriba del gráfico"
+  

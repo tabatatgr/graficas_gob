@@ -1,0 +1,181 @@
+# Receta para barras con datos previos y puntos suspensivos
+# Configuración basada en el ejemplo EXPORTAR: barra_previa
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras con Datos Previos"
+  descripcion: "Gráfico de barras verticales con datos históricos previos agregados y etiquetas personalizadas"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "barra_previa"
+  
+# Configuración de datos
+datos:
+  # El CLI proporcionará el DataFrame desde el archivo Excel/CSV
+  # Se agregan datos adicionales programáticamente
+  hoja: null  # Se usará la hoja por defecto
+  rango: null # Se usarán todos los datos
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.9
+  font: "Montserrat"
+  fontsize_barra: 15           # Por defecto de la función
+  fontsize_valor_total: 30     # Tamaño grande para valores
+  
+  # Ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y etiquetas
+  valor_barra: false           # No muestra valores dentro de las barras
+  porcentaje_barra: false      # No muestra porcentajes dentro de las barras
+  porcentaje_total: false      # No muestra porcentaje total arriba
+  valor_total: true            # Por defecto - mostrará los valores totales
+  
+  # Configuración visual
+  area_min: 0                  # Por defecto de la función
+  grillas: false               # Sin grillas para un look más limpio
+  
+  # Configuración de cápsulas
+  quitar_capsula: true         # Quita las cápsulas - valores sin borde
+  capsulas_cero: true          # Por defecto de la función
+  
+  # ** CONFIGURACIÓN PRINCIPAL: AGREGAR DATOS **
+  agregar_datos:
+    - fecha: "2005-01-01"
+      etiqueta: "Previo"
+      valores: [192, 313, "38%"]
+      descripcion: "Datos históricos previos agregados antes del rango principal"
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ASIGNAR ETIQUETAS **
+  asignar_etiquetas: "porcentaje"  # Usa la columna 'porcentaje' como etiquetas de valores
+  
+  # Configuración de colores especiales
+  paleta_colores: ["#10302C", "#E6E6E6"]  # Verde oscuro y gris claro
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+  
+  # Configuración de leyenda
+  leyenda: null                # Sin leyenda
+  posicion_leyenda: "arriba"   # Por defecto si se habilita
+  ncol_leyenda: null           # Automático
+  
+  # Configuración de orientación
+  orientacion_etiqueta_x: null  # Vertical por defecto (90 grados)
+  
+  # Configuración de ejes
+  nombre_eje_x: null
+  nombre_eje_y: null
+  y_limits: null
+  
+  # Configuración de unión de barras
+  union_izquierda: 0
+  union_derecha: 0
+  
+  # Configuración de datos adicionales
+  sustituir_etiquetas: null
+  
+  # Configuración de porcentajes
+  porcentaje_abajo: true
+  porcentaje_total_inicio: false
+  porcentaje_divergente: false
+  
+  # Configuración de espaciado
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de ejes especiales
+  ejeY_negativo_a_positivo: false
+  resaltar_etiquetas: null
+  
+  # Configuración de colores de texto
+  color_valor_barra: null
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica de datos agregados
+datos_agregados:
+  configuracion:
+    - tipo: "previo"
+      fecha: "2005-01-01"
+      etiqueta: "Previo"
+      valores:
+        - 192      # movimiento
+        - 313      # sin_movimiento
+        - "38%"    # porcentaje (se usa como etiqueta)
+      posicion: "inicio"
+      separador: "puntos_suspensivos"
+      
+# Configuración de etiquetas personalizadas
+etiquetas_personalizadas:
+  fuente: "columna_porcentaje"
+  reemplaza_valores_numericos: true
+  formato: "texto_directo"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta agrega datos históricos previos al inicio del gráfico"
+  - "La barra 'Previo' representa datos consolidados de años anteriores"
+  - "Se muestran puntos suspensivos (...) para indicar datos faltantes"
+  - "Los valores se muestran sin cápsulas (sin borde)"
+  - "Las etiquetas de valores provienen de la columna 'porcentaje'"
+  - "Paleta de colores de dos tonos: verde oscuro y gris claro"
+  - "Sin grillas para un diseño más limpio"
+  - "Ideal para series temporales con datos históricos resumidos"
+  
+# Casos de uso
+casos_uso:
+  - "Series temporales con datos históricos consolidados"
+  - "Reportes que muestran evolución desde un punto de referencia"
+  - "Análisis comparativo con período base"
+  - "Visualización de tendencias con contexto histórico"
+  - "Datos gubernamentales con línea base histórica"
+  
+# Estructura de datos esperada
+datos_esperados:
+  dataframe_principal:
+    - "Columna 1: años (2007, 2008, 2009, ...)"
+    - "Columna 2: movimiento (valores numéricos)"
+    - "Columna 3: sin_movimiento (valores numéricos)"
+    - "Columna 4: porcentaje (texto como '38%', '49%', etc.)"
+  
+  datos_agregados:
+    - "Se agrega automáticamente la barra 'Previo' al inicio"
+    - "Representa datos de 2005 consolidados"
+    - "Aparece separada por puntos suspensivos"
+    
+# Personalización avanzada
+personalizacion:
+  colores:
+    barra_1: "#10302C"  # Verde oscuro gubernamental
+    barra_2: "#E6E6E6"  # Gris claro para contraste
+  
+  etiquetas:
+    fuente_valores: "columna_porcentaje"
+    sin_capsulas: true
+    tamaño_fuente: 30
+    
+  espaciado:
+    separador_automatico: "puntos_suspensivos"
+    entre_previo_y_actual: "automático"

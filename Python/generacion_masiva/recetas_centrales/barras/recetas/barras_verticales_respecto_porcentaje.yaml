@@ -1,0 +1,284 @@
+# ================================================================
+# RECETA: Barras Verticales Respecto al Porcentaje
+# ================================================================
+# Esta receta genera barras verticales donde cada serie se muestra
+# como porcentaje del total, con valores absolutos y porcentajes
+# visibles, ideal para análisis de composición y comparaciones.
+# ================================================================
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+# Metadatos de la receta
+receta:
+  nombre: "barras_verticales_respecto_porcentaje"
+  descripcion: "Barras verticales con visualización de porcentajes del total"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha_creacion: "2025-07-10"
+  categoria: "barras_verticales"
+  subcategoria: "porcentajes"
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  nombre: "barras_respecto_porcentaje"
+  ancho_barra: 0.9
+  tipo_letra: "Montserrat"
+  
+  # Configuración de valores y porcentajes
+  valor_barra: true
+  tam_letra_valor_barra: 20
+  porce_barra: true
+  porce_total: true
+  
+  # Configuración de ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración específica para porcentajes
+  graf_resp_porce: true  # Clave: muestra barras como porcentaje del total
+  
+  # Configuración de colores personalizada
+  paleta_colores:
+    - "#003366"  # Azul oscuro
+    - "#107c41"  # Verde
+    - "#d35400"  # Naranja
+  
+  # Colores específicos para elementos
+  color_porce_total: "#a3173e"    # Rojo para porcentajes totales
+  color_valor_capsu: "#6c757d"    # Gris para valores en cápsulas
+  color_borde_capsu: "#b58900"    # Amarillo oscuro para bordes
+
+# Descripción detallada de la funcionalidad
+funcionalidad:
+  objetivo: "Visualizar datos como porcentajes del total con valores absolutos"
+  
+  caracteristicas_principales:
+    - "Barras mostradas como porcentaje del total (graf_resp_porce=True)"
+    - "Valores absolutos visibles dentro de las barras"
+    - "Porcentajes individuales y totales mostrados"
+    - "Paleta de colores vibrante y contrastante"
+    - "Colores personalizados para diferentes elementos"
+    - "Ideal para análisis de composición y participación"
+  
+  parametros_clave:
+    graf_resp_porce: "Convierte las barras a porcentajes del total"
+    valor_barra: "Muestra valores absolutos dentro de las barras"
+    porce_barra: "Muestra porcentajes individuales en las barras"
+    porce_total: "Muestra porcentajes totales en cápsulas superiores"
+    color_porce_total: "Color específico para porcentajes totales"
+    color_valor_capsu: "Color para valores en cápsulas"
+
+# Casos de uso
+casos_de_uso:
+  - "Análisis de participación de mercado por segmentos"
+  - "Distribución de presupuesto por categorías"
+  - "Composición de ingresos por fuentes"
+  - "Análisis de gastos por rubros"
+  - "Distribución de recursos por departamentos"
+  - "Participación de regiones en indicadores nacionales"
+  - "Análisis de composición de carteras de inversión"
+  - "Distribución de tiempo por actividades"
+
+# Estructura requerida del DataFrame
+estructura_dataframe:
+  columnas_requeridas:
+    - "Primera columna: Categorías o etiquetas (eje X)"
+    - "Múltiples columnas numéricas: Valores que se convertirán a porcentajes"
+  
+  ejemplo_estructura:
+    - "df['País'] = ['México', 'Canadá', 'EE.UU.', ...]"
+    - "df['Cantidad 1'] = [450, 480, 510, ...] # Primera serie"
+    - "df['Cantidad 2'] = [280, 290, 300, ...] # Segunda serie"
+    - "df['Cantidad 3'] = [140, 150, 160, ...] # Tercera serie"
+  
+  notas_datos:
+    - "Cada fila representa una categoría con múltiples valores"
+    - "Los valores se convertirán automáticamente a porcentajes del total"
+    - "Ideal para 2-5 series de datos por categoría"
+
+# Explicación de la visualización de porcentajes
+visualizacion_porcentajes:
+  como_funciona: "graf_resp_porce=True convierte cada valor a porcentaje del total de su categoría"
+  
+  ejemplo_calculo: |
+    Si una categoría tiene valores [450, 280, 140]:
+    - Total = 450 + 280 + 140 = 870
+    - Porcentaje 1 = (450/870) × 100 = 51.7%
+    - Porcentaje 2 = (280/870) × 100 = 32.2%
+    - Porcentaje 3 = (140/870) × 100 = 16.1%
+  
+  elementos_visuales:
+    - "Altura de barras: proporcional al porcentaje"
+    - "Valores absolutos: dentro de cada segmento de barra"
+    - "Porcentajes individuales: en cada segmento"
+    - "Porcentajes totales: en cápsulas superiores (100%)"
+
+# Configuración de colores explicada
+configuracion_colores:
+  paleta_principal:
+    - nombre: "Azul oscuro (#003366)"
+      uso: "Primera serie de datos"
+      descripcion: "Color profesional y sobrio"
+    - nombre: "Verde (#107c41)"
+      uso: "Segunda serie de datos"
+      descripcion: "Color que representa crecimiento/positivo"
+    - nombre: "Naranja (#d35400)"
+      uso: "Tercera serie de datos"
+      descripcion: "Color de contraste y énfasis"
+  
+  colores_especiales:
+    color_porce_total: "Rojo (#a3173e) para porcentajes totales"
+    color_valor_capsu: "Gris (#6c757d) para valores en cápsulas"
+    color_borde_capsu: "Amarillo oscuro (#b58900) para bordes"
+  
+  filosofia: "Colores contrastantes para facilitar la distinción entre series"
+
+# Ejemplos de uso desde CLI
+cli_ejemplos:
+  basico: |
+    python generar_grafica.py barras_verticales \
+      --receta barras_verticales_respecto_porcentaje \
+      --archivo_datos composicion_datos.csv \
+      --directorio_salida ./outputs/
+  
+  con_override: |
+    python generar_grafica.py barras_verticales \
+      --receta barras_verticales_respecto_porcentaje \
+      --archivo_datos composicion_datos.csv \
+      --directorio_salida ./outputs/ \
+      --color_porce_total "#ff0000" \
+      --tam_letra_valor_barra 25 \
+      --ancho_barra 0.8
+  
+  paleta_personalizada: |
+    python generar_grafica.py barras_verticales \
+      --receta barras_verticales_respecto_porcentaje \
+      --archivo_datos composicion_datos.csv \
+      --directorio_salida ./outputs/ \
+      --paleta_colores "#1f77b4" "#ff7f0e" "#2ca02c" "#d62728"
+  
+  batch_processing: |
+    python generar_lote.py \
+      --receta barras_verticales_respecto_porcentaje \
+      --directorio_datos ./datos_composicion/ \
+      --patron_archivos "*_composicion.csv" \
+      --directorio_salida ./graficas_porcentajes/
+
+# Notas importantes
+notas:
+  - "graf_resp_porce=True es el parámetro clave para esta funcionalidad"
+  - "Todas las categorías mostrarán 100% en la cápsula superior"
+  - "Los valores absolutos se mantienen visibles para referencia"
+  - "Ideal para comparar composiciones entre diferentes categorías"
+  - "Los colores personalizados ayudan a distinguir series y elementos"
+  - "Funciona mejor con 2-5 series por categoría"
+
+# Consideraciones de rendimiento
+rendimiento:
+  - "Adecuado para datasets con 10-50 categorías"
+  - "Óptimo para 2-5 series de datos por categoría"
+  - "El cálculo de porcentajes se realiza automáticamente"
+  - "Visualización clara incluso con múltiples series"
+
+# Variaciones comunes
+variaciones:
+  solo_porcentajes: |
+    # Ocultar valores absolutos, mostrar solo porcentajes
+    valor_barra: false
+    porce_barra: true
+  
+  sin_capsulas: |
+    # Ocultar cápsulas superiores
+    porce_total: false
+    quitar_capsu: true
+  
+  colores_institucionales: |
+    # Usar colores de marca específicos
+    paleta_colores: 
+      - "#8B4513"  # Marrón institucional
+      - "#2E8B57"  # Verde institucional
+      - "#4682B4"  # Azul institucional
+    color_porce_total: "#B22222"  # Rojo institucional
+  
+  ordenamiento_por_valor: |
+    # Ordenar por valores totales en lugar de etiquetas
+    ordenar_por: "valor"
+    orden: "descendente"
+
+# Validaciones recomendadas
+validaciones:
+  - "Verificar que hay al menos 2 series numéricas en el DataFrame"
+  - "Confirmar que no hay valores negativos (los porcentajes requieren valores positivos)"
+  - "Validar que los colores especificados son códigos hexadecimales válidos"
+  - "Revisar que el número de colores en la paleta sea suficiente para las series"
+  - "Asegurar que las etiquetas de categorías no sean demasiado largas"
+
+# Ejemplo de datos típicos para esta receta
+datos_ejemplo:
+  estructura_tipica: |
+    País,Industria,Servicios,Agricultura
+    México,450,280,140
+    Brasil,520,310,160
+    Argentina,390,250,120
+    Colombia,460,290,130
+  
+  resultado_visual: |
+    Cada país mostrará:
+    - Barras con altura proporcional al porcentaje
+    - Valores absolutos dentro de cada segmento
+    - Porcentajes individuales en cada segmento
+    - 100% en la cápsula superior
+
+# Configuraciones alternativas para casos específicos
+configuraciones_alternativas:
+  presentacion_ejecutiva:
+    tam_letra_valor_barra: 22
+    tam_letra_valor_capsu: 25
+    ancho_barra: 0.85
+    color_porce_total: "#2C3E50"
+  
+  reporte_tecnico:
+    valor_barra: true
+    porce_barra: true
+    porce_total: true
+    grillas: true
+    leyenda: true
+  
+  dashboard_compacto:
+    ancho_barra: 0.7
+    tam_letra_valor_barra: 16
+    porce_total: false
+    quitar_capsu: true
+
+# Diferencias con otras recetas
+diferencias:
+  - "graf_resp_porce=True convierte automáticamente a porcentajes"
+  - "Muestra tanto valores absolutos como porcentajes"
+  - "Todas las categorías alcanzan 100% en la visualización"
+  - "Colores personalizados para diferentes elementos de la gráfica"
+  - "Ideal para análisis de composición y participación"
+  - "Facilita comparaciones entre distribuciones de diferentes categorías"
+
+# Casos de uso específicos por sector
+casos_uso_sector:
+  financiero:
+    - "Composición de portafolios de inversión"
+    - "Distribución de ingresos por fuentes"
+    - "Participación de gastos por categorías"
+  
+  gubernamental:
+    - "Distribución de presupuesto por secretarías"
+    - "Participación regional en indicadores nacionales"
+    - "Composición de ingresos fiscales"
+  
+  empresarial:
+    - "Participación de mercado por productos"
+    - "Distribución de recursos por departamentos"
+    - "Análisis de costos por categorías"
+  
+  academico:
+    - "Distribución de tiempo por actividades"
+    - "Composición de poblaciones por características"
+    - "Análisis de resultados por categorías"

@@ -1,0 +1,198 @@
+# Receta YAML para gráficas de barras verticales con etiquetas superiores personalizadas
+# Tipo: Barras verticales con etiquetas personalizadas en la parte superior
+# Uso: Ideal para mostrar datos con etiquetas alternativas o códigos personalizados
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+nombre: "sustitucion_etiquetas_superiores_barras_verticales"
+descripcion: "Gráfica de barras verticales minimalista con etiquetas personalizadas en la parte superior de las barras, sin cápsulas ni grillas"
+
+# Parámetros de configuración
+parametros:
+  # Configuración básica
+  ancho_barra: 0.9
+  tipo_letra: "Montserrat"
+  tam_letra_valor_capsu: 30
+  tam_letra_ejeY: 30
+  
+  # Configuración de ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y porcentajes (deshabilitados para diseño minimalista)
+  valor_barra: false
+  porce_barra: false
+  porce_total: false
+  
+  # Configuración de presentación minimalista
+  quitar_capsu: true
+  grillas: false
+  
+  # Configuración de colores (paleta minimalista)
+  paleta_colores:
+    - "#10302C"  # Verde oscuro
+    - "#E6E6E6"  # Gris claro
+
+# Configuración de etiquetas personalizadas
+etiquetas_personalizadas:
+  parametro: "asignar_etiquetas"
+  descripcion: "Nombre de la columna que contiene las etiquetas personalizadas"
+  ejemplo: "Etiqueta nueva"
+  uso: "Permite mostrar códigos, abreviaciones o etiquetas alternativas"
+  nota: "La columna debe existir en el DataFrame y contener las etiquetas deseadas"
+
+# Casos de uso
+casos_uso:
+  - "Mostrar códigos o abreviaciones en lugar de nombres completos"
+  - "Presentar etiquetas simplificadas para mejor legibilidad"
+  - "Usar nomenclatura específica o técnica"
+  - "Mostrar identificadores únicos o claves"
+  - "Presentaciones con espacio limitado en el eje X"
+  - "Dashboards con códigos institucionales"
+  - "Gráficas con categorías codificadas"
+  - "Visualizaciones técnicas con nomenclatura específica"
+
+# Notas de implementación
+notas:
+  - "quitar_capsu=true elimina las cápsulas de valores para diseño minimalista"
+  - "grillas=false oculta las líneas de grilla para mayor limpieza visual"
+  - "asignar_etiquetas debe coincidir con el nombre de una columna existente"
+  - "Las etiquetas personalizadas aparecen en la parte superior de las barras"
+  - "Paleta de colores minimalista con solo dos tonos"
+  - "Diseño optimizado para claridad y simplicidad"
+  - "Ideal cuando los valores no son el foco principal"
+  - "Funciona mejor con etiquetas cortas (1-3 caracteres)"
+
+# Datos de ejemplo requeridos
+datos_ejemplo:
+  tipo: "DataFrame con columnas: categoría, valores numéricos, y columna de etiquetas personalizadas"
+  estructura: "Tres columnas mínimo: identificador, valores, etiquetas personalizadas"
+  ejemplo: |
+    df con columnas:
+    - 'Fechas': [fechas o categorías principales]
+    - 'Cantidad 1': [valores numéricos]
+    - 'Cantidad 2': [valores numéricos adicionales]
+    - 'Etiqueta nueva': ['A', 'B', 'C', 'D', ...] (etiquetas personalizadas)
+  nota: "La columna de etiquetas personalizadas debe tener el mismo número de filas que las demás"
+
+# Configuración de diseño minimalista
+diseño_minimalista:
+  sin_capsulas: true
+  sin_grillas: true
+  sin_valores_en_barras: true
+  sin_porcentajes: true
+  descripcion: "Enfoque en la forma y proporciones de los datos"
+  beneficio: "Maximiza la claridad visual y reduce el desorden"
+
+# Configuración de colores explicada
+configuracion_colores:
+  paleta_minimalista:
+    - nombre: "Verde oscuro (#10302C)"
+      uso: "Color principal para las barras"
+      descripcion: "Color institucional sobrio"
+    - nombre: "Gris claro (#E6E6E6)"
+      uso: "Color secundario o de contraste"
+      descripcion: "Color neutro para elementos secundarios"
+  
+  filosofia: "Paleta reducida para máxima claridad visual"
+  recomendacion: "Ideal para presentaciones profesionales y técnicas"
+
+# Parámetros que deben ser configurados
+parametros_obligatorios:
+  asignar_etiquetas:
+    descripcion: "Nombre de la columna con las etiquetas personalizadas"
+    ejemplo: "Etiqueta nueva"
+    obligatorio: true
+    nota: "Debe ser una columna existente en el DataFrame"
+
+# Parámetros opcionales que pueden ser sobrescritos via kwargs
+parametros_sobrescribibles:
+  - "sustituir_etiquetas: para cambiar las etiquetas del eje X"
+  - "espaciado: para ajustar el espaciado general"
+  - "paleta_colores: para usar una paleta diferente"
+  - "valor_barra: para mostrar valores dentro de las barras"
+  - "porce_barra: para habilitar porcentajes en barras"
+  - "porce_total: para habilitar porcentajes totales"
+  - "grillas: para mostrar grillas de fondo"
+  - "quitar_capsu: para mostrar/ocultar cápsulas"
+  - "nombre_eje_x: para agregar título al eje X"
+  - "nombre_eje_y: para agregar título al eje Y"
+  - "tam_letra_valor_capsu: para ajustar tamaño de etiquetas superiores"
+
+# Ejemplo de uso desde CLI
+ejemplo_cli: |
+  python generar_grafica.py --receta sustitucion_etiquetas_superiores_barras_verticales --datos datos_codificados.csv --asignar_etiquetas "Codigo_Corto" --valor_barra true --nombre_eje_x "Categorías" --nombre_eje_y "Valores"
+
+# Variantes recomendadas
+variantes:
+  con_valores:
+    descripcion: "Agregar valores dentro de las barras"
+    parametros: "--valor_barra true"
+    uso: "Cuando se necesitan tanto etiquetas como valores"
+  
+  con_grillas:
+    descripcion: "Mostrar grillas de fondo"
+    parametros: "--grillas true"
+    uso: "Para facilitar la lectura de valores"
+  
+  con_capsulas:
+    descripcion: "Mostrar cápsulas de valores totales"
+    parametros: "--quitar_capsu false"
+    uso: "Para presentaciones que requieren valores exactos"
+  
+  colores_personalizados:
+    descripcion: "Usar paleta de colores específica"
+    parametros: '--paleta_colores ["#003366", "#107c41", "#d35400"]'
+    uso: "Para branded visualizations o temas específicos"
+
+# Consideraciones especiales
+consideraciones:
+  - "La columna de etiquetas personalizadas debe existir en el DataFrame"
+  - "Las etiquetas cortas (1-3 caracteres) funcionan mejor visualmente"
+  - "El diseño minimalista prioriza la forma sobre los valores específicos"
+  - "Ideal para presentaciones donde el patrón es más importante que los números"
+  - "Funciona mejor con 5-30 categorías para mantener legibilidad"
+  - "Las etiquetas personalizadas deben ser únicas y descriptivas"
+
+# Validaciones recomendadas
+validaciones:
+  - "Verificar que la columna de etiquetas personalizadas existe"
+  - "Confirmar que las etiquetas son únicas o apropiadas para el contexto"
+  - "Revisar que las etiquetas no sean demasiado largas"
+  - "Asegurar que el número de etiquetas coincide con el número de barras"
+  - "Validar que las etiquetas sean legibles en el tamaño especificado"
+
+# Casos de uso específicos
+casos_uso_especificos:
+  codigos_institucionales:
+    descripcion: "Mostrar códigos de dependencias o programas"
+    ejemplo: "A1, B2, C3 en lugar de nombres completos"
+  
+  abreviaciones_tecnicas:
+    descripcion: "Usar términos técnicos o abreviaciones"
+    ejemplo: "API, DB, UI en lugar de nombres descriptivos"
+  
+  clasificaciones_alfabeticas:
+    descripcion: "Mostrar clasificaciones simples"
+    ejemplo: "A, B, C, D para categorías ordenadas"
+  
+  identificadores_numericos:
+    descripcion: "Usar números o códigos numéricos"
+    ejemplo: "01, 02, 03 para secuencias ordenadas"
+
+# Diferencias con otras recetas
+diferencias:
+  - "Enfoque minimalista sin valores o porcentajes visibles"
+  - "Etiquetas personalizadas en la parte superior de las barras"
+  - "Sin cápsulas ni grillas para máxima limpieza"
+  - "Paleta de colores reducida a dos tonos"
+  - "Optimizado para patrones y formas, no para valores específicos"
+  - "Ideal para presentaciones técnicas o con códigos"
+
+# Filosofía de diseño
+filosofia_diseño:
+  principio: "Menos es más"
+  enfoque: "Claridad visual sobre información detallada"
+  objetivo: "Mostrar patrones y proporciones de manera limpia"
+  audiencia: "Presentaciones técnicas, dashboards ejecutivos, reportes codificados"

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1142.3" height="564.82" viewBox="0 0 856.74 423.62">
+<defs>
+<style>*{stroke-linejoin:round;stroke-linecap:butt}</style>
+</defs>
+<path d="M0 423.616h856.74V0H0z" opacity="0" id="path-1" class="path-element" />
+<path d="M41.9 349.376h807.64V23.392H41.9z" opacity="0" id="path-2" class="path-element" />
+<path d="m73.448 349.38h113.57v-218.64h-113.57z" clip-path="url(#a)" fill="#584290" id="path-3" class="path-element" />
+<path d="m199.64 349.38h113.57v-240.5h-113.57z" clip-path="url(#a)" fill="#584290" id="path-4" class="path-element" />
+<path d="m325.84 349.38h113.58v-262.36h-113.58z" clip-path="url(#a)" fill="#584290" id="path-5" class="path-element" />
+<path d="m452.03 349.38h113.57v-227.38h-113.57z" clip-path="url(#a)" fill="#584290" id="path-6" class="path-element" />
+<path d="m578.22 349.38h113.57v-253.62h-113.57z" clip-path="url(#a)" fill="#584290" id="path-7" class="path-element" />
+<path d="m704.42 349.38h113.57v-284.23h-113.57z" clip-path="url(#a)" fill="#584290" id="path-8" class="path-element" />
+<path d="m73.448 130.74h113.57v-43.727h-113.57z" clip-path="url(#a)" fill="#b1adcf" id="path-9" class="path-element" />
+<path d="m199.64 108.88h113.57v-34.982h-113.57z" clip-path="url(#a)" fill="#b1adcf" id="path-10" class="path-element" />
+<path d="m325.84 87.014h113.58v-30.609h-113.58z" clip-path="url(#a)" fill="#b1adcf" id="path-11" class="path-element" />
+<path d="m452.03 122h113.57v-52.473h-113.57z" clip-path="url(#a)" fill="#b1adcf" id="path-12" class="path-element" />
+<path d="m578.22 95.76h113.57v-39.355h-113.57z" clip-path="url(#a)" fill="#b1adcf" id="path-13" class="path-element" />
+<path d="m704.42 65.15h113.57v-26.234h-113.57z" clip-path="url(#a)" fill="#b1adcf" id="path-14" class="path-element" />
+<defs>
+<path id="c" d="m0 0v3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="130.235" y="349.376" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 523.2 46.924)" font-family="&quot;Arial&quot;" font-size="8px" id="etiqueta-jan-2020" class="label-element">Jan 2020</text>
+<use x="508.816" y="349.376" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 712.21 -410.42)" font-family="&quot;Arial&quot;" font-size="8px" id="etiqueta-apr-2020" class="label-element">Apr 2020</text>
+<text x="445.719" y="397.413" font-family="&quot;Arial&quot;" font-size="12px" font-weight="500" text-anchor="middle" id="etiqueta-fecha" class="label-element">Fecha</text>
+<defs>
+<path id="b" d="m0 0h-3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="41.899" y="349.376" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="353.175" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-0" class="value-element">0</text>
+<use x="41.899" y="305.649" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="309.448" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-10" class="value-element">10</text>
+<use x="41.899" y="261.922" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="265.721" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-20" class="value-element">20</text>
+<use x="41.899" y="218.195" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="221.994" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-30" class="value-element">30</text>
+<use x="41.899" y="174.468" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="178.267" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-40" class="value-element">40</text>
+<use x="41.899" y="130.741" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="134.54" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-50" class="value-element">50</text>
+<use x="41.899" y="87.014" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="90.813" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-60" class="value-element">60</text>
+<use x="41.899" y="43.287" stroke="#000" stroke-width=".8" href="#b" />
+<text x="34.899" y="47.087" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="10px" text-anchor="end" id="valor-70" class="value-element">70</text>
+<text transform="rotate(-90 15.79 186.38)" x="15.789" y="186.384" font-family="&quot;Arial&quot;" font-size="12px" font-weight="500" text-anchor="middle" id="etiqueta-número-de-casos" class="label-element">Número de casos</text>
+<path d="m41.9 349.38v-325.98" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-15" class="path-element" />
+<path d="m41.9 349.38h807.64" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-16" class="path-element" />
+<text x="445.719" y="17.392" font-family="&quot;Arial&quot;" font-size="14px" font-weight="700" text-anchor="middle" id="etiqueta-casos-con-y-sin-datos" class="label-element">Casos con y sin datos</text>
+<path d="m376.64 411.55h16v-5.6h-16z" fill="#584290" id="path-17" class="path-element" />
+<text x="399.036" y="411.552" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="8px" id="etiqueta-con-datos" class="label-element">Con datos</text>
+<path d="m455.31 411.55h16v-5.6h-16z" fill="#b1adcf" id="path-18" class="path-element" />
+<text x="477.709" y="411.552" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="8px" id="etiqueta-sin-datos" class="label-element">Sin datos</text>
+<defs>
+<clipPath id="a">
+<path d="m41.899 23.392h807.64v325.98h-807.64z" id="path-19" class="path-element" />
+</clipPath>
+</defs>
+</svg>

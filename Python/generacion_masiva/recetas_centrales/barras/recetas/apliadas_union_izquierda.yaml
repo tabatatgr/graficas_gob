@@ -1,0 +1,62 @@
+# Receta para barras apiladas con unión por la izquierda
+# Configuración basada en el ejemplo EXPORTAR: union_barras_izquierda
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Apiladas con Unión Izquierda"
+  descripcion: "Gráfico de barras verticales apiladas que agrupa las primeras N barras en una sola"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "union_barras_izquierda"
+  
+# Configuración de datos
+datos:
+  # El CLI proporcionará el DataFrame desde el archivo Excel/CSV
+  # Ideal para datos temporales donde se quieren agrupar años iniciales
+  hoja: null  # Se usará la hoja por defecto
+  rango: null # Se usarán todos los datos
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.8
+  font: "Montserrat"
+  fontsize_barra: 24
+  fontsize_valor_total: 20  # Por defecto de la función
+  
+  # Ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y etiquetas
+  valor_barra: true          # Muestra valores dentro de las barras
+  porcentaje_barra: false    # No muestra porcentajes dentro de las barras
+  porcentaje_total: true     # Muestra porcentaje total arriba
+  valor_total: true          # Por defecto en la función
+  
+  # Configuración visual
+  area_min: 500              # Área mínima para mostrar etiquetas
+  grillas: true              # Por defecto en la función
+  
+  # Configuración de leyenda
+  leyenda: true              # Muestra leyenda
+  posicion_leyenda: "arriba" # Por defecto en la función
+  ncol_leyenda: null         # Automático basado en número de categorías
+  
+  # ** CONFIGURACIÓN PRINCIPAL: UNIÓN DE BARRAS **
+  union_izquierda: 5         # Agrupa las primeras 5 barras en una sola
+  union_derecha: 0           # No agrupa barras por la derecha
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+  
+  # Configuración de colores (usará paleta por defecto)

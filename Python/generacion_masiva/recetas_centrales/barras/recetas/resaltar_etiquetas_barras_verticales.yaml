@@ -1,0 +1,187 @@
+# Receta YAML para gráficas de barras verticales con etiquetas resaltadas
+# Tipo: Barras verticales con capacidad de resaltar etiquetas específicas
+# Uso: Ideal para destacar entidades, categorías o elementos específicos de interés
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+nombre: "resaltar_etiquetas_barras_verticales"
+descripcion: "Gráfica de barras verticales con capacidad de resaltar etiquetas específicas mediante colores y porcentajes al inicio"
+
+# Parámetros de configuración
+parametros:
+  # Configuración básica
+  ancho_barra: 0.7
+  tipo_letra: "Montserrat"
+  tam_letra_ejeX: 35
+  tam_letra_ejeY: 30
+  tam_letra_valor_capsu: 35
+  tam_letra_valor_barra: 35
+  tam_porce_total: 35
+  
+  # Configuración de posicionamiento
+  ajusta_pos_capsu: 0.01
+  separar_por_total: -0.0
+  
+  # Configuración de ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y porcentajes
+  porce_barra: false
+  porce_total: false
+  porce_total_inicio: true
+  espacio_inicio: 120
+  
+  # Configuración de alineación
+  alinea_capsu: true
+  alinea_texto_barra: true
+  
+  # Configuración de colores para resaltado
+  color_resalt_etique: "#900c3f"  # Granate para etiquetas resaltadas
+  color_borde_resalt: "black"     # Negro para borde de etiquetas resaltadas
+
+# Configuración de resaltado (se pasa via kwargs)
+resaltado:
+  descripcion: "Lista de etiquetas exactas que se desean resaltar"
+  ejemplo: ["Aguascalientes", "Colima", "Estado de México", "Oaxaca"]
+  nota: "Las etiquetas deben coincidir exactamente con los valores en los datos"
+
+# Casos de uso
+casos_uso:
+  - "Destacar entidades federativas de interés especial"
+  - "Resaltar categorías prioritarias en análisis gubernamental"
+  - "Marcar elementos que requieren atención específica"
+  - "Comparar elementos seleccionados contra el resto del conjunto"
+  - "Presentaciones ejecutivas con énfasis en casos clave"
+  - "Análisis de rendimiento con destacado de casos excepcionales"
+  - "Reportes donde ciertas regiones o dependencias son prioritarias"
+
+# Notas de implementación
+notas:
+  - "porce_total_inicio=true coloca porcentajes al inicio de cada barra"
+  - "espacio_inicio=120 ajusta el espacio para mostrar los porcentajes"
+  - "Las etiquetas resaltadas aparecen con fondo granate (#900c3f) y borde negro"
+  - "Las etiquetas no resaltadas mantienen su formato estándar"
+  - "color_resalt_etique y color_borde_resalt controlan el estilo del resaltado"
+  - "La configuración mantiene alta legibilidad con fuentes grandes"
+  - "Ideal para datasets con múltiples categorías donde solo algunas son relevantes"
+  - "El resaltado funciona tanto visual como funcionalmente"
+
+# Datos de ejemplo requeridos
+datos_ejemplo:
+  tipo: "DataFrame con dos columnas: categoría y valor numérico"
+  estructura: "Primera columna: categorías (ej. entidades), segunda columna: valores numéricos"
+  ejemplo: |
+    df con columnas:
+    - 'Entidad Federativa': ['Aguascalientes', 'Baja California', 'Baja California Sur', ...]
+    - 'Cantidad': [45892, 78143, 22345, ...]
+  nota: "Las etiquetas a resaltar deben coincidir exactamente con los valores en la primera columna"
+
+# Configuración de colores explicada
+configuracion_colores:
+  color_resalt_etique:
+    valor: "#900c3f"
+    descripcion: "Color granate para fondo de etiquetas resaltadas"
+    uso: "Fondo de las etiquetas que se desean destacar"
+  
+  color_borde_resalt:
+    valor: "black"
+    descripcion: "Color negro para borde de etiquetas resaltadas"
+    uso: "Borde de las etiquetas resaltadas para mayor definición"
+
+# Configuración de porcentajes al inicio
+porcentajes_inicio:
+  porce_total_inicio: true
+  espacio_inicio: 120
+  descripcion: "Muestra porcentajes al inicio de cada barra"
+  beneficio: "Permite ver proporciones sin saturar la visualización"
+  nota: "Solo se muestran porcentajes, no valores absolutos al inicio"
+
+# Parámetros que deben ser pasados via kwargs
+parametros_kwargs:
+  resaltar_etiquetas:
+    tipo: "lista"
+    descripcion: "Lista de etiquetas exactas que se desean resaltar"
+    ejemplo: '["Aguascalientes", "Colima", "Estado de México", "Oaxaca"]'
+    obligatorio: true
+    nota: "Las etiquetas deben coincidir exactamente con los valores en los datos"
+
+# Parámetros opcionales que pueden ser sobrescritos via kwargs
+parametros_sobrescribibles:
+  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
+  - "espaciado: para ajustar el espaciado general"
+  - "paleta_colores: para usar una paleta de colores específica"
+  - "porce_barra: para habilitar porcentajes en barras"
+  - "porce_total: para habilitar porcentajes totales adicionales"
+  - "valor_barra: para mostrar valores dentro de las barras"
+  - "color_resalt_etique: para cambiar el color de resaltado"
+  - "color_borde_resalt: para cambiar el color del borde"
+  - "espacio_inicio: para ajustar el espacio de los porcentajes"
+  - "nombre_eje_x: para agregar título al eje X"
+  - "nombre_eje_y: para agregar título al eje Y"
+
+# Ejemplo de uso desde CLI
+ejemplo_cli: |
+  python generar_grafica.py --receta resaltar_etiquetas_barras_verticales --datos entidades_federativas.csv --resaltar_etiquetas '["Aguascalientes", "Colima", "Estado de México", "Oaxaca"]' --color_resalt_etique "#a3173e" --nombre_eje_x "Entidades Federativas"
+
+# Variantes recomendadas
+variantes:
+  con_valores_en_barras:
+    descripcion: "Agregar valores dentro de las barras"
+    parametros: "--valor_barra true"
+  
+  con_porcentajes_totales:
+    descripcion: "Agregar porcentajes totales adicionales"
+    parametros: "--porce_total true"
+  
+  color_personalizado:
+    descripcion: "Usar color de resaltado personalizado"
+    parametros: '--color_resalt_etique "#a3173e"'
+  
+  mas_espacio:
+    descripcion: "Aumentar espacio para porcentajes"
+    parametros: "--espacio_inicio 150"
+
+# Consideraciones especiales
+consideraciones:
+  - "Verificar que las etiquetas a resaltar existan exactamente en los datos"
+  - "Limitar el número de etiquetas resaltadas para mantener efectividad visual"
+  - "El color de resaltado debe contrastar bien con el fondo"
+  - "Funciona mejor con 3-8 etiquetas resaltadas de un total de 10-50"
+  - "Las etiquetas resaltadas aparecen tanto en el inicio como en el eje X"
+  - "Ideal para análisis comparativos donde solo algunos elementos son relevantes"
+
+# Validaciones recomendadas
+validaciones:
+  - "Verificar que las etiquetas a resaltar existan en el dataset"
+  - "Confirmar que las etiquetas coinciden exactamente (case-sensitive)"
+  - "Revisar que el número de etiquetas resaltadas sea razonable (3-8)"
+  - "Asegurar que el color de resaltado sea visible y accesible"
+  - "Validar que el espacio_inicio sea suficiente para mostrar porcentajes"
+
+# Casos de uso específicos
+casos_uso_especificos:
+  entidades_prioritarias:
+    descripcion: "Destacar entidades federativas de interés especial"
+    ejemplo: "Estados con mayor incidencia, recursos especiales, etc."
+  
+  dependencias_clave:
+    descripcion: "Resaltar dependencias gubernamentales prioritarias"
+    ejemplo: "Secretarías con presupuesto especial, proyectos prioritarios"
+  
+  regiones_criticas:
+    descripcion: "Marcar regiones que requieren atención inmediata"
+    ejemplo: "Zonas de emergencia, alta prioridad, intervención especial"
+  
+  indicadores_fuera_rango:
+    descripcion: "Destacar categorías con valores excepcionales"
+    ejemplo: "Valores muy altos o muy bajos que requieren análisis especial"
+
+# Diferencias con barras_verticales_simples
+diferencias:
+  - "Funcionalidad de resaltado de etiquetas específicas"
+  - "Porcentajes al inicio de las barras"
+  - "Colores personalizados para elementos destacados"
+  - "Espacio adicional para mostrar información de resaltado"
+  - "Mayor complejidad visual pero con propósito específico"

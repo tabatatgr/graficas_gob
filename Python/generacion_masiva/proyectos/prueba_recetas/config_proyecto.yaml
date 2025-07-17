@@ -1,0 +1,19 @@
+configuracion_graficas:
+  formato_salida: svg
+  generar_catalogo: true
+  generar_png: false
+  optimizacion_svg: true
+directorios:
+  input: input
+  output: output
+  recetas: recetas
+  temp: temp
+equipo:
+  colaboradores: []
+  contacto: ''
+  responsable: ''
+proyecto:
+  descripcion: Proyecto de prueba para validar recetas
+  fecha_creacion: '2025-07-16 12:21:00'
+  nombre: prueba_recetas
+  version: 1.0.0

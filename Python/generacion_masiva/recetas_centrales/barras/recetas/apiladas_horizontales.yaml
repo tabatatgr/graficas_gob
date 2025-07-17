@@ -1,0 +1,258 @@
+# Receta para barras apiladas horizontales
+# Configuración basada en el ejemplo de barras horizontales con múltiples series
+
+metadata:
+  titulo: "Barras Apiladas Horizontales"
+  descripcion: "Gráfico de barras horizontales apiladas con valores internos y porcentajes totales"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras"
+  nombre: "barras_apiladas_horizontales"
+  
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+
+# Parámetros de la función barras
+parametros:
+  # Configuración básica
+  bar_height: 0.8              # Barras con buen grosor para apilamiento
+  font: "Montserrat"
+  fontsize_barra: 24           # Tamaño grande para valores internos
+  fontsize_valor_total: 20     # Tamaño para totales
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
+  orientacion: "horizontal"     # Barras horizontales
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORDENAMIENTO **
+  ordenar_por: "etiqueta"      # Ordena por nombre de categoría
+  orden: "ascendente"          # Orden cronológico o alfabético
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ETIQUETAS DE VALORES **
+  valor_barra: true            # Muestra valores dentro de cada segmento
+  porcentaje_barra: false      # No muestra porcentajes internos
+  porcentaje_total: true       # Muestra porcentajes totales al final
+  valor_total: true            # Muestra totales al final (por defecto)
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ESPACIADO **
+  area_min: 500                # Área mínima para mostrar etiquetas internas
+  separar_por_total: 0.05      # Separación adicional entre total y porcentaje
+  
+  # ** CONFIGURACIÓN PRINCIPAL: LEYENDA **
+  leyenda: true                # Muestra leyenda para identificar series
+  posicion_leyenda: "arriba"   # Leyenda en la parte superior
+  
+  # Configuración de cápsulas
+  quitar_capsula: false        # Mantiene cápsulas en totales
+  
+  # Configuración de ordenamiento
+  porcentaje_total_inicio: false
+  
+  # Configuración de datos adicionales
+  agregar_datos: null
+  asignar_etiquetas: null
+  
+  # Configuración de unión de barras
+  union_izquierda: 0
+  union_derecha: 0
+  
+  # Configuración de espaciado
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de colores
+  paleta_colores: null         # Usa colores por defecto
+  color_valor_barra: null
+  
+  # Configuración visual
+  grillas: true                # Mantiene grillas por defecto
+  porcentaje_abajo: true       # Configuración por defecto
+  
+  # Configuración de ejes
+  y_limits: null
+  nombre_eje_x: null
+  nombre_eje_y: null
+  orientacion_etiqueta_x: null
+  resaltar_etiquetas: null
+  
+  # Configuración de etiquetas
+  sustituir_etiquetas: null
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica para barras apiladas horizontales
+configuracion_apiladas_horizontales:
+  tipo: "barras_multiples_series"
+  orientacion: "horizontal"
+  mostrar_valores_internos: true
+  mostrar_totales: true
+  separacion_porcentaje: 0.05
+  area_minima_etiquetas: 500
+  
+# Notas para el usuario
+notas:
+  - "Esta receta está optimizada para barras horizontales apiladas"
+  - "Ideal para mostrar composición de datos a lo largo del tiempo"
+  - "Muestra valores absolutos dentro de cada segmento"
+  - "Incluye totales y porcentajes al final de cada barra"
+  - "Usa área mínima de 500 para evitar saturación de etiquetas"
+  - "Separación adicional entre total y porcentaje para claridad"
+  - "Leyenda necesaria para identificar las diferentes series"
+  - "Ordenamiento cronológico para datos temporales"
+  
+# Casos de uso
+casos_uso:
+  - "Evolución temporal de categorías múltiples"
+  - "Análisis de composición por año o período"
+  - "Comparación de series de datos relacionadas"
+  - "Visualización de cambios en distribución a lo largo del tiempo"
+  - "Análisis de datos gubernamentales con múltiples componentes"
+  - "Seguimiento de indicadores compuestos"
+  - "Evaluación de tendencias en datos categóricos"
+  
+# Estructura de datos esperada
+datos_esperados:
+  formato: "wide"
+  columnas:
+    - "Columna 1: períodos o categorías (años, regiones, etc.)"
+    - "Columna 2-N: series de datos múltiples"
+    
+  ejemplo:
+    - "Año | Movimiento | Sin Movimiento"
+    - "2007 | 174        | 185"
+    - "2008 | 234        | 247"
+    - "2009 | 412        | 400"
+    - "2010 | 852        | 1149"
+    
+  caracteristicas:
+    - "Múltiples series de datos relacionadas"
+    - "Datos cronológicos o categóricos ordenables"
+    - "Valores que se pueden apilar (acumulativos)"
+    - "Generalmente 2-5 series para evitar saturación"
+    
+# Personalización avanzada
+personalizacion:
+  orientacion:
+    tipo: "horizontal"
+    ventajas: ["Mejor para etiquetas temporales", "Más espacio para valores"]
+    
+  valores_internos:
+    mostrar: true
+    tamaño: 24
+    area_minima: 500
+    
+  totales:
+    mostrar_valores: true
+    mostrar_porcentajes: true
+    separacion: 0.05
+    
+  leyenda:
+    mostrar: true
+    posicion: "arriba"
+    
+  ordenamiento:
+    criterio: "etiqueta"
+    direccion: "ascendente"
+    
+# Variantes recomendadas
+variantes:
+  solo_totales:
+    valor_barra: false
+    area_min: 0
+    
+  con_porcentajes_internos:
+    porcentaje_barra: true
+    fontsize_barra: 18
+    
+  ordenado_por_valor:
+    ordenar_por: "valor"
+    orden: "descendente"
+    
+  sin_porcentajes_totales:
+    porcentaje_total: false
+    
+  area_minima_reducida:
+    area_min: 200
+    fontsize_barra: 18
+    
+  leyenda_abajo:
+    posicion_leyenda: "abajo"
+    
+  con_nombres_ejes:
+    nombre_eje_x: "Cantidad"
+    nombre_eje_y: "Año"
+    
+  separacion_amplia:
+    separar_por_total: 0.1
+    
+# Consideraciones de diseño
+consideraciones:
+  - "La orientación horizontal es ideal para datos temporales"
+  - "Los valores internos ayudan a comparar componentes específicos"
+  - "El área mínima de 500 evita saturación en segmentos pequeños"
+  - "La separación adicional mejora la legibilidad de porcentajes"
+  - "La leyenda es esencial para identificar las series"
+  - "El ordenamiento por etiqueta mantiene la secuencia temporal"
+  - "Los totales y porcentajes proporcionan contexto adicional"
+  
+# Validaciones
+validaciones:
+  - "Verificar que todas las series tengan datos para cada período"
+  - "Confirmar que los valores sean compatibles para apilamiento"
+  - "Validar que el área mínima sea apropiada para la cantidad de datos"
+  - "Asegurar que la separación de porcentajes sea suficiente"
+  - "Verificar que las etiquetas temporales estén en orden correcto"
+  - "Confirmar que la leyenda incluya todas las series"
+  
+# Optimizaciones específicas
+optimizaciones:
+  legibilidad:
+    fontsize_barra: 24
+    area_min: 500
+    separar_por_total: 0.05
+    
+  espaciado:
+    bar_height: 0.8
+    orientacion: "horizontal"
+    
+  información:
+    valor_barra: true
+    porcentaje_total: true
+    leyenda: true
+    
+# Alternativas relacionadas
+alternativas:
+  barras_verticales_apiladas:
+    usar_cuando: "Nombres cortos de categorías"
+    ventajas: ["Más compacto verticalmente"]
+    configuracion: "orientacion: 'vertical'"
+    
+  solo_valores_internos:
+    usar_cuando: "Enfoque en componentes individuales"
+    configuracion: "porcentaje_total: false"
+    
+  con_porcentajes_internos:
+    usar_cuando: "Interesa composición porcentual"
+    configuracion: "porcentaje_barra: true"
+    
+  ordenado_por_magnitud:
+    usar_cuando: "Interesa ranking por total"
+    configuracion: "ordenar_por: 'valor'"

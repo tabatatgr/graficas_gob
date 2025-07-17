@@ -1,0 +1,151 @@
+# Receta para barras apiladas con unión por la derecha
+# Configuración basada en el ejemplo EXPORTAR: union_barras_derecha
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Apiladas con Unión Derecha"
+  descripcion: "Gráfico de barras verticales apiladas que agrupa las últimas N barras en una sola"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "union_barras_derecha"
+  
+# Configuración de datos
+datos:
+  # El CLI proporcionará el DataFrame desde el archivo Excel/CSV
+  # Ideal para datos temporales donde se quieren agrupar años finales
+  hoja: null  # Se usará la hoja por defecto
+  rango: null # Se usarán todos los datos
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.8
+  font: "Montserrat"
+  fontsize_barra: 24
+  fontsize_valor_total: 20  # Por defecto de la función
+  
+  # Ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y etiquetas
+  valor_barra: true          # Muestra valores dentro de las barras
+  porcentaje_barra: false    # No muestra porcentajes dentro de las barras
+  porcentaje_total: true     # Muestra porcentaje total arriba
+  valor_total: true          # Por defecto en la función
+  
+  # Configuración visual
+  area_min: 900              # Área mínima para mostrar etiquetas (mayor que izquierda)
+  grillas: true              # Por defecto en la función
+  
+  # Configuración de leyenda
+  leyenda: true              # Muestra leyenda
+  posicion_leyenda: "arriba" # Por defecto en la función
+  ncol_leyenda: null         # Automático basado en número de categorías
+  
+  # ** CONFIGURACIÓN PRINCIPAL: UNIÓN DE BARRAS **
+  union_izquierda: 0         # No agrupa barras por la izquierda
+  union_derecha: 3           # Agrupa las últimas 3 barras en una sola
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+  
+  # Configuración de colores (usará paleta por defecto)
+  paleta_colores: null       # Usará: ["#10302C", "#4C6A67", "#8FA8A6", "#A3C9A8"]
+  
+  # Configuración de cápsulas
+  quitar_capsula: false
+  capsulas_cero: true
+  
+  # Configuración de orientación
+  orientacion_etiqueta_x: null  # Vertical por defecto (90 grados)
+  
+  # Configuración de ejes
+  nombre_eje_x: null
+  nombre_eje_y: null
+  y_limits: null
+  
+  # Configuración de datos adicionales
+  agregar_datos: null
+  asignar_etiquetas: null
+  sustituir_etiquetas: null
+  
+  # Configuración de porcentajes
+  porcentaje_abajo: true
+  porcentaje_total_inicio: false
+  porcentaje_divergente: false
+  
+  # Configuración de espaciado
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de ejes especiales
+  ejeY_negativo_a_positivo: false
+  resaltar_etiquetas: null
+  
+  # Configuración de colores de texto
+  color_valor_barra: null
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta agrupa las últimas 3 barras en una sola barra combinada"
+  - "Útil para datos temporales donde los años finales representan proyecciones o períodos futuros"
+  - "La barra agrupada se etiqueta automáticamente con el rango (ej: '2023-2025')"
+  - "Mantiene todas las características de barras apiladas verticales"
+  - "Muestra valores dentro de cada segmento de la barra"
+  - "Incluye leyenda para identificar las categorías"
+  - "Área mínima de 900 para mostrar etiquetas dentro de las barras"
+  - "Mayor área mínima que la versión izquierda para mejor legibilidad"
+  
+# Casos de uso
+casos_uso:
+  - "Series temporales con proyecciones futuras agrupadas"
+  - "Datos históricos donde se quiere simplificar períodos futuros"
+  - "Reportes gubernamentales con años de proyección combinados"
+  - "Análisis de tendencias con agrupación de períodos finales"
+  - "Planificación estratégica con períodos futuros consolidados"
+  
+# Configuración específica de unión
+union_configuracion:
+  tipo: "derecha"
+  cantidad: 3
+  etiqueta_automatica: true
+  formato_etiqueta: "YYYY-YYYY"  # Para fechas
+  comportamiento: "suma_valores"  # Suma los valores de las barras agrupadas
+  posicion: "final"              # Las barras agrupadas aparecen al final
+  
+# Ejemplo de estructura de datos esperada
+ejemplo_datos:
+  descripcion: "DataFrame con datos temporales donde las últimas barras se agruparán"
+  estructura:
+    - "Columna 1: Años (..., 2020, 2021, 2022, 2023, 2024, 2025)"
+    - "Columna 2: Serie 1 (ej: 'Movimiento')"
+    - "Columna 3: Serie 2 (ej: 'Sin Movimiento')"
+  resultado: "Barras individuales hasta 2022, última barra: '2023-2025'"
+  
+# Comparación con unión izquierda
+diferencias:
+  - "area_min: 900 (vs 500 en izquierda) - mayor exigencia para mostrar etiquetas"
+  - "Agrupa barras finales en lugar de iniciales"
+  - "Útil para consolidar proyecciones futuras"
+  - "La barra combinada aparece al final del gráfico"

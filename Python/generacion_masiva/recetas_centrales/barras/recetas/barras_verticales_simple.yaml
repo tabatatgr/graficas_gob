@@ -1,0 +1,82 @@
+# Receta para barras verticales simples - Estados de México
+# Configuración basada en el ejemplo EXPORTAR: barras_verticales_simples
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Verticales Simples"
+  descripcion: "Gráfico de barras verticales con etiquetas ordenadas alfabéticamente"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "barras_verticales_simples"
+  
+# Configuración de datos
+datos:
+  # El CLI proporcionará el DataFrame desde el archivo Excel/CSV
+  # La función espera que la primera columna sea el índice (estados)
+  hoja: null  # Se usará la hoja por defecto
+  rango: null # Se usarán todos los datos
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.9
+  font: "Montserrat"
+  fontsize_barra: 20
+  fontsize_valor_total: 20
+  
+  # Ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y etiquetas
+  valor_barra: false
+  porcentaje_barra: false
+  porcentaje_total: true
+  valor_total: true  # Por defecto en la función
+  
+  # Configuración visual
+  area_min: 300
+  grillas: true      # Por defecto en la función
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  
+  # Configuración de colores (usará paleta por defecto)
+  paleta_colores: null
+  
+  # Configuración de leyenda
+  leyenda: null      # Sin leyenda para gráfico simple
+  
+  # Configuración de cápsulas
+  quitar_capsula: false
+  capsulas_cero: true
+  
+  # Configuración de orientación
+  orientacion_etiqueta_x: null  # Vertical por defecto (90 grados)
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta genera un gráfico de barras verticales simples"
+  - "Las etiquetas se ordenan alfabéticamente de forma ascendente"
+  - "Muestra el porcentaje total de cada barra"
+  - "No incluye valores dentro de las barras"
+  - "Usa la paleta de colores por defecto"
+  - "Ideal para datos categóricos con una sola serie"

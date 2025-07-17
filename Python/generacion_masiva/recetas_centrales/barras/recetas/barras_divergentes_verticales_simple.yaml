@@ -1,0 +1,131 @@
+# Receta YAML para gráficas de barras divergentes verticales simples
+# Tipo: Barras verticales con valores positivos y negativos básicos
+# Uso: Ideal para mostrar datos divergentes simples con configuración básica
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+nombre: "barras_divergentes_verticales_simple"
+descripcion: "Gráfica de barras verticales divergentes con configuración básica para mostrar datos con valores positivos y negativos"
+
+# Parámetros de configuración
+parametros:
+  # Configuración básica
+  ancho_barra: 0.85
+  tipo_letra: "Montserrat"
+  tam_letra_ejeX: 35
+  tam_letra_ejeY: 30
+  tam_letra_valor_capsu: 18
+  tam_letra_valor_barra: 20
+  
+  # Configuración de ordenamiento
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  
+  # Configuración de valores y porcentajes
+  porce_barra: false
+  porce_total: false
+  
+  # Configuración de separación
+  aumenta_sep_eje_x: -0.25
+  
+  # Configuración de colores
+  paleta_colores:
+    - "#10302C"  # Verde oscuro
+    - "#E6E6E6"  # Gris claro
+    - "#FF5733"  # Naranja/rojo
+    - "#C70039"  # Rojo oscuro
+  
+  # Colores específicos
+  color_valor_capsu: "#3d5c93"   # Azul para valores de cápsula
+  color_borde_capsu: "#900c3f"   # Granate para borde de cápsula
+
+# Casos de uso
+casos_uso:
+  - "Datos de ingresos vs egresos por período"
+  - "Análisis de ganancias y pérdidas"
+  - "Comparación de valores positivos y negativos a lo largo del tiempo"
+  - "Flujos de efectivo por año"
+  - "Métricas de rendimiento con valores opuestos"
+  - "Análisis de variaciones con componentes positivos y negativos"
+
+# Notas de implementación
+notas:
+  - "Configuración básica sin porcentajes para mayor simplicidad"
+  - "aumenta_sep_eje_x=-0.25 ajusta la separación del eje X para mejor visualización"
+  - "Paleta de colores contrastante para distinguir valores positivos y negativos"
+  - "Tamaños de fuente optimizados para legibilidad"
+  - "Colores personalizados para cápsulas de valores"
+  - "Ideal para presentaciones ejecutivas que requieren claridad visual"
+  - "Funciona mejor con datos que tienen clara separación entre positivos y negativos"
+
+# Datos de ejemplo requeridos
+datos_ejemplo:
+  tipo: "DataFrame con columnas numéricas que incluyen valores positivos y negativos"
+  estructura: "Primera columna: años/fechas, siguientes columnas: valores (algunos positivos, otros negativos)"
+  ejemplo: |
+    df con columnas:
+    - 'Año': [2005, 2006, 2007, ...]
+    - 'Cantidad Positiva 1': [25000, 28000, 32000, ...]
+    - 'Cantidad Positiva 2': [10000, 12000, 15000, ...]
+    - 'Cantidad Negativa 1': [-10000, -12000, -15000, ...]
+    - 'Cantidad Negativa 2': [-5000, -6000, -7000, ...]
+  nota: "Los valores negativos deben tener el signo (-) para crear el efecto divergente"
+
+# Configuración de colores explicada
+configuracion_colores:
+  paleta_principal:
+    - nombre: "Verde oscuro (#10302C)"
+      uso: "Valores positivos principales"
+    - nombre: "Gris claro (#E6E6E6)"
+      uso: "Valores secundarios o neutros"
+    - nombre: "Naranja/rojo (#FF5733)"
+      uso: "Valores negativos principales"
+    - nombre: "Rojo oscuro (#C70039)"
+      uso: "Valores negativos secundarios"
+  
+  colores_especiales:
+    - nombre: "Azul (#3d5c93)"
+      uso: "Texto de valores en cápsulas"
+    - nombre: "Granate (#900c3f)"
+      uso: "Bordes de cápsulas"
+
+# Parámetros que pueden ser sobrescritos via kwargs
+parametros_sobrescribibles:
+  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
+  - "espaciado: para ajustar el espaciado general"
+  - "y_limits: para definir límites específicos del eje Y"
+  - "nombre_eje_x: para agregar título al eje X"
+  - "nombre_eje_y: para agregar título al eje Y"
+  - "porce_barra: para habilitar porcentajes en barras"
+  - "porce_total: para habilitar porcentajes totales"
+  - "leyenda: para mostrar leyenda"
+
+# Ejemplo de uso desde CLI
+ejemplo_cli: |
+  python generar_grafica.py --receta barras_divergentes_verticales_simple --datos flujo_efectivo.csv --porce_total true --leyenda true --nombre_eje_x "Años" --nombre_eje_y "Cantidad (Miles)"
+
+# Diferencias con barras_divergentes
+diferencias_con_compleja:
+  - "Sin configuración de proyecciones futuras"
+  - "Sin estilos personalizados por elemento"
+  - "Sin textos personalizados en barras"
+  - "Configuración más simple y directa"
+  - "Enfoque en claridad visual básica"
+  - "Menos parámetros de configuración"
+
+# Consideraciones especiales
+consideraciones:
+  - "Verificar que los datos contengan valores negativos para el efecto divergente"
+  - "La paleta de colores está optimizada para contrastar positivos vs negativos"
+  - "Ideal para datasets medianos (5-25 períodos)"
+  - "Los tamaños de fuente son apropiados para presentaciones"
+  - "Funciona mejor con series temporales regulares"
+  - "Requiere datos balanceados entre positivos y negativos para mejor visualización"
+
+# Validaciones recomendadas
+validaciones:
+  - "Verificar que existan tanto valores positivos como negativos"
+  - "Confirmar que la primera columna sea de fechas o categorías ordenables"
+  - "Revisar que los valores negativos tengan el signo (-)"
+  - "Asegurar que los nombres de columnas sean descriptivos"

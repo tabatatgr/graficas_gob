@@ -1,0 +1,139 @@
+# Receta YAML para gráficas de barras divergentes
+# Tipo: Barras verticales apiladas con valores positivos y negativos
+# Uso: Ideal para mostrar datos que tienen componentes positivos y negativos, como desaparecidos vs localizados
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+nombre: "barras_divergentes"
+descripcion: "Gráfica de barras verticales divergentes con valores positivos y negativos, incluyendo proyecciones futuras con estilos personalizados"
+
+# Parámetros de configuración
+parametros:
+  # Configuración básica
+  bar_height: 0.65
+  font: "Montserrat"
+  fontsize_barra: 9
+  fontsize_barra_porcentaje: 7
+  fontsize_valor_total: 15
+  
+  # Configuración de ordenamiento
+  ordenar_por: false
+  orden: "ascendente"
+  
+  # Configuración de valores y porcentajes
+  valor_barra: true
+  valor_total: true
+  porcentaje_barra: true
+  porcentaje_total: false
+  area_min: 0
+  porcentaje_abajo: true
+  
+  # Configuración de leyenda
+  leyenda: false
+  orientacion_etiqueta_x: "horizontal"
+  posicion_leyenda: "abajo"
+  ncol_leyenda: 2
+  
+  # Configuración específica para divergentes
+  porcentaje_divergente: true
+  ejeY_negativo_a_positivo: true
+  capsulas_cero: false
+  
+  # Configuración de separación
+  aumenta_sep_eje_x: -0.52
+  
+  # Configuración de colores
+  paleta_colores:
+    - "#114a44"  # Verde oscuro
+    - "#739489"  # Verde medio
+    - "#3d5c93"  # Azul oscuro
+    - "#7393b3"  # Azul claro
+    - "#6B5B95"  # Violeta
+
+# Configuración de datos de proyección
+proyecciones:
+  # Año 2026 (proyección negativa)
+  anio_2026:
+    fecha: "2026-01-01"
+    etiqueta: " "
+    valores: [0, 0, 0, 0, -13732]
+    textos_personalizados: [null, null, null, null, "13,732"]
+    estilos:
+      colores_fondo: [null, null, null, null, "none"]
+      colores_borde: [null, null, null, null, "#114a44"]
+      estilos_borde: [null, null, null, null, "dotted"]
+      grosores_borde: [null, null, null, null, 3.5]
+      colores_texto: [null, null, null, null, "#114a44"]
+  
+  # Año 2027 (proyección positiva)
+  anio_2027:
+    fecha: "2027-01-01"
+    etiqueta: " "
+    valores: [0, 0, 0, 0, 63173]
+    textos_personalizados: [null, null, null, null, "63,173"]
+    estilos:
+      colores_fondo: [null, null, null, null, "#114a44"]
+      colores_borde: [null, null, null, null, "#114a44"]
+      estilos_borde: [null, null, null, null, "dotted"]
+      grosores_borde: [null, null, null, null, 3.5]
+      colores_texto: [null, null, null, null, "white"]
+
+# Casos de uso
+casos_uso:
+  - "Datos de desaparecidos vs localizados por año"
+  - "Ingresos vs egresos con proyecciones"
+  - "Análisis de flujos positivos y negativos"
+  - "Tendencias históricas con proyecciones futuras"
+  - "Comparación de métricas opuestas a lo largo del tiempo"
+
+# Notas de implementación
+notas:
+  - "porcentaje_divergente=true calcula porcentajes por separado para valores positivos y negativos"
+  - "ejeY_negativo_a_positivo=true muestra valores negativos como positivos en el eje Y"
+  - "capsulas_cero=false oculta las cápsulas de valores cuando son cero"
+  - "Los datos de proyección se agregan con estilos personalizados (líneas punteadas)"
+  - "aumenta_sep_eje_x ajusta la separación del eje X para mejor visualización"
+  - "La función requiere datos con valores positivos y negativos para funcionar correctamente"
+  - "Los textos personalizados permiten formatear números con comas o texto específico"
+
+# Datos de ejemplo requeridos
+datos_ejemplo:
+  tipo: "DataFrame con columnas numéricas que incluyen valores positivos y negativos"
+  estructura: "Primera columna: fechas/años, siguientes columnas: valores (algunos negativos)"
+  ejemplo: "df con columnas ['Año', 'Acumulado anterior', 'Desaparecidos del periodo', 'Localizados de años anteriores', 'Localizados del periodo', 'Sin año de localización']"
+  nota: "Las columnas de 'Localizados' deben tener valores negativos para crear el efecto divergente"
+
+# Configuración avanzada opcional
+configuracion_avanzada:
+  division_ejeY: 
+    descripcion: "Divisiones específicas del eje Y (opcional)"
+    ejemplo: 50000
+    nota: "Comentado en el ejemplo, usar solo cuando sea necesario"
+  
+  agregar_datos:
+    descripcion: "Datos adicionales con estilos personalizados"
+    estructura: "Lista de tuplas con (fecha, etiqueta, valores, textos, estilos)"
+    nota: "Permite agregar proyecciones con estilos visuales específicos"
+
+# Parámetros que pueden ser sobrescritos via kwargs
+parametros_sobrescribibles:
+  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
+  - "espaciado: para ajustar el espaciado general"
+  - "y_limits: para definir límites específicos del eje Y"
+  - "nombre_eje_x: para agregar título al eje X"
+  - "nombre_eje_y: para agregar título al eje Y"
+  - "division_ejeY: para establecer divisiones específicas del eje Y"
+
+# Ejemplo de uso desde CLI
+ejemplo_cli: |
+  python generar_grafica.py --receta barras_divergentes --datos desaparecidos_2006_2025.csv --division_ejeY 50000 --nombre_eje_x "Años" --nombre_eje_y "Cantidad de personas"
+
+# Consideraciones especiales
+consideraciones:
+  - "Verificar que los datos contengan valores negativos para el efecto divergente"
+  - "Los valores negativos se muestran como positivos en el eje Y si ejeY_negativo_a_positivo=true"
+  - "Las proyecciones futuras se configuran con estilos visuales diferenciados"
+  - "Ideal para series temporales con componentes opuestos"
+  - "Requiere configuración cuidadosa de colores para distinguir categorías"
+  - "Los porcentajes se calculan por separado para valores positivos y negativos"

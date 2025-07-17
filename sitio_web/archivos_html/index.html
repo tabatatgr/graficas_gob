@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Catálogo de gráficas y proyectos de la Agencia Digital.">
+  <meta name="keywords" content="gráficas, visualizaciones, Python, R, datos">
+  <meta name="author" content="Agencia Digital">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineamientos de estilos - Agencia Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+  <header-gob></header-gob>
+  
+  <div class="franja-titulo">
+    <div class="textura-superior"></div>
+    <h1 class="titulo-centro">Lineamientos de estilos</h1>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="container">
+      <p style="text-align: center; margin-bottom: 3rem;">Explora visualizaciones y proyectos de la Agencia de Transformación Digital y Telecomunicaciones.</p>
+
+      <div class="catalogo-graficas">
+        <h2>Catálogo de Gráficas</h2>
+        <div class="catalogo-grid">
+          <div class="grid-sizer"></div>
+          <a href="graficas-tendencias.html" title="Ver más sobre tendencias">
+            <img src="../Python/agrupadasyapiladas/grafica_agrupadasyapiladas.svg" alt="Gráfica de tendencias">
+            <span class="titulo-grafica">Tendencias</span>
+          </a>
+          <a href="graficas-comparativas.html" title="Ver más comparativas">
+            <img src="../Python/snapshot/snapshot.svg" alt="Gráfica comparativa">
+            <span class="titulo-grafica">Comparativas</span>
+          </a>
+          <a href="graficas-demograficas.html" title="Ver más demográficas">
+            <img src="../Python/areaplot2/areaplot2_svgo.svg" alt="Gráfica demográfica">
+            <span class="titulo-grafica">Demográficas</span>
+          </a>
+          <a href="graficas-series.html" title="Ver más series de tiempo">
+            <img src="../Python/linea/linea.svg" alt="Gráfica de series de tiempo">
+            <span class="titulo-grafica">Series de tiempo</span>
+          </a>
+          <a href="graficas-barras.html" class="grafica-ancha">
+            <img src="../Python/barras/output/barras_verticales_svgo.svg" alt="Gráficas de barras">
+            <span class="titulo-grafica">Barras</span>
+          </a>
+          <!-- Puedes agregar más categorías aquí -->
+        </div>
+      </div>
+
+      <div class="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+          <li><a href="graficas-python.html" target="_blank">Python</a></li>
+          <li><a href="graficas-r.html" target="_blank">RStudio</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer-gob></footer-gob>
+  
+  </div>
+
+  <!-- Registrar componentes y funcionalidades -->
+  <script src="../componentes/header.js"></script>
+  <script src="../componentes/footer.js"></script>
+  <script src="../componentes/menu.js"></script>
+  <script src="../componentes/main.js"></script>
+  
+  <!-- Masonry.js y imagesLoaded desde CDN -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+tipo_grafico: lineas_tendencia
+archivo_datos: ../datos_lineas_tendencia.csv
+titulo: "Líneas de Tendencia - Comparación Internacional"
+descripcion: "Gráfica de líneas de tendencia que compara múltiples países"
+archivo_salida: lineas_tendencia_test
+
+# Parámetros de la función
+parametros:
+  nombre: lineas_tendencia_test
+  columna_entidad: entity_name
+  columna_fecha: data_year
+  columna_valor: data_value
+  entidad_destacada: México
+  color_destacado: "#8B0000"
+  color_otras: "#10302C"
+  alpha_otras: 0.3

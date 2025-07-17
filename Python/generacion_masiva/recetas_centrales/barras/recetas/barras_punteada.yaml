@@ -1,0 +1,239 @@
+# Receta para barras divergentes con datos adicionales
+# Configuración basada en barras con valores positivos/negativos y elementos personalizados
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Divergentes con Datos Adicionales"
+  descripcion: "Gráfico de barras verticales divergentes con datos adicionales y estilos personalizados"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "barras_divergentes_con_datos_adicionales"
+  
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.65
+  font: "Montserrat"
+  fontsize_barra: 9              # Tamaño pequeño para etiquetas internas
+  fontsize_valor_total: 20
+  
+  # ** CONFIGURACIÓN PRINCIPAL: SIN ORDENAMIENTO **
+  ordenar_por: false             # Mantiene el orden original (temporal)
+  orden: "ascendente"
+  
+  # ** CONFIGURACIÓN PRINCIPAL: VALORES Y PORCENTAJES **
+  valor_barra: true              # Muestra valores absolutos dentro de barras
+  valor_total: true              # Muestra totales arriba y abajo
+  porcentaje_barra: true         # Muestra porcentajes dentro de barras
+  porcentaje_total: false        # No muestra porcentaje total arriba
+  
+  # ** CONFIGURACIÓN PRINCIPAL: MANEJO DE DIVERGENTES **
+  porcentaje_divergente: true    # Calcula porcentajes por sección (pos/neg)
+  ejeY_negativo_a_positivo: false # Mantiene valores negativos como negativos
+  
+  # ** CONFIGURACIÓN PRINCIPAL: CÁPSULAS **
+  capsulas_cero: false           # No muestra cápsulas cuando el total es cero
+  
+  # ** CONFIGURACIÓN PRINCIPAL: FORMATO DE ETIQUETAS **
+  porcentaje_abajo: false        # Porcentajes al lado de valores
+  area_min: 0                    # Muestra todas las etiquetas sin restricción
+  
+  # ** CONFIGURACIÓN PRINCIPAL: LEYENDA **
+  leyenda: true                  # Muestra leyenda
+  posicion_leyenda: "abajo"      # Leyenda en la parte inferior
+  ncol_leyenda: 2                # Leyenda en 2 columnas
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
+  orientacion_etiqueta_x: "horizontal"  # Etiquetas horizontales en eje X
+  
+  # ** CONFIGURACIÓN PRINCIPAL: COLORES PERSONALIZADOS **
+  paleta_colores: ["#114a44", "#739489", "#3d5c93", "#7393b3", "#6B5B95"]
+  
+  # ** CONFIGURACIÓN PRINCIPAL: DATOS ADICIONALES **
+  agregar_datos: 
+    - categoria: "2025-01-01"    # Fecha como timestamp
+      etiqueta: " "              # Etiqueta vacía (espacio)
+      valores: [0, 0, 0, 0, -100000]  # Valores para cada columna
+      textos_personalizados: [null, null, null, null, "100,000"]  # Texto personalizado
+      opciones_visuales:
+        colores_fondo: [null, null, null, null, "none"]           # Sin fondo
+        colores_borde: [null, null, null, null, "#114a44"]        # Borde verde
+        estilos_borde: [null, null, null, null, "dotted"]         # Línea punteada
+        grosores_borde: [null, null, null, null, 3.5]             # Grosor de borde
+        colores_texto: [null, null, null, null, "#114a44"]        # Texto verde
+  
+  # Configuración visual
+  grillas: true                  # Mantiene grillas por defecto
+  
+  # Configuración de unión de barras
+  union_izquierda: 0
+  union_derecha: 0
+  
+  # Configuración de espaciado
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de ejes
+  y_limits: null
+  nombre_eje_x: null
+  nombre_eje_y: null
+  resaltar_etiquetas: null
+  
+  # Configuración de cápsulas
+  quitar_capsula: false
+  
+  # Configuración de porcentajes
+  porcentaje_total_inicio: false
+  
+  # Configuración de colores de texto
+  color_valor_barra: null
+  
+  # Configuración de asignación de etiquetas
+  asignar_etiquetas: null
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica para datos adicionales
+configuracion_datos_adicionales:
+  tipo: "elemento_especial"
+  posicion: "posterior"           # Se agrega después de los datos existentes
+  formato_fecha: "timestamp"
+  
+  # Configuración del elemento especial
+  elemento_especial:
+    etiqueta: " "                 # Etiqueta vacía (solo espacio)
+    valores: [0, 0, 0, 0, -100000]  # Solo el último valor es significativo
+    texto_personalizado: "100,000"  # Formato personalizado para el valor
+    
+    # Estilos visuales
+    estilos:
+      fondo: "transparente"       # Sin fondo
+      borde: "#114a44"           # Color verde del tema
+      estilo_borde: "punteado"   # Línea punteada
+      grosor_borde: 3.5          # Grosor destacado
+      color_texto: "#114a44"     # Texto del mismo color que el borde
+      
+# Notas para el usuario
+notas:
+  - "Esta receta incluye un elemento especial con formato personalizado"
+  - "El elemento adicional usa bordes punteados para diferenciarse"
+  - "Solo el último segmento del elemento adicional tiene valor (-100,000)"
+  - "El texto se muestra con formato personalizado (100,000)"
+  - "Los colores del elemento especial coinciden con la paleta principal"
+  - "El elemento especial no tiene fondo (transparente)"
+  - "Se mantiene la configuración divergente para el resto de datos"
+  - "La etiqueta del elemento especial es casi invisible (solo espacio)"
+  
+# Casos de uso
+casos_uso:
+  - "Análisis de flujos con elementos especiales destacados"
+  - "Datos históricos con proyecciones o estimaciones"
+  - "Comparación de períodos regulares vs valores excepcionales"
+  - "Análisis de balances con elementos de contexto"
+  - "Reportes con notas visuales o aclaraciones"
+  - "Datos de seguimiento con hitos importantes"
+  - "Análisis de tendencias con eventos singulares"
+  
+# Estructura de datos esperada
+datos_esperados:
+  formato: "wide"
+  columnas:
+    - "Columna 1: períodos temporales (años, meses, etc.)"
+    - "Columna 2-N: valores que pueden ser positivos o negativos"
+    - "Elemento adicional: agregado programáticamente"
+    
+  ejemplo:
+    datos_base:
+      - "Año | Acumulado | Desaparecidos | Localizados ant. | Localizados per. | Sin año loc."
+      - "2019 | 50000     | 20000         | -20000           | -10000           | 0"
+      - "2020 | 30000     | 10000         | -40000           | -20000           | 0"
+      - "2021 | 40000     | 30000         | -10000           | -20000           | 0"
+      - "2022 | 20000     | 10000         | -30000           | -10000           | 0"
+      
+    elemento_adicional:
+      - "2025 | 0         | 0             | 0                | 0                | -100000"
+      - "Con formato especial: texto '100,000', borde punteado verde"
+      
+# Personalización avanzada
+personalizacion:
+  datos_adicionales:
+    elemento_especial:
+      fecha: "2025-01-01"
+      etiqueta: " "
+      valores: [0, 0, 0, 0, -100000]
+      texto_personalizado: "100,000"
+      
+    estilos_visuales:
+      fondo: "none"
+      borde: "#114a44"
+      estilo_borde: "dotted"
+      grosor_borde: 3.5
+      color_texto: "#114a44"
+      
+  configuracion_base:
+    colores: ["#114a44", "#739489", "#3d5c93", "#7393b3", "#6B5B95"]
+    etiquetas_tamaño: 9
+    leyenda_columnas: 2
+    
+# Variantes recomendadas
+variantes:
+  elemento_destacado:
+    estilo_borde: "solid"
+    grosor_borde: 2.0
+    
+  elemento_sutil:
+    estilo_borde: "dashed"
+    grosor_borde: 1.5
+    
+  sin_elemento_especial:
+    agregar_datos: null
+    
+  elemento_con_fondo:
+    colores_fondo: [null, null, null, null, "#f0f0f0"]
+    
+  multiples_elementos:
+    # Agregar más elementos con diferentes configuraciones
+    elementos_adicionales: 2
+    
+# Consideraciones técnicas
+consideraciones:
+  - "El elemento adicional se define con pd.Timestamp para fechas"
+  - "Los valores null en las listas indican 'usar configuración por defecto'"
+  - "El texto personalizado sobrescribe el formato automático"
+  - "Los estilos solo se aplican a elementos no-null"
+  - "La etiqueta ' ' (espacio) crea una entrada casi invisible"
+  - "Los bordes punteados ayudan a distinguir elementos especiales"
+  
+# Validaciones
+validaciones:
+  - "Verificar que las fechas de elementos adicionales sean válidas"
+  - "Confirmar que los arrays de personalización tengan la longitud correcta"
+  - "Validar que los colores estén en formato hexadecimal"
+  - "Asegurar que los valores null se manejen correctamente"
+  - "Verificar que el texto personalizado sea legible"

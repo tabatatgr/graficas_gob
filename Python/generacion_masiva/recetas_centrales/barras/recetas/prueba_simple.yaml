@@ -1,0 +1,23 @@
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Prueba Simple"
+  descripcion: "Gráfico de barras verticales básico"
+  version: "1.0"
+
+grafico:
+  tipo: "barras_verticales"
+  nombre: "prueba_simple"
+
+datos:
+  hoja: null
+  rango: null
+
+parametros:
+  nombre: "prueba_simple"
+  font: "Montserrat"
+  fontsize_barra: 15
+  fontsize_valor_total: 20
+  bar_height: 0.5
+  valor_total: true
+  grillas: true

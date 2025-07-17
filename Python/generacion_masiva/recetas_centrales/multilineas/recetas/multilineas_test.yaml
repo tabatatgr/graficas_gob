@@ -1,0 +1,15 @@
+tipo_grafico: multilineas
+archivo_datos: ../datos_multilineas.csv
+titulo: "Gráfica de Multilineas"
+descripcion: "Gráfica de múltiples líneas con etiquetas y cápsulas"
+archivo_salida: multilineas_test
+
+# Parámetros de la función
+parametros:
+  nombre: multilineas_test
+  columna_fecha: Fecha
+  columna_variable: Variable
+  columna_valor: Valor
+  font: Montserrat
+  margen: 0.7
+  sin_tag: 2

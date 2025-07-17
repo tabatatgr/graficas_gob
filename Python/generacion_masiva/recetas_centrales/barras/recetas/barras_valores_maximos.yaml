@@ -1,0 +1,124 @@
+# Receta para barras verticales con destacado de máximo
+# Configuración que incluye resaltado del valor máximo
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+metadata:
+  titulo: "Barras Verticales con Máximo Destacado"
+  descripcion: "Gráfico de barras verticales que resalta el valor máximo con color especial"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras_verticales"
+  nombre: "barras_verticales_maximo_destacado"
+  
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+
+# Parámetros de la función barras_verticales
+parametros:
+  # Configuración básica
+  bar_height: 0.9
+  font: "Montserrat"
+  fontsize_barra: 20
+  fontsize_valor_total: 20
+  
+  # Ordenamiento
+  ordenar_por: "valor"
+  orden: "descendente"
+  
+  # Configuración de valores y etiquetas
+  valor_barra: false
+  porcentaje_barra: false
+  porcentaje_total: true
+  valor_total: true
+  
+  # Configuración visual
+  area_min: 300
+  grillas: true
+  
+  # ** CONFIGURACIÓN DE DESTACADO DE MÁXIMO **
+  destacar_maximo: true
+  color_maximo: "#8B0000"           # Color rojo para el máximo
+  color_texto_maximo: "#FFFFFF"     # Texto blanco para el máximo
+  color_capsula_maximo: "#8B0000"   # Cápsula roja para el máximo
+  
+  # Configuración de colores normales
+  paleta_colores: ["#10302C", "#4C6A67", "#8FA8A6", "#A3C9A8"]
+  
+  # Configuración de cápsulas
+  quitar_capsula: false
+  capsulas_cero: true
+  
+  # Configuración de orientación
+  orientacion_etiqueta_x: null
+  
+  # Configuración de ejes
+  nombre_eje_x: null
+  nombre_eje_y: null
+  y_limits: null
+  
+  # Otras configuraciones
+  leyenda: null
+  union_izquierda: 0
+  union_derecha: 0
+  agregar_datos: null
+  asignar_etiquetas: null
+  sustituir_etiquetas: null
+  
+  # Configuración de porcentajes
+  porcentaje_abajo: true
+  porcentaje_total_inicio: false
+  porcentaje_divergente: false
+  
+  # Configuración de espaciado
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de ejes especiales
+  ejeY_negativo_a_positivo: false
+  resaltar_etiquetas: null
+  color_valor_barra: null
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica de destacado
+destacado_configuracion:
+  criterio: "maximo"              # Puede ser "maximo", "minimo", "valores_especificos"
+  color_barra: "#8B0000"          # Color de la barra destacada
+  color_texto: "#FFFFFF"          # Color del texto dentro de la barra
+  color_capsula_fondo: "#8B0000"  # Color de fondo de la cápsula
+  color_capsula_borde: "none"     # Sin borde para la cápsula destacada
+  grosor_borde: 0                 # Sin grosor de borde
+  
+# Notas para el usuario
+notas:
+  - "Esta receta resalta automáticamente el valor máximo con color rojo"
+  - "El valor máximo tendrá barra roja (#8B0000) y texto blanco"
+  - "La cápsula del máximo será roja sin borde"
+  - "Las demás barras mantendrán el estilo normal"
+  - "Ideal para destacar el líder o valor más importante"
+  - "Se puede adaptar para destacar mínimos o valores específicos"
+
+# Casos de uso
+casos_uso:
+  - "Ranking de entidades federativas"
+  - "Competencias donde se quiere destacar el ganador"
+  - "Análisis comparativo con líder claro"
+  - "Reportes gubernamentales con entidad destacada"
+  - "Indicadores de desempeño con mejor resultado"

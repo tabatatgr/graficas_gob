@@ -1,0 +1,61 @@
+tipo_grafico: "areaplot2"
+
+metadata:
+  titulo: "Gráfica de Área Apilada"
+  descripcion: "Gráfico de área que muestra la evolución temporal de múltiples series de datos apiladas"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-14"
+
+grafico:
+  tipo: "areaplot2"
+  nombre: "areaplot2_basico"
+
+# Configuración específica para areaplot2
+datos:
+  # Columna que contiene las fechas/tiempo
+  columna_fecha: "Fecha"
+  
+  # Filtros opcionales
+  # filtros:
+  #   - columna: "Columna1"
+  #     operador: ">"
+  #     valor: 1000
+
+parametros:
+  # Configuración básica
+  nombre: "areaplot2_basico"
+  columna_fecha: "Fecha"
+  font: "Arial"
+  
+  # Dimensiones
+  ancho_px: 2400  # Aún más ancho para mejor distribución
+  alto_px: 520
+  dpi: 100
+  
+  # Configuración visual
+  alpha: 0.8
+  rotacion_x: 45
+  margen_y: 0.2  # Reducido para que las cápsulas no se eleven tanto
+  
+  # Configuración de etiquetas
+  mostrar_etiquetas: true
+  sin_tag: 1
+  etiquetar_max: true
+  incluir_min: true
+  incluir_max: true
+  omitir_antes_del_max: true
+  separacion_etiquetas: 1100
+  
+  # Configuración de grillas
+  mostrar_grid_x: true
+  mostrar_grid_y: true
+  
+  # Colores personalizados
+  paleta_colores: 
+    - "#006157"
+    - "#767676"
+    - "#671435"
+    - "#9B2247"
+    - "#9D792A"
+    - "#D5B162"

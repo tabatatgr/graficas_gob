@@ -1,0 +1,92 @@
+# Receta YAML para gráficas de barras con etiquetas resaltadas
+# Tipo: Barras horizontales con porcentaje al inicio y etiquetas específicas resaltadas
+# Uso: Ideal para destacar elementos específicos en comparaciones entre múltiples categorías
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras_verticales"
+
+nombre: "resaltar_etiquetas"
+descripcion: "Gráfica de barras horizontales con porcentaje al inicio y capacidad de resaltar etiquetas específicas con estilo diferenciado"
+
+# Parámetros de configuración
+parametros:
+  # Configuración básica
+  bar_height: 0.7
+  font: "Poppins"
+  fontsize_barra: 18
+  fontsize_valor_total: 24
+  
+  # Configuración de valores y porcentajes
+  valor_barra: true
+  valor_total: true
+  porcentaje_barra: false
+  porcentaje_total: false
+  porcentaje_total_inicio: true
+  
+  # Configuración de orientación y ordenamiento
+  orientacion: "horizontal"
+  ordenar_por: "valor"
+  orden: "ascendente"
+  
+  # Configuración de presentación
+  quitar_capsula: true
+  espacio_inicio: 65
+  area_min: 350
+  
+  # Configuración de resaltado (se define via kwargs)
+  # resaltar_etiquetas: ["Elemento1", "Elemento2", "Elemento3"]
+
+# Casos de uso
+casos_uso:
+  - "Destacar estados, regiones o categorías específicas de interés"
+  - "Comparar elementos seleccionados contra el resto del conjunto"
+  - "Reportes donde ciertas entidades requieren atención especial"
+  - "Análisis de rendimiento con énfasis en casos destacados"
+  - "Presentaciones ejecutivas con elementos clave resaltados"
+
+# Notas de implementación
+notas:
+  - "El parámetro resaltar_etiquetas se pasa via kwargs desde la CLI"
+  - "Las etiquetas resaltadas aparecen con fondo colorido (#a3173e) y texto blanco"
+  - "porcentaje_total_inicio=true coloca el porcentaje al inicio de cada barra"
+  - "Las etiquetas no resaltadas mantienen su formato normal"
+  - "espacio_inicio=65 ajusta el espacio para mostrar los porcentajes correctamente"
+  - "quitar_capsula=true elimina el borde de los valores totales"
+  - "Funciona mejor con datos que tienen múltiples categorías numéricas"
+
+# Datos de ejemplo requeridos
+datos_ejemplo:
+  tipo: "DataFrame con múltiples columnas numéricas"
+  estructura: "Primera columna: categorías, siguientes columnas: valores numéricos"
+  ejemplo: "df con columnas ['estado', 'movimiento', 'sin_movimiento', 'pendiente', 'cancelado']"
+  nota: "Las etiquetas a resaltar deben coincidir exactamente con los valores en la primera columna"
+
+# Parámetros que deben ser pasados via kwargs
+parametros_kwargs:
+  resaltar_etiquetas: 
+    tipo: "lista"
+    descripcion: "Lista de etiquetas exactas que se desean resaltar"
+    ejemplo: '["Puebla", "Ciudad de México", "Tabasco"]'
+    obligatorio: true
+    nota: "Las etiquetas deben coincidir exactamente con los valores en los datos"
+
+# Parámetros opcionales que pueden ser sobrescritos via kwargs
+parametros_sobrescribibles:
+  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
+  - "espaciado: para ajustar el espaciado general (compacto, normal, amplio)"
+  - "paleta_colores: para usar una paleta diferente"
+  - "nombre_eje_x: para agregar título al eje X"
+  - "nombre_eje_y: para agregar título al eje Y"
+  - "espacio_inicio: para ajustar el espacio de los porcentajes"
+
+# Ejemplo de uso desde CLI
+ejemplo_cli: |
+  python generar_grafica.py --receta resaltar_etiquetas --datos estados_mexico.csv --resaltar_etiquetas '["Puebla", "Ciudad de México", "Tabasco"]' --espaciado compacto
+
+# Consideraciones especiales
+consideraciones:
+  - "Verificar que las etiquetas a resaltar existan en los datos"
+  - "Limitar el número de etiquetas resaltadas para mantener legibilidad"
+  - "Funciona mejor con datasets de tamaño medio a grande (10-50 elementos)"
+  - "El color de resaltado (#a3173e) es institucional y puede ser modificado"
+  - "Las etiquetas resaltadas también ocultan su texto en el eje Y para evitar duplicación"

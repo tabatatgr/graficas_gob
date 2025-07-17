@@ -1,0 +1,225 @@
+# Receta para barras horizontales simples
+# Configuración basada en el ejemplo EXPORTAR: barras_horizontales_simples
+
+metadata:
+  titulo: "Barras Horizontales Simples"
+  descripcion: "Gráfico de barras horizontales simples ordenadas por etiqueta"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+# Configuración del gráfico
+grafico:
+  tipo: "barras"
+  nombre: "barras_horizontales_simples"
+  
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+
+# Parámetros de la función barras
+parametros:
+  # Configuración básica
+  bar_height: 0.9              # Barras anchas para mejor visualización
+  font: "Montserrat"
+  fontsize_barra: 15           # Tamaño medio para etiquetas internas
+  fontsize_valor_total: 20     # Tamaño destacado para totales
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
+  orientacion: "horizontal"     # Barras horizontales
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ORDENAMIENTO **
+  ordenar_por: "etiqueta"      # Ordena por nombre de categoría
+  orden: "ascendente"          # Orden alfabético A-Z
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ETIQUETAS DE VALORES **
+  valor_barra: false           # No muestra valores dentro de barras
+  porcentaje_barra: false      # No muestra porcentajes dentro de barras
+  porcentaje_total: true       # Muestra porcentajes totales al final
+  valor_total: true            # Muestra totales al final (por defecto)
+  
+  # ** CONFIGURACIÓN PRINCIPAL: ESPACIADO **
+  area_min: 300                # Área mínima para mostrar etiquetas
+  separar_por_total: 0.05      # Separación entre total y porcentaje
+  
+  # Configuración de cápsulas
+  quitar_capsula: false        # Mantiene cápsulas en totales
+  
+  # Configuración de ordenamiento
+  porcentaje_total_inicio: false
+  
+  # Configuración de datos adicionales
+  agregar_datos: null
+  asignar_etiquetas: null
+  
+  # Configuración de unión de barras
+  union_izquierda: 0
+  union_derecha: 0
+  
+  # Configuración de espaciado
+  espacio_inicio: 0
+  altura_min: 0
+  
+  # Configuración de leyenda
+  leyenda: null                # Sin leyenda para barras simples
+  posicion_leyenda: "arriba"
+  
+  # Configuración de colores
+  paleta_colores: null         # Usa colores por defecto
+  color_valor_barra: null
+  
+  # Configuración visual
+  grillas: true                # Mantiene grillas por defecto
+  porcentaje_abajo: true       # Configuración por defecto
+  
+  # Configuración de ejes
+  y_limits: null
+  nombre_eje_x: null
+  nombre_eje_y: null
+  orientacion_etiqueta_x: null
+  resaltar_etiquetas: null
+  
+  # Configuración de etiquetas
+  sustituir_etiquetas: null
+  
+  # Configuración de figura
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.0
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+  
+# Configuración específica para barras horizontales
+configuracion_horizontal:
+  tipo: "barras_simples"
+  orientacion: "horizontal"
+  mostrar_solo_totales: true
+  separacion_porcentaje: 0.05
+  
+# Notas para el usuario
+notas:
+  - "Esta receta está optimizada para barras horizontales simples"
+  - "Ideal para comparar categorías con nombres largos"
+  - "Ordena alfabéticamente por nombre de categoría"
+  - "Muestra solo totales y porcentajes, sin valores internos"
+  - "Usa separación adicional entre total y porcentaje"
+  - "Barras anchas (0.9) para mejor legibilidad"
+  - "Área mínima de 300 para evitar etiquetas en barras pequeñas"
+  - "Sin leyenda ya que es una sola serie de datos"
+  
+# Casos de uso
+casos_uso:
+  - "Comparación de estados, regiones o entidades"
+  - "Rankings de categorías con nombres largos"
+  - "Análisis de frecuencias por categoría"
+  - "Distribución de datos categóricos"
+  - "Comparación de métricas por dependencia"
+  - "Análisis de resultados por institución"
+  - "Evaluación de desempeño por área"
+  
+# Estructura de datos esperada
+datos_esperados:
+  formato: "wide"
+  columnas:
+    - "Columna 1: categorías (nombres largos permitidos)"
+    - "Columna 2: valores numéricos únicos"
+    
+  ejemplo:
+    - "Estado               | Cantidad"
+    - "Aguascalientes       | 1500"
+    - "Baja California      | 1200"
+    - "Baja California Sur  | 800"
+    - "Campeche            | 600"
+    
+  caracteristicas:
+    - "Ideal para 15-35 categorías"
+    - "Nombres de categorías pueden ser largos"
+    - "Una sola serie de valores"
+    - "Valores positivos"
+    
+# Personalización avanzada
+personalizacion:
+  orientacion:
+    tipo: "horizontal"
+    ventajas: ["Mejor para nombres largos", "Más fácil de leer"]
+    
+  ordenamiento:
+    criterio: "etiqueta"
+    direccion: "ascendente"
+    alternativas: ["valor", "descendente"]
+    
+  etiquetas:
+    internas: false
+    totales: true
+    porcentajes: true
+    separacion: 0.05
+    
+  dimensiones:
+    altura_barra: 0.9
+    area_minima: 300
+    
+# Variantes recomendadas
+variantes:
+  solo_totales:
+    porcentaje_total: false
+    
+  con_valores_internos:
+    valor_barra: true
+    area_min: 100
+    
+  ordenado_por_valor:
+    ordenar_por: "valor"
+    orden: "descendente"
+    
+  con_leyenda:
+    leyenda: true
+    
+  barras_estrechas:
+    bar_height: 0.6
+    
+  sin_grillas:
+    grillas: false
+    
+  con_nombres_ejes:
+    nombre_eje_x: "Cantidad"
+    nombre_eje_y: "Estados"
+    
+# Consideraciones de diseño
+consideraciones:
+  - "Las barras horizontales son ideales para nombres largos de categorías"
+  - "El ordenamiento alfabético facilita la búsqueda de elementos específicos"
+  - "La separación entre total y porcentaje mejora la legibilidad"
+  - "El área mínima evita etiquetas ilegibles en barras pequeñas"
+  - "Sin leyenda para mantener simplicidad visual"
+  - "Barras anchas aprovechan mejor el espacio vertical"
+  
+# Validaciones
+validaciones:
+  - "Verificar que los nombres de categorías no sean excesivamente largos"
+  - "Confirmar que los valores sean positivos"
+  - "Validar que el número de categorías sea manejable (15-35)"
+  - "Asegurar que la separación de porcentajes sea apropiada"
+  - "Verificar que el área mínima permita legibilidad"
+  
+# Alternativas relacionadas
+alternativas:
+  barras_verticales:
+    usar_cuando: "Nombres cortos de categorías"
+    ventajas: ["Más compacto", "Mejor para muchas categorías"]
+    
+  con_valores_internos:
+    usar_cuando: "Valores importantes para comparación directa"
+    configuracion: "valor_barra: true"
+    
+  ordenado_por_valor:
+    usar_cuando: "Interesa el ranking por magnitud"
+    configuracion: "ordenar_por: 'valor'"

@@ -1,0 +1,81 @@
+tipo_grafico: "areaplot"
+
+metadata:
+  titulo: "Gráfico de Área Sin Suavizado"
+  descripcion: "Gráfico de área apilada con líneas rectas y valores absolutos"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "areaplot"
+  nombre: "areaplot_sin_suavizado"
+
+# Configuración de datos
+datos:
+  hoja: null
+  rango: null
+  columna_fechas: "fechas"
+  
+  # Filtros opcionales
+  filtros: []
+  
+  # Transformaciones opcionales
+  transformaciones: []
+
+parametros:
+  # Configuración básica
+  nombre: "areaplot_sin_suavizado"
+  font: "Arial"
+  
+  # Configuración de datos
+  columna_fechas: "fechas"
+  columnas_series: null
+  etiquetas_series: null
+  
+  # Configuración visual
+  mostrar_capsulas: true
+  suavizado: false  # ← Sin suavizado
+  puntos_suavizado: 300
+  mostrar_porcentajes: true
+  mostrar_leyenda: true
+  mostrar_snapshot: false
+  
+  # Dimensiones
+  ancho_figura: 16
+  alto_figura: 8
+  dpi: 100
+  
+  # Configuración de ejes
+  formato_fecha: "%b %Y"
+  rotacion_etiquetas: 90  
+  
+  # Configuración de leyenda
+  posicion_leyenda: [0.5, 1.12]
+  ncol_leyenda: 3
+  
+  # Colores personalizados
+  paleta_colores:
+    - "#215F53"
+    - "#7570B3"
+    - "#C7EAE5"
+    - "#A3C9A8"
+    - "#8FA8A6"
+    - "#4C6A67"
+
+# Configuración de exclusiones
+exclusiones: []
+
+# Configuración de salida
+salida:
+  formato: ["svg"]
+  dpi: 100
+  optimizar_svg: true
+  directorio: "output"
+  
+# Notas para el usuario
+notas:
+  - "Esta receta genera un gráfico de área apilada sin suavizado"
+  - "Muestra valores absolutos en lugar de porcentajes"
+  - "Las líneas son rectas entre puntos"
+  - "Ideal para datos donde la precisión es más importante que la estética"

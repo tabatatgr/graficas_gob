@@ -1,0 +1,65 @@
+tipo_grafico: "agrupadasyapiladas"
+
+metadata:
+  titulo: "Barras Agrupadas y Apiladas"
+  descripcion: "Gráfico de barras que combina agrupamiento y apilamiento para múltiples series de datos"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "agrupadasyapiladas"
+  nombre: "agrupadas_apiladas_ejemplo"
+
+# Configuración específica para barras agrupadas y apiladas
+datos:
+  # Este tipo de gráfica requiere múltiples DataFrames
+  # Se procesarán automáticamente desde el archivo de entrada
+  formato: "long"  # Los datos deben estar en formato long
+  columnas_requeridas: ["Sexo", "Cantidad", "Tipo", "Edad"]
+  
+  # Filtros específicos (opcional)
+  filtros: []
+  
+  # Agrupamiento de datos
+  agrupar_por: "Tipo"  # Columna que define los diferentes DataFrames
+
+parametros:
+  # Configuración básica
+  nombre: "agrupadas_apiladas_ejemplo"
+  font: "Arial"
+  
+  # Configuración visual
+  barra_valor: true
+  porcentaje: true
+  capsula_max: true
+  
+  # Dimensiones y espaciado
+  ancho_px: 2400
+  alto_px: 520
+  dpi: 100
+  factor_ancho: 1.5  # Reducimos el factor de espaciado
+  ancho_barra: 0.3   # Mantenemos el ancho de las barras
+  espacio_entre_grupos: 1.5  # Aumentamos espacio entre grupos
+  espacio_entre_barras: 0.08  # Reducimos el espacio entre barras del mismo grupo
+  
+  # Configuración de columnas
+  columna_grupo: "Sexo"
+  columna_subgrupo: "Edad"
+  columna_valor: "Cantidad"
+  excluir_total: true
+  
+  # Colores personalizados
+  paleta_colores: 
+    - "#006157"
+    - "#767676"
+    - "#671435"
+    - "#9B2247"
+    - "#9D792A"
+    - "#D5B162"
+    - "#10302C"
+    - "#E6D194"
+    - "#018477"
+    - "#FF6666"
+    - "#00008B"
+    - "#854991"

@@ -1,0 +1,46 @@
+tipo_grafico: "areaplot2"
+
+metadata:
+  titulo: "Gráfica de Área Sin Etiquetas"
+  descripcion: "Gráfico de área limpio sin etiquetas de valores, ideal para presentaciones"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-14"
+
+grafico:
+  tipo: "areaplot2"
+  nombre: "areaplot2_sin_etiquetas"
+
+datos:
+  columna_fecha: "Fecha"
+
+parametros:
+  nombre: "areaplot2_sin_etiquetas"
+  columna_fecha: "Fecha"
+  font: "Arial"
+  
+  # Dimensiones
+  ancho_px: 1480
+  alto_px: 520
+  dpi: 100
+  
+  # Configuración visual
+  alpha: 0.9
+  rotacion_x: 45
+  margen_y: 0.2
+  
+  # Desactivar etiquetas
+  mostrar_etiquetas: false
+  
+  # Configuración de grillas
+  mostrar_grid_x: false
+  mostrar_grid_y: true
+  
+  # Colores más vibrantes
+  paleta_colores: 
+    - "#006157"
+    - "#9B2247"
+    - "#9D792A"
+    - "#671435"
+    - "#D5B162"
+    - "#767676"
