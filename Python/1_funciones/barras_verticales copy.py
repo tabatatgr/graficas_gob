@@ -24,7 +24,10 @@ def barras_verticales(
     orden='descendente',        # Orden ascendente o descendente
     union_izq=0,                # Unir barras a la izquierda
     union_der=0,                # Unir barras a la derecha
-    columnas_lineas=None,       # Lista de nombres de columnas que serán graficadas como líneas
+
+
+    # --- LÍNEAS ---
+    columnas_lineas=None,       # Dataframe que sera graficado como líneas
     paleta_colores_lineas=None, # Lista de colores para las líneas
     capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
     nuevos_nom_col=None,          # Nuevos nombres de columnas
@@ -37,6 +40,7 @@ def barras_verticales(
     ancho_fig=None,             # Ancho de la figura 
     alto_fig=None,              # Alto de la figura
     grillas=True,               # Mostrar grillas horizontales
+    fondo='transparent',   # Color de fondo de la figura ('transparent' o 'white')
 
     # --- BARRAS ---
     ancho_barra=0.85,            # Ancho de cada barra
@@ -65,8 +69,9 @@ def barras_verticales(
     quitar_capsu=False,         # Quitar la cápsula de total
     capsu_cero=True,            # Mostrar cápsula aunque el valor sea cero
     ajusta_pos_capsu=0.00,      # Ajusta la posición de la cápsula respecto a la barra
-    ajusta_pos_capsu_2=0.00,  # Ajusta la posición de la cápsula respecto a la barra (para etiquetas fuera)
+    ajusta_pos_capsu_2=0.026,  # Ajusta la posición de la cápsula respecto a la barra (para etiquetas fuera). Desplazamiento extra proporcional al número de etiquetas desplazadas, para evitar que la cápsula se encime
     alinea_capsu=False,        # Alinear la cápsula verticalmente
+    ajusta_sep_etiqu_despla=1.0,  # Multiplicador para el espaciado entre etiquetas desplazadas (fuera)
 
     # --- PORCENTAJES TOTALES ---
     porce_total=True,           # Mostrar porcentaje respecto al total general
@@ -113,6 +118,7 @@ def barras_verticales(
     ejeY_positivo=False,        # Eje Y solo muestra valores positivos
     div_ejeY=False,             # División personalizada del eje y
     graf_resp_porce=False,      # Graficar con respecto al porcentaje en el eje Y
+    sustituir_etiquetas_ejeY=None, # Lista para sustituir etiquetas del eje y
 
 ):
     """
@@ -328,11 +334,8 @@ def barras_verticales(
     todas_columnas = df.columns
     x_max_pos = df[df > 0].sum(axis=1).max()
     x_max_neg = df[df < 0].sum(axis=1).min()
-    
-    # También consideramos los valores mínimos de las líneas para el cálculo del mínimo
-    min_lineas = df[columnas_lineas].min().min() if columnas_lineas else 0
-    
-    x_max = max(x_max_pos, abs(x_max_neg), abs(min_lineas) if min_lineas < 0 else 0) * 1.15
+
+    x_max = max(x_max_pos, abs(x_max_neg)) * 1.15
     if pd.isna(x_max): x_max = suma_total.max() * 1.15
 
     if graf_resp_porce:
@@ -378,9 +381,12 @@ def barras_verticales(
     fig_height = alto_fig if alto_fig is not None else fig_width / 2
     fig, ax = plt.subplots(figsize=(fig_width, fig_height), dpi=300)
 
-    # Fondo transparente para la figura y los ejes.
-    fig.patch.set_alpha(0)
-    ax.patch.set_alpha(0)
+    # Fondo para la figura y los ejes.
+    fig.patch.set_alpha(0 if fondo == 'transparent' else 1)
+    ax.patch.set_alpha(0 if fondo == 'transparent' else 1)
+    if fondo != 'transparent':
+        fig.patch.set_facecolor(fondo)
+        ax.patch.set_facecolor(fondo)
 
     # --- 7. DIBUJO DE BARRAS Y TEXTOS ---
     # Almacenar líneas para la leyenda
@@ -729,7 +735,7 @@ def barras_verticales(
             # Agrupar por positivas y negativas
             positivas = [etq for etq in lista_etqs if etq['bottom_pos'] >= 0]
             negativas = [etq for etq in lista_etqs if etq['bottom_pos'] < 0]
-            spacing = 0.025 * x_max  # Espaciado pequeño y uniforme
+            spacing = 0.025 * x_max * ajusta_sep_etiqu_despla  # Espaciado pequeño y uniforme
 
             # Etiquetas positivas: todas alineadas arriba de la barra apilada
             if positivas:
@@ -831,13 +837,26 @@ def barras_verticales(
         ax.yaxis.set_major_locator(mticker.MultipleLocator(div_ejeY))
     else:
         ax.yaxis.set_major_locator(mticker.MaxNLocator(nbins='auto', steps=[1, 2, 5, 10]))
-    
+
     # Formateo de los números en el eje Y (porcentaje o miles).
     if graf_resp_porce:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{int(x)}%'))
     else:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{int(abs(x)) if ejeY_positivo else int(x):,}"))
-    
+
+    # --- SUSTITUCIÓN DE ETIQUETAS DEL EJE Y ---
+    if sustituir_etiquetas_ejeY is not None:
+        yticks = ax.get_yticks()
+        # Si la longitud coincide, sustituye directamente
+        if len(sustituir_etiquetas_ejeY) == len(yticks):
+            ax.set_yticklabels(sustituir_etiquetas_ejeY,
+                               fontsize=font_config['variable_y']['size'],
+                               fontweight=font_config['variable_y']['weight'],
+                               color=font_config['variable_y']['color'],
+                               fontfamily=font_config['family'])
+        else:
+            print("Advertencia: La longitud de 'sustituir_etiquetas_ejeY' no coincide con el número de ticks del eje Y.")
+
     # Correcto: incluye explícitamente la familia de fuente
     plt.setp(ax.get_yticklabels(), 
              fontsize=font_config['variable_y']['size'],
@@ -923,9 +942,9 @@ def barras_verticales(
     base_path = f"output/{nombre}"
     original_svg_path = f"{base_path}.svg"
     scour_svg_path = f"{base_path}_scour.svg"
-    plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300, transparent=True)
+    plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300)  # <-- quita transparent=True
     # Guardado de la gráfica en formato PNG
-    plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300, transparent=True)
+    plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300)  # <-- quita transparent=True
 
     # Optimización del archivo SVG.
     try:
