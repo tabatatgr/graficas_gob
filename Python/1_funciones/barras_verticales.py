@@ -24,7 +24,10 @@ def barras_verticales(
     orden='descendente',        # Orden ascendente o descendente
     union_izq=0,                # Unir barras a la izquierda
     union_der=0,                # Unir barras a la derecha
-    columnas_lineas=None,       # Lista de nombres de columnas que serán graficadas como líneas
+
+
+    # --- LÍNEAS ---
+    columnas_lineas=None,       # Dataframe que sera graficado como líneas
     paleta_colores_lineas=None, # Lista de colores para las líneas
     capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
     nuevos_nom_col=None,          # Nuevos nombres de columnas
@@ -67,6 +70,8 @@ def barras_verticales(
     capsu_cero=True,            # Mostrar cápsula aunque el valor sea cero
     ajusta_pos_capsu=0.00,      # Ajusta la posición de la cápsula respecto a la barra
     ajusta_pos_capsu_2=0.026,  # Ajusta la posición de la cápsula respecto a la barra (para etiquetas fuera). Desplazamiento extra proporcional al número de etiquetas desplazadas, para evitar que la cápsula se encime
+    ajusta_pos_capsu_neg=0.00,  # Ajusta la posición de la cápsula negativa respecto a la barra
+    ajusta_pos_capsu_neg_2=0.026,  # Ajusta la posición de la cápsula negativa respecto a la barra (para etiquetas fuera). Desplazamiento extra proporcional al número de etiquetas desplazadas, para evitar que la cápsula se encime
     alinea_capsu=False,        # Alinear la cápsula verticalmente
     ajusta_sep_etiqu_despla=1.0,  # Multiplicador para el espaciado entre etiquetas desplazadas (fuera)
 
@@ -331,11 +336,8 @@ def barras_verticales(
     todas_columnas = df.columns
     x_max_pos = df[df > 0].sum(axis=1).max()
     x_max_neg = df[df < 0].sum(axis=1).min()
-    
-    # También consideramos los valores mínimos de las líneas para el cálculo del mínimo
-    min_lineas = df[columnas_lineas].min().min() if columnas_lineas else 0
-    
-    x_max = max(x_max_pos, abs(x_max_neg), abs(min_lineas) if min_lineas < 0 else 0) * 1.15
+
+    x_max = max(x_max_pos, abs(x_max_neg)) * 1.15
     if pd.isna(x_max): x_max = suma_total.max() * 1.15
 
     if graf_resp_porce:
@@ -583,7 +585,11 @@ def barras_verticales(
                         fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
                 else:
                     ax.text(pos_x_capsula, pos_y_capsula, texto_a_mostrar, ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula,
-                        fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
+                            fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
+
+                rotacion_capsula_neg = 90 if alinea_capsu else 0
+                va_capsula_neg = 'center' if alinea_capsu else 'top'
+
 
         # Lógica para cápsulas en la parte negativa de gráficos divergentes.
         if es_divergente and valor_capsu and bottom_neg < 0:
@@ -592,26 +598,29 @@ def barras_verticales(
                 texto_a_mostrar_neg = f"{int(abs(valor_negativo_total)):,}"
                 texto_capsula_neg = f"{espacio*2}{texto_a_mostrar_neg}{espacio*2}"
                 # Inicializa la posición base de la cápsula negativa
-                text_y_pos_neg = bottom_neg - x_max * ajusta_pos_capsu
+                text_y_pos_neg = bottom_neg - x_max * ajusta_pos_capsu_neg
 
                 # --- DESPLAZAMIENTO EXTRA SI HAY ETIQUETAS FUERA ABAJO ---
                 if opcion_area_min == 'fuera':
                     etiquetas_fuera_en_barra_neg = [etq for etq in etiquetas_fuera if etq['pos'] == pos and etq['bottom_pos'] < 0]
                     n_etqs_neg = len(etiquetas_fuera_en_barra_neg)
                     if n_etqs_neg:
-                        text_y_pos_neg -= ajusta_pos_capsu_2 * x_max * n_etqs_neg
+                        text_y_pos_neg -= ajusta_pos_capsu_neg_2 * x_max * n_etqs_neg
                 # --- FIN DESPLAZAMIENTO EXTRA ---
 
                 color_texto_capsula_neg = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
 
+                rotacion_capsula_neg = 90 if alinea_capsu else 0
+                va_capsula_neg = 'center' if alinea_capsu else 'top'
+
                 if not quitar_capsu:
                     ax.text(pos, text_y_pos_neg, texto_capsula_neg,
-                        bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
-                        ha='center', va='top',
-                        fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
+                    bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
+                    ha='center', va=va_capsula_neg, rotation=rotacion_capsula_neg,
+                    fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
                 else:
-                    ax.text(pos, text_y_pos_neg, texto_a_mostrar_neg, ha='center', va='top',
-                        fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
+                    ax.text(pos, text_y_pos_neg, texto_a_mostrar_neg, ha='center', va=va_capsula_neg, rotation=rotacion_capsula_neg,
+                    fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
 
         # Lógica para mostrar porcentajes totales al inicio del eje (debajo de las barras).
         if porce_total_inicio:
