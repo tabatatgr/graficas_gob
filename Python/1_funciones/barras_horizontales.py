@@ -34,6 +34,7 @@ def barras_horizontales(
     ancho_fig=None,             # Ancho de la figura 
     alto_fig=None,              # Alto de la figura
     grillas=True,               # Mostrar grillas verticales
+    fondo='transparent',   # Color de fondo de la figura ('transparent' o 'white')
 
     # --- BARRAS ---
     ancho_barra=0.85,            # Ancho de cada barra
@@ -63,6 +64,8 @@ def barras_horizontales(
     capsu_cero=True,            # Mostrar cápsula aunque el valor sea cero
     ajusta_pos_capsu=0.02,      # Ajusta la posición de la cápsula respecto a la barra
     alinea_capsu=False,         # Alinear la cápsula horizontalmente
+    decimales_valor_capsu=0,   # NUEVO: Número de decimales para el valor en la cápsula
+
 
     # --- PORCENTAJES TOTALES ---
     porce_total=True,           # Mostrar porcentaje respecto al total general
@@ -307,8 +310,14 @@ def barras_horizontales(
     fig_width = ancho_fig if ancho_fig is not None else fig_height * 2
     fig, ax = plt.subplots(figsize=(fig_width, fig_height), dpi=300)
 
-    fig.patch.set_alpha(0)
-    ax.patch.set_alpha(0)
+    if fondo == 'transparent':
+        fig.patch.set_alpha(0)
+        ax.patch.set_alpha(0)
+    else:
+        fig.patch.set_alpha(1)
+        ax.patch.set_alpha(1)
+        fig.patch.set_facecolor(fondo)
+        ax.patch.set_facecolor(fondo)
 
     # --- 7. DIBUJO DE BARRAS Y TEXTOS ---
     line_handles, line_labels = [], []
@@ -382,15 +391,19 @@ def barras_horizontales(
                     color_a_usar = text_color_porcentaje if not valor_barra and porce_barra else text_color_valor
                     ax.text(text_pos_x, pos, texto_final, va=va_texto_barra, ha=ha_texto_barra_unificado, rotation=rotacion_texto_barra, fontsize=font_size_a_usar, fontfamily=font_config['family'], fontweight=font_config['valor_porcentaje_barra']['weight'], color=color_a_usar, linespacing=1.2)
 
-        if valor_capsu and "__espaciador__" not in str(entidad):
+        if valor_capsu and "__espaciador__" not in str(entidad) and total_valor > 0:
             valor_a_mostrar = total_valor
             if es_divergente:
-                if not porce_diver: valor_a_mostrar = suma_absoluta_por_barra.loc[entidad]
-                else: valor_a_mostrar = suma_positivos_por_barra.loc[entidad]
+                if not porce_diver:
+                    valor_a_mostrar = suma_absoluta_por_barra.loc[entidad]
+                else:
+                    valor_a_mostrar = suma_positivos_por_barra.loc[entidad]
 
             if capsu_cero or valor_a_mostrar != 0:
-                texto_a_mostrar = f"{int(valor_a_mostrar):,}"
-                if etiquetas_finales is not None and not pd.isna(etiquetas_finales.iloc[pos]): texto_a_mostrar = str(etiquetas_finales.iloc[pos])
+                if etiquetas_finales is not None and not pd.isna(etiquetas_finales.iloc[pos]):
+                    texto_a_mostrar = str(etiquetas_finales.iloc[pos])
+                else:
+                    texto_a_mostrar = f"{valor_a_mostrar:,.{decimales_valor_capsu}f}" if decimales_valor_capsu > 0 else f"{int(valor_a_mostrar):,}"
                 
                 texto_capsula = f"{espacio*2}{texto_a_mostrar}{espacio*2}"
                 base_pos_x = left_pos if es_divergente else (100 if graf_resp_porce else total_valor)
@@ -409,10 +422,15 @@ def barras_horizontales(
                 else:
                     ax.text(pos_x_capsula, pos_y_capsula, texto_a_mostrar, ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula, fontdict=font_dict)
 
+        # Mostrar cápsula negativa solo si hay valores negativos
         if es_divergente and valor_capsu and left_neg < 0:
             valor_negativo_total = suma_negativos_por_barra.loc[entidad]
             if capsu_cero or valor_negativo_total != 0:
-                texto_a_mostrar_neg = f"{int(abs(valor_negativo_total)):,}"
+                # Agrega el signo "-" manualmente
+                if decimales_valor_capsu > 0:
+                    texto_a_mostrar_neg = f"-{abs(valor_negativo_total):,.{decimales_valor_capsu}f}"
+                else:
+                    texto_a_mostrar_neg = f"-{int(abs(valor_negativo_total)):,}"
                 texto_capsula_neg = f"{espacio*2}{texto_a_mostrar_neg}{espacio*2}"
                 text_x_pos_neg = left_neg - x_max * ajusta_pos_capsu
                 color_texto_capsula_neg = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
@@ -469,7 +487,7 @@ def barras_horizontales(
         if capsu_fin_lineas and len(valores_linea) > 0:
             ultimo_pos, ultimo_valor = posiciones[-1], valores_linea[-1]
             if capsu_cero or ultimo_valor != 0:
-                texto_a_mostrar = f"{int(abs(ultimo_valor)):,}"
+                texto_a_mostrar = f"{abs(ultimo_valor):,.{decimales_valor_capsu}f}" if decimales_valor_capsu > 0 else f"{int(abs(ultimo_valor)):,}"
                 texto_capsula = f"{espacio*2}{texto_a_mostrar}{espacio*2}"
                 pos_x_capsula, pos_y_capsula = ultimo_valor, ultimo_pos
                 color_texto_capsula = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
@@ -572,8 +590,8 @@ def barras_horizontales(
     base_path = f"output/{nombre}"
     original_svg_path = f"{base_path}.svg"
     scour_svg_path = f"{base_path}_scour.svg"
-    plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300, transparent=True)
-    plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300, transparent=True)
+    plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300, transparent=(fondo == 'transparent'))
+    plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300, transparent=(fondo == 'transparent'))
 
     try:
         limpiar_svg_con_scour(original_svg_path, scour_svg_path)

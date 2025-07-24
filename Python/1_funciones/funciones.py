@@ -4,7 +4,26 @@ import numpy as np
 import locale 
 import re
 from matplotlib.colors import to_rgb, to_hex
+import decimal
 
+
+def num_decimales(valores):
+    """
+    Determina el número de decimales a mostrar según el valor más pequeño:
+    - Si el menor valor está entre 0 y 9: 2 decimales
+    - Si está entre 10 y 99: 1 decimal
+    - Si es 100 o más: 0 decimales (entero)
+    """
+    serie = pd.Series(valores).dropna()
+    if len(serie) == 0:
+        return 0
+    min_abs = serie.abs().min()
+    if 0 <= min_abs < 10:
+        return 2
+    elif 10 <= min_abs < 100:
+        return 1
+    else:
+        return 0
 
 def limpiar_svg_con_scour(archivo_entrada, archivo_salida):
     """
