@@ -13,34 +13,29 @@ from matplotlib.patches import Patch
 from collections import defaultdict
 import os
 
-from funciones import limpiar_svg_con_scour, formato_fechas, get_text_color_for_bg, unir_barras, renombra_y_ordena_col
+from funciones import limpiar_svg_con_scour 
+from funciones import formato_fechas 
+from funciones import get_text_color_for_bg 
+from funciones import unir_barras 
+from funciones import renombra_y_ordena_col
+from funciones import num_decimales
 
 def barras_verticales(
     # --- DATOS Y ESTRUCTURA ---
     df,                         # DataFrame de entrada
     agregar_datos=None,         # Datos extra para agregar como barras
-    asignar_etiquetas=None,     # Columna para etiquetas personalizadas
-    ordenar_por='valor',        # Ordenar por 'valor' o 'etiqueta'
-    orden='descendente',        # Orden ascendente o descendente
-    union_izq=0,                # Unir barras a la izquierda
-    union_der=0,                # Unir barras a la derecha
-
-
-    # --- LÍNEAS ---
-    columnas_lineas=None,       # Dataframe que sera graficado como líneas
-    paleta_colores_lineas=None, # Lista de colores para las líneas
-    capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
-    nuevos_nom_col=None,          # Nuevos nombres de columnas
-    nuevas_pos_col=None,         # Nuevas posiciones de columnas
+    ordenar_por='valor',        # Ordenar las barras de acuerdo al eje X (etiqueta) o eje Y (valor) ('valor', 'etiqueta').
+    orden='descendente',        # Ordena las barras de forma ascendente o descendente ('ascendente', 'descendente').
+    union_izq=0,                # Cantidad de barras a unir a la izquierda.
+    union_der=0,                # Cantidad de barras a unir a la derecha.
     
-
     # --- GRÁFICA GENERAL ---
     nombre="barras_verticales", # Nombre base para archivos de salida
     tipo_letra='Montserrat',    # Tipo de letra para todo el texto en la gráfica
     ancho_fig=None,             # Ancho de la figura 
     alto_fig=None,              # Alto de la figura
-    grillas=True,               # Mostrar grillas horizontales
-    fondo='transparent',   # Color de fondo de la figura ('transparent' o 'white')
+    grillas=True,               # Muestra u oculta las grillas horizontales
+    fondo='transparent',        # Color de fondo de la figura ('transparent', 'white')
 
     # --- BARRAS ---
     ancho_barra=0.85,            # Ancho de cada barra
@@ -51,41 +46,45 @@ def barras_verticales(
     weight_porce_barra='bold',  # Grosor de letra para porcentajes dentro de las barras
     color_porce_barra=None,# Color de letra para porcentajes dentro de las barras
     paleta_colores=None,        # Lista de colores para las barras
-    area_min=0,                 # Área mínima para mostrar texto en barra
-    opcion_area_min='sin etiquetas',  # Opción para mostrar texto fuera o no mostrarlo al usar araea_min
-    valor_barra=True,           # Mostrar valor numérico en la barra
-    porce_barra=True,           # Mostrar porcentaje en la barra
-    porce_abajo=True,           # Mostrar porcentaje debajo del valor dentro de la barra
+    valor_barra=True,           # Muestra u oculta el valor numérico en la barra
+    porce_barra=True,           # Moustra u oculta el porcentaje en la barra
+    porce_abajo=True,           # Cuando es True muestra el porcentaje debajo del valor dentro de la barra en lugar de a lado del valor
     porce_diver=False,          # Porcentaje respecto a suma absoluta (divergente)
-    alinea_texto_barra=False,   # Alinear el texto dentro de la barra verticalmente
+    alinea_texto_barra=False,   # Alinear el texto dentro de la barra verticalmente a la dirección de las barras
+    sustituir_valor_barra=None,  # Lista de columnas con textos que sustituirán los valores dentro de las barras.
 
    # --- CÁPSULAS ---
-    valor_capsu=True,           # Mostrar cápsula de total arriba de la barra
+    valor_capsu=True,           # Muestra u oculta la cápsula arriba de la barra
     tam_letra_valor_capsu=20,   # Tamaño de letra para valores dentro de las cápsulas
     weight_valor_capsu='bold',  # Grosor de letra para valores dentro de las cápsulas
     color_valor_capsu='#000000',# Color de letra para valores dentro de las cápsulas
     color_borde_capsu='#002F2A',# Color del borde de la cápsula
     weight_borde_capsu=1.5,     # Grosor del borde de la cápsula
-    quitar_capsu=False,         # Quitar la cápsula de total
+    quitar_capsu=False,         # Quitar la cápsula y deja solo el valor dentro de la ella.
     capsu_cero=True,            # Mostrar cápsula aunque el valor sea cero
-    ajusta_pos_capsu=0.00,      # Ajusta la posición de la cápsula respecto a la barra
-    ajusta_pos_capsu_2=0.026,  # Ajusta la posición de la cápsula respecto a la barra (para etiquetas fuera). Desplazamiento extra proporcional al número de etiquetas desplazadas, para evitar que la cápsula se encime
-    ajusta_pos_capsu_neg=0.00,  # Ajusta la posición de la cápsula negativa respecto a la barra
-    ajusta_pos_capsu_neg_2=0.026,  # Ajusta la posición de la cápsula negativa respecto a la barra (para etiquetas fuera). Desplazamiento extra proporcional al número de etiquetas desplazadas, para evitar que la cápsula se encime
-    alinea_capsu=False,        # Alinear la cápsula verticalmente
-    ajusta_sep_etiqu_despla=1.0,  # Multiplicador para el espaciado entre etiquetas desplazadas (fuera)
+    asignar_etiquetas=None,     # Columna del dataframe df con las nuevas etiquetas que sustituiran las que se encuentran en la parte superior de las barras.
+    alinea_capsu=False,        # Alinear la cápsula verticalmente, en la misma dirección de las barras. 
+    ajusta_pos_capsu=0.00,      # Ajusta la posición de la cápsula respecto a la barra.
+    ajusta_pos_capsu_neg=0.00,      # Analogo que ajusta_pos_capsu pero para barras negativas.
+
+    # --- ETIQUETAS ENTRE LAS BARRAS Y LAS CAPSULAS ---
+    area_min=0,                 # Área mínima para mostrar texto en barra
+    opcion_area_min='sin etiquetas',  # Opción para mostrar texto fuera o no mostrarlo al usar araea_min ('sin etiquetas', 'fuera')
+    ajusta_pos_capsu_2=0.026,  # Ajusta la posición de la cápsulas, pero unicamente para aquellas capsulas que tienen etiquetas entre las barras y las capsulas. Ajustar en conjunto con el parametro ajusta_pos_capsu.
+    ajusta_pos_capsu_neg_2=0.026,   # Analogo que ajusta_pos_capsu_2 pero para capsulas en barras negativas.
+    ajusta_sep_etiqu_despla=1.0,  # Ajusta el espaciado de las etiquetas que estan entre las barras y las capsulas.
 
     # --- PORCENTAJES TOTALES ---
-    porce_total=True,           # Mostrar porcentaje respecto al total general
-    porce_total_inicio=False,   # Mostrar porcentaje respecto al total general al inicio
-    separar_por_total=-0.09,      # Separación extra para porcentaje total
+    porce_total=True,           # Muestra el valor del porcentaje respecto al total general arriba de la capsula
+    porce_total_inicio=False,   # Cuando es True, hace lo mismo que porce_total pero lo muestra al inicio de la barra en lugar de arriba de la cápsula.
+    separar_por_total=-0.09,      # Ajusta la posicion del porcentaje total
     tam_porce_total=25,         # Tamaño de letra para porcentaje total
     weight_porce_total='semibold', # Grosor de letra para porcentaje total
     color_porce_total='#4C6A67',   # Color de letra para porcentaje total
 
     # --- LEYENDA ---
     leyenda=None,               # Título de la leyenda
-    pos_leyenda='arriba',       # Posición de la leyenda ('arriba' o 'abajo')
+    pos_leyenda='arriba',       # Posición de la leyenda ('arriba', 'abajo')
     aumenta_sep_leyenda=0.0,    # Espacio extra para la leyenda
     ncol_leyenda=None,          # Número de columnas en la leyenda
     tam_letra_leyenda=24,       # Tamaño de letra para la leyenda
@@ -122,6 +121,15 @@ def barras_verticales(
     graf_resp_porce=False,      # Graficar con respecto al porcentaje en el eje Y
     sustituir_etiquetas_ejeY=None, # Lista para sustituir etiquetas del eje y
 
+    # --- GRÁFICA DE LÍNEAS ---
+    columnas_lineas=None,       # Lista de nombres de columnas que serán graficadas como líneas
+    paleta_colores_lineas=None, # Lista de colores para las líneas
+    capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
+
+    # --- CAMBIO DE NOMBRES Y POSICIONES DE LAS COLUMNAS DEL DATAFRAME DE ENTRADA ---
+    nuevos_nom_col=None,        # Nuevos nombres de columnas de las columnas del Dataframe de entrada
+    nuevas_pos_col=None,        # Nuevas posiciones de columnas de las columnas del Dataframe de entrada
+
 ):
     """
     Genera un gráfico de barras verticales apiladas, personalizable y con múltiples opciones de formato.
@@ -137,9 +145,9 @@ def barras_verticales(
     # Espacio sin ruptura para el formato de texto.
     espacio = "\u00A0"
 
-        # --- INTEGRACIÓN DE RENOMBRADO Y REORDENAMIENTO ---
-    if nuevos_nom_col is not None and nuevas_pos_col is not None:
-        df = renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col)
+    #     # --- INTEGRACIÓN DE RENOMBRADO Y REORDENAMIENTO ---
+    # if nuevos_nom_col is not None and nuevas_pos_col is not None:
+    #     df = renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col)
 
     # Diccionario para centralizar la configuración de fuentes.
     font_config = {
@@ -170,7 +178,11 @@ def barras_verticales(
     # Validación de que el input es un DataFrame.
     if not isinstance(df, pd.DataFrame):
         raise ValueError("El argumento df debe ser un DataFrame de pandas.")
-    
+
+    # --- SEGUNDO: Aplicar renombrado y reordenamiento si se especifica ---
+    if nuevos_nom_col is not None and nuevas_pos_col is not None:
+        df = renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col)
+
     # Copia del DataFrame para evitar modificar el original.
     df = df.copy()
     # Se asume que la primera columna es el eje X.
@@ -180,6 +192,16 @@ def barras_verticales(
         df[categorias_x] = pd.to_datetime(df[categorias_x], format='%Y')
     # Establecer la primera columna como índice del DataFrame.
     df = df.set_index(categorias_x)
+
+    # --- ELIMINAR COLUMNAS DE sustituir_valor_barra ANTES DE CÁLCULOS NUMÉRICOS ---
+    textos_personalizados_barra = None
+    if sustituir_valor_barra is not None:
+        # Verificar qué columnas existen realmente en el DataFrame
+        columnas_existentes = [col for col in sustituir_valor_barra if col in df.columns]
+        # Guardar los textos personalizados antes de eliminar las columnas
+        textos_personalizados_barra = df[columnas_existentes].copy()
+        # Eliminar esas columnas del DataFrame ANTES de cualquier cálculo numérico
+        df = df.drop(columns=columnas_existentes)
 
     # Unión de barras si se especifica.
     df, etiqueta_union_izq = unir_barras(df, union_izq, 'izquierda')
@@ -336,12 +358,19 @@ def barras_verticales(
     todas_columnas = df.columns
     x_max_pos = df[df > 0].sum(axis=1).max()
     x_max_neg = df[df < 0].sum(axis=1).min()
-
-    x_max = max(x_max_pos, abs(x_max_neg)) * 1.15
+    
+    # También consideramos los valores mínimos de las líneas para el cálculo del mínimo
+    min_lineas = df[columnas_lineas].min().min() if columnas_lineas else 0
+    
+    x_max = max(x_max_pos, abs(x_max_neg), abs(min_lineas) if min_lineas < 0 else 0) * 1.15
     if pd.isna(x_max): x_max = suma_total.max() * 1.15
 
     if graf_resp_porce:
         x_max = 100 * 1.15
+
+    # Determinar el número de decimales a mostrar usando los datos ya tratados
+    valores_a_graficar = df_plot[columnas_barras + columnas_lineas].values.flatten()
+    decimales_a_usar = num_decimales(valores_a_graficar)
 
     # --- 5. FORMATEO DE ETIQUETAS DEL EJE X ---
     entidades = df.index.values
@@ -459,7 +488,7 @@ def barras_verticales(
             text_pos_y = bar_bottom + current_val / 2
                 
             texto_final = ""
-            texto_a_dibujar = True
+            texto_a_dibujar = False  # Cambia a False por defecto
 
             # Configuración de la alineación del texto.
             rotacion_texto_barra = 90 if alinea_texto_barra else 0
@@ -468,15 +497,56 @@ def barras_verticales(
             va_texto_barra_porce = 'top' if porce_abajo else 'center'
             va_texto_barra_unificado = 'center'
 
-            # Construcción del texto a mostrar.
-            if entidad in textos_barra_personalizados:
+            # Si hay texto personalizado, solo muestra ese texto y NO el valor numérico
+            # 1. Prioridad absoluta a textos personalizados
+            # print("Depuracion: ", textos_personalizados_barra)
+            # if textos_personalizados_barra is not None:
+            #     print("Depuracion 2: ", textos_personalizados_barra.shape)
+            # else:
+            #     print("Depuracion 2: None")
+
+
+            if textos_personalizados_barra is not None and i < textos_personalizados_barra.shape[1]:
+                # print(f'pasa por 1')
+                texto_final = textos_personalizados_barra.iloc[pos, i]
+                if pd.notna(texto_final):
+                    texto_final = str(texto_final)
+                    if area_barra >= area_min or opcion_area_min == 'sin etiquetas':
+                        ax.text(pos, text_pos_y, texto_final, 
+                                va='center', ha='center', rotation=0,
+                                fontsize=tam_letra_valor_barra,
+                                fontfamily=font_config['family'],
+                                fontweight=font_config['valor_porcentaje_barra']['weight'],
+                                color=text_color_valor)
+                    elif opcion_area_min == 'fuera':
+                        etiquetas_fuera.append({
+                            'pos': pos,
+                            'col': col,
+                            'texto': texto_final,
+                            'color': color,
+                            'text_color': text_color_valor,
+                            'font_size': tam_letra_valor_barra,
+                            'font_weight': font_config['valor_porcentaje_barra']['weight'],
+                            'font_family': font_config['family'],
+                            'order': i,
+                            'bottom_pos': bar_bottom + current_val,
+                        })
+                continue
+            elif entidad in textos_barra_personalizados:
+                # print(f'pasa por 2')
                 textos_barra = textos_barra_personalizados[entidad]
                 if i < len(textos_barra) and textos_barra[i] is not None:
                     texto_final = textos_barra[i]
+                    texto_a_dibujar = True
             elif valor_barra and porce_barra:
-                texto_valor = f"{abs(df.iloc[pos, df.columns.get_loc(col)]):,.0f}"
-                texto_porcentaje = f"({abs(porcentaje_valor):.1f}%)" if not porce_abajo else f"{abs(porcentaje_valor):.1f}%"
-                    
+                valor_actual = abs(df.iloc[pos, df.columns.get_loc(col)])
+                # Usa el número de decimales calculado
+                if decimales_a_usar > 0:
+                    texto_valor = f"{valor_actual:,.{decimales_a_usar}f}"
+                    texto_porcentaje = f"({abs(porcentaje_valor):.{decimales_a_usar}f}%)" if not porce_abajo else f"{abs(porcentaje_valor):.{decimales_a_usar}f}%"
+                else:
+                    texto_valor = f"{valor_actual:,.0f}"
+                    texto_porcentaje = f"({abs(porcentaje_valor):.0f}%)" if not porce_abajo else f"{abs(porcentaje_valor):.0f}%"
                 if porce_abajo:
                     ax.text(pos, text_pos_y, texto_valor, va=va_texto_barra_valor, ha=ha_texto_barra, rotation=rotacion_texto_barra,
                             fontsize=font_config['valor_porcentaje_barra']['size'],
@@ -493,18 +563,29 @@ def barras_verticales(
                     texto_a_dibujar = False
                 else:
                     texto_final = f"{texto_valor} {texto_porcentaje}"
+                    texto_a_dibujar = True
             elif valor_barra:
-                texto_final = f"{abs(df.iloc[pos, df.columns.get_loc(col)]):,.0f}"
+                valor_actual = abs(df.iloc[pos, df.columns.get_loc(col)])
+                if decimales_a_usar > 0:
+                    texto_final = f"{valor_actual:,.{decimales_a_usar}f}"
+                else:
+                    texto_final = f"{valor_actual:,.0f}"
+                texto_a_dibujar = True
             elif porce_barra:
-                texto_final = f"{abs(porcentaje_valor):.1f}%"
+                texto_final = f"{abs(porcentaje_valor):.{decimales_a_usar}f}%"
+                texto_a_dibujar = True
 
             # --- CAMBIO PRINCIPAL: lógica para area_min y opcion_area_min ---
             if (porce_barra or valor_barra or (entidad in textos_barra_personalizados)):
                 if area_barra >= area_min or opcion_area_min == 'sin etiquetas':
-                    # Dibuja dentro de la barra como antes
                     if texto_a_dibujar and texto_final:
-                        font_size_a_usar = font_config['valor_porcentaje_barra_porcentaje']['size'] if not valor_barra and porce_barra else font_config['valor_porcentaje_barra']['size']
-                        color_a_usar = text_color_porcentaje if not valor_barra and porce_barra else text_color_valor
+                        # Si el texto es personalizado, usa tamaño y color estándar o personalizados
+                        if textos_personalizados_barra is not None and col in textos_personalizados_barra.columns:
+                            font_size_a_usar = tam_letra_valor_barra
+                            color_a_usar = text_color_valor
+                        else:
+                            font_size_a_usar = font_config['valor_porcentaje_barra_porcentaje']['size'] if not valor_barra and porce_barra else font_config['valor_porcentaje_barra']['size']
+                            color_a_usar = text_color_porcentaje if not valor_barra and porce_barra else text_color_valor
                         ax.text(pos, text_pos_y, texto_final, va=va_texto_barra_unificado, ha=ha_texto_barra, rotation=rotacion_texto_barra,
                                 fontsize=font_size_a_usar,
                                 fontfamily=font_config['family'],
@@ -545,82 +626,92 @@ def barras_verticales(
 
         # Lógica para dibujar las cápsulas con el total sobre las barras.
         if valor_capsu and "__espaciador__" not in str(entidad):
-            valor_a_mostrar = total_valor
-            if es_divergente:
-                if not porce_diver:
-                    valor_a_mostrar = suma_absoluta_por_barra.loc[entidad]
-                else: # porce_diver es True
-                    valor_a_mostrar = suma_positivos_por_barra.loc[entidad]
+            # Solo mostrar cápsula positiva si la barra es positiva o cero
+            if total_valor >= 0:
+                valor_a_mostrar = total_valor
+                if es_divergente:
+                    if not porce_diver:
+                        valor_a_mostrar = suma_absoluta_por_barra.loc[entidad]
+                    else: # porce_diver es True
+                        valor_a_mostrar = suma_positivos_por_barra.loc[entidad]
 
-            if capsu_cero or valor_a_mostrar != 0:
-                texto_a_mostrar = f"{int(valor_a_mostrar):,}"
-                if etiquetas_finales is not None and not pd.isna(etiquetas_finales.iloc[pos]):
-                    texto_a_mostrar = str(etiquetas_finales.iloc[pos])
-        
-                texto_capsula = f"{espacio*2}{texto_a_mostrar}{espacio*2}"
-                base_pos_y = bottom_pos if es_divergente else (100 if graf_resp_porce else total_valor)
-                text_y_pos = base_pos_y + x_max * ajusta_pos_capsu
+                if capsu_cero or valor_a_mostrar != 0:
+                    # Formatear usando decimales_a_usar
+                    if etiquetas_finales is not None and not pd.isna(etiquetas_finales.iloc[pos]):
+                        texto_a_mostrar = str(etiquetas_finales.iloc[pos])
+                    else:
+                        if decimales_a_usar > 0:
+                            texto_a_mostrar = f"{valor_a_mostrar:,.{decimales_a_usar}f}"
+                        else:
+                            texto_a_mostrar = f"{int(valor_a_mostrar):,}"
+            
+                    texto_capsula = f"{espacio*2}{texto_a_mostrar}{espacio*2}"
+                    base_pos_y = bottom_pos if es_divergente else (100 if graf_resp_porce else total_valor)
+                    text_y_pos = base_pos_y + x_max * ajusta_pos_capsu
 
-                # --- DESPLAZAMIENTO EXTRA SI HAY ETIQUETAS FUERA ---
-                if opcion_area_min == 'fuera':
-                    etiquetas_fuera_en_barra = [etq for etq in etiquetas_fuera if etq['pos'] == pos and etq['bottom_pos'] >= 0]
-                    n_etqs = len(etiquetas_fuera_en_barra)
-                    if n_etqs:
-                        # El desplazamiento total es proporcional al número de etiquetas
-                        text_y_pos += ajusta_pos_capsu_2 * x_max * n_etqs
-                # --- FIN DESPLAZAMIENTO EXTRA ---
+                    # --- DESPLAZAMIENTO EXTRA SI HAY ETIQUETAS FUERA ---
+                    if opcion_area_min == 'fuera':
+                        etiquetas_fuera_en_barra = [etq for etq in etiquetas_fuera if etq['pos'] == pos and etq['bottom_pos'] >= 0]
+                        n_etqs = len(etiquetas_fuera_en_barra)
+                        if n_etqs:
+                            text_y_pos += ajusta_pos_capsu_2 * x_max * n_etqs
+                    # --- FIN DESPLAZAMIENTO EXTRA ---
 
-                rotacion_capsula = 90 if alinea_capsu else 0
-                ha_capsula = 'center'
-                va_capsula = 'bottom'
-                pos_x_capsula = pos
-                pos_y_capsula = text_y_pos
-        
-                color_texto_capsula = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
+                    rotacion_capsula = 90 if alinea_capsu else 0
+                    ha_capsula = 'center'
+                    va_capsula = 'bottom'
+                    pos_x_capsula = pos
+                    pos_y_capsula = text_y_pos
+            
+                    color_texto_capsula = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
 
-                if not quitar_capsu:
-                    ax.text(pos_x_capsula, pos_y_capsula, texto_capsula,
-                        bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
-                        ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula,
-                        fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
-                else:
-                    ax.text(pos_x_capsula, pos_y_capsula, texto_a_mostrar, ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula,
+                    if not quitar_capsu:
+                        ax.text(pos_x_capsula, pos_y_capsula, texto_capsula,
+                            bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
+                            ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula,
+                            fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
+                    else:
+                        ax.text(pos_x_capsula, pos_y_capsula, texto_a_mostrar, ha=ha_capsula, va=va_capsula, rotation=rotacion_capsula,
                             fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula})
 
-                rotacion_capsula_neg = 90 if alinea_capsu else 0
-                va_capsula_neg = 'center' if alinea_capsu else 'top'
+            # Solo mostrar cápsula negativa si la barra es negativa
+            elif total_valor < 0 and es_divergente:
+                valor_negativo_total = suma_negativos_por_barra.loc[entidad]
+                if capsu_cero or valor_negativo_total != 0:
+                    # Formatear usando decimales_a_usar
+                    if decimales_a_usar > 0:
+                        texto_a_mostrar_neg = f"{abs(valor_negativo_total):,.{decimales_a_usar}f}"
+                    else:
+                        texto_a_mostrar_neg = f"{int(abs(valor_negativo_total)):,}"
+                    texto_capsula_neg = f"{espacio*2}{texto_a_mostrar_neg}{espacio*2}"
+                    # Inicializa la posición base de la cápsula negativa
+                    text_y_pos_neg = bottom_neg - x_max * ajusta_pos_capsu_neg
 
+                    # --- DESPLAZAMIENTO EXTRA SI HAY ETIQUETAS FUERA ABAJO ---
+                    if opcion_area_min == 'fuera':
+                        etiquetas_fuera_en_barra_neg = [etq for etq in etiquetas_fuera if etq['pos'] == pos and etq['bottom_pos'] < 0]
+                        n_etqs_neg = len(etiquetas_fuera_en_barra_neg)
+                        if n_etqs_neg:
+                            text_y_pos_neg -= ajusta_pos_capsu_neg_2 * x_max * n_etqs_neg
+                    # --- FIN DESPLAZAMIENTO EXTRA ---
 
-        # Lógica para cápsulas en la parte negativa de gráficos divergentes.
-        if es_divergente and valor_capsu and bottom_neg < 0:
-            valor_negativo_total = suma_negativos_por_barra.loc[entidad]
-            if capsu_cero or valor_negativo_total != 0:
-                texto_a_mostrar_neg = f"{int(abs(valor_negativo_total)):,}"
-                texto_capsula_neg = f"{espacio*2}{texto_a_mostrar_neg}{espacio*2}"
-                # Inicializa la posición base de la cápsula negativa
-                text_y_pos_neg = bottom_neg - x_max * ajusta_pos_capsu_neg
+                    color_texto_capsula_neg = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
 
-                # --- DESPLAZAMIENTO EXTRA SI HAY ETIQUETAS FUERA ABAJO ---
-                if opcion_area_min == 'fuera':
-                    etiquetas_fuera_en_barra_neg = [etq for etq in etiquetas_fuera if etq['pos'] == pos and etq['bottom_pos'] < 0]
-                    n_etqs_neg = len(etiquetas_fuera_en_barra_neg)
-                    if n_etqs_neg:
-                        text_y_pos_neg -= ajusta_pos_capsu_neg_2 * x_max * n_etqs_neg
-                # --- FIN DESPLAZAMIENTO EXTRA ---
+                    rotacion_capsula_neg = 90 if alinea_capsu else 0
+                    ha_capsula_neg = 'center'
+                    va_capsula_neg = 'top'
+                    pos_x_capsula_neg = pos
+                    pos_y_capsula_neg = text_y_pos_neg
 
-                color_texto_capsula_neg = color_valor_capsu or get_text_color_for_bg('#FFFFFF')
-
-                rotacion_capsula_neg = 90 if alinea_capsu else 0
-                va_capsula_neg = 'center' if alinea_capsu else 'top'
-
-                if not quitar_capsu:
-                    ax.text(pos, text_y_pos_neg, texto_capsula_neg,
-                    bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
-                    ha='center', va=va_capsula_neg, rotation=rotacion_capsula_neg,
-                    fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
-                else:
-                    ax.text(pos, text_y_pos_neg, texto_a_mostrar_neg, ha='center', va=va_capsula_neg, rotation=rotacion_capsula_neg,
-                    fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
+                    if not quitar_capsu:
+                        ax.text(pos_x_capsula_neg, pos_y_capsula_neg, texto_capsula_neg,
+                            bbox=dict(boxstyle="round,pad=0.15,rounding_size=0.8", facecolor=(1, 1, 1, 0), edgecolor=color_borde_capsu, linewidth=weight_borde_capsu),
+                            ha=ha_capsula_neg, va=va_capsula_neg, rotation=rotacion_capsula_neg,
+                            fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
+                    else:
+                        ax.text(pos_x_capsula_neg, pos_y_capsula_neg, texto_a_mostrar_neg, ha=ha_capsula_neg, va=va_capsula_neg, rotation=rotacion_capsula_neg,
+                                fontdict={'family': font_config['family'], 'size': font_config['valor_capsula']['size'], 'weight': font_config['valor_capsula']['weight'], 'color': color_texto_capsula_neg})
+                    
 
         # Lógica para mostrar porcentajes totales al inicio del eje (debajo de las barras).
         if porce_total_inicio:
@@ -851,7 +942,15 @@ def barras_verticales(
     if graf_resp_porce:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{int(x)}%'))
     else:
-        ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{int(abs(x)) if ejeY_positivo else int(x):,}"))
+        # Si el rango es menor a 10, muestra 2 decimales; si es menor a 1, muestra 3 decimales
+        y_min, y_max = ax.get_ylim()
+        rango = abs(y_max - y_min)
+        if rango < 1:
+            ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{x:.2f}"))
+        elif rango < 10:
+            ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{x:.2f}"))
+        else:
+            ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{int(abs(x)) if ejeY_positivo else int(x):,}"))
 
     # --- SUSTITUCIÓN DE ETIQUETAS DEL EJE Y ---
     if sustituir_etiquetas_ejeY is not None:
