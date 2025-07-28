@@ -28,6 +28,7 @@ def barras_verticales(
     orden='descendente',        # Ordena las barras de forma ascendente o descendente ('ascendente', 'descendente').
     union_izq=0,                # Cantidad de barras a unir a la izquierda.
     union_der=0,                # Cantidad de barras a unir a la derecha.
+    col_categorias=None,  # Columna que clasifica las barras en categorías
     
     # --- GRÁFICA GENERAL ---
     nombre="barras_verticales", # Nombre base para archivos de salida
@@ -172,7 +173,7 @@ def barras_verticales(
         font_manager.fontManager.addfont(font_file)
 
     # Asignación de paleta de colores por defecto si no se proporciona una.
-    colores_asignados = paleta_colores or ["#10302C", "#4C6A67", "#8FA8A6", "#A3C9A8"]
+    colores_asignados = paleta_colores or ["#006157", "#767676", "#671435", "#9B2247", "#9D792A", "#D5B162"]
 
     # --- 2. PREPARACIÓN DE DATOS ---
     # Validación de que el input es un DataFrame.
@@ -182,6 +183,16 @@ def barras_verticales(
     # --- SEGUNDO: Aplicar renombrado y reordenamiento si se especifica ---
     if nuevos_nom_col is not None and nuevas_pos_col is not None:
         df = renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col)
+
+    # --- CLASIFICACIÓN Y COLOREADO POR CATEGORÍA ---
+    # Si col_categorias está definido, asigna color por categoría
+    color_por_categoria = None
+    if col_categorias is not None and col_categorias in df.columns:
+        categorias_unicas = df[col_categorias].unique()
+        colores_categoria = (paleta_colores * ((len(categorias_unicas) // len(paleta_colores)) + 1))[:len(categorias_unicas)]
+        color_por_categoria = dict(zip(categorias_unicas, colores_categoria))
+        df['_categorias_original'] = df[col_categorias]  # <-- Guarda la columna de categorías
+        df = df.drop(columns=[col_categorias])
 
     # Copia del DataFrame para evitar modificar el original.
     df = df.copy()
@@ -439,17 +450,33 @@ def barras_verticales(
                 continue
 
             # Personalización de colores y estilos de borde por barra/segmento.
+            #color_fondo_personalizado = colores_fondo_personalizados.get(entidad)
+
+            # Color por categoría
+            if color_por_categoria is not None:
+                # Usa el índice (entidad) para buscar la categoría
+                categoria_actual = df['_categorias_original'].loc[entidad]
+                color_base = color_por_categoria.get(categoria_actual, colores_asignados[i % len(colores_asignados)])
+            else:
+                color_base = colores_asignados[i % len(colores_asignados)]
+
+            # Personalización de colores y estilos de borde por barra/segmento.
             color_fondo_personalizado = colores_fondo_personalizados.get(entidad)
+            if color_fondo_personalizado and i < len(color_fondo_personalizado) and color_fondo_personalizado[i]:
+                color = color_fondo_personalizado[i]
+            else:
+                color = color_base
+
             color_borde_personalizado = colores_borde_personalizados.get(entidad)
             estilo_borde_personalizado = estilos_borde_personalizados.get(entidad)
             grosor_borde_personalizado = grosores_borde_personalizados.get(entidad)
             color_texto_personalizado = colores_texto_personalizados.get(entidad)
 
-            color = color_fondo_personalizado[i] if color_fondo_personalizado and i < len(color_fondo_personalizado) and color_fondo_personalizado[i] else colores_asignados[i % len(colores_asignados)]
+            #color = color_fondo_personalizado[i] if color_fondo_personalizado and i < len(color_fondo_personalizado) and color_fondo_personalizado[i] else colores_asignados[i % len(colores_asignados)]
             edge_color = color_borde_personalizado[i] if color_borde_personalizado and i < len(color_borde_personalizado) and color_borde_personalizado[i] else 'none'
             line_style = estilo_borde_personalizado[i] if estilo_borde_personalizado and i < len(estilo_borde_personalizado) and estilo_borde_personalizado[i] else '-'
             line_width = grosor_borde_personalizado[i] if grosor_borde_personalizado and i < len(grosor_borde_personalizado) and grosor_borde_personalizado[i] is not None else 1.5
-            
+
             custom_text_color = color_texto_personalizado[i] if color_texto_personalizado and i < len(color_texto_personalizado) and color_texto_personalizado[i] else None
             
             # Determinación del color del texto para asegurar contraste.
