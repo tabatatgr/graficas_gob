@@ -19,22 +19,19 @@ def barras_horizontales(
     # --- DATOS Y ESTRUCTURA ---
     df,                         # DataFrame de entrada
     agregar_datos=None,         # Datos extra para agregar como barras
-    asignar_etiquetas=None,     # Columna para etiquetas personalizadas
-    ordenar_por='valor',        # Ordenar por 'valor' o 'etiqueta'
-    orden='descendente',        # Orden ascendente o descendente
-    union_sup=0,                # Unir barras superiores
-    union_inf=0,                # Unir barras inferiores
-    columnas_lineas=None,       # Lista de nombres de columnas que serán graficadas como líneas verticales
-    paleta_colores_lineas=None, # Lista de colores para las líneas
-    capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
+    ordenar_por='valor',        # Ordenar las barras de acuerdo al eje X (etiqueta) o eje Y (valor) ('valor', 'etiqueta').
+    orden='descendente',        # Ordena las barras de forma ascendente o descendente ('ascendente', 'descendente').
+    union_sup=0,                # Cantidad de barras a unir en la parte superior (primeras barras).
+    union_inf=0,                # Cantidad de barras a unir en la parte inferior (últimas barras).
+
 
     # --- GRÁFICA GENERAL ---
-    nombre="barras_horizontales", # Nombre base para archivos de salida
+    nombre="barras_verticales", # Nombre base para archivos de salida
     tipo_letra='Montserrat',    # Tipo de letra para todo el texto en la gráfica
     ancho_fig=None,             # Ancho de la figura 
     alto_fig=None,              # Alto de la figura
-    grillas=True,               # Mostrar grillas verticales
-    fondo='transparent',   # Color de fondo de la figura ('transparent' o 'white')
+    grillas=True,               # Muestra u oculta las grillas horizontales
+    fondo='transparent',        # Color de fondo de la figura ('transparent', 'white')
 
     # --- BARRAS ---
     ancho_barra=0.85,            # Ancho de cada barra
@@ -45,39 +42,41 @@ def barras_horizontales(
     weight_porce_barra='bold',  # Grosor de letra para porcentajes dentro de las barras
     color_porce_barra=None,     # Color de letra para porcentajes dentro de las barras
     paleta_colores=None,        # Lista de colores para las barras
-    area_min=0,                 # Área mínima para mostrar texto en barra
-    ancho_min=0,                # Ancho mínimo para mostrar texto dentro de barra
     valor_barra=True,           # Mostrar valor numérico en la barra
     porce_barra=True,           # Mostrar porcentaje en la barra
     porce_al_lado=True,         # Mostrar porcentaje al lado del valor dentro de la barra
     porce_diver=False,          # Porcentaje respecto a suma absoluta (divergente)
     alinea_texto_barra=False,   # Alinear el texto dentro de la barra horizontalmente
 
-    # --- CÁPSULAS ---
-    valor_capsu=True,           # Mostrar cápsula de total al final de la barra
+   # --- CÁPSULAS ---
+    valor_capsu=True,           # Muestra u oculta la cápsula arriba de la barra
     tam_letra_valor_capsu=20,   # Tamaño de letra para valores dentro de las cápsulas
     weight_valor_capsu='bold',  # Grosor de letra para valores dentro de las cápsulas
     color_valor_capsu='#000000',# Color de letra para valores dentro de las cápsulas
     color_borde_capsu='#002F2A',# Color del borde de la cápsula
     weight_borde_capsu=1.5,     # Grosor del borde de la cápsula
-    quitar_capsu=False,         # Quitar la cápsula de total
+    quitar_capsu=False,         # Quitar la cápsula y deja solo el valor dentro de la ella.
     capsu_cero=True,            # Mostrar cápsula aunque el valor sea cero
-    ajusta_pos_capsu=0.02,      # Ajusta la posición de la cápsula respecto a la barra
-    alinea_capsu=False,         # Alinear la cápsula horizontalmente
+    asignar_etiquetas=None,     # Columna del dataframe df con las nuevas etiquetas que sustituiran las que se encuentran en la parte superior de las barras.
+    alinea_capsu=False,        # Alinear la cápsula verticalmente, en la misma dirección de las barras. 
+    ajusta_pos_capsu=0.00,      # Ajusta la posición de la cápsula respecto a la barra.
     decimales_valor_capsu=0,   # NUEVO: Número de decimales para el valor en la cápsula
 
+    # --- OCULTAR ETIQUETAS CUANDO LAS BARRAS SON MUY PEQUEÑAS ---
+    area_min=0,                 # Área mínima para mostrar texto en barra
+    ancho_min=0,                # Ancho mínimo para mostrar texto dentro de barra
 
     # --- PORCENTAJES TOTALES ---
-    porce_total=True,           # Mostrar porcentaje respecto al total general
-    porce_total_inicio=False,   # Mostrar porcentaje respecto al total general al inicio
-    separar_por_total=-0.09,    # Separación extra para porcentaje total
+    porce_total=True,           # Muestra el valor del porcentaje respecto al total general arriba de la capsula
+    porce_total_inicio=False,   # Cuando es True, hace lo mismo que porce_total pero lo muestra al inicio de la barra en lugar de arriba de la cápsula.
+    separar_por_total=-0.09,      # Ajusta la posicion del porcentaje total
     tam_porce_total=25,         # Tamaño de letra para porcentaje total
     weight_porce_total='semibold', # Grosor de letra para porcentaje total
     color_porce_total='#4C6A67',   # Color de letra para porcentaje total
 
     # --- LEYENDA ---
     leyenda=None,               # Título de la leyenda
-    pos_leyenda='arriba',       # Posición de la leyenda ('arriba' o 'abajo')
+    pos_leyenda='arriba',       # Posición de la leyenda ('arriba', 'abajo')
     aumenta_sep_leyenda=0.0,    # Espacio extra para la leyenda
     ncol_leyenda=None,          # Número de columnas en la leyenda
     tam_letra_leyenda=24,       # Tamaño de letra para la leyenda
@@ -113,6 +112,11 @@ def barras_horizontales(
     ejeX_positivo=False,        # Eje X solo muestra valores positivos
     div_ejeX=False,             # División personalizada del eje X
     graf_resp_porce=False,      # Graficar con respecto al porcentaje en el eje X
+
+    # --- GRÁFICA DE LÍNEAS ---
+    columnas_lineas=None,       # Lista de nombres de columnas que serán graficadas como líneas verticales
+    paleta_colores_lineas=None, # Lista de colores para las líneas
+    capsu_fin_lineas=False,     # Mostrar cápsula con el valor al final de cada línea
 ):
     """
     Genera un gráfico de barras horizontales apiladas, personalizable y con múltiples opciones de formato.
