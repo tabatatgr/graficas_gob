@@ -605,53 +605,53 @@
  <text transform="rotate(-0 1809 433.81)" x="1809.045395" y="433.805264" fill="#2e4057" font-family="'Montserrat'" font-size="12px" font-weight="700" text-anchor="middle">7,500.00</text>
  <path d="m164.13 252.92 1644.9-170 96.76-21.099" clip-path="url(#a)" fill="none" stroke="#3e92cc" stroke-linecap="square" stroke-width="2"/>
  <defs>
-  <path id="b" d="m0 3c0.79561 0 1.5587-0.3161 2.1213-0.87868 0.56258-0.56258 0.87868-1.3257 0.87868-2.1213s-0.3161-1.5587-0.87868-2.1213c-0.56258-0.56258-1.3257-0.87868-2.1213-0.87868s-1.5587 0.3161-2.1213 0.87868c-0.56258 0.56258-0.87868 1.3257-0.87868 2.1213s0.3161 1.5587 0.87868 2.1213c0.56258 0.56258 1.3257 0.87868 2.1213 0.87868z" stroke="#3e92cc"/>
+  <path id="c" d="m0 3c0.79561 0 1.5587-0.3161 2.1213-0.87868 0.56258-0.56258 0.87868-1.3257 0.87868-2.1213s-0.3161-1.5587-0.87868-2.1213c-0.56258-0.56258-1.3257-0.87868-2.1213-0.87868s-1.5587 0.3161-2.1213 0.87868c-0.56258 0.56258-0.87868 1.3257-0.87868 2.1213s0.3161 1.5587 0.87868 2.1213c0.56258 0.56258 1.3257 0.87868 2.1213 0.87868z" stroke="#3e92cc"/>
  </defs>
  <g clip-path="url(#a)" fill="#3e92cc" stroke="#3e92cc">
-  <use x="164.129868" y="252.923941" xlink:href="#b"/>
-  <use x="260.889605" y="242.924023" xlink:href="#b"/>
-  <use x="357.649342" y="232.924104" xlink:href="#b"/>
-  <use x="454.409079" y="222.924186" xlink:href="#b"/>
-  <use x="551.168816" y="212.924267" xlink:href="#b"/>
-  <use x="647.928553" y="202.924349" xlink:href="#b"/>
-  <use x="744.688289" y="192.92443" xlink:href="#b"/>
-  <use x="841.448026" y="182.924512" xlink:href="#b"/>
-  <use x="938.207763" y="172.924593" xlink:href="#b"/>
-  <use x="1034.9675" y="162.924675" xlink:href="#b"/>
-  <use x="1131.727237" y="152.924756" xlink:href="#b"/>
-  <use x="1228.486974" y="142.924838" xlink:href="#b"/>
-  <use x="1325.246711" y="132.924919" xlink:href="#b"/>
-  <use x="1422.006447" y="122.925001" xlink:href="#b"/>
-  <use x="1518.766184" y="112.925082" xlink:href="#b"/>
-  <use x="1615.525921" y="102.925164" xlink:href="#b"/>
-  <use x="1712.285658" y="92.925245" xlink:href="#b"/>
-  <use x="1809.045395" y="82.925327" xlink:href="#b"/>
-  <use x="1905.805132" y="61.825995" xlink:href="#b"/>
+  <use x="164.129868" y="252.923941" xlink:href="#c"/>
+  <use x="260.889605" y="242.924023" xlink:href="#c"/>
+  <use x="357.649342" y="232.924104" xlink:href="#c"/>
+  <use x="454.409079" y="222.924186" xlink:href="#c"/>
+  <use x="551.168816" y="212.924267" xlink:href="#c"/>
+  <use x="647.928553" y="202.924349" xlink:href="#c"/>
+  <use x="744.688289" y="192.92443" xlink:href="#c"/>
+  <use x="841.448026" y="182.924512" xlink:href="#c"/>
+  <use x="938.207763" y="172.924593" xlink:href="#c"/>
+  <use x="1034.9675" y="162.924675" xlink:href="#c"/>
+  <use x="1131.727237" y="152.924756" xlink:href="#c"/>
+  <use x="1228.486974" y="142.924838" xlink:href="#c"/>
+  <use x="1325.246711" y="132.924919" xlink:href="#c"/>
+  <use x="1422.006447" y="122.925001" xlink:href="#c"/>
+  <use x="1518.766184" y="112.925082" xlink:href="#c"/>
+  <use x="1615.525921" y="102.925164" xlink:href="#c"/>
+  <use x="1712.285658" y="92.925245" xlink:href="#c"/>
+  <use x="1809.045395" y="82.925327" xlink:href="#c"/>
+  <use x="1905.805132" y="61.825995" xlink:href="#c"/>
  </g>
  <path d="m164.13 393.05 1644.9 170 96.76 21.099" clip-path="url(#a)" fill="none" stroke="#ed553b" stroke-linecap="square" stroke-width="2"/>
  <defs>
-  <path id="c" d="m0 3c0.79561 0 1.5587-0.3161 2.1213-0.87868 0.56258-0.56258 0.87868-1.3257 0.87868-2.1213s-0.3161-1.5587-0.87868-2.1213c-0.56258-0.56258-1.3257-0.87868-2.1213-0.87868s-1.5587 0.3161-2.1213 0.87868c-0.56258 0.56258-0.87868 1.3257-0.87868 2.1213s0.3161 1.5587 0.87868 2.1213c0.56258 0.56258 1.3257 0.87868 2.1213 0.87868z" stroke="#ed553b"/>
+  <path id="b" d="m0 3c0.79561 0 1.5587-0.3161 2.1213-0.87868 0.56258-0.56258 0.87868-1.3257 0.87868-2.1213s-0.3161-1.5587-0.87868-2.1213c-0.56258-0.56258-1.3257-0.87868-2.1213-0.87868s-1.5587 0.3161-2.1213 0.87868c-0.56258 0.56258-0.87868 1.3257-0.87868 2.1213s0.3161 1.5587 0.87868 2.1213c0.56258 0.56258 1.3257 0.87868 2.1213 0.87868z" stroke="#ed553b"/>
  </defs>
  <g clip-path="url(#a)" fill="#ed553b" stroke="#ed553b">
-  <use x="164.129868" y="393.053382" xlink:href="#c"/>
-  <use x="260.889605" y="403.0533" xlink:href="#c"/>
-  <use x="357.649342" y="413.053219" xlink:href="#c"/>
-  <use x="454.409079" y="423.053137" xlink:href="#c"/>
-  <use x="551.168816" y="433.053056" xlink:href="#c"/>
-  <use x="647.928553" y="443.052974" xlink:href="#c"/>
-  <use x="744.688289" y="453.052893" xlink:href="#c"/>
-  <use x="841.448026" y="463.052811" xlink:href="#c"/>
-  <use x="938.207763" y="473.05273" xlink:href="#c"/>
-  <use x="1034.9675" y="483.052648" xlink:href="#c"/>
-  <use x="1131.727237" y="493.052567" xlink:href="#c"/>
-  <use x="1228.486974" y="503.052485" xlink:href="#c"/>
-  <use x="1325.246711" y="513.052404" xlink:href="#c"/>
-  <use x="1422.006447" y="523.052322" xlink:href="#c"/>
-  <use x="1518.766184" y="533.052241" xlink:href="#c"/>
-  <use x="1615.525921" y="543.052159" xlink:href="#c"/>
-  <use x="1712.285658" y="553.052078" xlink:href="#c"/>
-  <use x="1809.045395" y="563.051996" xlink:href="#c"/>
-  <use x="1905.805132" y="584.151328" xlink:href="#c"/>
+  <use x="164.129868" y="393.053382" xlink:href="#b"/>
+  <use x="260.889605" y="403.0533" xlink:href="#b"/>
+  <use x="357.649342" y="413.053219" xlink:href="#b"/>
+  <use x="454.409079" y="423.053137" xlink:href="#b"/>
+  <use x="551.168816" y="433.053056" xlink:href="#b"/>
+  <use x="647.928553" y="443.052974" xlink:href="#b"/>
+  <use x="744.688289" y="453.052893" xlink:href="#b"/>
+  <use x="841.448026" y="463.052811" xlink:href="#b"/>
+  <use x="938.207763" y="473.05273" xlink:href="#b"/>
+  <use x="1034.9675" y="483.052648" xlink:href="#b"/>
+  <use x="1131.727237" y="493.052567" xlink:href="#b"/>
+  <use x="1228.486974" y="503.052485" xlink:href="#b"/>
+  <use x="1325.246711" y="513.052404" xlink:href="#b"/>
+  <use x="1422.006447" y="523.052322" xlink:href="#b"/>
+  <use x="1518.766184" y="533.052241" xlink:href="#b"/>
+  <use x="1615.525921" y="543.052159" xlink:href="#b"/>
+  <use x="1712.285658" y="553.052078" xlink:href="#b"/>
+  <use x="1809.045395" y="563.051996" xlink:href="#b"/>
+  <use x="1905.805132" y="584.151328" xlink:href="#b"/>
  </g>
  <path d="m215.72 748.26h24v-21.48h-24z" fill="#3e92cc"/>
  <text transform="rotate(-0 258.92 745.74)" x="258.921875" y="745.735311" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Personas que continúan desaparecidas de años anteriores - Fiscalía</text>
@@ -678,10 +678,10 @@
  <path d="m1169.6 892.53h24v-21.48h-24z" fill="#355c7d"/>
  <text transform="rotate(-0 1212.8 890.01)" x="1212.764375" y="890.012811" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Personas localizadas del período - Portal</text>
  <path d="m1169.6 916.48h12 12" fill="none" stroke="#3e92cc" stroke-linecap="square" stroke-width="2"/>
- <use x="1181.564375" y="916.484061" fill="#3e92cc" stroke="#3e92cc" xlink:href="#b"/>
+ <use x="1181.564375" y="916.484061" fill="#3e92cc" stroke="#3e92cc" xlink:href="#c"/>
  <text transform="rotate(-0 1212.8 925.96)" x="1212.764375" y="925.964061" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Acumulado de personas desaparecidas</text>
  <path d="m1169.6 952.44h12 12" fill="none" stroke="#ed553b" stroke-linecap="square" stroke-width="2"/>
- <use x="1181.564375" y="952.435311" fill="#ed553b" stroke="#ed553b" xlink:href="#c"/>
+ <use x="1181.564375" y="952.435311" fill="#ed553b" stroke="#ed553b" xlink:href="#b"/>
  <text transform="rotate(-0 1212.8 961.92)" x="1212.764375" y="961.915311" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Acumulado de personas localizadas</text>
  <defs>
   <clipPath id="a">
