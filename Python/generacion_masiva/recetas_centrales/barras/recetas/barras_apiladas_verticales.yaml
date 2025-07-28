@@ -14,7 +14,6 @@ metadata:
 # Configuración del gráfico
 grafico:
   tipo: "barras_verticales"
-  nombre: "barras_apiladas_verticales"
   
 # Configuración de datos
 datos:
@@ -26,10 +25,12 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
-  bar_height: 0.8
-  font: "Montserrat"
+  nombre: "barras_apiladas_verticales"
+  bar_height: 1
+  font: "Arial"
   fontsize_barra: 24
   fontsize_valor_total: 20  # Por defecto de la función
+  origen_barras: "y"        # Las barras salen del eje Y
   
   # Ordenamiento
   ordenar_por: "etiqueta"
@@ -38,7 +39,7 @@ parametros:
   # Configuración de valores y etiquetas
   valor_barra: true          # Muestra valores dentro de las barras
   porcentaje_barra: false    # No muestra porcentajes dentro de las barras
-  porcentaje_total: true     # Muestra porcentaje total arriba
+  porcentaje_total: false     # No muestra porcentaje total arriba
   valor_total: true          # Por defecto en la función
   
   # Configuración visual
@@ -53,7 +54,7 @@ parametros:
   # Configuración de figura
   aumenta_ancho_fig: 0
   aumenta_alto_fig: 0
-  aumenta_sep_leyenda: 0.0
+  aumenta_sep_leyenda: 0.2
   
   # Configuración de colores (usará paleta por defecto)
   paleta_colores: null       # Usará: ["#10302C", "#4C6A67", "#8FA8A6", "#A3C9A8"]
@@ -90,7 +91,7 @@ parametros:
   altura_min: 0
   
   # Configuración de ejes especiales
-  ejeY_negativo_a_positivo: false
+  ejeY_negativo_a_positivo: true   # Invertimos el eje Y
   resaltar_etiquetas: null
   
   # Configuración de colores de texto

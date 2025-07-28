@@ -1,6 +1,8 @@
 # Receta para barras apiladas horizontales
 # Configuración basada en el ejemplo de barras horizontales con múltiples series
 
+tipo_grafico: "barras"
+
 metadata:
   titulo: "Barras Apiladas Horizontales"
   descripcion: "Gráfico de barras horizontales apiladas con valores internos y porcentajes totales"
@@ -11,7 +13,6 @@ metadata:
 # Configuración del gráfico
 grafico:
   tipo: "barras"
-  nombre: "barras_apiladas_horizontales"
   
 # Configuración de datos
 datos:
@@ -20,9 +21,11 @@ datos:
 
 # Parámetros de la función barras
 parametros:
+  orientacion: "horizontal"
   # Configuración básica
+  nombre: "barras_apiladas_horizontales"
   bar_height: 0.8              # Barras con buen grosor para apilamiento
-  font: "Montserrat"
+  font: "Arial"
   fontsize_barra: 24           # Tamaño grande para valores internos
   fontsize_valor_total: 20     # Tamaño para totales
   
@@ -77,7 +80,7 @@ parametros:
   y_limits: null
   nombre_eje_x: null
   nombre_eje_y: null
-  orientacion_etiqueta_x: null
+  orientacion_etiqueta_x: "45"  # Para rotación de 45 grados (con comillas)
   resaltar_etiquetas: null
   
   # Configuración de etiquetas

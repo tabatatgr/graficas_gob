@@ -2,7 +2,7 @@
 # Configuración basada en el ejemplo EXPORTAR: union_barras_derecha
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 metadata:
   titulo: "Barras Apiladas con Unión Derecha"
@@ -13,8 +13,7 @@ metadata:
 
 # Configuración del gráfico
 grafico:
-  tipo: "barras_verticales"
-  nombre: "union_barras_derecha"
+  tipo: "barras"
   
 # Configuración de datos
 datos:
@@ -26,8 +25,9 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
+  nombre: "union_barras_derecha"
   bar_height: 0.8
-  font: "Montserrat"
+  font: "Arial"
   fontsize_barra: 24
   fontsize_valor_total: 20  # Por defecto de la función
   
@@ -56,8 +56,8 @@ parametros:
   
   # Configuración de figura
   aumenta_ancho_fig: 0
-  aumenta_alto_fig: 0
-  aumenta_sep_leyenda: 0.0
+  aumenta_alto_fig: 1        # Aumentamos el alto de la figura
+  aumenta_sep_leyenda: 0.2   # Aumentamos aún más la separación de la leyenda
   
   # Configuración de colores (usará paleta por defecto)
   paleta_colores: null       # Usará: ["#10302C", "#4C6A67", "#8FA8A6", "#A3C9A8"]

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1536" height="768" viewBox="0 0 1152 576">
+<defs>
+<style>*{stroke-linejoin:round;stroke-linecap:butt}</style>
+</defs>
+<path d="M0 576h1152V0H0z" opacity="0" id="path-1" class="path-element" />
+<path d="M230.4 489.6h864V86.4h-864z" opacity="0" id="path-2" class="path-element" />
+<path d="M230.4 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-3" class="path-element" />
+<defs>
+<path id="c" d="m0 0v3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="230.4" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="230.4" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-0" class="value-element">0</text>
+<path d="M382.678 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-4" class="path-element" />
+<use x="382.678" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="382.678" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-20000" class="value-element">20,000</text>
+<path d="M534.956 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-5" class="path-element" />
+<use x="534.956" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="534.956" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-40000" class="value-element">40,000</text>
+<path d="M687.233 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-6" class="path-element" />
+<use x="687.233" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="687.233" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-60000" class="value-element">60,000</text>
+<path d="M839.511 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-7" class="path-element" />
+<use x="839.511" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="839.511" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-80000" class="value-element">80,000</text>
+<path d="M991.789 489.6V86.4" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-8" class="path-element" />
+<use x="991.789" y="489.6" stroke="#000" stroke-width=".8" href="#c" />
+<text x="991.789" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-100000" class="value-element">100,000</text>
+<defs>
+<path id="b" d="m0 0h-3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="230.4" y="106.56" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="114.434" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-agencias" class="label-element">Agencias</text>
+<use x="230.4" y="146.88" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="154.754" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-comisiones" class="label-element">Comisiones</text>
+<use x="230.4" y="187.2" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="195.208" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-consejos" class="label-element">Consejos</text>
+<use x="230.4" y="227.52" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="235.394" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-dependencias" class="label-element">Dependencias</text>
+<use x="230.4" y="267.84" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="275.714" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-direcciones" class="label-element">Direcciones</text>
+<use x="230.4" y="308.16" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="316.034" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-fiscalías" class="label-element">Fiscalías</text>
+<use x="230.4" y="348.48" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="356.354" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-institutos" class="label-element">Institutos</text>
+<use x="230.4" y="388.8" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="396.674" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-ministerios" class="label-element">Ministerios</text>
+<use x="230.4" y="429.12" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="436.994" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-portal" class="label-element">Portal</text>
+<use x="230.4" y="469.44" stroke="#000" stroke-width=".8" href="#b" />
+<text x="216.9" y="477.314" font-family="&quot;Arial&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-secretarías" class="label-element">Secretarías</text>
+<path d="M230.4 87.408h93.993v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-9" class="path-element" />
+<path d="m324.39 87.408h51.691v38.304h-51.69z" clip-path="url(#a)" fill="#4c6a67" id="path-10" class="path-element" />
+<path d="m230.4 127.73h110.61v38.304h-110.61z" clip-path="url(#a)" fill="#10302c" id="path-11" class="path-element" />
+<path d="m341.01 127.73h135.54v38.304h-135.54z" clip-path="url(#a)" fill="#4c6a67" id="path-12" class="path-element" />
+<path d="M230.4 168.048h66.667v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-13" class="path-element" />
+<path d="m297.07 168.05h34.506v38.304h-34.506z" clip-path="url(#a)" fill="#4c6a67" id="path-14" class="path-element" />
+<path d="M230.4 208.368h195.51v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-15" class="path-element" />
+<path d="m425.91 208.37h94.792v38.304h-94.792z" clip-path="url(#a)" fill="#4c6a67" id="path-16" class="path-element" />
+<path d="m520.7 208.37h9.518v38.304h-9.518z" clip-path="url(#a)" fill="#8fa8a6" id="path-17" class="path-element" />
+<path d="M230.4 248.688h220.62v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-18" class="path-element" />
+<path d="m451.02 248.69h110.91v38.304h-110.91z" clip-path="url(#a)" fill="#4c6a67" id="path-19" class="path-element" />
+<path d="m561.93 248.69h6.776v38.304h-6.776z" clip-path="url(#a)" fill="#8fa8a6" id="path-20" class="path-element" />
+<path d="m230.4 289.01h364.68v38.304h-364.68z" clip-path="url(#a)" fill="#10302c" id="path-21" class="path-element" />
+<path d="m595.08 289.01h293.32v38.304h-293.32z" clip-path="url(#a)" fill="#4c6a67" id="path-22" class="path-element" />
+<path d="M888.4 289.008h25.004v38.304H888.4z" clip-path="url(#a)" fill="#8fa8a6" id="path-23" class="path-element" />
+<path d="M230.4 329.328h119.37v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-24" class="path-element" />
+<path d="m349.77 329.33h75.195v38.304h-75.194z" clip-path="url(#a)" fill="#4c6a67" id="path-25" class="path-element" />
+<path d="m424.96 329.33h11.931v38.304h-11.93z" clip-path="url(#a)" fill="#8fa8a6" id="path-26" class="path-element" />
+<path d="m230.4 369.65h144.4v38.304h-144.4z" clip-path="url(#a)" fill="#10302c" id="path-27" class="path-element" />
+<path d="m374.8 369.65h66.668v38.304h-66.668z" clip-path="url(#a)" fill="#4c6a67" id="path-28" class="path-element" />
+<path d="M230.4 409.968h24.433v38.304H230.4z" clip-path="url(#a)" fill="#10302c" id="path-29" class="path-element" />
+<path d="m254.83 409.97h43.232v38.304h-43.232z" clip-path="url(#a)" fill="#4c6a67" id="path-30" class="path-element" />
+<path d="m230.4 450.29h247.12v38.304h-247.12z" clip-path="url(#a)" fill="#10302c" id="path-31" class="path-element" />
+<path d="m477.52 450.29h119.37v38.304h-119.37z" clip-path="url(#a)" fill="#4c6a67" id="path-32" class="path-element" />
+<path d="m596.89 450.29h17.855v38.304h-17.855z" clip-path="url(#a)" fill="#8fa8a6" id="path-33" class="path-element" />
+<path d="M230.4 489.6V86.4" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-34" class="path-element" />
+<text x="277.397" y="112.781" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-12345" class="value-element">12,345</text>
+<text x="350.239" y="112.781" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-6789" class="value-element">6,789</text>
+<path d="m259.1 896376q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-35" class="path-element" />
+<text x="230.4" y="896368.736" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-19134" class="value-element">19,134 </text>
+<text x="230.4" y="147668.882" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-54" class="value-element">5.4%</text>
+<text x="285.703" y="153.101" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-14527" class="value-element">14,527</text>
+<text x="408.778" y="153.101" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-17802" class="value-element">17,802</text>
+<path d="m259.1 1428398q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-36" class="path-element" />
+<text x="230.408" y="1428391.136" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-32329" class="value-element">32,329 </text>
+<text x="230.408" y="679691.282" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-92" class="value-element">9.2%</text>
+<text x="263.734" y="193.421" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-8756" class="value-element">8,756</text>
+<text x="314.32" y="193.421" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-4532" class="value-element">4,532</text>
+<path d="m259.11 660665q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-37" class="path-element" />
+<text x="230.415" y="660658.016" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-13288" class="value-element">13,288 </text>
+<text x="230.415" y="-88041.838" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-38" class="value-element">3.8%</text>
+<text x="328.155" y="233.741" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-25678" class="value-element">25,678</text>
+<text x="473.306" y="233.741" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-12450" class="value-element">12,450</text>
+<text x="525.461" y="233.741" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-1250" class="value-element">1,250</text>
+<path d="m259.12 1712614q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-38" class="path-element" />
+<text x="230.423" y="1712606.816" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-39378" class="value-element">39,378 </text>
+<text x="230.423" y="963906.962" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-112" class="value-element">11.2%</text>
+<text x="340.71" y="274.061" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-28976" class="value-element">28,976</text>
+<text x="506.476" y="274.061" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-14567" class="value-element">14,567</text>
+<text x="565.32" y="274.061" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-890" class="value-element">890</text>
+<path d="m259.13 1916431q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-39" class="path-element" />
+<text x="230.43" y="1916424.416" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-44433" class="value-element">44,433 </text>
+<text x="230.43" y="1167724.562" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-126" class="value-element">12.6%</text>
+<text x="412.741" y="314.381" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-47897" class="value-element">47,897</text>
+<text x="741.741" y="314.381" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-38524" class="value-element">38,524</text>
+<text x="900.902" y="314.381" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-3284" class="value-element">3,284</text>
+<path d="m259.13 3741798q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-40" class="path-element" />
+<text x="230.438" y="3741791.456" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-89705" class="value-element">89,705 </text>
+<text x="230.438" y="2993091.602" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-255" class="value-element">25.5%</text>
+<text x="290.085" y="354.701" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-15678" class="value-element">15,678</text>
+<text x="387.368" y="354.701" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-9876" class="value-element">9,876</text>
+<text x="430.931" y="354.701" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-1567" class="value-element">1,567</text>
+<path d="m259.14 1218412q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-41" class="path-element" />
+<text x="230.446" y="1218404.576" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-27121" class="value-element">27,121 </text>
+<text x="230.446" y="469704.722" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-77" class="value-element">7.7%</text>
+<text x="302.599" y="395.021" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-18965" class="value-element">18,965</text>
+<text x="408.131" y="395.021" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-8756-1" class="value-element">8,756</text>
+<path d="m259.15 1242604q16 0 16-16 0-8.262-16-8.262-73.391 0-73.391 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-42" class="path-element" />
+<text x="230.453" y="1242596.576" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-27721" class="value-element">27,721 </text>
+<text x="230.453" y="493896.722" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-79" class="value-element">7.9%</text>
+<text x="242.616" y="435.341" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-3209" class="value-element">3,209</text>
+<text x="276.449" y="435.341" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-5678" class="value-element">5,678</text>
+<path d="m253.6 483217q16 0 16-16 0-8.262-16-8.262-62.268 0-62.268 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-43" class="path-element" />
+<text x="230.461" y="483209.696" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-8887" class="value-element">8,887 </text>
+<text x="230.461" y="-265490.158" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-25" class="value-element">2.5%</text>
+<text x="353.958" y="475.661" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-32456" class="value-element">32,456</text>
+<text x="537.202" y="475.661" fill="#fff" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-15678-1" class="value-element">15,678</text>
+<text x="605.814" y="475.661" font-family="&quot;Arial&quot;" font-size="24px" font-weight="700" text-anchor="middle" id="valor-2345" class="value-element">2,345</text>
+<path d="m259.16 2160206q16 0 16-16 0-8.262-16-8.262-73.39 0-73.39 16 0 8.262 16 8.262" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-44" class="path-element" />
+<text x="230.469" y="2160199.136" font-family="&quot;Arial&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-50479" class="value-element">50,479 </text>
+<text x="230.469" y="1411499.282" fill="#4c6a67" font-family="&quot;Arial&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-143" class="value-element">14.3%</text>
+<path d="m196.95-11.64h24v-21.48h-24z" fill="#10302c" id="path-45" class="path-element" />
+<text x="240.154" y="-14.16" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="24px" id="etiqueta-sin-datos" class="label-element">Sin Datos</text>
+<path d="m402.68-11.64h24v-21.48h-24z" fill="#4c6a67" id="path-46" class="path-element" />
+<text x="445.879" y="-14.16" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="24px" id="etiqueta-con-datos-sin-carpeta" class="label-element">Con Datos (Sin Carpeta)</text>
+<path d="m784.49-11.64h24v-21.48h-24z" fill="#8fa8a6" id="path-47" class="path-element" />
+<text x="827.692" y="-14.16" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="24px" id="etiqueta-con-datos-con-carpeta" class="label-element">Con Datos (Con Carpeta)</text>
+<defs>
+<clipPath id="a">
+<path d="m230.4 86.4h864v403.2h-864z" id="path-48" class="path-element" />
+</clipPath>
+</defs>
+</svg>

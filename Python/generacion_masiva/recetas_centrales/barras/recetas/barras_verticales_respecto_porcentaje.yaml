@@ -7,7 +7,7 @@
 # ================================================================
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 # Metadatos de la receta
 receta:
@@ -261,24 +261,3 @@ diferencias:
   - "Ideal para análisis de composición y participación"
   - "Facilita comparaciones entre distribuciones de diferentes categorías"
 
-# Casos de uso específicos por sector
-casos_uso_sector:
-  financiero:
-    - "Composición de portafolios de inversión"
-    - "Distribución de ingresos por fuentes"
-    - "Participación de gastos por categorías"
-  
-  gubernamental:
-    - "Distribución de presupuesto por secretarías"
-    - "Participación regional en indicadores nacionales"
-    - "Composición de ingresos fiscales"
-  
-  empresarial:
-    - "Participación de mercado por productos"
-    - "Distribución de recursos por departamentos"
-    - "Análisis de costos por categorías"
-  
-  academico:
-    - "Distribución de tiempo por actividades"
-    - "Composición de poblaciones por características"
-    - "Análisis de resultados por categorías"

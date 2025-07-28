@@ -1,3 +1,14 @@
+# Importar Path antes de usarlo para fuentes
+from pathlib import Path
+from matplotlib import font_manager
+# Cargar fuentes personalizadas desde Python/0_fonts para todo el proyecto
+font_dir = Path(__file__).parent.parent / '0_fonts'
+if not font_dir.exists():
+    font_dir = Path(__file__).parent.parent / 'Python' / '0_fonts'
+if font_dir.exists():
+    font_files = font_manager.findSystemFonts(fontpaths=[font_dir])
+    for font_file in font_files:
+        font_manager.fontManager.addfont(font_file)
 #!/usr/bin/env python3
 """
 Sistema CLI para generación masiva de gráficas con recetas YAML
@@ -15,7 +26,6 @@ from typing import Dict, Any, List, Optional
 import importlib.util
 
 # Importar las funciones de gráficas desde recetas_centrales
-from recetas_centrales.barras.funcion_barras import barras_verticales
 from recetas_centrales.agrupadasyapiladas.funcion_agrupadasyapiladas import agrupadasyapiladas
 from recetas_centrales.areaplot2.funcion_areaplot2 import areaplot2
 from recetas_centrales.areaplot.funcion_areaplot import areaplot
@@ -27,8 +37,9 @@ from recetas_centrales.treemap.funcion_treemap import generar_treemap
 
 class GraficoCLI:
     def __init__(self):
+        from recetas_centrales.barras.funcion_barras import barras
         self.tipos_grafico = {
-            'barras_verticales': barras_verticales,
+            'barras': barras,
             'agrupadasyapiladas': agrupadasyapiladas,
             'areaplot2': areaplot2,
             'areaplot': areaplot,
@@ -154,25 +165,59 @@ class GraficoCLI:
     def generar_grafica(self, receta: Dict[str, Any], df: pd.DataFrame, kwargs_extra: Dict[str, Any] = None) -> bool:
         """Genera una gráfica individual basada en la receta"""
         try:
+            import ast
             # Obtener función de gráfica
             tipo_grafico = receta['tipo_grafico']
             funcion_grafica = self.tipos_grafico[tipo_grafico]
-            
+
             # Preparar parámetros
-            parametros = receta.get('parametros', {})
-            
+            parametros = receta.get('parametros', {}).copy()
+
+            # Buscar el nombre en diferentes niveles del YAML
+            nombre = None
+            if 'nombre' in receta:
+                nombre = receta['nombre']
+            elif 'grafico' in receta and 'nombre' in receta['grafico']:
+                nombre = receta['grafico']['nombre']
+            elif 'parametros' in receta and 'nombre' in receta['parametros']:
+                nombre = receta['parametros']['nombre']
+            if nombre:
+                parametros['nombre'] = nombre
+
             # Agregar kwargs extra de la línea de comandos
             if kwargs_extra:
                 parametros.update(kwargs_extra)
-            
+
+            # --- Normalizar resaltar_etiquetas a lista real ---
+            if 'resaltar_etiquetas' in parametros:
+                valor = parametros['resaltar_etiquetas']
+                if isinstance(valor, str):
+                    try:
+                        # Intenta evaluar como lista Python
+                        valor_eval = ast.literal_eval(valor)
+                        if isinstance(valor_eval, list):
+                            parametros['resaltar_etiquetas'] = valor_eval
+                        else:
+                            # Si no es lista, intenta separar por coma
+                            parametros['resaltar_etiquetas'] = [v.strip() for v in valor.split(',')]
+                    except Exception:
+                        # Si falla, intenta separar por coma
+                        parametros['resaltar_etiquetas'] = [v.strip() for v in valor.split(',')]
+                # Si es None, elimina la clave
+                if parametros['resaltar_etiquetas'] is None:
+                    parametros.pop('resaltar_etiquetas')
+
             # Aplicar exclusiones si se especifican
             if 'exclusiones' in receta:
                 parametros = self.aplicar_exclusiones(parametros, receta['exclusiones'])
-            
+
             # Configurar parámetros para optimización SVG
             parametros['output_dir'] = parametros.get('output_dir', 'output')
             parametros['usar_flujo_svg'] = True
-            
+
+
+            # Eliminado el volcado de parámetros para depuración (debug_cli.txt)
+
             # Manejo especial para gráficas agrupadas y apiladas
             if tipo_grafico == 'agrupadasyapiladas':
                 if 'datos' in receta:
@@ -181,12 +226,12 @@ class GraficoCLI:
                     # Si no hay configuración de datos, asumir que el DataFrame ya está preparado
                     # y crear una lista con un solo DataFrame
                     dataframes = [df]
-                
+
                 # Remover parámetros específicos de configuración de datos
                 parametros_limpio = parametros.copy()
                 for key in ['agrupar_por', 'columnas_requeridas', 'formato']:
                     parametros_limpio.pop(key, None)
-                
+
                 funcion_grafica(dataframes, **parametros_limpio)
             else:
                 # Preparar DataFrame para gráficas normales
@@ -194,13 +239,13 @@ class GraficoCLI:
                     df_preparado = self.preparar_dataframe(df, receta['datos'])
                 else:
                     df_preparado = df
-                
+
                 funcion_grafica(df_preparado, **parametros)
-            
+
             # Aplicar optimización SVG automáticamente si se generó un archivo SVG
             nombre_grafica = parametros.get('nombre', 'sin_nombre')
             print(f"Gráfica generada: {nombre_grafica}")
-                
+
             return True
         except Exception as e:
             print(f"Error generando gráfica: {e}")
@@ -348,17 +393,25 @@ def main():
                 kwargs_extra[clave] = valor
     
     # Procesar argumentos desconocidos como kwargs también
+    import ast
     for i in range(0, len(unknown), 2):
         if i + 1 < len(unknown):
             clave = unknown[i].lstrip('-')
             valor = unknown[i + 1]
-            try:
-                if '.' in valor:
-                    valor = float(valor)
-                else:
-                    valor = int(valor)
-            except ValueError:
-                pass
+            # Si es resaltar_etiquetas, evalúa como lista
+            if clave == 'resaltar_etiquetas':
+                try:
+                    valor = ast.literal_eval(valor)
+                except Exception:
+                    pass
+            else:
+                try:
+                    if '.' in valor:
+                        valor = float(valor)
+                    else:
+                        valor = int(valor)
+                except ValueError:
+                    pass
             kwargs_extra[clave] = valor
     
     # Crear instancia del CLI con optimización SVG automática

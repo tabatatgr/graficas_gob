@@ -3,7 +3,7 @@
 # Uso: Ideal para mostrar datos divergentes simples con configuración básica
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 nombre: "barras_divergentes_verticales_simple"
 descripcion: "Gráfica de barras verticales divergentes con configuración básica para mostrar datos con valores positivos y negativos"

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="768" viewBox="0 0 1440 576">
+<defs>
+<style>*{stroke-linejoin:round;stroke-linecap:butt}</style>
+</defs>
+<path d="M0 576h1440V0H0z" opacity="0" id="path-1" class="path-element" />
+<path d="M216 460.8h1152v-432H216z" opacity="0" id="path-2" class="path-element" />
+<defs>
+<path id="c" d="m0 0v3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="360" y="460.8" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 790.87 -112.7)" font-family="&quot;Poppins&quot;" font-size="25px" font-weight="500" id="valor-2023" class="value-element">2023</text>
+<use x="648" y="460.8" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 934.87 -460.35)" font-family="&quot;Poppins&quot;" font-size="25px" font-weight="500" id="valor-2024" class="value-element">2024</text>
+<use x="936" y="460.8" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 1078.9 -808)" font-family="&quot;Poppins&quot;" font-size="25px" font-weight="500" id="valor-2025" class="value-element">2025</text>
+<use x="1224" y="460.8" stroke="#000" stroke-width=".8" href="#c" />
+<text transform="rotate(-45 1222.9 -1155.6)" font-family="&quot;Poppins&quot;" font-size="25px" font-weight="500" id="valor-2026" class="value-element">2026</text>
+<text x="792" y="566.894" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="etiqueta-fecha" class="label-element">Fecha</text>
+<path d="m216 460.8h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-3" class="path-element" />
+<defs>
+<path id="b" d="m0 0h-3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="216" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="469.158" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-0" class="value-element">0</text>
+<path d="m216 374.4h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-4" class="path-element" />
+<use x="216" y="374.4" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="382.758" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-20" class="value-element">20</text>
+<path d="m216 288h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-5" class="path-element" />
+<use x="216" y="288" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="296.358" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-40" class="value-element">40</text>
+<path d="m216 201.6h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-6" class="path-element" />
+<use x="216" y="201.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="209.958" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-60" class="value-element">60</text>
+<path d="m216 115.2h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-7" class="path-element" />
+<use x="216" y="115.2" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="123.558" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-80" class="value-element">80</text>
+<path d="m216 28.8h1152" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-8" class="path-element" />
+<use x="216" y="28.8" stroke="#000" stroke-width=".8" href="#b" />
+<text x="209" y="37.158" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-100" class="value-element">100</text>
+<text transform="rotate(-90 144.43 244.8)" x="144.432" y="244.8" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="middle" id="etiqueta-porcentaje" class="label-element">Porcentaje</text>
+<path d="M230.4 460.8h259.2V265.536H230.4z" clip-path="url(#a)" fill="#10302c" id="path-9" class="path-element" />
+<path d="m230.4 265.54h259.2v-130.03h-259.2z" clip-path="url(#a)" fill="#4c6a67" id="path-10" class="path-element" />
+<path d="M230.4 135.504h259.2V28.8H230.4z" clip-path="url(#a)" fill="#8fa8a6" id="path-11" class="path-element" />
+<path d="M518.4 460.8h259.2v-216H518.4z" clip-path="url(#a)" fill="#10302c" id="path-12" class="path-element" />
+<path d="M518.4 244.8h259.2v-108H518.4z" clip-path="url(#a)" fill="#4c6a67" id="path-13" class="path-element" />
+<path d="M518.4 136.8h259.2v-108H518.4z" clip-path="url(#a)" fill="#8fa8a6" id="path-14" class="path-element" />
+<path d="M806.4 460.8h259.2V288H806.4z" clip-path="url(#a)" fill="#10302c" id="path-15" class="path-element" />
+<path d="M806.4 288h259.2V136.8H806.4z" clip-path="url(#a)" fill="#4c6a67" id="path-16" class="path-element" />
+<path d="M806.4 136.8h259.2v-108H806.4z" clip-path="url(#a)" fill="#8fa8a6" id="path-17" class="path-element" />
+<path d="M1094.4 460.8h259.2V201.6h-259.2z" clip-path="url(#a)" fill="#10302c" id="path-18" class="path-element" />
+<path d="m1094.4 201.6h259.2v-86.4h-259.2z" clip-path="url(#a)" fill="#4c6a67" id="path-19" class="path-element" />
+<path d="M1094.4 115.2h259.2V28.8h-259.2z" clip-path="url(#a)" fill="#8fa8a6" id="path-20" class="path-element" />
+<path d="m216 460.8h1152" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-21" class="path-element" />
+<text x="360" y="367.859" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-452" class="value-element">45.2%</text>
+<text x="360" y="205.211" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-301" class="value-element">30.1%</text>
+<text x="360" y="86.843" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-247" class="value-element">24.7%</text>
+<text x="648" y="357.491" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-500" class="value-element">50.0%</text>
+<text x="648" y="195.491" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-250" class="value-element">25.0%</text>
+<text x="648" y="87.491" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-250-1" class="value-element">25.0%</text>
+<text x="936" y="379.091" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-400" class="value-element">40.0%</text>
+<text x="936" y="217.091" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-350" class="value-element">35.0%</text>
+<text x="936" y="87.491" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-250-2" class="value-element">25.0%</text>
+<text x="1224" y="335.891" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-600" class="value-element">60.0%</text>
+<text x="1224" y="163.091" fill="#fff" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-200" class="value-element">20.0%</text>
+<text x="1224" y="76.691" font-family="&quot;Poppins&quot;" font-size="17px" font-weight="700" text-anchor="middle" id="valor-200-1" class="value-element">20.0%</text>
+<defs>
+<clipPath id="a">
+<path d="M216 28.8h1152v432H216z" id="path-22" class="path-element" />
+</clipPath>
+</defs>
+</svg>

@@ -3,7 +3,7 @@
 # Uso: Ideal para mostrar proporciones y valores absolutos simultáneamente
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 nombre: "porcentaje_inicio"
 descripcion: "Gráfica de barras horizontales con porcentaje al inicio de cada barra, mostrando tanto valores absolutos como proporciones relativas"
@@ -18,11 +18,13 @@ parametros:
   
   # Configuración de valores y porcentajes
   valor_barra: true
-  valor_total: true
+  valor_total: false
   porcentaje_barra: false
   porcentaje_total: false
   porcentaje_total_inicio: true
-  
+  color_porcentaje_inicio: "#6c757d"  # Gris para el porcentaje de inicio
+  espacio_inicio: 100
+
   # Configuración de orientación y ordenamiento
   orientacion: "horizontal"
   ordenar_por: "valor"

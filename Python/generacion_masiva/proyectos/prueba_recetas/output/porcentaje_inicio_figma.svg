@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2112" height="768" viewBox="0 0 1584 576">
+<defs>
+<style>*{stroke-linejoin:round;stroke-linecap:butt}</style>
+</defs>
+<path d="M0 576h1584V0H0z" opacity="0" id="path-1" class="path-element" />
+<path d="M396 489.6h1108.8V28.8H396z" opacity="0" id="path-2" class="path-element" />
+<path d="M396 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-3" class="path-element" />
+<defs>
+<path id="b" d="m0 0v3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="396" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="396" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-0" class="value-element">0</text>
+<path d="M573.075 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-4" class="path-element" />
+<use x="573.075" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="573.075" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-200" class="value-element">200</text>
+<path d="M750.15 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-5" class="path-element" />
+<use x="750.15" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="750.15" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-400" class="value-element">400</text>
+<path d="M927.225 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-6" class="path-element" />
+<use x="927.225" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="927.225" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-600" class="value-element">600</text>
+<path d="M1104.3 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-7" class="path-element" />
+<use x="1104.3" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="1104.3" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-800" class="value-element">800</text>
+<path d="m1281.4 489.6v-460.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-8" class="path-element" />
+<use x="1281.375" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="1281.375" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-1000" class="value-element">1,000</text>
+<path d="M1458.45 489.6V28.8" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-9" class="path-element" />
+<use x="1458.451" y="489.6" stroke="#000" stroke-width=".8" href="#b" />
+<text x="1458.451" y="515.596" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="25px" font-weight="500" text-anchor="middle" id="valor-1200" class="value-element">1,200</text>
+<defs>
+<path id="c" d="m0 0h-3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="396" y="61.714" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="70.073" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-ecuador" class="label-element">Ecuador</text>
+<use x="396" y="127.543" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="135.901" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-perú" class="label-element">Perú</text>
+<use x="396" y="193.371" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="201.73" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-argentina" class="label-element">Argentina</text>
+<use x="396" y="259.2" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="267.558" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-chile" class="label-element">Chile</text>
+<use x="396" y="325.029" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="333.387" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-méxico" class="label-element">México</text>
+<use x="396" y="390.857" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="399.215" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-colombia" class="label-element">Colombia</text>
+<use x="396" y="456.686" stroke="#000" stroke-width=".8" href="#c" />
+<text x="264.127" y="465.044" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="500" text-anchor="end" id="etiqueta-brasil" class="label-element">Brasil</text>
+<path d="M396 38.674h309.881v46.08H396z" clip-path="url(#a)" fill="#8b0000" id="path-10" class="path-element" />
+<path d="m705.88 38.674h194.78v46.08h-194.78z" clip-path="url(#a)" fill="#b22222" id="path-11" class="path-element" />
+<path d="m900.66 38.674h79.684v46.08h-79.684z" clip-path="url(#a)" fill="#cd5c5c" id="path-12" class="path-element" />
+<path d="M396 104.503h336.443v46.08H396z" clip-path="url(#a)" fill="#8b0000" id="path-13" class="path-element" />
+<path d="m732.44 104.5h212.49v46.08h-212.49z" clip-path="url(#a)" fill="#b22222" id="path-14" class="path-element" />
+<path d="m944.93 104.5h88.537v46.08h-88.537z" clip-path="url(#a)" fill="#cd5c5c" id="path-15" class="path-element" />
+<path d="m396 170.33h345.3v46.08h-345.3z" clip-path="url(#a)" fill="#8b0000" id="path-16" class="path-element" />
+<path d="m741.3 170.33h221.34v46.08h-221.34z" clip-path="url(#a)" fill="#b22222" id="path-17" class="path-element" />
+<path d="m962.64 170.33h106.24v46.08h-106.24z" clip-path="url(#a)" fill="#cd5c5c" id="path-18" class="path-element" />
+<path d="m396 236.16h363v46.08h-363z" clip-path="url(#a)" fill="#8b0000" id="path-19" class="path-element" />
+<path d="m759 236.16h239.05v46.08h-239.05z" clip-path="url(#a)" fill="#b22222" id="path-20" class="path-element" />
+<path d="m998.06 236.16h97.392v46.08h-97.392z" clip-path="url(#a)" fill="#cd5c5c" id="path-21" class="path-element" />
+<path d="M396 301.989h398.419v46.08H396z" clip-path="url(#a)" fill="#8b0000" id="path-22" class="path-element" />
+<path d="m794.42 301.99h247.9v46.08h-247.9z" clip-path="url(#a)" fill="#b22222" id="path-23" class="path-element" />
+<path d="m1042.3 301.99h123.95v46.08h-123.95z" clip-path="url(#a)" fill="#cd5c5c" id="path-24" class="path-element" />
+<path d="M396 367.817h407.273v46.08H396z" clip-path="url(#a)" fill="#8b0000" id="path-25" class="path-element" />
+<path d="m803.27 367.82h256.76v46.08h-256.76z" clip-path="url(#a)" fill="#b22222" id="path-26" class="path-element" />
+<path d="m1060 367.82h115.1v46.08h-115.1z" clip-path="url(#a)" fill="#cd5c5c" id="path-27" class="path-element" />
+<path d="m396 433.65h460.4v46.08h-460.4z" clip-path="url(#a)" fill="#8b0000" id="path-28" class="path-element" />
+<path d="m856.4 433.65h274.47v46.08h-274.47z" clip-path="url(#a)" fill="#b22222" id="path-29" class="path-element" />
+<path d="m1130.9 433.65h141.66v46.08h-141.66z" clip-path="url(#a)" fill="#cd5c5c" id="path-30" class="path-element" />
+<path d="M396 489.6V28.8" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-31" class="path-element" />
+<text x="384.912" y="67.785" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-116-" class="value-element">11.6 %</text>
+<text x="384.912" y="133.613" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-127-" class="value-element">12.7 %</text>
+<text x="384.912" y="199.442" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-134-" class="value-element">13.4 %</text>
+<text x="384.912" y="265.271" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-139-" class="value-element">13.9 %</text>
+<text x="384.912" y="331.099" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-153-" class="value-element">15.3 %</text>
+<text x="384.912" y="396.928" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-155-" class="value-element">15.5 %</text>
+<text x="384.912" y="462.756" fill="#6c757d" font-family="&quot;Poppins&quot;" font-size="22px" font-weight="600" text-anchor="end" id="valor-175-" class="value-element">17.5 %</text>
+<text x="550.941" y="66.681" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-350" class="value-element">350</text>
+<text x="803.273" y="66.681" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-220" class="value-element">220</text>
+<text x="940.506" y="66.681" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-90" class="value-element">90</text>
+<text x="564.221" y="132.51" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-380" class="value-element">380</text>
+<text x="838.688" y="132.51" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-240" class="value-element">240</text>
+<text x="989.202" y="132.51" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-100" class="value-element">100</text>
+<text x="568.648" y="198.338" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-390" class="value-element">390</text>
+<text x="851.968" y="198.338" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-250" class="value-element">250</text>
+<text x="1015.763" y="198.338" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-120" class="value-element">120</text>
+<text x="577.502" y="264.167" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-410" class="value-element">410</text>
+<text x="878.53" y="264.167" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-270" class="value-element">270</text>
+<text x="1046.751" y="264.167" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-110" class="value-element">110</text>
+<text x="595.209" y="329.995" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-450" class="value-element">450</text>
+<text x="918.372" y="329.995" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-280" class="value-element">280</text>
+<text x="1104.3" y="329.995" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-140" class="value-element">140</text>
+<text x="599.636" y="395.824" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-460" class="value-element">460</text>
+<text x="931.652" y="395.824" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-290" class="value-element">290</text>
+<text x="1117.581" y="395.824" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-130" class="value-element">130</text>
+<text x="626.198" y="461.653" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-520" class="value-element">520</text>
+<text x="993.628" y="461.653" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-310" class="value-element">310</text>
+<text x="1201.692" y="461.653" fill="#fff" font-family="&quot;Poppins&quot;" font-size="18px" font-weight="700" text-anchor="middle" id="valor-160" class="value-element">160</text>
+<defs>
+<clipPath id="a">
+<path d="M396 28.8h1108.8v460.8H396z" id="path-32" class="path-element" />
+</clipPath>
+</defs>
+</svg>

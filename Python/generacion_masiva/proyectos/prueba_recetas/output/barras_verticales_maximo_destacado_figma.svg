@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3456" height="768" viewBox="0 0 2592 576">
+<defs>
+<style>*{stroke-linejoin:round;stroke-linecap:butt}</style>
+</defs>
+<path d="M0 576h2592V0H0z" opacity="0" id="path-1" class="path-element" />
+<path d="M388.8 460.8h2073.6v-432H388.8z" opacity="0" id="path-2" class="path-element" />
+<defs>
+<path id="b" d="m0 0v3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="423.36" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 486.63 68.47)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-méxico" class="label-element">México</text>
+<use x="492.48" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 532.11 44.826)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-veracruz" class="label-element">Veracruz</text>
+<use x="561.6" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 586.09 29.692)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-nuevo-león" class="label-element">Nuevo León</text>
+<use x="630.72" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 641.44 15.915)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-aguascalientes" class="label-element">Aguascalientes</text>
+<use x="699.84" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 620.55 -74.094)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-jalisco" class="label-element">Jalisco</text>
+<use x="768.96" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 688.23 -75.527)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-guanajuato" class="label-element">Guanajuato</text>
+<use x="838.08" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 741.04 -91.841)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-baja-california" class="label-element">Baja California</text>
+<use x="907.2" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 726.9 -175.1)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-puebla" class="label-element">Puebla</text>
+<use x="976.32" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 763.41 -207.71)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-sonora" class="label-element">Sonora</text>
+<use x="1045.44" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 821.15 -219.09)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-chihuahua" class="label-element">Chihuahua</text>
+<use x="1114.56" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 855.4 -253.96)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-michoacán" class="label-element">Michoacán</text>
+<use x="1183.68" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 868.91 -309.57)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-sinaloa" class="label-element">Sinaloa</text>
+<use x="1252.8" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 927.74 -319.86)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-tamaulipas" class="label-element">Tamaulipas</text>
+<use x="1321.92" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 942.15 -374.57)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-chiapas" class="label-element">Chiapas</text>
+<use x="1391.04" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 973.91 -411.93)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-oaxaca" class="label-element">Oaxaca</text>
+<use x="1460.16" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1016.7 -438.31)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-guerrero" class="label-element">Guerrero</text>
+<use x="1529.28" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1089.3 -434.76)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-san-luis-potosí" class="label-element">San Luis Potosí</text>
+<use x="1598.4" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1080.4 -512.84)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-tabasco" class="label-element">Tabasco</text>
+<use x="1667.52" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1118.9 -543.41)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-durango" class="label-element">Durango</text>
+<use x="1736.64" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1162.7 -568.75)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-querétaro" class="label-element">Querétaro</text>
+<use x="1805.76" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1200.9 -599.7)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-campeche" class="label-element">Campeche</text>
+<use x="1874.88" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1216.3 -653.42)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-hidalgo" class="label-element">Hidalgo</text>
+<use x="1944" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1288 -650.81)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-quintana-roo" class="label-element">Quintana Roo</text>
+<use x="2013.12" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1292.3 -715.57)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-coahuila" class="label-element">Coahuila</text>
+<use x="2082.24" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1321 -756)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-morelos" class="label-element">Morelos</text>
+<use x="2151.36" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1350.1 -796.02)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-colima" class="label-element">Colima</text>
+<use x="2220.48" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1390.7 -824.61)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-yucatán" class="label-element">Yucatán</text>
+<use x="2289.6" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1440.5 -843.91)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-zacatecas" class="label-element">Zacatecas</text>
+<use x="2358.72" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1456.2 -897.28)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-nayarit" class="label-element">Nayarit</text>
+<use x="2427.84" y="460.8" stroke="#000" stroke-width=".8" href="#b" />
+<text transform="rotate(-90 1496.8 -925.81)" font-family="&quot;Montserrat&quot;" font-size="25px" font-weight="500" id="etiqueta-tlaxcala" class="label-element">Tlaxcala</text>
+<path d="m388.8 460.8h2073.6" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-3" class="path-element" />
+<defs>
+<path id="c" d="m0 0h-3.5" stroke="#000" stroke-width=".8" />
+</defs>
+<use x="388.8" y="460.8" stroke="#000" stroke-width=".8" href="#c" />
+<text x="381.8" y="469.158" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-0" class="value-element">0</text>
+<path d="m388.8 366.89h2073.6" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-4" class="path-element" />
+<use x="388.8" y="366.887" stroke="#000" stroke-width=".8" href="#c" />
+<text x="381.8" y="375.245" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-500" class="value-element">500</text>
+<path d="m388.8 272.97h2073.6" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-5" class="path-element" />
+<use x="388.8" y="272.974" stroke="#000" stroke-width=".8" href="#c" />
+<text x="381.8" y="281.332" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-1000" class="value-element">1,000</text>
+<path d="m388.8 179.06h2073.6" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-6" class="path-element" />
+<use x="388.8" y="179.061" stroke="#000" stroke-width=".8" href="#c" />
+<text x="381.8" y="187.419" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-1500" class="value-element">1,500</text>
+<path d="m388.8 85.148h2073.6" clip-path="url(#a)" fill="none" stroke="#b9b9b9" stroke-linecap="square" stroke-width=".75" id="path-7" class="path-element" />
+<use x="388.8" y="85.148" stroke="#000" stroke-width=".8" href="#c" />
+<text x="381.8" y="93.506" font-family="&quot;DejaVu Sans&quot;,&quot;Bitstream Vera Sans&quot;,&quot;Computer Modern Sans Serif&quot;,&quot;Lucida Grande&quot;,&quot;Verdana&quot;,&quot;Geneva&quot;,&quot;Lucid&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Avant Garde&quot;,sans-serif" font-size="22px" font-weight="500" text-anchor="end" id="valor-2000" class="value-element">2,000</text>
+<path d="m412.99 460.8h20.736v-375.65h-20.736z" clip-path="url(#a)" fill="#8b0000" id="path-8" class="path-element" />
+<path d="m482.11 460.8h20.736v-319.3h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-9" class="path-element" />
+<path d="m551.23 460.8h20.736v-300.52h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-10" class="path-element" />
+<path d="m620.35 460.8h20.736v-281.74h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-11" class="path-element" />
+<path d="m689.47 460.8h20.736v-262.96h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-12" class="path-element" />
+<path d="m758.59 460.8h20.736v-244.17h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-13" class="path-element" />
+<path d="m827.71 460.8h20.736v-225.39h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-14" class="path-element" />
+<path d="m896.83 460.8h20.736v-225.39h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-15" class="path-element" />
+<path d="m965.95 460.8h20.736v-216h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-16" class="path-element" />
+<path d="m1035.1 460.8h20.736v-206.61h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-17" class="path-element" />
+<path d="m1104.2 460.8h20.736v-197.22h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-18" class="path-element" />
+<path d="m1173.3 460.8h20.736v-187.83h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-19" class="path-element" />
+<path d="m1242.4 460.8h20.736v-178.44h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-20" class="path-element" />
+<path d="m1311.6 460.8h20.736v-178.44h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-21" class="path-element" />
+<path d="m1380.7 460.8h20.736v-178.44h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-22" class="path-element" />
+<path d="m1449.8 460.8h20.736v-169.04h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-23" class="path-element" />
+<path d="m1518.9 460.8h20.736v-169.04h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-24" class="path-element" />
+<path d="m1588 460.8h20.736v-159.65h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-25" class="path-element" />
+<path d="m1657.2 460.8h20.736v-159.65h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-26" class="path-element" />
+<path d="m1726.3 460.8h20.736v-150.26h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-27" class="path-element" />
+<path d="m1795.4 460.8h20.736v-150.26h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-28" class="path-element" />
+<path d="m1864.5 460.8h20.736v-140.87h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-29" class="path-element" />
+<path d="m1933.6 460.8h20.736v-131.48h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-30" class="path-element" />
+<path d="m2002.8 460.8h20.736v-131.48h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-31" class="path-element" />
+<path d="m2071.9 460.8h20.736v-122.09h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-32" class="path-element" />
+<path d="m2141 460.8h20.736v-112.7h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-33" class="path-element" />
+<path d="m2210.1 460.8h20.736v-112.7h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-34" class="path-element" />
+<path d="m2279.2 460.8h20.736v-103.3h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-35" class="path-element" />
+<path d="m2348.4 460.8h20.736v-93.913h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-36" class="path-element" />
+<path d="m2417.5 460.8h20.736v-75.13h-20.736z" clip-path="url(#a)" fill="#10302c" id="path-37" class="path-element" />
+<path d="m388.8 460.8h2073.6" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8" id="path-38" class="path-element" />
+<path d="m390.8 75.188h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16" fill="#8b0000" id="path-39" class="path-element" />
+<text x="423.36" y="68.028" fill="#fff" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-2000-1" class="value-element">2,000 </text>
+<text x="423.36" y="15.773" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-68" class="value-element">6.8%</text>
+<path d="m459.92 131.54h65.11q16 0 16-16v6.643q0-16-16-16h-65.11q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-40" class="path-element" />
+<text x="492.48" y="124.376" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1700" class="value-element">1,700 </text>
+<text x="492.48" y="72.12" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-57" class="value-element">5.7%</text>
+<path d="m529.04 150.32h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-41" class="path-element" />
+<text x="561.6" y="143.159" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1600" class="value-element">1,600 </text>
+<text x="561.6" y="90.903" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-54" class="value-element">5.4%</text>
+<path d="m598.16 169.1h65.11q16 0 16-16v6.645q0-16-16-16h-65.11q-16 0-16 16v-6.645q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-42" class="path-element" />
+<text x="630.72" y="161.941" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1500-1" class="value-element">1,500 </text>
+<text x="630.72" y="109.686" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-51" class="value-element">5.1%</text>
+<path d="m667.28 187.88h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-43" class="path-element" />
+<text x="699.84" y="180.724" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1400" class="value-element">1,400 </text>
+<text x="699.84" y="128.468" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-47" class="value-element">4.7%</text>
+<path d="m736.4 206.67h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-44" class="path-element" />
+<text x="768.96" y="199.507" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1300" class="value-element">1,300 </text>
+<text x="768.96" y="147.251" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-44" class="value-element">4.4%</text>
+<path d="m805.52 225.45h65.11q16 0 16-16v6.643q0-16-16-16h-65.11q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-45" class="path-element" />
+<text x="838.08" y="218.289" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1200" class="value-element">1,200 </text>
+<text x="838.08" y="166.033" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-41" class="value-element">4.1%</text>
+<path d="m874.64 225.45h65.11q16 0 16-16v6.643q0-16-16-16h-65.11q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-46" class="path-element" />
+<text x="907.2" y="218.289" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1200-1" class="value-element">1,200 </text>
+<text x="907.2" y="166.033" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-41-1" class="value-element">4.1%</text>
+<path d="m943.76 234.84h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-47" class="path-element" />
+<text x="976.32" y="227.681" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1150" class="value-element">1,150 </text>
+<text x="976.32" y="175.425" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-39" class="value-element">3.9%</text>
+<path d="m1012.9 244.23h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-48" class="path-element" />
+<text x="1045.44" y="237.072" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1100" class="value-element">1,100 </text>
+<text x="1045.44" y="184.816" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-37" class="value-element">3.7%</text>
+<path d="m1082 253.62h65.11q16 0 16-16v6.643q0-16-16-16h-65.11q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-49" class="path-element" />
+<text x="1114.56" y="246.463" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1050" class="value-element">1,050 </text>
+<text x="1114.56" y="194.207" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-35" class="value-element">3.5%</text>
+<path d="m1151.1 263.01h65.11q16 0 16-16v6.644q0-16-16-16h-65.11q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-50" class="path-element" />
+<text x="1183.68" y="255.855" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-1000-1" class="value-element">1,000 </text>
+<text x="1183.68" y="203.599" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-34" class="value-element">3.4%</text>
+<path d="m1231 272.4h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-51" class="path-element" />
+<text x="1252.8" y="265.246" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-950" class="value-element">950 </text>
+<text x="1252.8" y="212.99" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-32" class="value-element">3.2%</text>
+<path d="m1300.1 272.4h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-52" class="path-element" />
+<text x="1321.92" y="265.246" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-950-1" class="value-element">950 </text>
+<text x="1321.92" y="212.99" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-32-1" class="value-element">3.2%</text>
+<path d="m1369.2 272.4h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-53" class="path-element" />
+<text x="1391.04" y="265.246" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-950-2" class="value-element">950 </text>
+<text x="1391.04" y="212.99" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-32-2" class="value-element">3.2%</text>
+<path d="m1438.4 281.8h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-54" class="path-element" />
+<text x="1460.16" y="274.637" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-900" class="value-element">900 </text>
+<text x="1460.16" y="222.381" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-30" class="value-element">3.0%</text>
+<path d="m1507.5 281.8h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-55" class="path-element" />
+<text x="1529.28" y="274.637" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-900-1" class="value-element">900 </text>
+<text x="1529.28" y="222.381" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-30-1" class="value-element">3.0%</text>
+<path d="m1576.6 291.19h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-56" class="path-element" />
+<text x="1598.4" y="284.028" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-850" class="value-element">850 </text>
+<text x="1598.4" y="231.773" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-29" class="value-element">2.9%</text>
+<path d="m1645.7 291.19h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-57" class="path-element" />
+<text x="1667.52" y="284.028" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-850-1" class="value-element">850 </text>
+<text x="1667.52" y="231.773" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-29-1" class="value-element">2.9%</text>
+<path d="m1714.8 300.58h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-58" class="path-element" />
+<text x="1736.64" y="293.42" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-800" class="value-element">800 </text>
+<text x="1736.64" y="241.164" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-27" class="value-element">2.7%</text>
+<path d="m1784 300.58h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-59" class="path-element" />
+<text x="1805.76" y="293.42" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-800-1" class="value-element">800 </text>
+<text x="1805.76" y="241.164" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-27-1" class="value-element">2.7%</text>
+<path d="m1853.1 309.97h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-60" class="path-element" />
+<text x="1874.88" y="302.811" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-750" class="value-element">750 </text>
+<text x="1874.88" y="250.555" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-25" class="value-element">2.5%</text>
+<path d="m1922.2 319.36h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-61" class="path-element" />
+<text x="1944" y="312.202" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-700" class="value-element">700 </text>
+<text x="1944" y="259.946" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-24" class="value-element">2.4%</text>
+<path d="m1991.3 319.36h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-62" class="path-element" />
+<text x="2013.12" y="312.202" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-700-1" class="value-element">700 </text>
+<text x="2013.12" y="259.946" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-24-1" class="value-element">2.4%</text>
+<path d="m2060.4 328.75h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-63" class="path-element" />
+<text x="2082.24" y="321.594" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-650" class="value-element">650 </text>
+<text x="2082.24" y="269.338" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-22" class="value-element">2.2%</text>
+<path d="m2129.6 338.14h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-64" class="path-element" />
+<text x="2151.36" y="330.985" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-600" class="value-element">600 </text>
+<text x="2151.36" y="278.729" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-20" class="value-element">2.0%</text>
+<path d="m2198.7 338.14h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-65" class="path-element" />
+<text x="2220.48" y="330.985" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-600-1" class="value-element">600 </text>
+<text x="2220.48" y="278.729" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-20-1" class="value-element">2.0%</text>
+<path d="m2267.8 347.54h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-66" class="path-element" />
+<text x="2289.6" y="340.376" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-550" class="value-element">550 </text>
+<text x="2289.6" y="288.12" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-19" class="value-element">1.9%</text>
+<path d="m2336.9 356.93h43.596q16 0 16-16v6.644q0-16-16-16h-43.596q-16 0-16 16v-6.644q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-67" class="path-element" />
+<text x="2358.72" y="349.768" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-500-1" class="value-element">500 </text>
+<text x="2358.72" y="297.512" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-17" class="value-element">1.7%</text>
+<path d="m2406 375.71h43.596q16 0 16-16v6.643q0-16-16-16h-43.596q-16 0-16 16v-6.643q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5" id="path-68" class="path-element" />
+<text x="2427.84" y="368.55" font-family="&quot;Montserrat&quot;" font-size="20px" font-weight="700" text-anchor="middle" id="valor-400" class="value-element">400 </text>
+<text x="2427.84" y="316.294" fill="#4c6a67" font-family="&quot;Montserrat&quot;" font-size="22px" font-weight="600" text-anchor="middle" id="valor-14" class="value-element">1.4%</text>
+<defs>
+<clipPath id="a">
+<path d="M388.8 28.8h2073.6v432H388.8z" id="path-69" class="path-element" />
+</clipPath>
+</defs>
+</svg>

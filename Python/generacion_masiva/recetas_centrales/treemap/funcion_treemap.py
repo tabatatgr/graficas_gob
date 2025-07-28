@@ -8,41 +8,8 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import squarify
 import pandas as pd
-import subprocess
 from pathlib import Path
 import os
-
-def limpiar_svg_con_svgo(input_file, output_file, config_file=None):
-    """Optimiza un archivo SVG usando SVGO."""
-    command = ["svgo", input_file, "-o", output_file]
-    if config_file:
-        command.extend(["--config", config_file])
-    try:
-        subprocess.run(command, check=True)
-    except FileNotFoundError:
-        print("SVGO no encontrado. Saltando optimización SVGO.")
-        return False
-    return True
-
-def limpiar_svg_con_scour(input_file, output_file):
-    """Optimiza un archivo SVG usando Scour."""
-    try:
-        subprocess.run([
-            "scour",
-            "--enable-id-stripping",
-            "--enable-comment-stripping",
-            "--shorten-ids",
-            "--indent=none",
-            "--strip-xml-prolog",
-            "--remove-metadata",
-            "--no-line-breaks",
-            "-i", input_file,
-            "-o", output_file
-        ], check=True)
-    except FileNotFoundError:
-        print("Scour no encontrado. Saltando optimización Scour.")
-        return False
-    return True
 
 def generar_treemap(df, **kwargs):
     """
@@ -210,78 +177,16 @@ def generar_treemap(df, **kwargs):
     ax.axis('off')
     plt.tight_layout()
     
-    # Generar nombres de archivo
+    # Generar nombres de archivo y guardar
     nombre_base = kwargs.get('nombre', 'treemap')
     archivo_png = os.path.join(output_dir, f"{nombre_base}.png")
     archivo_svg = os.path.join(output_dir, f"{nombre_base}.svg")
-    archivo_svg_svgo = os.path.join(output_dir, f"{nombre_base}_svgo.svg")
-    archivo_svg_final = os.path.join(output_dir, f"{nombre_base}_final.svg")
     
-    # Guardar archivos
-    plt.savefig(archivo_png, format='png', bbox_inches='tight')
+    plt.savefig(archivo_png, format='png', bbox_inches='tight', dpi=300, transparent=True)
     plt.savefig(archivo_svg, format='svg', bbox_inches='tight')
-    
-    # Aplicar flujo SVG si está habilitado
-    if kwargs.get('usar_flujo_svg', False):
-        try:
-            import sys
-            from pathlib import Path as PathLib
-            parent_dir = PathLib(__file__).parent.parent
-            sys.path.insert(0, str(parent_dir))
-            from svg_cleanup.flujo_exportacion import exportar_grafica
-            
-            print(f"🔄 Aplicando flujo SVG a {nombre_base}...")
-            archivo_final = exportar_grafica(archivo_svg, nombre_base, output_dir)
-            if archivo_final:
-                print(f"✅ Archivo optimizado para Figma: {archivo_final}")
-                # Limpiar archivos intermedios
-                for temp_file in [archivo_svg, archivo_svg_svgo, archivo_svg_final]:
-                    if os.path.exists(temp_file):
-                        os.remove(temp_file)
-                resultado_svg = archivo_final
-            else:
-                print("⚠️ Error en flujo SVG, usando optimización básica")
-                # Optimización básica de fallback
-                if limpiar_svg_con_svgo(archivo_svg, archivo_svg_svgo):
-                    if limpiar_svg_con_scour(archivo_svg_svgo, archivo_svg_final):
-                        print(f"SVG optimizado generado: {archivo_svg_final}")
-                        resultado_svg = archivo_svg_final
-                    else:
-                        print(f"SVG básico generado: {archivo_svg}")
-                        resultado_svg = archivo_svg
-                else:
-                    print(f"SVG básico generado: {archivo_svg}")
-                    resultado_svg = archivo_svg
-        except Exception as e:
-            print(f"⚠️ Error en flujo SVG: {e}")
-            # Optimización básica de fallback
-            if limpiar_svg_con_svgo(archivo_svg, archivo_svg_svgo):
-                if limpiar_svg_con_scour(archivo_svg_svgo, archivo_svg_final):
-                    print(f"SVG optimizado generado: {archivo_svg_final}")
-                    resultado_svg = archivo_svg_final
-                else:
-                    print(f"SVG básico generado: {archivo_svg}")
-                    resultado_svg = archivo_svg
-            else:
-                print(f"SVG básico generado: {archivo_svg}")
-                resultado_svg = archivo_svg
-    else:
-        # Optimización básica del archivo SVG
-        if limpiar_svg_con_svgo(archivo_svg, archivo_svg_svgo):
-            if limpiar_svg_con_scour(archivo_svg_svgo, archivo_svg_final):
-                print(f"SVG optimizado generado: {archivo_svg_final}")
-                resultado_svg = archivo_svg_final
-            else:
-                print(f"SVG básico generado: {archivo_svg}")
-                resultado_svg = archivo_svg
-        else:
-            print(f"SVG básico generado: {archivo_svg}")
-            resultado_svg = archivo_svg
-
-    print(f"PNG generado: {archivo_png}")
     plt.close()
     
     return {
         'png': archivo_png,
-        'svg': resultado_svg
+        'svg': archivo_svg
     }

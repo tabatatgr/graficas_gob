@@ -7,16 +7,6 @@ from matplotlib import font_manager
 import subprocess
 import os
 
-def limpiar_svg_con_scour(archivo_entrada, archivo_salida):
-    subprocess.run([
-        'scour', '-i', archivo_entrada, '-o', archivo_salida,
-        '--enable-viewboxing', '--enable-id-stripping',
-        '--shorten-ids', '--remove-descriptive-elements'
-    ], check=True)
-
-def limpiar_svg_con_svgo(archivo_entrada, archivo_salida):
-    subprocess.run(['svgo', archivo_entrada, '-o', archivo_salida], check=True)
-
 def generar_lineas_tendencia(df, **kwargs):
     """
     Genera una gráfica de líneas de tendencia usando matplotlib que produce PNG y SVG
@@ -102,63 +92,36 @@ def generar_lineas_tendencia(df, **kwargs):
         plt.tight_layout()
         
         # Guardar archivos
-        plt.savefig(f"{nombre_df}.svg", format='svg', bbox_inches='tight', dpi=300)
-        plt.savefig(f"{nombre_df}.png", format='png', bbox_inches='tight', dpi=300)
-        
-        # Limpiar SVG
-        nombre_svg = f"{nombre_df}.svg"
-        nombre_svg_limpio = f"{nombre_df}_scour.svg"
-        nombre_svg_svgo = f"{nombre_df}_svgo.svg"
+        # --- 9. GUARDADO Y VISUALIZACIÓN ---
+        output_dir = kwargs.get('output_dir', 'output')
+        os.makedirs(output_dir, exist_ok=True)
 
-        # Aplicar flujo SVG si está habilitado
-        if kwargs.get('usar_flujo_svg', False):
-            try:
-                import sys
-                from pathlib import Path as PathLib
-                parent_dir = PathLib(__file__).parent.parent
-                sys.path.insert(0, str(parent_dir))
-                from svg_cleanup.flujo_exportacion import exportar_grafica
-                
-                print(f"🔄 Aplicando flujo SVG a {nombre_df}...")
-                archivo_final = exportar_grafica(nombre_svg, nombre_df, ".")
-                if archivo_final:
-                    print(f"✅ Archivo optimizado para Figma: {archivo_final}")
-                    # Limpiar archivos intermedios
-                    for temp_file in [nombre_svg, nombre_svg_limpio, nombre_svg_svgo]:
-                        if os.path.exists(temp_file):
-                            os.remove(temp_file)
-                else:
-                    print("⚠️ Error en flujo SVG, usando optimización básica")
-                    # Optimización básica de fallback
-                    try:
-                        limpiar_svg_con_scour(nombre_svg, nombre_svg_limpio)
-                        limpiar_svg_con_svgo(nombre_svg_limpio, nombre_svg_svgo)
-                    except Exception as e:
-                        print("Error al limpiar SVG:", e)
-            except Exception as e:
-                print(f"⚠️ Error en flujo SVG: {e}")
-                # Optimización básica de fallback
-                try:
-                    limpiar_svg_con_scour(nombre_svg, nombre_svg_limpio)
-                    limpiar_svg_con_svgo(nombre_svg_limpio, nombre_svg_svgo)
-                except Exception as e:
-                    print("Error al limpiar SVG:", e)
-        else:
-            # Optimización básica del archivo SVG
-            try:
-                limpiar_svg_con_scour(nombre_svg, nombre_svg_limpio)
-            except Exception as e:
-                print("Error al limpiar con Scour:", e)
+        # Ajustar márgenes (idéntico a barras)
+        left_margin = 0.15
+        right_margin = 0.95
+        bottom_margin = 0.2
+        top_margin = 0.95
+        plt.subplots_adjust(left=left_margin, right=right_margin, top=top_margin, bottom=bottom_margin)
 
-            try:
-                limpiar_svg_con_svgo(nombre_svg_limpio, nombre_svg_svgo)
-            except Exception as e:
-                print("Error al limpiar con SVGO:", e)
+        nombre_archivo = f"{nombre_df}.svg"
+        ruta_temporal = os.path.join(output_dir, nombre_archivo)
+        plt.savefig(ruta_temporal, format='svg', dpi=300, transparent=True)
+
+        # Aplicar el flujo de exportación
+        try:
+            from svg_cleanup.flujo_exportacion import exportar_grafica
+            archivo_final = exportar_grafica(ruta_temporal, nombre_df, output_dir)
+            # Limpiar archivo temporal
+            if archivo_final and os.path.exists(ruta_temporal):
+                os.remove(ruta_temporal)
+        except ImportError:
+            print("Nota: Módulo de exportación no disponible. Se guardará el SVG sin optimizar.")
+        except Exception as e:
+            print(f"Advertencia: Error en el flujo de exportación: {e}")
 
         plt.close(fig)  # Cerrar la figura para liberar memoria
-        
-        print(f"Gráfica de líneas de tendencia guardada como: {nombre_df}.png y {nombre_df}.svg")
-        return f"{nombre_df}.png"
+        print(f"Gráfica de líneas de tendencia guardada como: {ruta_temporal}")
+        return ruta_temporal
         
     except Exception as e:
         print(f"Error al generar gráfica de líneas de tendencia: {e}")

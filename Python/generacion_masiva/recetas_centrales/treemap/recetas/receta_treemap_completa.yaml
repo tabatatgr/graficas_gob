@@ -7,7 +7,7 @@ archivo_salida: treemap_victimas
 # Parámetros de la función
 parametros:
   nombre: treemap_victimas
-  font: Montserrat
+  font: Arial
   fontsize_etiqueta: 26
   fontsize_valor: 26
   fontsize_porcentaje: 26

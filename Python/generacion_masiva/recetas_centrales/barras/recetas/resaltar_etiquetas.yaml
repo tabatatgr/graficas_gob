@@ -3,7 +3,7 @@
 # Uso: Ideal para destacar elementos específicos en comparaciones entre múltiples categorías
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 nombre: "resaltar_etiquetas"
 descripcion: "Gráfica de barras horizontales con porcentaje al inicio y capacidad de resaltar etiquetas específicas con estilo diferenciado"
@@ -21,12 +21,16 @@ parametros:
   valor_total: true
   porcentaje_barra: false
   porcentaje_total: false
-  porcentaje_total_inicio: true
+  porcentaje_total_inicio: false
   
   # Configuración de orientación y ordenamiento
   orientacion: "horizontal"
   ordenar_por: "valor"
   orden: "ascendente"
+  orientacion_etiqueta_x: "45"
+  
+  # Configuración de origen de las barras
+  orientacion: "vertical"
   
   # Configuración de presentación
   quitar_capsula: true

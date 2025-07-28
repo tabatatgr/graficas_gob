@@ -1,0 +1,81 @@
+# Receta para barras verticales simples
+# Gráfica de barras verticales para una sola serie
+
+tipo_grafico: "barras"
+
+metadata:
+  titulo: "Barras Verticales Simples una Serie"
+  descripcion: "Gráfico de barras verticales simples con valores dentro de las barras"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-07-22"
+
+grafico:
+  tipo: "barras_verticales"
+
+datos:
+  hoja: null
+  rango: null
+
+parametros:
+  nombre: "barras_verticales_simples_una_serie"
+  bar_height: 1
+  font: "Arial"
+  fontsize_barra: 24
+  fontsize_valor_total: 20
+  orientacion: "horizontal"
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  valor_barra: true
+  porcentaje_barra: false
+  porcentaje_total: false
+  valor_total: true
+  area_min: 500
+  grillas: true
+  leyenda: false
+  posicion_leyenda: null
+  ncol_leyenda: null
+  aumenta_ancho_fig: 0
+  aumenta_alto_fig: 0
+  aumenta_sep_leyenda: 0.2
+  paleta_colores: null
+  quitar_capsula: false
+  capsulas_cero: true
+  orientacion_etiqueta_x: null
+  nombre_eje_x: null
+  nombre_eje_y: null
+  y_limits: null
+  union_izquierda: 0
+  union_derecha: 0
+  agregar_datos: null
+  asignar_etiquetas: null
+  sustituir_etiquetas: null
+  porcentaje_abajo: false
+  porcentaje_total_inicio: false
+  porcentaje_divergente: false
+  separar_por_total: 0.0
+  espacio_inicio: 0
+  altura_min: 0
+  ejeY_negativo_a_positivo: true
+  resaltar_etiquetas: null
+  color_valor_barra: null
+
+exclusiones: []
+
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+
+notas:
+  - "Esta receta genera un gráfico de barras verticales simples para una sola serie."
+  - "Ideal para datos de una sola categoría."
+  - "Muestra valores dentro de cada barra."
+  - "No incluye leyenda."
+
+ejemplo_datos:
+  descripcion: "El DataFrame debe tener la primera columna como índice y una sola columna de valores."
+  estructura:
+    - "Columna 1: Categorías (índice)"
+    - "Columna 2: Serie única (ej: 'Total')"

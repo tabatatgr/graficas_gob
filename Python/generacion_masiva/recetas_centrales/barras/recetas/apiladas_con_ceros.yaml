@@ -2,7 +2,7 @@
 # Configuración basada en el ejemplo EXPORTAR: barras_apiladas_con_ceros
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 metadata:
   titulo: "Barras Apiladas con Ceros"
@@ -13,7 +13,7 @@ metadata:
 
 # Configuración del gráfico
 grafico:
-  tipo: "barras_verticales"
+  tipo: "barras"
   nombre: "barras_apiladas_con_ceros"
   
 # Configuración de datos
@@ -24,10 +24,12 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
+  nombre: "barras_apiladas_con_ceros"
   bar_height: 0.65
-  font: "Montserrat"
+  font: "Arial"
   fontsize_barra: 15
   fontsize_valor_total: 20
+  bar_height_override: true
   
   # ** CONFIGURACIÓN PRINCIPAL: SIN ORDENAMIENTO **
   ordenar_por: false            # Mantiene el orden original de los datos
@@ -49,7 +51,7 @@ parametros:
   ncol_leyenda: null            # Número de columnas automático
   
   # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
-  orientacion_etiqueta_x: "horizontal"  # Etiquetas horizontales en eje X
+  orientacion_etiqueta_x: "45"  # Etiquetas rotadas 45 grados en eje X
   
   # ** CONFIGURACIÓN PRINCIPAL: COLORES PERSONALIZADOS **
   paleta_colores: ["#584290", "#8578B0", "#B1ADCF"]  # Paleta morada institucional

@@ -3,7 +3,7 @@
 # Uso: Ideal para mostrar datos que tienen componentes positivos y negativos, como desaparecidos vs localizados
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 nombre: "barras_divergentes"
 descripcion: "Gráfica de barras verticales divergentes con valores positivos y negativos, incluyendo proyecciones futuras con estilos personalizados"
@@ -12,10 +12,13 @@ descripcion: "Gráfica de barras verticales divergentes con valores positivos y 
 parametros:
   # Configuración básica
   bar_height: 0.65
+  bar_height_override: true
   font: "Montserrat"
   fontsize_barra: 9
   fontsize_barra_porcentaje: 7
   fontsize_valor_total: 15
+  orientacion_etiqueta_x: "45"
+  desplazamiento_capsula: 0.06
   
   # Configuración de ordenamiento
   ordenar_por: false
@@ -31,7 +34,6 @@ parametros:
   
   # Configuración de leyenda
   leyenda: false
-  orientacion_etiqueta_x: "horizontal"
   posicion_leyenda: "abajo"
   ncol_leyenda: 2
   

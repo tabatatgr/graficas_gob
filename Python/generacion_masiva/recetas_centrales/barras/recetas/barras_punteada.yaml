@@ -2,7 +2,8 @@
 # Configuración basada en barras con valores positivos/negativos y elementos personalizados
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
+nombre: "barras_punteada"
 
 metadata:
   titulo: "Barras Divergentes con Datos Adicionales"
@@ -13,8 +14,8 @@ metadata:
 
 # Configuración del gráfico
 grafico:
-  tipo: "barras_verticales"
-  nombre: "barras_divergentes_con_datos_adicionales"
+  tipo: "barras"
+  nombre: "barras_punteada"
   
 # Configuración de datos
 datos:
@@ -24,7 +25,7 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
-  bar_height: 0.65
+  bar_height: 0.8
   font: "Montserrat"
   fontsize_barra: 9              # Tamaño pequeño para etiquetas internas
   fontsize_valor_total: 20
@@ -56,23 +57,14 @@ parametros:
   ncol_leyenda: 2                # Leyenda en 2 columnas
   
   # ** CONFIGURACIÓN PRINCIPAL: ORIENTACIÓN **
-  orientacion_etiqueta_x: "horizontal"  # Etiquetas horizontales en eje X
+  orientacion_etiqueta_x: "45"  # Etiquetas a 45 grados en eje X
   
   # ** CONFIGURACIÓN PRINCIPAL: COLORES PERSONALIZADOS **
   paleta_colores: ["#114a44", "#739489", "#3d5c93", "#7393b3", "#6B5B95"]
   
   # ** CONFIGURACIÓN PRINCIPAL: DATOS ADICIONALES **
-  agregar_datos: 
-    - categoria: "2025-01-01"    # Fecha como timestamp
-      etiqueta: " "              # Etiqueta vacía (espacio)
-      valores: [0, 0, 0, 0, -100000]  # Valores para cada columna
-      textos_personalizados: [null, null, null, null, "100,000"]  # Texto personalizado
-      opciones_visuales:
-        colores_fondo: [null, null, null, null, "none"]           # Sin fondo
-        colores_borde: [null, null, null, null, "#114a44"]        # Borde verde
-        estilos_borde: [null, null, null, null, "dotted"]         # Línea punteada
-        grosores_borde: [null, null, null, null, 3.5]             # Grosor de borde
-        colores_texto: [null, null, null, null, "#114a44"]        # Texto verde
+  agregar_datos:
+    - ["2025-01-01", " ", [0, 0, -100000], [null, null, "100,000"], {"colores_fondo": [null, null, "none"], "colores_borde": [null, null, "#114a44"], "estilos_borde": [null, null, "dotted"], "grosores_borde": [null, null, 3.5], "colores_texto": [null, null, "#114a44"]}]
   
   # Configuración visual
   grillas: true                  # Mantiene grillas por defecto

@@ -2,7 +2,7 @@
 # Configuración que incluye resaltado del valor máximo
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
 
 metadata:
   titulo: "Barras Verticales con Máximo Destacado"
@@ -13,7 +13,7 @@ metadata:
 
 # Configuración del gráfico
 grafico:
-  tipo: "barras_verticales"
+  tipo: "barras"
   nombre: "barras_verticales_maximo_destacado"
   
 # Configuración de datos
@@ -24,7 +24,7 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
-  bar_height: 0.9
+  bar_height: 1
   font: "Montserrat"
   fontsize_barra: 20
   fontsize_valor_total: 20

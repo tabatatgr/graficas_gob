@@ -2,7 +2,8 @@
 # Configuración basada en el ejemplo EXPORTAR: barra_previa
 
 # Tipo de gráfico que se generará
-tipo_grafico: "barras_verticales"
+tipo_grafico: "barras"
+nombre: "barras_datos_previos"
 
 metadata:
   titulo: "Barras con Datos Previos"
@@ -13,8 +14,7 @@ metadata:
 
 # Configuración del gráfico
 grafico:
-  tipo: "barras_verticales"
-  nombre: "barra_previa"
+  tipo: "barras"
   
 # Configuración de datos
 datos:
@@ -26,8 +26,9 @@ datos:
 # Parámetros de la función barras_verticales
 parametros:
   # Configuración básica
+  nombre: "barras_datos_previos"
   bar_height: 0.9
-  font: "Montserrat"
+  font: "Arial"
   fontsize_barra: 15           # Por defecto de la función
   fontsize_valor_total: 30     # Tamaño grande para valores
   
@@ -51,13 +52,11 @@ parametros:
   
   # ** CONFIGURACIÓN PRINCIPAL: AGREGAR DATOS **
   agregar_datos:
-    - fecha: "2005-01-01"
-      etiqueta: "Previo"
-      valores: [192, 313, "38%"]
-      descripcion: "Datos históricos previos agregados antes del rango principal"
+    - ["2005-01-01", "Previo", [192, 313], null]
+    - ["2006-01-01", "...", [0, 0], null]
   
   # ** CONFIGURACIÓN PRINCIPAL: ASIGNAR ETIQUETAS **
-  asignar_etiquetas: "porcentaje"  # Usa la columna 'porcentaje' como etiquetas de valores
+  asignar_etiquetas: null  # No usamos etiquetas personalizadas por ahora
   
   # Configuración de colores especiales
   paleta_colores: ["#10302C", "#E6E6E6"]  # Verde oscuro y gris claro
@@ -120,12 +119,8 @@ datos_agregados:
     - tipo: "previo"
       fecha: "2005-01-01"
       etiqueta: "Previo"
-      valores:
-        - 192      # movimiento
-        - 313      # sin_movimiento
-        - "38%"    # porcentaje (se usa como etiqueta)
+      valores: [192, 313]      # movimiento, sin_movimiento
       posicion: "inicio"
-      separador: "puntos_suspensivos"
       
 # Configuración de etiquetas personalizadas
 etiquetas_personalizadas:
