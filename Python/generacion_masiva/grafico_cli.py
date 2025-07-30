@@ -215,9 +215,6 @@ class GraficoCLI:
             parametros['output_dir'] = parametros.get('output_dir', 'output')
             parametros['usar_flujo_svg'] = True
 
-
-            # Eliminado el volcado de parámetros para depuración (debug_cli.txt)
-
             # Manejo especial para gráficas agrupadas y apiladas
             if tipo_grafico == 'agrupadasyapiladas':
                 if 'datos' in receta:

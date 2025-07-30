@@ -1,12 +1,12 @@
+nombre: linea_simple_functional
 tipo_grafico: linea
-archivo_datos: ../datos_linea_test.csv
-titulo: "Gráfica de Línea Simple"
-descripcion: "Gráfica de línea simple con área sombreada"
-archivo_salida: linea_simple_functional
-
-# Parámetros de la función
-parametros:
-  nombre: linea_simple_functional
-  columna_fecha: fecha
-  columna_grafica: valores
-  columna_linea: referencia
+columna_fecha: fecha
+columna_grafica: valores
+columna_linea: referencia
+font: Montserrat
+agregar_capsula: true
+# Notas relevantes para el usuario
+notas:
+  - "Gráfica de línea simple con área sombreada y diferencia resaltada."
+  - "Puedes desactivar la cápsula con agregar_capsula: false."
+  - "No es necesario especificar los nombres de columna si usas nombres comunes ('fecha', 'valor', 'referencia', etc.)."

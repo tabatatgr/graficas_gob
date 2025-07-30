@@ -62,9 +62,6 @@ parametros:
   # ** CONFIGURACIÓN PRINCIPAL: COLORES PERSONALIZADOS **
   paleta_colores: ["#114a44", "#739489", "#3d5c93", "#7393b3", "#6B5B95"]
   
-  # ** CONFIGURACIÓN PRINCIPAL: DATOS ADICIONALES **
-  agregar_datos:
-    - ["2025-01-01", " ", [0, 0, -100000], [null, null, "100,000"], {"colores_fondo": [null, null, "none"], "colores_borde": [null, null, "#114a44"], "estilos_borde": [null, null, "dotted"], "grosores_borde": [null, null, 3.5], "colores_texto": [null, null, "#114a44"]}]
   
   # Configuración visual
   grillas: true                  # Mantiene grillas por defecto
@@ -101,40 +98,20 @@ parametros:
   aumenta_alto_fig: 0
   aumenta_sep_leyenda: 0.0
 
+  # Barra especial punteada (figura especial)
+  barra_especial: true           # Si true, agrega barra especial al final
+  valor_barra_especial: -100000  # Valor de la barra especial
+  texto_barra_especial: "100,000" # Texto personalizado para la barra especial
+
 # Configuración de exclusiones
 exclusiones: []
 
-# Configuración de salida
-salida:
-  formato: ["png", "svg"]
-  dpi: 300
-  optimizar_svg: true
-  directorio: "output"
-  
-# Configuración específica para datos adicionales
-configuracion_datos_adicionales:
-  tipo: "elemento_especial"
-  posicion: "posterior"           # Se agrega después de los datos existentes
-  formato_fecha: "timestamp"
-  
-  # Configuración del elemento especial
-  elemento_especial:
-    etiqueta: " "                 # Etiqueta vacía (solo espacio)
-    valores: [0, 0, 0, 0, -100000]  # Solo el último valor es significativo
-    texto_personalizado: "100,000"  # Formato personalizado para el valor
-    
-    # Estilos visuales
-    estilos:
-      fondo: "transparente"       # Sin fondo
-      borde: "#114a44"           # Color verde del tema
-      estilo_borde: "punteado"   # Línea punteada
-      grosor_borde: 3.5          # Grosor destacado
-      color_texto: "#114a44"     # Texto del mismo color que el borde
       
 # Notas para el usuario
 notas:
   - "Esta receta incluye un elemento especial con formato personalizado"
   - "El elemento adicional usa bordes punteados para diferenciarse"
+  - "Activa la barra especial con 'barra_especial: true' y define su valor/texto con 'valor_barra_especial' y 'texto_barra_especial'"
   - "Solo el último segmento del elemento adicional tiene valor (-100,000)"
   - "El texto se muestra con formato personalizado (100,000)"
   - "Los colores del elemento especial coinciden con la paleta principal"
@@ -142,90 +119,3 @@ notas:
   - "Se mantiene la configuración divergente para el resto de datos"
   - "La etiqueta del elemento especial es casi invisible (solo espacio)"
   
-# Casos de uso
-casos_uso:
-  - "Análisis de flujos con elementos especiales destacados"
-  - "Datos históricos con proyecciones o estimaciones"
-  - "Comparación de períodos regulares vs valores excepcionales"
-  - "Análisis de balances con elementos de contexto"
-  - "Reportes con notas visuales o aclaraciones"
-  - "Datos de seguimiento con hitos importantes"
-  - "Análisis de tendencias con eventos singulares"
-  
-# Estructura de datos esperada
-datos_esperados:
-  formato: "wide"
-  columnas:
-    - "Columna 1: períodos temporales (años, meses, etc.)"
-    - "Columna 2-N: valores que pueden ser positivos o negativos"
-    - "Elemento adicional: agregado programáticamente"
-    
-  ejemplo:
-    datos_base:
-      - "Año | Acumulado | Desaparecidos | Localizados ant. | Localizados per. | Sin año loc."
-      - "2019 | 50000     | 20000         | -20000           | -10000           | 0"
-      - "2020 | 30000     | 10000         | -40000           | -20000           | 0"
-      - "2021 | 40000     | 30000         | -10000           | -20000           | 0"
-      - "2022 | 20000     | 10000         | -30000           | -10000           | 0"
-      
-    elemento_adicional:
-      - "2025 | 0         | 0             | 0                | 0                | -100000"
-      - "Con formato especial: texto '100,000', borde punteado verde"
-      
-# Personalización avanzada
-personalizacion:
-  datos_adicionales:
-    elemento_especial:
-      fecha: "2025-01-01"
-      etiqueta: " "
-      valores: [0, 0, 0, 0, -100000]
-      texto_personalizado: "100,000"
-      
-    estilos_visuales:
-      fondo: "none"
-      borde: "#114a44"
-      estilo_borde: "dotted"
-      grosor_borde: 3.5
-      color_texto: "#114a44"
-      
-  configuracion_base:
-    colores: ["#114a44", "#739489", "#3d5c93", "#7393b3", "#6B5B95"]
-    etiquetas_tamaño: 9
-    leyenda_columnas: 2
-    
-# Variantes recomendadas
-variantes:
-  elemento_destacado:
-    estilo_borde: "solid"
-    grosor_borde: 2.0
-    
-  elemento_sutil:
-    estilo_borde: "dashed"
-    grosor_borde: 1.5
-    
-  sin_elemento_especial:
-    agregar_datos: null
-    
-  elemento_con_fondo:
-    colores_fondo: [null, null, null, null, "#f0f0f0"]
-    
-  multiples_elementos:
-    # Agregar más elementos con diferentes configuraciones
-    elementos_adicionales: 2
-    
-# Consideraciones técnicas
-consideraciones:
-  - "El elemento adicional se define con pd.Timestamp para fechas"
-  - "Los valores null en las listas indican 'usar configuración por defecto'"
-  - "El texto personalizado sobrescribe el formato automático"
-  - "Los estilos solo se aplican a elementos no-null"
-  - "La etiqueta ' ' (espacio) crea una entrada casi invisible"
-  - "Los bordes punteados ayudan a distinguir elementos especiales"
-  
-# Validaciones
-validaciones:
-  - "Verificar que las fechas de elementos adicionales sean válidas"
-  - "Confirmar que los arrays de personalización tengan la longitud correcta"
-  - "Validar que los colores estén en formato hexadecimal"
-  - "Asegurar que los valores null se manejen correctamente"
-  - "Verificar que el texto personalizado sea legible"

@@ -1,0 +1,51 @@
+# Receta para barras verticales simples con porcentaje total
+# Gráfico de barras verticales mostrando solo el porcentaje total por barra
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras"
+
+metadata:
+  titulo: "Barras Verticales Simples con Porcentaje Total"
+  descripcion: "Gráfico de barras verticales que muestra solo el porcentaje total arriba de cada barra, sin valores internos"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-01-10"
+
+grafico:
+  tipo: "barras"
+  nombre: "barras_verticales_simples_porcentaje_total"
+
+datos:
+  hoja: null
+  rango: null
+
+parametros:
+  bar_height: 0.9
+  font: "Montserrat"
+  fontsize_barra: 20
+  fontsize_valor_total: 20
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  valor_barra: false
+  porcentaje_barra: false
+  porcentaje_total: true
+  valor_total: true
+  area_min: 300
+  grillas: true
+  quitar_capsula: false
+  capsulas_cero: true
+
+exclusiones: []
+
+salida:
+  formato: ["png", "svg"]
+  dpi: 300
+  optimizar_svg: true
+  directorio: "output"
+
+notas:
+  - "Esta receta genera un gráfico de barras verticales simples mostrando solo el porcentaje total arriba de cada barra."
+  - "Las etiquetas se ordenan alfabéticamente de forma ascendente."
+  - "No incluye valores dentro de las barras, solo el porcentaje total."
+  - "Usa la paleta de colores por defecto."
+  - "Ideal para datos categóricos con una sola serie."

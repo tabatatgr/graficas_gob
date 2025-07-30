@@ -23,14 +23,10 @@ parametros:
   porcentaje_total: false
   porcentaje_total_inicio: false
   
-  # Configuración de orientación y ordenamiento
-  orientacion: "horizontal"
+  orientacion: "vertical"
   ordenar_por: "valor"
   orden: "ascendente"
   orientacion_etiqueta_x: "45"
-  
-  # Configuración de origen de las barras
-  orientacion: "vertical"
   
   # Configuración de presentación
   quitar_capsula: true
@@ -39,14 +35,6 @@ parametros:
   
   # Configuración de resaltado (se define via kwargs)
   # resaltar_etiquetas: ["Elemento1", "Elemento2", "Elemento3"]
-
-# Casos de uso
-casos_uso:
-  - "Destacar estados, regiones o categorías específicas de interés"
-  - "Comparar elementos seleccionados contra el resto del conjunto"
-  - "Reportes donde ciertas entidades requieren atención especial"
-  - "Análisis de rendimiento con énfasis en casos destacados"
-  - "Presentaciones ejecutivas con elementos clave resaltados"
 
 # Notas de implementación
 notas:
@@ -57,40 +45,3 @@ notas:
   - "espacio_inicio=65 ajusta el espacio para mostrar los porcentajes correctamente"
   - "quitar_capsula=true elimina el borde de los valores totales"
   - "Funciona mejor con datos que tienen múltiples categorías numéricas"
-
-# Datos de ejemplo requeridos
-datos_ejemplo:
-  tipo: "DataFrame con múltiples columnas numéricas"
-  estructura: "Primera columna: categorías, siguientes columnas: valores numéricos"
-  ejemplo: "df con columnas ['estado', 'movimiento', 'sin_movimiento', 'pendiente', 'cancelado']"
-  nota: "Las etiquetas a resaltar deben coincidir exactamente con los valores en la primera columna"
-
-# Parámetros que deben ser pasados via kwargs
-parametros_kwargs:
-  resaltar_etiquetas: 
-    tipo: "lista"
-    descripcion: "Lista de etiquetas exactas que se desean resaltar"
-    ejemplo: '["Puebla", "Ciudad de México", "Tabasco"]'
-    obligatorio: true
-    nota: "Las etiquetas deben coincidir exactamente con los valores en los datos"
-
-# Parámetros opcionales que pueden ser sobrescritos via kwargs
-parametros_sobrescribibles:
-  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
-  - "espaciado: para ajustar el espaciado general (compacto, normal, amplio)"
-  - "paleta_colores: para usar una paleta diferente"
-  - "nombre_eje_x: para agregar título al eje X"
-  - "nombre_eje_y: para agregar título al eje Y"
-  - "espacio_inicio: para ajustar el espacio de los porcentajes"
-
-# Ejemplo de uso desde CLI
-ejemplo_cli: |
-  python generar_grafica.py --receta resaltar_etiquetas --datos estados_mexico.csv --resaltar_etiquetas '["Puebla", "Ciudad de México", "Tabasco"]' --espaciado compacto
-
-# Consideraciones especiales
-consideraciones:
-  - "Verificar que las etiquetas a resaltar existan en los datos"
-  - "Limitar el número de etiquetas resaltadas para mantener legibilidad"
-  - "Funciona mejor con datasets de tamaño medio a grande (10-50 elementos)"
-  - "El color de resaltado (#a3173e) es institucional y puede ser modificado"
-  - "Las etiquetas resaltadas también ocultan su texto en el eje Y para evitar duplicación"

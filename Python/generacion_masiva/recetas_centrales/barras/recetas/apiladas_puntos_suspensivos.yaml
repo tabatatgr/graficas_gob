@@ -50,10 +50,11 @@ parametros:
   quitar_capsula: true         # Quita las cápsulas - valores sin borde
   capsulas_cero: true          # Por defecto de la función
   
-  # ** CONFIGURACIÓN PRINCIPAL: AGREGAR DATOS **
-  agregar_datos:
-    - ["2005-01-01", "Previo", [192, 313], null]
-    - ["2006-01-01", "...", [0, 0], null]
+  # Ahora la barra 'Previo' y los puntos suspensivos se agregan automáticamente desde Python
+  # Solo necesitas indicar el corte y activar la opción:
+  agregar_barra_previa: true
+  fecha_corte: "2007-01-01"  # Cambia esta fecha según tu caso (es el primer año que quieres mostrar como barra normal)
+  nombre_barra_previa: "Previo"
   
   # ** CONFIGURACIÓN PRINCIPAL: ASIGNAR ETIQUETAS **
   asignar_etiquetas: null  # No usamos etiquetas personalizadas por ahora
@@ -103,24 +104,7 @@ parametros:
   # Configuración de colores de texto
   color_valor_barra: null
 
-# Configuración de exclusiones
 exclusiones: []
-
-# Configuración de salida
-salida:
-  formato: ["png", "svg"]
-  dpi: 300
-  optimizar_svg: true
-  directorio: "output"
-  
-# Configuración específica de datos agregados
-datos_agregados:
-  configuracion:
-    - tipo: "previo"
-      fecha: "2005-01-01"
-      etiqueta: "Previo"
-      valores: [192, 313]      # movimiento, sin_movimiento
-      posicion: "inicio"
       
 # Configuración de etiquetas personalizadas
 etiquetas_personalizadas:
@@ -138,39 +122,3 @@ notas:
   - "Paleta de colores de dos tonos: verde oscuro y gris claro"
   - "Sin grillas para un diseño más limpio"
   - "Ideal para series temporales con datos históricos resumidos"
-  
-# Casos de uso
-casos_uso:
-  - "Series temporales con datos históricos consolidados"
-  - "Reportes que muestran evolución desde un punto de referencia"
-  - "Análisis comparativo con período base"
-  - "Visualización de tendencias con contexto histórico"
-  - "Datos gubernamentales con línea base histórica"
-  
-# Estructura de datos esperada
-datos_esperados:
-  dataframe_principal:
-    - "Columna 1: años (2007, 2008, 2009, ...)"
-    - "Columna 2: movimiento (valores numéricos)"
-    - "Columna 3: sin_movimiento (valores numéricos)"
-    - "Columna 4: porcentaje (texto como '38%', '49%', etc.)"
-  
-  datos_agregados:
-    - "Se agrega automáticamente la barra 'Previo' al inicio"
-    - "Representa datos de 2005 consolidados"
-    - "Aparece separada por puntos suspensivos"
-    
-# Personalización avanzada
-personalizacion:
-  colores:
-    barra_1: "#10302C"  # Verde oscuro gubernamental
-    barra_2: "#E6E6E6"  # Gris claro para contraste
-  
-  etiquetas:
-    fuente_valores: "columna_porcentaje"
-    sin_capsulas: true
-    tamaño_fuente: 30
-    
-  espaciado:
-    separador_automatico: "puntos_suspensivos"
-    entre_previo_y_actual: "automático"

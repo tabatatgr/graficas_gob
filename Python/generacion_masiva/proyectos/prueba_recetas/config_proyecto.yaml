@@ -6,7 +6,6 @@ configuracion_graficas:
 directorios:
   input: input
   output: output
-  recetas: recetas
   temp: temp
 equipo:
   colaboradores: []

@@ -17,8 +17,6 @@ grafico:
   
 # Configuración de datos
 datos:
-  # El CLI proporcionará el DataFrame desde el archivo Excel/CSV
-  # Ideal para datos temporales donde se quieren agrupar años iniciales
   hoja: null  # Se usará la hoja por defecto
   rango: null # Se usarán todos los datos
 
@@ -58,5 +56,3 @@ parametros:
   aumenta_ancho_fig: 0
   aumenta_alto_fig: 1
   aumenta_sep_leyenda: 0.2
-  
-  # Configuración de colores (usará paleta por defecto)

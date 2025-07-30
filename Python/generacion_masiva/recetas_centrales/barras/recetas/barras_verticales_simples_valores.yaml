@@ -1,0 +1,40 @@
+# Receta para barras verticales simples con valores internos
+# Gráfico de barras verticales mostrando los valores absolutos dentro de cada barra
+
+# Tipo de gráfico que se generará
+tipo_grafico: "barras"
+
+metadata:
+  titulo: "Barras Verticales Simples con Valores Internos"
+  descripcion: "Gráfico de barras verticales que muestra los valores absolutos dentro de cada barra, sin porcentaje total"
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-07-22"
+
+grafico:
+  tipo: "barras_verticales"
+
+datos:
+  hoja: null
+  rango: null
+
+parametros:
+  nombre: "barras_verticales_simples_una_serie"
+  bar_height: 1
+  font: "Arial"
+  fontsize_barra: 24
+  fontsize_valor_total: 20
+  orientacion: "horizontal"
+  ordenar_por: "etiqueta"
+  orden: "ascendente"
+  valor_barra: true
+  valor_total: true
+  area_min: 500
+  grillas: true
+  leyenda: false
+
+notas:
+  - "Esta receta genera un gráfico de barras verticales simples mostrando los valores absolutos dentro de cada barra."
+  - "Ideal para datos de una sola categoría."
+  - "Muestra valores dentro de cada barra."
+  - "No incluye leyenda."

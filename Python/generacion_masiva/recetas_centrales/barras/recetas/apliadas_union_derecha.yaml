@@ -105,6 +105,15 @@ salida:
   dpi: 300
   optimizar_svg: true
   directorio: "output"
+
+# Configuración específica de unión
+union_configuracion:
+  tipo: "derecha"
+  cantidad: 3
+  etiqueta_automatica: true
+  formato_etiqueta: "YYYY-YYYY"  # Para fechas
+  comportamiento: "suma_valores"  # Suma los valores de las barras agrupadas
+  posicion: "final"              # Las barras agrupadas aparecen al final 
   
 # Notas para el usuario
 notas:
@@ -117,35 +126,4 @@ notas:
   - "Área mínima de 900 para mostrar etiquetas dentro de las barras"
   - "Mayor área mínima que la versión izquierda para mejor legibilidad"
   
-# Casos de uso
-casos_uso:
-  - "Series temporales con proyecciones futuras agrupadas"
-  - "Datos históricos donde se quiere simplificar períodos futuros"
-  - "Reportes gubernamentales con años de proyección combinados"
-  - "Análisis de tendencias con agrupación de períodos finales"
-  - "Planificación estratégica con períodos futuros consolidados"
   
-# Configuración específica de unión
-union_configuracion:
-  tipo: "derecha"
-  cantidad: 3
-  etiqueta_automatica: true
-  formato_etiqueta: "YYYY-YYYY"  # Para fechas
-  comportamiento: "suma_valores"  # Suma los valores de las barras agrupadas
-  posicion: "final"              # Las barras agrupadas aparecen al final
-  
-# Ejemplo de estructura de datos esperada
-ejemplo_datos:
-  descripcion: "DataFrame con datos temporales donde las últimas barras se agruparán"
-  estructura:
-    - "Columna 1: Años (..., 2020, 2021, 2022, 2023, 2024, 2025)"
-    - "Columna 2: Serie 1 (ej: 'Movimiento')"
-    - "Columna 3: Serie 2 (ej: 'Sin Movimiento')"
-  resultado: "Barras individuales hasta 2022, última barra: '2023-2025'"
-  
-# Comparación con unión izquierda
-diferencias:
-  - "area_min: 900 (vs 500 en izquierda) - mayor exigencia para mostrar etiquetas"
-  - "Agrupa barras finales en lugar de iniciales"
-  - "Útil para consolidar proyecciones futuras"
-  - "La barra combinada aparece al final del gráfico"

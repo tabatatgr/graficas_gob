@@ -1,73 +1,41 @@
-# Receta YAML para gráficas de barras con porcentaje al inicio
-# Tipo: Barras horizontales con porcentaje al inicio de cada barra
-# Uso: Ideal para mostrar proporciones y valores absolutos simultáneamente
 
-# Tipo de gráfico que se generará
+
+# Receta para barras horizontales con porcentaje al inicio
+# Ideal para mostrar proporciones y valores absolutos simultáneamente
+
 tipo_grafico: "barras"
 
-nombre: "porcentaje_inicio"
-descripcion: "Gráfica de barras horizontales con porcentaje al inicio de cada barra, mostrando tanto valores absolutos como proporciones relativas"
-
+metadata:
+  titulo: "Barras Horizontales con Porcentaje al Inicio"
+  descripcion: "Gráfica de barras horizontales que muestra el porcentaje al inicio de cada barra y valores absolutos."
+  version: "1.0"
+  autor: "Sistema de Generación Masiva"
+  fecha: "2025-07-29"
 # Parámetros de configuración
 parametros:
-  # Configuración básica
   bar_height: 0.7
   font: "Poppins"
   fontsize_barra: 18
   fontsize_valor_total: 24
-  
-  # Configuración de valores y porcentajes
   valor_barra: true
-  valor_total: false
-  porcentaje_barra: false
-  porcentaje_total: false
   porcentaje_total_inicio: true
-  color_porcentaje_inicio: "#6c757d"  # Gris para el porcentaje de inicio
-  espacio_inicio: 100
-
-  # Configuración de orientación y ordenamiento
+  color_porcentaje_inicio: "#6c757d"
   orientacion: "horizontal"
   ordenar_por: "valor"
   orden: "ascendente"
-  
-  # Configuración de presentación
   quitar_capsula: true
   espacio_inicio: 70
   area_min: 350
-  
-  # Configuración de colores
   paleta_colores:
-    - "#8B0000"  # Rojo oscuro
-    - "#B22222"  # Rojo medio
-    - "#CD5C5C"  # Rojo claro
-    - "#F08080"  # Rojo muy claro
+    - "#8B0000"
+    - "#B22222"
+    - "#CD5C5C"
+    - "#F08080"
 
-# Casos de uso
-casos_uso:
-  - "Mostrar distribución de valores con proporciones claras"
-  - "Comparar magnitudes absolutas y relativas"
-  - "Presentar datos ordenados por valor con contexto porcentual"
-  - "Reportes institucionales con énfasis en proporciones"
-
-# Notas de implementación
+# Notas importantes para el usuario
 notas:
-  - "El parámetro porcentaje_total_inicio=true coloca el porcentaje al inicio de cada barra"
-  - "espacio_inicio=70 ajusta el espacio para mostrar los porcentajes correctamente"
-  - "quitar_capsula=true elimina el borde de los valores totales para un diseño más limpio"
-  - "La paleta de colores usa tonos rojos en degradé para énfasis visual"
-  - "ordenar_por='valor' y orden='ascendente' ordena de menor a mayor valor"
-
-# Datos de ejemplo requeridos
-datos_ejemplo:
-  tipo: "DataFrame con múltiples columnas numéricas"
-  estructura: "Primera columna: categorías, siguientes columnas: valores numéricos"
-  ejemplo: "df con columnas ['Año', 'Movimiento', 'Sin Movimiento']"
-
-# Parámetros opcionales que pueden ser sobrescritos via kwargs
-parametros_sobrescribibles:
-  - "sustituir_etiquetas: para cambiar las etiquetas de las barras"
-  - "espaciado: para ajustar el espaciado general (compacto, normal, amplio)"
-  - "paleta_colores: para usar una paleta diferente"
-  - "resaltar_etiquetas: para resaltar etiquetas específicas"
-  - "nombre_eje_x: para agregar título al eje X"
-  - "nombre_eje_y: para agregar título al eje Y"
+  - "El parámetro porcentaje_total_inicio: true coloca el porcentaje al inicio de cada barra."
+  - "espacio_inicio: 70 ajusta el espacio para mostrar los porcentajes correctamente."
+  - "quitar_capsula: true elimina el borde de los valores totales para un diseño más limpio."
+  - "La paleta de colores usa tonos rojos en degradé para énfasis visual."
+  - "ordenar_por: 'valor' y orden: 'ascendente' ordena de menor a mayor valor."

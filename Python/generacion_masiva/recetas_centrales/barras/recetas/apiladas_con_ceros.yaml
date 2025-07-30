@@ -108,46 +108,7 @@ configuracion_ceros:
   mostrar_etiquetas_cero: false
   area_minima_etiqueta: 5
   formato_combinado: "valor (porcentaje%)"
-  
-# Notas para el usuario
-notas:
-  - "Esta receta maneja correctamente valores cero en barras apiladas"
-  - "Muestra tanto valores absolutos como porcentajes dentro de cada segmento"
-  - "Usa paleta de colores morada institucional"
-  - "Mantiene el orden original de los datos (sin ordenamiento)"
-  - "Etiquetas horizontales para mejor legibilidad"
-  - "Leyenda posicionada abajo para no interferir con los datos"
-  - "Área mínima muy pequeña (5) para mostrar etiquetas incluso en segmentos pequeños"
-  - "Texto negro para las etiquetas de barras para mejor contraste"
-  
-# Casos de uso
-casos_uso:
-  - "Datos institucionales con categorías fijas"
-  - "Comparación de completitud de datos por institución"
-  - "Análisis de distribución con valores cero"
-  - "Reportes de estado de información por dependencia"
-  - "Dashboards gubernamentales con datos categóricos"
-  - "Análisis de disponibilidad de datos por fuente"
-  - "Métricas de completitud de bases de datos"
-  
-# Estructura de datos esperada
-datos_esperados:
-  formato: "wide"
-  columnas:
-    - "Columna 1: categorías fijas (ej: Instituciones)"
-    - "Columna 2-N: valores que pueden incluir ceros"
-    
-  ejemplo:
-    - "Instituciones | Sin Datos | Con Datos (Sin Carpeta) | Con Datos (Con Carpeta)"
-    - "Fiscalías    | 47897     | 38524                   | 3284"
-    - "Comisiones   | 14527     | 17802                   | 0"
-    - "Portal       | 3209      | 5678                    | 0"
-    
-  caracteristicas:
-    - "Valores pueden ser cero"
-    - "Orden de categorías debe mantenerse"
-    - "Ideal para 3-5 categorías"
-    
+ 
 # Personalización avanzada
 personalizacion:
   colores:
@@ -169,32 +130,13 @@ personalizacion:
     posicion: "abajo"
     columnas: "automatico"
     
-# Variantes recomendadas
-variantes:
-  solo_valores:
-    valor_barra: true
-    porcentaje_barra: false
-    
-  solo_porcentajes:
-    valor_barra: false
-    porcentaje_barra: true
-    
-  con_totales_porcentaje:
-    porcentaje_total: true
-    
-  ordenado_por_total:
-    ordenar_por: "valor"
-    orden: "descendente"
-    
-  etiquetas_verticales:
-    orientacion_etiqueta_x: null
-    
-  leyenda_arriba:
-    posicion_leyenda: "arriba"
-    
-# Validaciones
-validaciones:
-  - "Verificar que existan valores cero en los datos"
-  - "Confirmar que el orden de categorías es el deseado"
-  - "Validar que los colores tengan suficiente contraste"
-  - "Asegurar que las etiquetas sean legibles"
+# Notas para el usuario
+notas:
+  - "Esta receta maneja correctamente valores cero en barras apiladas"
+  - "Muestra tanto valores absolutos como porcentajes dentro de cada segmento"
+  - "Usa paleta de colores morada institucional"
+  - "Mantiene el orden original de los datos (sin ordenamiento)"
+  - "Etiquetas horizontales para mejor legibilidad"
+  - "Leyenda posicionada abajo para no interferir con los datos"
+  - "Área mínima muy pequeña (5) para mostrar etiquetas incluso en segmentos pequeños"
+  - "Texto negro para las etiquetas de barras para mejor contraste"

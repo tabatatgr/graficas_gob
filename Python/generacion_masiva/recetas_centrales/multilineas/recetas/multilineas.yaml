@@ -6,10 +6,8 @@ archivo_salida: multilineas_test
 
 # Parámetros de la función
 parametros:
-  nombre: multilineas_test
-  columna_fecha: Fecha
-  columna_variable: Variable
-  columna_valor: Valor
+  nombre: multilineas
+  # Las columnas se infieren automáticamente del archivo de datos
   font: Montserrat
-  margen: 0.7
+  borde_capsula: 0.7
   sin_tag: 2
