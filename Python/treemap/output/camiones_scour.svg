@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="1144.8pt" height="1000.8pt" version="1.1" viewBox="0 0 1144.8 1000.8" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <path d="m0 1000.8h1144.8v-1000.8h-1144.8z" fill="#fff"/>
+ <path d="m7.2 993.6h911.77v-542.83h-911.77z" clip-path="url(#a)" fill="#10302c" stroke="#000" stroke-width="6"/>
+ <path d="m7.2 450.77h911.77v-443.57h-911.77z" clip-path="url(#a)" fill="#671435" stroke="#000" stroke-width="6"/>
+ <path d="m918.97 993.6h218.63v-730.91h-218.63z" clip-path="url(#a)" fill="#006157" stroke="#000" stroke-width="6"/>
+ <path d="m918.97 262.69h218.63v-223.15h-218.63z" clip-path="url(#a)" fill="#a36c2a" stroke="#000" stroke-width="6"/>
+ <path d="m918.97 39.541h153.04v-32.341h-153.04z" clip-path="url(#a)" fill="#d8b878" stroke="#000" stroke-width="6"/>
+ <path d="m1072 39.541h65.588v-32.341h-65.588z" clip-path="url(#a)" fill="#7f7f7f" stroke="#000" stroke-width="6"/>
+ <g fill="#ffffff" font-family="'Arial'" font-size="72.8px" font-weight="700">
+  <text transform="translate(226.42 637.47)">Tractocamión</text>
+  <text transform="translate(283.11 714.37)">Articulado</text>
+ </g>
+ <text transform="rotate(-0 463.09 806.58)" x="463.087381" y="806.575981" fill="#ffffff" font-family="'Arial'" font-size="72.8px" font-weight="700" text-anchor="middle">700 (44.4%)</text>
+ <text transform="rotate(-0 463.09 194.63)" x="463.087381" y="194.627653" fill="#ffffff" font-family="'Arial'" font-size="72.8px" font-weight="700" text-anchor="middle">Autobús</text>
+ <text transform="rotate(-0 463.09 275.43)" x="463.087381" y="275.432136" fill="#ffffff" font-family="'Arial'" font-size="72.8px" font-weight="700" text-anchor="middle">572 (36.3%)</text>
+ <g fill="#ffffff" font-family="'Arial'" font-size="41.8px" font-weight="700">
+  <text transform="translate(951.65 529.2)">Camión</text>
+  <text transform="translate(949.33 573.35)">Unitario</text>
+ </g>
+ <g fill="#ffffff" font-family="'Arial'" font-size="41.8px" font-weight="700">
+  <text transform="translate(993.42 629.64)">226</text>
+  <text transform="translate(955.11 674.4)">(14.3%)</text>
+ </g>
+ <g fill="#ffffff" font-family="'Arial'" font-size="24px" font-weight="700">
+  <text transform="translate(950.27 105.21)">Tractocamión</text>
+  <text transform="translate(959.61 130.56)">Doblemente</text>
+  <text transform="translate(968.95 155.91)">Articulado</text>
+ </g>
+ <text transform="rotate(-0 1028.3 190.53)" x="1028.287381" y="190.525234" fill="#ffffff" font-family="'Arial'" font-size="24px" font-weight="700" text-anchor="middle">69 (4.4%)</text>
+ <text transform="rotate(-0 995.49 23.119)" x="995.493595" y="23.118636" font-family="'Arial'" font-size="14px" font-weight="700" text-anchor="middle">Tractocamión</text>
+ <text transform="rotate(-0 995.49 38.24)" x="995.493595" y="38.239797" font-family="'Arial'" font-size="14px" font-weight="700" text-anchor="middle">7 (0.4%)</text>
+ <text transform="rotate(-0 1104.8 21.563)" x="1104.806214" y="21.563324" fill="#ffffff" font-family="'Arial'" font-size="8px" font-weight="700" text-anchor="middle">C-R</text>
+ <text transform="rotate(-0 1104.8 30.364)" x="1104.806214" y="30.364377" fill="#ffffff" font-family="'Arial'" font-size="8px" font-weight="700" text-anchor="middle">3 (0.2%)</text>
+ <path d="m7.2 993.6h1130.4v-986.4h-1130.4v986.4z" fill="none" stroke="#000" stroke-width="6"/>
+ <defs>
+  <clipPath id="a">
+   <rect x="7.2" y="7.2" width="1130.4" height="986.4"/>
+  </clipPath>
+ </defs>
+</svg>

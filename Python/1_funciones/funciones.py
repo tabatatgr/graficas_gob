@@ -4,7 +4,10 @@ import numpy as np
 import locale 
 import re
 from matplotlib.colors import to_rgb, to_hex
+import matplotlib.pyplot as plt
 import decimal
+import os
+
 
 
 def num_decimales(valores):
@@ -206,3 +209,22 @@ def renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col):
     #print(df.head())
     print("\n----------------------------------------------------------------------------\n")
     return df
+
+def exportar_grafica(nombre, limpiar_svg_con_scour_func):
+    """
+    Guarda la gráfica actual en SVG y PNG, optimiza el SVG y elimina el original.
+    """
+    base_path = f"output/{nombre}"
+    output_dir = os.path.dirname(base_path)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)  # <-- crea el directorio si no existe
+
+    original_svg_path = f"{base_path}.svg"
+    scour_svg_path = f"{base_path}_scour.svg"
+    plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300)
+    plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300)
+    try:
+        limpiar_svg_con_scour_func(original_svg_path, scour_svg_path)
+        os.remove(original_svg_path)
+    except Exception as e:
+        print(f"Error al optimizar o eliminar el SVG: {e}")

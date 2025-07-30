@@ -1,0 +1,88 @@
+Variable,Opciones,Descripción
+df,DataFrame,DataFrame de entrada
+agregar_datos,None; lista,Datos extra para agregar como barras
+ordenar_por,'valor'; 'etiqueta',Ordena las barras de acuerdo al eje X (etiqueta) o eje Y (valor)
+orden,'ascendente'; 'descendente',Ordena las barras de forma ascendente o descendente
+union_izq,Entero,Cantidad de barras a unir a la izquierda
+union_der,Entero,Cantidad de barras a unir a la derecha
+nombre,Texto,Nombre base para los archivos de salida
+tipo_letra,Texto,Tipo de letra para todo el texto en la gráfica
+ancho_fig,Numérico; None,Ancho de la figura
+alto_fig,Numérico; None,Alto de la figura
+grillas,True; False,Muestra u oculta las líneas de la grilla horizontal
+fondo,'transparent'; 'white',Color de fondo de la figura
+ancho_barra,Numérico,Ancho de cada barra
+tam_letra_valor_barra,Numérico,Tamaño de letra para los valores dentro de las barras
+weight_valor_barra,'bold'; 'normal'; etc.,Grosor de letra para los valores dentro de las barras
+color_valor_barra,Color; None,Color del texto de valor en la barra
+tam_letra_porce_barra,Numérico,Tamaño de letra para los porcentajes dentro de las barras
+weight_porce_barra,'bold'; 'normal'; etc.,Grosor de letra para los porcentajes dentro de las barras
+color_porce_barra,Color; None,Color de letra para los porcentajes dentro de las barras
+paleta_colores,Lista; None,Lista de colores para las barras
+valor_barra,True; False,Muestra u oculta el valor numérico en la barra
+porce_barra,True; False,Muestra u oculta el porcentaje en la barra
+porce_abajo,True; False,"Si es True, muestra el porcentaje debajo del valor dentro de la barra en lugar de al lado"
+porce_diver,True; False,Porcentaje respecto a la suma absoluta (divergente)
+alinea_texto_barra,True; False,Alinea el texto dentro de la barra verticalmente según la dirección de las barras
+sustituir_valor_barra,Lista; None,Lista de columnas con textos que sustituirán los valores dentro de las barras
+valor_capsu,True; False,Muestra u oculta la cápsula arriba de la barra
+tam_letra_valor_capsu,Numérico,Tamaño de letra para los valores dentro de las cápsulas
+weight_valor_capsu,'bold'; 'normal'; etc.,Grosor de letra para los valores dentro de las cápsulas
+color_valor_capsu,Color,Color de letra para los valores dentro de las cápsulas
+color_borde_capsu,Color,Color del borde de la cápsula
+weight_borde_capsu,Numérico,Grosor del borde de la cápsula
+quitar_capsu,True; False,Quita la cápsula y deja solo el valor dentro de ella
+capsu_cero,True; False,Muestra la cápsula aunque el valor sea cero
+asignar_etiquetas,Columna; None,Columna del DataFrame con las nuevas etiquetas que sustituirán las que están en la parte superior de las barras
+alinea_capsu,True; False,Alinea la cápsula verticalmente en la misma dirección de las barras
+ajusta_pos_capsu,Numérico,Ajusta la posición de la cápsula respecto a la barra
+ajusta_pos_capsu_neg,Numérico,Análogo a ajusta_pos_capsu pero para barras negativas
+area_min,Numérico,Área mínima para mostrar texto en la barra
+opcion_area_min,'sin etiquetas'; 'fuera',Opción para mostrar texto fuera o no mostrarlo al usar area_min
+ajusta_pos_capsu_2,Numérico,Ajusta la posición de la cápsula solo para aquellas que tienen etiquetas entre las barras y las cápsulas
+ajusta_pos_capsu_neg_2,Numérico,Análogo a ajusta_pos_capsu_2 pero para cápsulas en barras negativas
+ajusta_sep_etiqu_despla,Numérico,Ajusta el espaciado de las etiquetas que están entre las barras y las cápsulas
+porce_total,True; False,Muestra el valor del porcentaje respecto al total general arriba de la cápsula
+porce_total_inicio,True; False,"Si es True, muestra el porcentaje total al inicio de la barra en lugar de arriba de la cápsula"
+separar_por_total,Numérico,Ajusta la posición del porcentaje total
+tam_porce_total,Numérico,Tamaño de letra para el porcentaje total
+weight_porce_total,'semibold'; etc.,Grosor de letra para el porcentaje total
+color_porce_total,Color,Color de letra para el porcentaje total
+leyenda,Texto; None,Título de la leyenda
+pos_leyenda,'arriba'; 'abajo',Posición de la leyenda
+aumenta_sep_leyenda,Numérico,Espacio extra para la leyenda
+ncol_leyenda,Numérico; None,Número de columnas en la leyenda
+tam_letra_leyenda,Numérico,Tamaño de letra para la leyenda
+weight_letra_leyenda,'medium'; etc.,Grosor de letra para la leyenda
+color_letra_leyenda,Color,Color de letra para la leyenda
+tam_letra_ejeX,Numérico,Tamaño de letra para las etiquetas del eje X
+weight_letra_ejeX,'medium'; etc.,Grosor de letra para las etiquetas del eje X
+color_letra_ejeX,Color,Color de letra para las etiquetas del eje X
+espacio_inicio,Numérico,Espacio extra al inicio del eje X
+nombre_eje_x,Texto; None,Nombre del eje X
+tam_letra_nombre_eje_x,Numérico,Tamaño de letra para el nombre del eje X
+weight_letra_nombre_eje_x,'medium'; etc.,Grosor de letra para el nombre del eje X
+color_letra_nombre_eje_x,Color,Color de letra para el nombre del eje X
+sustituir_etiquetas,Lista; None,Lista para sustituir etiquetas del eje X
+orientacion_etiqu_ejeX,'horizontal'; None,Orientación de las etiquetas del eje X
+aumenta_sep_eje_x,Numérico,Aumenta la separación en el eje X
+resaltar_etiquetas,Lista; None,Lista de etiquetas a resaltar
+color_resalt_etique,Color,Color para el resaltado de etiquetas
+color_borde_resalt,Color,Color del borde de resaltado de etiquetas
+tam_letra_ejeY,Numérico,Tamaño de letra para las etiquetas del eje Y
+weight_letra_ejeY,'medium'; etc.,Grosor de letra para las etiquetas del eje Y
+color_letra_ejeY,Color,Color de letra para las etiquetas del eje Y
+nombre_eje_y,Texto; None,Nombre del eje Y
+tam_letra_nombre_eje_y,Numérico,Tamaño de letra para el nombre del eje Y
+weight_letra_nombre_eje_y,'medium'; etc.,Grosor de letra para el nombre del eje Y
+color_letra_nombre_eje_y,Color,Color de letra para el nombre del eje Y
+y_limits,Lista; None,Límites del eje Y
+ejeY_positivo,True; False,El eje Y solo muestra valores positivos
+div_ejeY,Numérico; False,División personalizada del eje Y
+graf_resp_porce,True; False,Grafica con respecto al porcentaje en el eje Y
+sustituir_etiquetas_ejeY,Lista; None,Lista para sustituir etiquetas del eje Y
+columnas_lineas,Lista; None,Lista de nombres de columnas que serán graficadas como líneas
+paleta_colores_lineas,Lista; None,Lista de colores para las líneas
+capsu_fin_lineas,True; False,Muestra la cápsula con el valor al final de cada línea
+nuevos_nom_col,Lista; None,Nuevos nombres de columnas del DataFrame de entrada
+nuevas_pos_col,Lista; None,Nuevas posiciones de columnas del DataFrame de entrada

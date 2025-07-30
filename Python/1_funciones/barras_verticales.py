@@ -46,7 +46,7 @@ def barras_verticales(
     tam_letra_porce_barra=15,   # Tamaño de letra para porcentajes dentro de las barras
     weight_porce_barra='bold',  # Grosor de letra para porcentajes dentro de las barras
     color_porce_barra=None,# Color de letra para porcentajes dentro de las barras
-    paleta_colores=None,        # Lista de colores para las barras
+    paleta_colores=["#006157", "#767676", "#671435", "#9B2247", "#9D792A", "#D5B162"],        # Lista de colores para las barras
     valor_barra=True,           # Muestra u oculta el valor numérico en la barra
     porce_barra=True,           # Moustra u oculta el porcentaje en la barra
     porce_abajo=True,           # Cuando es True muestra el porcentaje debajo del valor dentro de la barra en lugar de a lado del valor
@@ -173,7 +173,7 @@ def barras_verticales(
         font_manager.fontManager.addfont(font_file)
 
     # Asignación de paleta de colores por defecto si no se proporciona una.
-    colores_asignados = paleta_colores or ["#006157", "#767676", "#671435", "#9B2247", "#9D792A", "#D5B162"]
+    colores_asignados = paleta_colores 
 
     # --- 2. PREPARACIÓN DE DATOS ---
     # Validación de que el input es un DataFrame.
@@ -185,14 +185,21 @@ def barras_verticales(
         df = renombra_y_ordena_col(df, nuevos_nom_col, nuevas_pos_col)
 
     # --- CLASIFICACIÓN Y COLOREADO POR CATEGORÍA ---
-    # Si col_categorias está definido, asigna color por categoría
-    color_por_categoria = None
-    if col_categorias is not None and col_categorias in df.columns:
-        categorias_unicas = df[col_categorias].unique()
-        colores_categoria = (paleta_colores * ((len(categorias_unicas) // len(paleta_colores)) + 1))[:len(categorias_unicas)]
-        color_por_categoria = dict(zip(categorias_unicas, colores_categoria))
-        df['_categorias_original'] = df[col_categorias]  # <-- Guarda la columna de categorías
-        df = df.drop(columns=[col_categorias])
+    categorias_original = None
+    if col_categorias is not None:
+        if col_categorias in df.columns:
+            # Asegura que el índice de categorias_original sea la columna eje X
+            categorias_x = df.columns[0]
+            categorias_original = df.set_index(categorias_x)[col_categorias].copy()
+            categorias_unicas = categorias_original.unique()
+            paleta_base = paleta_colores or ["#006157", "#767676", "#671435", "#9B2247", "#9D792A", "#D5B162"]
+            colores_categoria = (paleta_base * ((len(categorias_unicas) // len(paleta_base)) + 1))[:len(categorias_unicas)]
+            color_por_categoria = dict(zip(categorias_unicas, colores_categoria))
+            df = df.drop(columns=[col_categorias])
+        else:
+            raise ValueError(f"La columna '{col_categorias}' indicada en 'col_categorias' no existe en el DataFrame.")
+    else:
+        color_por_categoria = None
 
     # Copia del DataFrame para evitar modificar el original.
     df = df.copy()
@@ -203,6 +210,10 @@ def barras_verticales(
         df[categorias_x] = pd.to_datetime(df[categorias_x], format='%Y')
     # Establecer la primera columna como índice del DataFrame.
     df = df.set_index(categorias_x)
+
+    # Reindexar categorias_original para que coincida con el índice actual
+    if categorias_original is not None:
+        categorias_original = categorias_original.reindex(df.index)
 
     # --- ELIMINAR COLUMNAS DE sustituir_valor_barra ANTES DE CÁLCULOS NUMÉRICOS ---
     textos_personalizados_barra = None
@@ -449,18 +460,15 @@ def barras_verticales(
             if current_val == 0:
                 continue
 
-            # Personalización de colores y estilos de borde por barra/segmento.
-            #color_fondo_personalizado = colores_fondo_personalizados.get(entidad)
-
-            # Color por categoría
-            if color_por_categoria is not None:
-                # Usa el índice (entidad) para buscar la categoría
-                categoria_actual = df['_categorias_original'].loc[entidad]
-                color_base = color_por_categoria.get(categoria_actual, colores_asignados[i % len(colores_asignados)])
+            if color_por_categoria is not None and categorias_original is not None:
+                try:
+                    categoria_actual = categorias_original.loc[entidad]
+                    color_base = color_por_categoria.get(categoria_actual, colores_asignados[i % len(colores_asignados)])
+                except Exception as e:
+                    color_base = colores_asignados[i % len(colores_asignados)]
             else:
                 color_base = colores_asignados[i % len(colores_asignados)]
 
-            # Personalización de colores y estilos de borde por barra/segmento.
             color_fondo_personalizado = colores_fondo_personalizados.get(entidad)
             if color_fondo_personalizado and i < len(color_fondo_personalizado) and color_fondo_personalizado[i]:
                 color = color_fondo_personalizado[i]
@@ -523,15 +531,6 @@ def barras_verticales(
             va_texto_barra_valor = 'bottom' if porce_abajo else 'center'
             va_texto_barra_porce = 'top' if porce_abajo else 'center'
             va_texto_barra_unificado = 'center'
-
-            # Si hay texto personalizado, solo muestra ese texto y NO el valor numérico
-            # 1. Prioridad absoluta a textos personalizados
-            # print("Depuracion: ", textos_personalizados_barra)
-            # if textos_personalizados_barra is not None:
-            #     print("Depuracion 2: ", textos_personalizados_barra.shape)
-            # else:
-            #     print("Depuracion 2: None")
-
 
             if textos_personalizados_barra is not None and i < textos_personalizados_barra.shape[1]:
                 # print(f'pasa por 1')
@@ -1056,6 +1055,19 @@ def barras_verticales(
         num_cols_leyenda = ncol_leyenda if ncol_leyenda is not None else len(all_labels)
 
         ax.legend(final_handles, all_labels, title=leyenda if isinstance(leyenda, str) else None,
+                  fontsize=font_config['leyenda']['size'], title_fontsize=font_config['leyenda']['size'],
+                  loc=loc_leyenda, bbox_to_anchor=bbox_leyenda, frameon=False,
+                  ncol=num_cols_leyenda, handlelength=1, handleheight=1)
+        
+    # --- Leyenda por categorías si corresponde ---
+    if leyenda and col_categorias is not None and color_por_categoria is not None:
+        legend_handles = []
+        for categoria, color in color_por_categoria.items():
+            legend_handles.append(Patch(color=color, label=str(categoria)))
+        loc_leyenda, bbox_leyenda = ('upper center', (0.5, -0.15 - aumenta_sep_leyenda)) if pos_leyenda == 'abajo' else ('upper center', (0.5, 1.08 + aumenta_sep_leyenda))
+        num_cols_leyenda = ncol_leyenda if ncol_leyenda is not None else len(color_por_categoria)
+        ax.legend(legend_handles, [str(cat) for cat in color_por_categoria.keys()],
+                  title=leyenda if isinstance(leyenda, str) else None,
                   fontsize=font_config['leyenda']['size'], title_fontsize=font_config['leyenda']['size'],
                   loc=loc_leyenda, bbox_to_anchor=bbox_leyenda, frameon=False,
                   ncol=num_cols_leyenda, handlelength=1, handleheight=1)
