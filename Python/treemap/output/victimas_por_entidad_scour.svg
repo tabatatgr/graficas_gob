@@ -11,15 +11,15 @@
  <path d="m475.98 705.6h333.39v-218.04h-333.39z" clip-path="url(#a)" fill="#fc9" stroke="#fff"/>
  <path d="m809.38 705.6h328.22v-218.04h-328.22z" clip-path="url(#a)" fill="#c2c2f0" stroke="#fff"/>
  <path d="m475.98 487.56h370.97v-184.18h-370.97z" clip-path="url(#a)" fill="#ffb3e6" stroke="#fff"/>
- <path d="m846.95 487.56h290.65v-184.18h-290.65z" clip-path="url(#a)" fill="#268572" stroke="#fff"/>
- <path d="m475.98 303.38h277.78v-162.29h-277.78z" clip-path="url(#a)" fill="#cec6c6" stroke="#fff"/>
- <path d="m475.98 141.09h277.78v-133.89h-277.78z" clip-path="url(#a)" fill="#ceaaf2" stroke="#fff"/>
- <path d="m753.76 303.38h200.73v-120.01h-200.73z" clip-path="url(#a)" fill="#5ff4bc" stroke="#fff"/>
- <path d="m954.48 303.38h183.12v-120.01h-183.12z" clip-path="url(#a)" fill="#1ffbaa" stroke="#fff"/>
- <path d="m753.76 183.37h231.11v-92.655h-231.11z" clip-path="url(#a)" fill="#66aa7e" stroke="#fff"/>
- <path d="m753.76 90.712h231.11v-83.512h-231.11z" clip-path="url(#a)" fill="#c4ee8e" stroke="#fff"/>
- <path d="m984.86 183.37h152.74v-111.6h-152.74z" clip-path="url(#a)" fill="#80ba87" stroke="#fff"/>
- <path d="m984.86 71.764h152.74v-64.564h-152.74z" clip-path="url(#a)" fill="#1a851b" stroke="#fff"/>
+ <path d="m846.95 487.56h290.65v-184.18h-290.65z" clip-path="url(#a)" fill="#8f1bd7" stroke="#fff"/>
+ <path d="m475.98 303.38h277.78v-162.29h-277.78z" clip-path="url(#a)" fill="#e55494" stroke="#fff"/>
+ <path d="m475.98 141.09h277.78v-133.89h-277.78z" clip-path="url(#a)" fill="#4559ff" stroke="#fff"/>
+ <path d="m753.76 303.38h200.73v-120.01h-200.73z" clip-path="url(#a)" fill="#81cf82" stroke="#fff"/>
+ <path d="m954.48 303.38h183.12v-120.01h-183.12z" clip-path="url(#a)" fill="#a72335" stroke="#fff"/>
+ <path d="m753.76 183.37h231.11v-92.655h-231.11z" clip-path="url(#a)" fill="#31aec0" stroke="#fff"/>
+ <path d="m753.76 90.712h231.11v-83.512h-231.11z" clip-path="url(#a)" fill="#8002e2" stroke="#fff"/>
+ <path d="m984.86 183.37h152.74v-111.6h-152.74z" clip-path="url(#a)" fill="#a7113c" stroke="#fff"/>
+ <path d="m984.86 71.764h152.74v-64.564h-152.74z" clip-path="url(#a)" fill="#cb65bb" stroke="#fff"/>
  <text transform="rotate(-0 241.59 575.99)" x="241.590578" y="575.988654" font-family="'Montserrat'" font-size="26px" font-weight="700" text-anchor="middle">Jalisco</text>
  <text transform="rotate(-0 241.59 652.65)" x="241.590578" y="652.650503" font-family="'Montserrat'" font-size="26px" font-weight="700" text-anchor="middle">910 (16.2%)</text>
  <text transform="rotate(-0 241.59 327.04)" x="241.590578" y="327.041489" font-family="'Montserrat'" font-size="26px" font-weight="700" text-anchor="middle">Guanajuato</text>
@@ -43,20 +43,20 @@
  <text transform="rotate(-0 992.27 455.41)" x="992.273318" y="455.407743" fill="#ffffff" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">380 (6.8%)</text>
  <text transform="rotate(-0 614.87 228.81)" x="614.868793" y="228.811305" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">Nuevo León</text>
  <text transform="rotate(-0 614.87 283.62)" x="614.868793" y="283.617863" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">320 (5.7%)</text>
- <text transform="rotate(-0 614.87 80.721)" x="614.868793" y="80.720695" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">Coahuila</text>
- <text transform="rotate(-0 614.87 130.42)" x="614.868793" y="130.415084" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">264 (4.7%)</text>
+ <text transform="rotate(-0 614.87 80.721)" x="614.868793" y="80.720695" fill="#ffffff" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">Coahuila</text>
+ <text transform="rotate(-0 614.87 130.42)" x="614.868793" y="130.415084" fill="#ffffff" font-family="'Montserrat'" font-size="24px" font-weight="700" text-anchor="middle">264 (4.7%)</text>
  <text transform="rotate(-0 854.12 248.12)" x="854.119198" y="248.117994" font-family="'Montserrat'" font-size="16px" font-weight="700" text-anchor="middle">Tamaulipas</text>
  <text transform="rotate(-0 854.12 286.83)" x="854.119198" y="286.826398" font-family="'Montserrat'" font-size="16px" font-weight="700" text-anchor="middle">171 (3.1%)</text>
- <text transform="rotate(-0 1046 247.21)" x="1046.040983" y="247.210025" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Puebla</text>
- <text transform="rotate(-0 1046 283.53)" x="1046.040983" y="283.528309" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">156 (2.8%)</text>
+ <text transform="rotate(-0 1046 247.21)" x="1046.040983" y="247.210025" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Puebla</text>
+ <text transform="rotate(-0 1046 283.53)" x="1046.040983" y="283.528309" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">156 (2.8%)</text>
  <text transform="rotate(-0 869.31 140.88)" x="869.309338" y="140.875325" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Ciudad de México</text>
  <text transform="rotate(-0 869.31 172.27)" x="869.309338" y="172.269079" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">152 (2.7%)</text>
- <text transform="rotate(-0 869.31 52.792)" x="869.309338" y="52.791691" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Guerrero</text>
- <text transform="rotate(-0 869.31 82.54)" x="869.309338" y="82.539591" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">137 (2.4%)</text>
- <text transform="rotate(-0 1061.2 131.4)" x="1061.231123" y="131.401375" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Veracruz</text>
- <text transform="rotate(-0 1061.2 166.21)" x="1061.231123" y="166.205751" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">121 (2.2%)</text>
- <text transform="rotate(-0 1061.2 42.743)" x="1061.231123" y="42.743288" fill="#ffffff" font-family="'Montserrat'" font-size="11px" font-weight="700" text-anchor="middle">Chiapas</text>
- <text transform="rotate(-0 1061.2 66.068)" x="1061.231123" y="66.068407" fill="#ffffff" font-family="'Montserrat'" font-size="11px" font-weight="700" text-anchor="middle">70 (1.2%)</text>
+ <text transform="rotate(-0 869.31 52.792)" x="869.309338" y="52.791691" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Guerrero</text>
+ <text transform="rotate(-0 869.31 82.54)" x="869.309338" y="82.539591" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">137 (2.4%)</text>
+ <text transform="rotate(-0 1061.2 131.4)" x="1061.231123" y="131.401375" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">Veracruz</text>
+ <text transform="rotate(-0 1061.2 166.21)" x="1061.231123" y="166.205751" fill="#ffffff" font-family="'Montserrat'" font-size="14px" font-weight="700" text-anchor="middle">121 (2.2%)</text>
+ <text transform="rotate(-0 1061.2 42.743)" x="1061.231123" y="42.743288" font-family="'Montserrat'" font-size="11px" font-weight="700" text-anchor="middle">Chiapas</text>
+ <text transform="rotate(-0 1061.2 66.068)" x="1061.231123" y="66.068407" font-family="'Montserrat'" font-size="11px" font-weight="700" text-anchor="middle">70 (1.2%)</text>
  <path d="m7.2 705.6h1130.4v-698.4h-1130.4v698.4z" fill="none" stroke="#fff"/>
  <defs>
   <clipPath id="a">
