@@ -51,6 +51,66 @@ def ajustar_fontsize(ax, fig, texto, max_width, base_size, fontweight):
         t.remove()
     return fontsize
 
+# def calcular_fontsize(area, base, ajusta_tam_letra):
+#     base = base * ajusta_tam_letra  
+#     if area > 0.08:
+#         return base
+#     elif area > 0.06:
+#         return int(base * 20 / 26)
+#     elif area > 0.04:
+#         return int(base * 18 / 26)
+#     elif area > 0.02:
+#         return int(base * 14 / 26)
+#     elif area > 0.01:
+#         return int(base * 11 / 26)
+#     elif area > 0.005:
+#         return int(base * 9 / 26)
+#     else:
+#         return int(base * 5 / 26)
+
+# def calcular_fontsize(area, base, ajusta_tam_letra):
+#     base = base * ajusta_tam_letra  
+#     if area > 0.08:
+#         return base
+#     elif area > 0.06:
+#         return int(base * 20 / 26)
+#     elif area > 0.04:
+#         return int(base * 18 / 26)
+#     elif area > 0.03:
+#         return int(base * 16 / 26)
+#     elif area > 0.02:
+#         return int(base * 14 / 26)
+#     elif area > 0.015:
+#         return int(base * 12 / 26)
+#     elif area > 0.01:
+#         return int(base * 11 / 26)
+#     elif area > 0.008:
+#         return int(base * 10 / 26)
+#     elif area > 0.006:
+#         return int(base * 9 / 26)
+#     elif area > 0.005:
+#         return int(base * 8 / 26)
+#     elif area > 0.004:
+#         return int(base * 7 / 26)
+#     elif area > 0.003:
+#         return int(base * 6 / 26)
+#     elif area > 0.002:
+#         return int(base * 5 / 26)
+#     elif area > 0.0015:
+#         return int(base * 4 / 26)
+#     elif area > 0.001:
+#         return int(base * 3 / 26)
+#     elif area > 0.0007:
+#         return int(base * 2.5 / 26)
+#     elif area > 0.0005:
+#         return int(base * 2 / 26)
+#     elif area > 0.0003:
+#         return int(base * 1.5 / 26)
+#     elif area > 0.0001:
+#         return int(base * 1 / 26)
+#     else:
+#         return int(base * 0.7 / 26)
+
 def calcular_fontsize(area, base, ajusta_tam_letra):
     base = base * ajusta_tam_letra  
     if area > 0.08:
@@ -130,15 +190,16 @@ def treemap(victimas_por_entidad,
         font_manager.fontManager.addfont(font_file)
     plt.rc('font', family=tipo_letra)  # Aplica la fuente a toda la gráfica
 
+
     # Asegurar que todos los valores sean numéricos tipo float
-    victimas_por_entidad.iloc[:, 1] = pd.to_numeric(
-        victimas_por_entidad.iloc[:, 1], errors='coerce'
+    victimas_por_entidad['NUMERO DE VICTIMAS'] = pd.to_numeric(
+        victimas_por_entidad['NUMERO DE VICTIMAS'], errors='coerce'
     ).fillna(0).astype(float)
 
     # Ordenar y calcular porcentaje
-    df = victimas_por_entidad.sort_values(by=victimas_por_entidad.columns[1], ascending=False).copy()
-    total_nacional = df.iloc[:, 1].sum()
-    df['Porcentaje'] = (df.iloc[:, 1] / total_nacional * 100).round(1)
+    df = victimas_por_entidad.sort_values(by='NUMERO DE VICTIMAS', ascending=False).copy()
+    total_nacional = df['NUMERO DE VICTIMAS'].sum()
+    df['Porcentaje'] = (df['NUMERO DE VICTIMAS'] / total_nacional * 100).round(1)
 
     # --- Colores por paleta_colores ---
     n = len(df)
@@ -159,7 +220,7 @@ def treemap(victimas_por_entidad,
     ax.axis('off')  # <-- Oculta los ejes y los números
 
     # rectangulos
-    sizes = df.iloc[:, 1].tolist()
+    sizes = df['NUMERO DE VICTIMAS'].tolist()
     rectangles = squarify.normalize_sizes(sizes, 1, 1)
     rectangles = squarify.squarify(rectangles, 0, 0, 1, 1)
 
@@ -176,7 +237,7 @@ def treemap(victimas_por_entidad,
         area = dx * dy
 
         if area > area_min:
-            entidad = row.iloc[0]
+            entidad = row['ENTIDAD FEDERATIVA']
             entidad_mod = entidad
 
             # Ajuste de tamaño de fuente siempre proporcional al área
@@ -185,7 +246,7 @@ def treemap(victimas_por_entidad,
             fontsize_pct = calcular_fontsize(area, fontsize_porcentaje, ajusta_tam_letra)
 
             # --- DEBUG: Imprime área, tamaño de letra y etiqueta ---
-            #print(f"[DEBUG] Área: {area:.6f} | Etiqueta: '{entidad_mod}' | FontSize: {fontsize_et}")
+            print(f"[DEBUG] Área: {area:.6f} | Etiqueta: '{entidad_mod}' | FontSize: {fontsize_et}")
 
 
             x_text = x + dx * 0.04
@@ -202,7 +263,7 @@ def treemap(victimas_por_entidad,
             entidad_mod_wrapped = wrap_text(entidad_mod, ax, fig, max_text_width, fontsize_et, font_config['etiquetas']['weight'])
             fontsize_et_ajustado = ajustar_fontsize(ax, fig, entidad_mod_wrapped, max_text_width, fontsize_et, font_config['etiquetas']['weight'])
 
-            valor_y_porcentaje = f"{int(row.iloc[1]):,} ({row['Porcentaje']}%)"
+            valor_y_porcentaje = f"{int(row['NUMERO DE VICTIMAS']):,} ({row['Porcentaje']}%)"
             valor_y_porcentaje_wrapped = wrap_text(valor_y_porcentaje, ax, fig, max_valor_width, fontsize_val, font_config['valor']['weight'])
             fontsize_val_ajustado = ajustar_fontsize(ax, fig, valor_y_porcentaje_wrapped, max_valor_width, fontsize_val, font_config['valor']['weight'])
 
