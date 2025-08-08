@@ -56,33 +56,41 @@
  <path d="m674.41 113.25h84.422v92.215h-84.422v-92.215z" clip-path="url(#a)" fill="none" stroke="#114a44" stroke-dasharray="3.5,5.775" stroke-width="3.5"/>
  <path d="m132.17 113.25h649.4" clip-path="url(#a)" fill="none" stroke="#000" stroke-linecap="square"/>
  <path d="m132.17 240.5h649.4" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8"/>
- <text transform="rotate(-0 197.11 92.659)" x="197.105625" y="92.659377" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">50,000.00 (71.43%)</text>
- <text transform="rotate(-0 197.11 60.384)" x="197.105625" y="60.38412" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000.00 (28.57%)</text>
- <text transform="rotate(-0 197.11 124.93)" x="197.105625" y="124.934634" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000.00 (66.67%)</text>
- <text transform="rotate(-0 197.11 138.77)" x="197.105625" y="138.766887" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000.00 (33.33%)</text>
- <path d="m146.6 44.273h101.01q16 0 16-16v7.2781q0-16-16-16h-101.01q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
- <text transform="rotate(-0 197.11 37.392)" x="197.105625" y="37.3922" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000.00  </text>
- <text transform="rotate(-0 326.99 101.88)" x="326.985625" y="101.880879" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000.00 (75.00%)</text>
- <text transform="rotate(-0 326.99 83.438)" x="326.985625" y="83.437875" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000.00 (25.00%)</text>
- <text transform="rotate(-0 326.99 134.16)" x="326.985625" y="134.156136" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000.00 (66.67%)</text>
- <text transform="rotate(-0 326.99 161.82)" x="326.985625" y="161.820642" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000.00 (33.33%)</text>
- <path d="m276.31 190.3h101.35q16 0 16-16v7.2781q0-16-16-16h-101.35q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
- <text transform="rotate(-0 326.99 183.42)" x="326.985625" y="183.41691" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">60,000.00  </text>
- <text transform="rotate(-0 456.87 97.27)" x="456.865625" y="97.270128" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000.00 (57.14%)</text>
- <text transform="rotate(-0 456.87 64.995)" x="456.865625" y="64.994871" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000.00 (42.86%)</text>
- <text transform="rotate(-0 456.87 120.32)" x="456.865625" y="120.323883" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000.00 (33.33%)</text>
- <text transform="rotate(-0 456.87 134.16)" x="456.865625" y="134.156136" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000.00 (66.67%)</text>
- <path d="m406.36 44.273h101.01q16 0 16-16v7.2781q0-16-16-16h-101.01q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
- <text transform="rotate(-0 456.87 37.392)" x="456.865625" y="37.3922" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000.00  </text>
- <text transform="rotate(-0 586.75 106.49)" x="586.745625" y="106.49163" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000.00 (66.67%)</text>
- <text transform="rotate(-0 586.75 92.659)" x="586.745625" y="92.659377" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000.00 (33.33%)</text>
- <text transform="rotate(-0 586.75 129.55)" x="586.745625" y="129.545385" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000.00 (75.00%)</text>
- <text transform="rotate(-0 586.75 147.99)" x="586.745625" y="147.988389" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000.00 (25.00%)</text>
- <path d="m535.55 171.86h102.39q16 0 16-16v7.2781q0-16-16-16h-102.39q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
- <text transform="rotate(-0 586.75 164.97)" x="586.745625" y="164.973906" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">40,000.00  </text>
+ <text transform="rotate(-0 197.11 92.659)" x="197.105625" y="92.659377" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">50,000 (71.4%)</text>
+ <text transform="rotate(-0 197.11 60.384)" x="197.105625" y="60.38412" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (28.6%)</text>
+ <text transform="rotate(-0 197.11 124.93)" x="197.105625" y="124.934634" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <text transform="rotate(-0 197.11 138.77)" x="197.105625" y="138.766887" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <path d="m162.8 44.273h68.603q16 0 16-16v7.2781q0-16-16-16h-68.603q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 197.11 37.392)" x="197.105625" y="37.3922" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000  </text>
+ <path d="m163.08 170.06h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 197.11 163.18)" x="197.105625" y="163.175713" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <text transform="rotate(-0 326.99 101.88)" x="326.985625" y="101.880879" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (75.0%)</text>
+ <text transform="rotate(-0 326.99 83.438)" x="326.985625" y="83.437875" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (25.0%)</text>
+ <text transform="rotate(-0 326.99 134.16)" x="326.985625" y="134.156136" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000 (66.7%)</text>
+ <text transform="rotate(-0 326.99 161.82)" x="326.985625" y="161.820642" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (33.3%)</text>
+ <path d="m291.99 71.938h69.984q16 0 16-16v7.2781q0-16-16-16h-69.984q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 326.99 65.057)" x="326.985625" y="65.056706" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">40,000  </text>
+ <path d="m292.51 197.72h68.944q16 0 16-16v7.2781q0-16-16-16h-68.944q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 326.99 190.84)" x="326.985625" y="190.840219" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">60,000  </text>
+ <text transform="rotate(-0 456.87 97.27)" x="456.865625" y="97.270128" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">40,000 (57.1%)</text>
+ <text transform="rotate(-0 456.87 64.995)" x="456.865625" y="64.994871" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (42.9%)</text>
+ <text transform="rotate(-0 456.87 120.32)" x="456.865625" y="120.323883" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <text transform="rotate(-0 456.87 134.16)" x="456.865625" y="134.156136" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <path d="m422.56 44.273h68.603q16 0 16-16v7.2781q0-16-16-16h-68.603q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 456.87 37.392)" x="456.865625" y="37.3922" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">70,000  </text>
+ <path d="m422.84 170.06h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 456.87 163.18)" x="456.865625" y="163.175713" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <text transform="rotate(-0 586.75 106.49)" x="586.745625" y="106.49163" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">20,000 (66.7%)</text>
+ <text transform="rotate(-0 586.75 92.659)" x="586.745625" y="92.659377" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (33.3%)</text>
+ <text transform="rotate(-0 586.75 129.55)" x="586.745625" y="129.545385" fill="#ffffff" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">30,000 (75.0%)</text>
+ <text transform="rotate(-0 586.75 147.99)" x="586.745625" y="147.988389" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">10,000 (25.0%)</text>
+ <path d="m552.72 81.159h68.044q16 0 16-16v7.2781q0-16-16-16h-68.044q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 586.75 74.278)" x="586.745625" y="74.278208" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">30,000  </text>
+ <path d="m551.75 179.28h69.984q16 0 16-16v7.2781q0-16-16-16h-69.984q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 586.75 172.4)" x="586.745625" y="172.397215" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">40,000  </text>
  <text transform="rotate(-0 716.63 161.82)" x="716.625625" y="161.820642" fill="#114a44" font-family="'Montserrat'" font-size="9px" font-weight="700" text-anchor="middle">100,000</text>
- <path d="m661.61 227.18h110.03q16 0 16-16v7.2781q0-16-16-16h-110.03q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
- <text transform="rotate(-0 716.63 220.3)" x="716.625625" y="220.302917" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">100,000.00  </text>
+ <path d="m677.81 234.61h77.625q16 0 16-16v7.2781q0-16-16-16h-77.625q-16 0-16 16v-7.2781q0 16 16 16z" fill="none" stroke="#002f2a" stroke-width="1.5"/>
+ <text transform="rotate(-0 716.63 227.73)" x="716.625625" y="227.726227" font-family="'Montserrat'" font-size="20px" font-weight="700" text-anchor="middle">100,000  </text>
  <path d="m63.577 318.58h24v-21.48h-24z" fill="#114a44"/>
  <text transform="rotate(-0 106.78 316.06)" x="106.776875" y="316.0596" font-family="'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" font-size="24px">Acomulado anterior </text>
  <path d="m63.577 354.53h24v-21.48h-24z" fill="#739489"/>

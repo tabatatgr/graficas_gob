@@ -9,22 +9,53 @@ import decimal
 import os
 
 
+def elimina_ceros_no_significativos(valor):
+    valor_str = str(valor)
+    if '.' in valor_str:
+        valor_str = valor_str.rstrip('0').rstrip('.')
+    return valor_str
 
-def num_decimales(valores):
+def num_decimales(valores, determinado=None):
     """
-    Determina el número de decimales a mostrar según el valor más pequeño:
-    - Si el menor valor está entre 0 y 9: 2 decimales
-    - Si está entre 10 y 99: 1 decimal
-    - Si es 100 o más: 0 decimales (entero)
+    Determina el número de decimales adecuado para mostrar en una gráfica según los valores dados.
+    Reglas:
+    - Busca el valor absoluto mínimo distinto de cero.
+    - Calcula el promedio de los valores absolutos distintos de cero.
+    - Si el mínimo > 1: 0 decimales.
+    - Si el mínimo < 1 y el promedio >= 100: 0 decimales.
+    - Si el mínimo < 1 y el promedio >= 10 y < 100: 1 decimal.
+    - Si el mínimo < 1 y el promedio >= 1 y < 10: 2 decimales.
+    - Si el promedio < 1: decimales según el mínimo (cuántos decimales tiene, incluyendo ceros a la izquierda).
+    - Si 'determinado' es distinto de None, devuelve ese valor ignorando el resto.
     """
+    if determinado is not None:
+        return determinado
+
     serie = pd.Series(valores).dropna()
-    if len(serie) == 0:
+    serie_no_cero = serie[serie != 0].abs()
+    if len(serie_no_cero) == 0:
         return 0
-    min_abs = serie.abs().min()
-    if 0 <= min_abs < 10:
-        return 2
-    elif 10 <= min_abs < 100:
-        return 1
+
+    min_abs = serie_no_cero.min()
+    promedio = serie_no_cero.mean()
+
+    if min_abs > 1:
+        return 0
+    elif min_abs < 1:
+        if promedio >= 100:
+            return 0
+        elif promedio >= 10:
+            return 1
+        elif promedio >= 1:
+            return 2
+        else:
+            # Cuenta todos los decimales después del punto, incluyendo ceros a la izquierda
+            min_str = f"{min_abs:.16f}".rstrip('0')
+            if '.' in min_str:
+                decimales = len(min_str.split('.')[1])
+                return decimales
+            else:
+                return 0
     else:
         return 0
 
@@ -45,17 +76,13 @@ def limpiar_svg_con_scour(archivo_entrada, archivo_salida):
         '--shorten-ids', '--remove-descriptive-elements'
     ], check=True)
 
-def formato_fechas(fechas):
+def formato_fechas(fechas, modalidad=None):
     """
     Formatea una lista de fechas a un formato de cadena de texto legible y conciso.
 
-    La función adapta el formato según la variabilidad de las fechas en la lista:
-    - Si solo cambia el año, muestra solo el año (ej. "2023").
-    - Si cambia el mes o el año, muestra mes y año (ej. "Ene-2023").
-    - Si cambia el día, muestra día, mes y año (ej. "01-01-2023").
-
     Args:
         fechas (list): Una lista de objetos de fecha (ej. pd.Timestamp).
+        modalidad (int, optional): Si es 2, el formato mes y año será "ene\\n2023".
 
     Returns:
         list: Una lista de cadenas de texto con las fechas formateadas.
@@ -64,13 +91,23 @@ def formato_fechas(fechas):
     dias = set(f.day for f in fechas)
     meses = set(f.month for f in fechas)
     anios = set(f.year for f in fechas)
+
+    # Detectar si las fechas difieren exactamente por tres meses
+    if len(fechas) > 1:
+        diferencias = [(fechas[i+1] - fechas[i]).days for i in range(len(fechas)-1)]
+        if all(d in [89, 90, 91, 92] for d in diferencias):
+            return [f"T{((f.month-1)//3)+1} {f.year}" for f in fechas]
+
     # Si solo difieren en el año (mismo día y mes)
-    if len(dias) == 1 and len(meses) == 1 and len(anios) >1:
+    if len(dias) == 1 and len(meses) == 1 and len(anios) > 1:
         return [str(f.year) for f in fechas]
     elif len(dias) == 1 and (len(meses) > 1 or len(anios) > 1):
         locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
-        return [f.strftime("%b-%Y").capitalize() for f in fechas]
-    # Si difieren en día, mes o año
+        if modalidad == 2:
+            # mes abreviado en minúsculas + salto de línea + año
+            return [f.strftime("%b").lower() + "\n" + str(f.year) for f in fechas]
+        else:
+            return [f.strftime("%b-%Y").capitalize() for f in fechas]
     else:
         return [f.strftime("%d-%m-%Y") for f in fechas]
 
@@ -217,14 +254,59 @@ def exportar_grafica(nombre, limpiar_svg_con_scour_func):
     base_path = f"output/{nombre}"
     output_dir = os.path.dirname(base_path)
     if not os.path.exists(output_dir):
-        os.makedirs(output_dir, exist_ok=True)  # <-- crea el directorio si no existe
+        os.makedirs(output_dir, exist_ok=True)
 
     original_svg_path = f"{base_path}.svg"
     scour_svg_path = f"{base_path}_scour.svg"
     plt.savefig(original_svg_path, format='svg', bbox_inches='tight', dpi=300)
     plt.savefig(f"{base_path}.png", format='png', bbox_inches='tight', dpi=300)
-    try:
-        limpiar_svg_con_scour_func(original_svg_path, scour_svg_path)
-        os.remove(original_svg_path)
-    except Exception as e:
-        print(f"Error al optimizar o eliminar el SVG: {e}")
+    
+    # Comprueba si se proporcionó una función de limpieza válida antes de llamarla
+    if callable(limpiar_svg_con_scour_func):
+        try:
+            limpiar_svg_con_scour_func(original_svg_path, scour_svg_path)
+            os.remove(original_svg_path)
+        except Exception as e:
+            print(f"Error al optimizar o eliminar el SVG: {e}")
+            # Si falla la optimización, renombra el original para no perderlo
+            os.rename(original_svg_path, scour_svg_path)
+    else:
+        # Si no hay función de limpieza, simplemente renombra el archivo original
+        os.rename(original_svg_path, scour_svg_path)
+
+
+def mostrar_guardar_figura(fig=None, ax=None, nombre_df=None, guardar_fig=True, mostrar_fig=True, limpiar_svg_con_scour=True):
+    """
+    Guarda y/o muestra una figura de Matplotlib.
+    Parámetros:
+        fig: figura de matplotlib (opcional, si no se pasa se usa plt.gcf())
+        ax: eje de matplotlib (opcional, si no se pasa se usa plt.gca())
+        nombre_df: nombre para exportar la gráfica (str)
+        guardar_fig: bool, si True guarda la figura
+        mostrar_fig: bool, si True muestra la figura
+        limpiar_svg_con_scour: bool o función. Si es True, usa la función por defecto.
+                               Si es una función, la usa. Si es False/None, no hace nada.
+    Retorna:
+        fig, ax
+    """
+    import matplotlib.pyplot as plt
+
+    plt.tight_layout()
+    if fig is None:
+        fig = plt.gcf()
+    if ax is None:
+        ax = plt.gca()
+    if guardar_fig and nombre_df is not None:
+        from funciones import exportar_grafica, limpiar_svg_con_scour as scour_func
+        
+        # Determina qué función pasar a exportar_grafica
+        func_a_pasar = None
+        if limpiar_svg_con_scour is True:
+            func_a_pasar = scour_func
+        elif callable(limpiar_svg_con_scour):
+            func_a_pasar = limpiar_svg_con_scour
+
+        exportar_grafica(nombre_df, func_a_pasar)
+    if mostrar_fig:
+        plt.show()
+    return fig, ax

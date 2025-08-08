@@ -34,7 +34,10 @@ def multilineal(
     leyenda_color='#767676',
     leyenda_final=False,
     leyenda=False,
+    ncol_leyenda=None, 
     ajusta_pos_leyenda_final=0.0,
+    ajusta_pos_tag_final=0.0, 
+    ajusta_sep_tag_final=0.0, 
     decimales_capsu=0,
     puntos=True,
     sin_tag=2,
@@ -48,6 +51,8 @@ def multilineal(
     tag_final=True,
     tag_max=True,
     paleta_colores=None,
+    pos_leyenda=(0.5, 1.2), 
+    muestra_etiquetas=None,
 ):
     # Validar columnas
     if df_long.shape[1] != 3:
@@ -135,7 +140,13 @@ def multilineal(
         escala = df_long[columna_valor].max() - df_long[columna_valor].min()
         offset = abs(escala) * 0.03 if escala else 10
         for j, row in datos.iterrows():
-            tiene_etiqueta = (total_puntos - j - 1) % (sin_tag + 1) == 0
+            # Si muestra_etiquetas está definido, solo mostrar en esos índices
+            if muestra_etiquetas is not None:
+                mostrar_etiqueta = j in muestra_etiquetas
+            else:
+                mostrar_etiqueta = (total_puntos - j - 1) % (sin_tag + 1) == 0
+
+            tiene_etiqueta = mostrar_etiqueta
             es_ultimo = (j == total_puntos - 1) and (tag_final is True)
             es_maximo = (j == max_index) and tag_max
             if (tiene_etiqueta or es_ultimo or es_maximo) and not (tag_final == 'derecha' and j == total_puntos - 1):
@@ -158,9 +169,13 @@ def multilineal(
         if tag_final == 'derecha':
             y_final = datos[columna_valor].iloc[-1]
             valor_capsula = f"{y_final:,.{decimales_capsu}f}"
-            desplazamiento_tag = 0.2  # Valor fijo solo para tag_final
+            desplazamiento_tag = 0.2 + ajusta_pos_tag_final  # Usa el argumento para ajustar
+            if pd.api.types.is_numeric_dtype(df_long[columna_fecha]):
+                x_pos = x_final_global + desplazamiento_tag
+            else:
+                x_pos = x_final_global
             txt_tag = plt.text(
-                x_final_global + desplazamiento_tag,
+                x_pos,
                 y_final,
                 f"{espacio*1}{valor_capsula}{espacio*1}",
                 fontsize=font_config['capsula_valor']['size'],
@@ -170,7 +185,7 @@ def multilineal(
                 va='center',
                 bbox=bbox_props,
                 fontname=font_config['family']
-            )
+                )
             all_texts.append(txt_tag)
             tag_final_texts.append(txt_tag)
 
@@ -190,7 +205,11 @@ def multilineal(
     if tag_final == 'derecha':
         for txt in tag_final_texts:
             pos = txt.get_position()
-            txt.set_position((x_final_global + desplazamiento_tag, pos[1]))
+            # Solo sumar desplazamiento si el eje X es numérico
+            if pd.api.types.is_numeric_dtype(df_long[columna_fecha]):
+                txt.set_position((x_final_global + desplazamiento_tag, pos[1]))
+            else:
+                txt.set_position((x_final_global, pos[1]))
 
     # Si tag_final == 'derecha' y leyenda_final, extraer las coordenadas Y ajustadas
     if tag_final == 'derecha' and leyenda_final:
@@ -260,11 +279,14 @@ def multilineal(
             # Si tag_final es 'derecha' y leyenda_final, usar el mismo Y que la etiqueta final ajustada
             if tag_final == 'derecha' and y_coords is not None:
                 y_final = y_coords[i]
+                # Aplica el ajuste horizontal aquí
+                x_final_ajustado = x_final + ajusta_pos_leyenda_final if pd.api.types.is_numeric_dtype(df_long[columna_fecha]) else x_final
             else:
                 y_final = datos[columna_valor].iloc[-1]
+                x_final_ajustado = x_final + ajusta_pos_leyenda_final if pd.api.types.is_numeric_dtype(df_long[columna_fecha]) else x_final
             leyenda_texts.append(
                 ax.text(
-                    x_final, y_final,
+                    x_final_ajustado, y_final,
                     f"  {var}",
                     color=color_map[var],
                     fontsize=font_config['leyenda']['size'],
@@ -273,7 +295,7 @@ def multilineal(
                     ha='left',
                     fontname=font_config['family']
                 )
-            )
+        )
         # Primero ajustar solo en Y
         adjust_text(
             leyenda_texts,
@@ -284,14 +306,18 @@ def multilineal(
             arrowprops=None
         )
         # Luego aplicar el desplazamiento horizontal
-        for txt in leyenda_texts:
+        for txt in tag_final_texts:
             pos = txt.get_position()
-            txt.set_position((pos[0] + ajusta_pos_leyenda_final, pos[1]))
-    else:
+            # Solo sumar desplazamiento si el eje X es numérico
+            if pd.api.types.is_numeric_dtype(df_long[columna_fecha]):
+                txt.set_position((x_final_global + desplazamiento_tag, pos[1]))
+            else:
+                txt.set_position((x_final_global, pos[1]))
+    if leyenda:
         leg = ax.legend(
             loc='upper center',
-            bbox_to_anchor=(0.5, 1.2),
-            ncol=len(variables),
+            bbox_to_anchor=pos_leyenda,
+            ncol=ncol_leyenda if ncol_leyenda is not None else len(variables),
             frameon=False,
             prop={
                 'size': font_config['leyenda']['size'],
@@ -300,23 +326,34 @@ def multilineal(
             }
         )
         for text in leg.get_texts():
-            text.set_color(font_config['leyenda']['color'])   
+            text.set_color(font_config['leyenda']['color'])  
+            
+    # Ajuste manual de separación vertical entre etiquetas finales (mayores arriba, menores abajo)
+    if ajusta_sep_tag_final != 0.0 and len(tag_final_texts) > 1:
+        posiciones = [txt.get_position() for txt in tag_final_texts]
+        orden = sorted(range(len(posiciones)), key=lambda i: -posiciones[i][1])  # mayor Y arriba
+        posiciones_ordenadas = [posiciones[i] for i in orden]
+        textos_ordenados = [tag_final_texts[i] for i in orden]
+        x_vals = [x for x, y in posiciones_ordenadas]
+        y_centro = sum([y for x, y in posiciones_ordenadas]) / len(posiciones_ordenadas)
+        for i, txt in enumerate(textos_ordenados):
+            # Invertir el desplazamiento para que el primero (mayor) quede arriba
+            nuevo_y = y_centro - ajusta_sep_tag_final * (i - (len(textos_ordenados)-1)/2)
+            txt.set_position((x_vals[i], nuevo_y))
 
     # Leyenda tradicional si leyenda=True (independiente de leyenda_final)
     if leyenda:
         leg = ax.legend(
             loc='upper center',
-            bbox_to_anchor=(0.5, 1.2),
-            ncol=len(variables),
+            bbox_to_anchor=pos_leyenda,  # <-- Usar el nuevo argumento aquí
+            ncol=ncol_leyenda if ncol_leyenda is not None else len(variables),
             frameon=False,
             prop={
                 'size': font_config['leyenda']['size'],
                 'weight': font_config['leyenda']['weight'],
                 'family': font_config['family']
             }
-        )
-        for text in leg.get_texts():
-            text.set_color(font_config['leyenda']['color'])   
+        ) 
 
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
