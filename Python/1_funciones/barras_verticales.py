@@ -40,6 +40,7 @@ def barras_verticales(
     # --- GRÁFICA GENERAL ---
     nombre="barras_verticales", # Nombre base para archivos de salida
     tipo_letra='Montserrat',    # Tipo de letra para todo el texto en la gráfica
+    paleta_colores=None,        # Lista de colores para las barras
     ancho_fig=None,             # Ancho de la figura 
     alto_fig=None,              # Alto de la figura
     grillas=True,               # Mostrar grillas horizontales
@@ -56,7 +57,6 @@ def barras_verticales(
     tam_letra_porce_barra=15,   # Tamaño de letra para porcentajes dentro de las barras
     weight_porce_barra='bold',  # Grosor de letra para porcentajes dentro de las barras
     color_porce_barra=None,# Color de letra para porcentajes dentro de las barras
-    paleta_colores=None,        # Lista de colores para las barras
     area_min=0,                 # Área mínima para mostrar texto en barra
     opcion_area_min='sin etiquetas',  # Opción para mostrar texto fuera o no mostrarlo al usar araea_min
     valor_barra=True,           # Mostrar valor numérico en la barra
@@ -560,7 +560,7 @@ def barras_verticales(
                 if valor_barra:
                     texto_valor = elimina_ceros_no_significativos(formato_decimal.format(abs(df.iloc[pos, df.columns.get_loc(col)])))
                 if porce_barra:
-                    texto_porcentaje = f"({abs(porcentaje_valor):.1f}%)" if not porce_abajo else f"{abs(porcentaje_valor):.1f}%"
+                    texto_porcentaje = f"({elimina_ceros_no_significativos(f'{abs(porcentaje_valor):.1f}')}%)" if not porce_abajo else f"{elimina_ceros_no_significativos(f'{abs(porcentaje_valor):.1f}')}%"
 
             # 3. Dibujar las etiquetas si corresponde
             if debe_dibujar_dentro:
@@ -647,7 +647,7 @@ def barras_verticales(
                     else: # porce_diver es True
                         valor_a_mostrar = suma_positivos_por_barra.loc[entidad]
 
-                texto_a_mostrar = formato_decimal.format(valor_a_mostrar)
+                texto_a_mostrar = elimina_ceros_no_significativos(formato_decimal.format(valor_a_mostrar))
                 if etiquetas_finales is not None and not pd.isna(etiquetas_finales.iloc[pos]):
                     texto_a_mostrar = str(etiquetas_finales.iloc[pos])
      
@@ -686,7 +686,7 @@ def barras_verticales(
         if es_divergente and valor_capsu and bottom_neg < 0:
             valor_negativo_total = suma_negativos_por_barra.loc[entidad]
             if capsu_cero or valor_negativo_total != 0:
-                texto_a_mostrar_neg = formato_decimal.format(abs(valor_negativo_total))
+                texto_a_mostrar_neg = elimina_ceros_no_significativos(formato_decimal.format(abs(valor_negativo_total)))
                 texto_capsula_neg = f"{espacio*2}{texto_a_mostrar_neg}{espacio*2}"
                 # Usa el nuevo parámetro si existe, si no, usa el original
                 ajuste_neg = ajusta_pos_capsu_neg if ajusta_pos_capsu_neg is not None else ajusta_pos_capsu
@@ -742,7 +742,7 @@ def barras_verticales(
 
             # Resaltado de etiquetas si se especifica.
             if resaltar_etiquetas and etiqueta_actual in resaltar_etiquetas:
-                texto_a_mostrar = f"{espacio*1}{etiqueta_actual}   {porcentaje}%{espacio*1}"
+                texto_a_mostrar = f"{espacio*1}{etiqueta_actual}   {elimina_ceros_no_significativos(f'{porcentaje:.1f}')}%{espacio*1}"
                 color_texto_resaltado = get_text_color_for_bg(color_resalt_etique)
                 bbox_capsula = dict(facecolor=color_resalt_etique, edgecolor=color_borde_resalt, boxstyle="round,pad=0.15,rounding_size=0.8")
                 ax.text(pos, -x_max*0.02, texto_a_mostrar, ha='center', va='top', rotation=90,
@@ -750,7 +750,7 @@ def barras_verticales(
                         fontdict={'family': font_config['family'], 'size': font_config['porcentaje_total']['size'], 
                                   'weight': font_config['porcentaje_total']['weight'], 'color': color_texto_resaltado})
             else:
-                texto_a_mostrar = f"{espacio*1}{porcentaje}%{espacio*1}"
+                texto_a_mostrar = f"{espacio*1}{elimina_ceros_no_significativos(f'{porcentaje:.1f}')}%{espacio*1}"
                 ax.text(pos, 0, texto_a_mostrar, ha='right', va='top', rotation=90,
                         color=font_config['porcentaje_total']['color'],
                         fontdict={'family': font_config['family'], 'size': font_config['porcentaje_total']['size'], 'weight': font_config['porcentaje_total']['weight']})
@@ -774,7 +774,7 @@ def barras_verticales(
             base_pos_y = bottom_pos if es_divergente else (100 if graf_resp_porce else total_valor)
             desplazamiento_final = base_pos_y + desplazamiento_y + (x_max * separar_por_total)
 
-            ax.text(pos, desplazamiento_final, f"{porcentaje}%", ha='center', va='bottom',
+            ax.text(pos, desplazamiento_final, f"{elimina_ceros_no_significativos(f'{porcentaje:.1f}')}%", ha='center', va='bottom',
                     color=font_config['porcentaje_total']['color'],
                     fontdict={'family': font_config['family'], 'size': font_config['porcentaje_total']['size'], 'weight': font_config['porcentaje_total']['weight']})
 
@@ -806,7 +806,7 @@ def barras_verticales(
             
             # Solo mostrar cápsula si el valor no es cero o si se especificó capsu_cero=True
             if capsu_cero or ultimo_valor != 0:
-                texto_a_mostrar = f"{int(abs(ultimo_valor)):,}"
+                texto_a_mostrar = elimina_ceros_no_significativos(formato_decimal.format(ultimo_valor))
                 texto_capsula = f"{espacio*2}{texto_a_mostrar}{espacio*2}"
                 
                 # Colocar la cápsula ligeramente desplazada del último punto
@@ -954,7 +954,7 @@ def barras_verticales(
     if graf_resp_porce:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{int(x)}%'))
     else:
-        ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: formato_decimal.format(abs(x) if ejeY_positivo else x)))
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: elimina_ceros_no_significativos(formato_decimal.format(abs(x) if ejeY_positivo else x))))
 
     # --- SUSTITUCIÓN DE ETIQUETAS DEL EJE Y ---
     if sustituir_etiquetas_ejeY is not None:

@@ -95,30 +95,32 @@ def calcular_fontsize(area, base, ajusta_tam_letra):
         return int(base * 0.3 / 26)
     
 
-def treemap(victimas_por_entidad, 
-            nombre=None, 
-            area_min=0.001, 
-            tipo_letra='Montserrat',
-            fontsize_etiqueta=26, 
-            fontsize_valor=26, 
-            fontsize_porcentaje=26,
-            paleta_colores=None,
-            porce_parentesis=False,
-            ancho_fig=16,        
-            alto_fig=10, 
-            color_borde_rec="white",
-            ancho_borde_rec=1,
-            ajusta_sep_valor=0.18,
-            ajusta_tam_letra=1.0,
-            ajusta_posY_texto=0.5,
-            ):
+def treemap(
+        df,                         # DataFrame de entrada (pandas.DataFrame)
+        nombre=None,                # Nombre base para archivos de salida (str o None)
+        area_min=0.001,             # Área mínima para mostrar texto en el rectángulo (float, 0 a 1)
+        tipo_letra='Montserrat',    # Tipo de letra para todo el texto (str, ej: 'Montserrat', 'Arial')
+        tam_letra_etiqueta=26,      # Tamaño de letra para las etiquetas principales (int)
+        tam_letra_valor=26,         # Tamaño de letra para los valores numéricos (int)
+        tam_letra_porcentaje=26,    # Tamaño de letra para los porcentajes (int)
+        paleta_colores=None,        # Lista de colores para los rectángulos (None o [str, ...])
+        porce_parentesis=False,     # Mostrar porcentaje entre paréntesis junto al valor (bool: True/False)
+        ancho_fig=16,               # Ancho de la figura en pulgadas (int o float)
+        alto_fig=10,                # Alto de la figura en pulgadas (int o float)
+        color_borde_rec="white",    # Color del borde de los rectángulos (str, ej: 'white', '#123456')
+        ancho_borde_rec=1,          # Grosor del borde de los rectángulos (int o float)
+        ajusta_sep_valor=0.18,      # Separación vertical entre etiqueta y valor (float, 0 a 1)
+        ajusta_tam_letra=1.0,       # Multiplicador para ajustar el tamaño de letra (float)
+        ajusta_posY_texto=0.5,      # Posición vertical del texto dentro del rectángulo (float, 0 a 1)
+        ajusta_tam_letra_rec=None,  # Lista de tuplas (índice, tamaño) para ajustar tamaño de letra por rectángulo (None o list[tuple])
+        ):
 
     # Configuración de fuentes y colores
     font_config = {
         'family': tipo_letra,
-        'etiquetas': {'size': fontsize_etiqueta, 'weight': 'bold', 'color': '#ffffff'},
-        'valor': {'size': fontsize_valor, 'weight': 'bold', 'color': '#ffffff'},
-        'porcentaje': {'size': fontsize_porcentaje, 'weight': 'medium', 'color': '#ffffff'}
+        'etiquetas': {'size': tam_letra_etiqueta, 'weight': 'bold', 'color': '#ffffff'},
+        'valor': {'size': tam_letra_valor, 'weight': 'bold', 'color': '#ffffff'},
+        'porcentaje': {'size': tam_letra_porcentaje, 'weight': 'medium', 'color': '#ffffff'}
     }
 
    # Configuración para que el texto en SVG sea editable.
@@ -131,12 +133,12 @@ def treemap(victimas_por_entidad,
     plt.rc('font', family=tipo_letra)  # Aplica la fuente a toda la gráfica
 
     # Asegurar que todos los valores sean numéricos tipo float
-    victimas_por_entidad.iloc[:, 1] = pd.to_numeric(
-        victimas_por_entidad.iloc[:, 1], errors='coerce'
+    df.iloc[:, 1] = pd.to_numeric(
+        df.iloc[:, 1], errors='coerce'
     ).fillna(0).astype(float)
 
     # Ordenar y calcular porcentaje
-    df = victimas_por_entidad.sort_values(by=victimas_por_entidad.columns[1], ascending=False).copy()
+    df = df.sort_values(by=df.columns[1], ascending=False).copy()
     total_nacional = df.iloc[:, 1].sum()
     df['Porcentaje'] = (df.iloc[:, 1] / total_nacional * 100).round(1)
 
@@ -163,7 +165,7 @@ def treemap(victimas_por_entidad,
     rectangles = squarify.normalize_sizes(sizes, 1, 1)
     rectangles = squarify.squarify(rectangles, 0, 0, 1, 1)
 
-    for rect, (_, row), color in zip(rectangles, df.iterrows(), colores):
+    for i, (rect, (_, row), color) in enumerate(zip(rectangles, df.iterrows(), colores)):
         x, y, dx, dy = rect['x'], rect['y'], rect['dx'], rect['dy']
 
         ax.add_patch(plt.Rectangle(
@@ -180,9 +182,9 @@ def treemap(victimas_por_entidad,
             entidad_mod = entidad
 
             # Ajuste de tamaño de fuente siempre proporcional al área
-            fontsize_et = calcular_fontsize(area, fontsize_etiqueta, ajusta_tam_letra)
-            fontsize_val = calcular_fontsize(area, fontsize_valor, ajusta_tam_letra)
-            fontsize_pct = calcular_fontsize(area, fontsize_porcentaje, ajusta_tam_letra)
+            fontsize_et = calcular_fontsize(area, tam_letra_etiqueta, ajusta_tam_letra)
+            fontsize_val = calcular_fontsize(area, tam_letra_valor, ajusta_tam_letra)
+            fontsize_pct = calcular_fontsize(area, tam_letra_porcentaje, ajusta_tam_letra)
 
             # --- DEBUG: Imprime área, tamaño de letra y etiqueta ---
             #print(f"[DEBUG] Área: {area:.6f} | Etiqueta: '{entidad_mod}' | FontSize: {fontsize_et}")
@@ -208,6 +210,12 @@ def treemap(victimas_por_entidad,
 
             # 2. Usa el tamaño más pequeño para ambos textos
             fontsize_final = min(fontsize_et_ajustado, fontsize_val_ajustado)
+
+            # --- Ajuste manual de tamaño de letra por rectángulo ---
+            if ajusta_tam_letra_rec is not None:
+                for idx, tam in ajusta_tam_letra_rec:
+                    if idx == i:
+                        fontsize_final = tam
 
             # 3. Vuelve a aplicar wrap_text con el tamaño final
             entidad_mod_wrapped_final = wrap_text(entidad_mod, ax, fig, max_text_width, fontsize_final, font_config['etiquetas']['weight'])
