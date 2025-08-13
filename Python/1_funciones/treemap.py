@@ -7,7 +7,7 @@ import random
 
 from funciones import limpiar_svg_con_scour 
 from funciones import get_text_color_for_bg 
-from funciones import exportar_grafica
+from funciones import mostrar_guardar_figura
 
 import textwrap
 def wrap_text(text, ax, fig, max_width, fontsize, fontweight):
@@ -96,23 +96,25 @@ def calcular_fontsize(area, base, ajusta_tam_letra):
     
 
 def treemap(
-        df,                         # DataFrame de entrada (pandas.DataFrame)
-        nombre=None,                # Nombre base para archivos de salida (str o None)
-        area_min=0.001,             # Área mínima para mostrar texto en el rectángulo (float, 0 a 1)
-        tipo_letra='Montserrat',    # Tipo de letra para todo el texto (str, ej: 'Montserrat', 'Arial')
-        tam_letra_etiqueta=26,      # Tamaño de letra para las etiquetas principales (int)
-        tam_letra_valor=26,         # Tamaño de letra para los valores numéricos (int)
-        tam_letra_porcentaje=26,    # Tamaño de letra para los porcentajes (int)
-        paleta_colores=None,        # Lista de colores para los rectángulos (None o [str, ...])
-        porce_parentesis=False,     # Mostrar porcentaje entre paréntesis junto al valor (bool: True/False)
-        ancho_fig=16,               # Ancho de la figura en pulgadas (int o float)
-        alto_fig=10,                # Alto de la figura en pulgadas (int o float)
-        color_borde_rec="white",    # Color del borde de los rectángulos (str, ej: 'white', '#123456')
-        ancho_borde_rec=1,          # Grosor del borde de los rectángulos (int o float)
-        ajusta_sep_valor=0.18,      # Separación vertical entre etiqueta y valor (float, 0 a 1)
-        ajusta_tam_letra=1.0,       # Multiplicador para ajustar el tamaño de letra (float)
-        ajusta_posY_texto=0.5,      # Posición vertical del texto dentro del rectángulo (float, 0 a 1)
-        ajusta_tam_letra_rec=None,  # Lista de tuplas (índice, tamaño) para ajustar tamaño de letra por rectángulo (None o list[tuple])
+        df,                             # DataFrame de entrada (primera columna: etiquetas, segunda columna: valores numéricos)
+        nombre=None,                    # Nombre base para archivos de salida (str o None)
+        area_min=0.001,                 # Área mínima para mostrar texto en el rectángulo (float, típicamente entre 0 y 0.01)
+        tipo_letra='Montserrat',        # Tipo de letra para todo el texto en la gráfica (str, ejemplo: 'Montserrat', 'Arial')
+        tam_letra_etiqueta=26,          # Tamaño de letra para las etiquetas (int)
+        tam_letra_valor=26,             # Tamaño de letra para los valores numéricos (int)
+        tam_letra_porcentaje=26,        # Tamaño de letra para los porcentajes (int)
+        paleta_colores=None,            # Lista de colores para los rectángulos (list de str HEX, ejemplo: ['#10302C', ...] o None para usar la paleta por defecto)
+        porce_parentesis=False,         # Mostrar porcentaje entre paréntesis junto al valor (bool: True/False)
+        ancho_fig=16,                   # Ancho de la figura en pulgadas (int o float)
+        alto_fig=10,                    # Alto de la figura en pulgadas (int o float)
+        color_borde_rec="white",        # Color del borde de los rectángulos (str HEX, ejemplo: 'white', '#000000')
+        ancho_borde_rec=1,              # Grosor del borde de los rectángulos (int o float)
+        ajusta_sep_valor=0.18,          # Separación vertical entre etiqueta y valor (float, proporcional al alto del rectángulo)
+        ajusta_tam_letra=1.0,           # Multiplicador para ajustar el tamaño de letra automáticamente (float, ejemplo: 1.0 para normal, <1 para reducir)
+        ajusta_posY_texto=0.5,          # Posición vertical del texto dentro del rectángulo (float entre 0 y 1, 0.5 es centrado)
+        ajusta_tam_letra_rec=None,      # Lista de tuplas (índice, tamaño) para ajustar manualmente el tamaño de letra por rectángulo (list o None)
+        mostrar_fig=True,               # Mostrar la figura al terminar (bool: True/False)
+        guardar_fig=True,               # Guardar la figura al terminar (bool: True/False)
         ):
 
     # Configuración de fuentes y colores
@@ -272,5 +274,11 @@ def treemap(
     )
     plt.tight_layout()
 
-    exportar_grafica(nombre or "treemap", limpiar_svg_con_scour)
-    plt.show()
+    mostrar_guardar_figura(
+        fig=fig,
+        ax=ax,
+        nombre_df=nombre or "treemap",
+        guardar_fig=guardar_fig,         # <-- Usa el argumento aquí
+        mostrar_fig=mostrar_fig,         # <-- Usa el argumento aquí
+        limpiar_svg_con_scour=limpiar_svg_con_scour
+    )

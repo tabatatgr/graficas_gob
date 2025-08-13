@@ -19,6 +19,8 @@ def municipios_prioritarios(
     alto_fig=5,                      # Alto de la figura en pulgadas (int o float)
     fecha_linea_vertical=pd.to_datetime('2024-10-01'), # Fecha para la línea vertical en la gráfica de líneas (pandas.Timestamp)
     fondo='transparente',            # Color de fondo de la figura ('transparente' o 'white')
+    mostrar_fig=True,                # Si True, muestra la figura en pantalla (bool)
+    guardar_fig=True                 # Si True, guarda la figura como archivo (bool)
 ):
     
     # --- VALIDACIONES DE DATOS ---
@@ -181,8 +183,8 @@ def municipios_prioritarios(
         fig=fig_final,
         ax=None,
         nombre_df=titulo,
-        guardar_fig=True,
-        mostrar_fig=True,
+        guardar_fig=guardar_fig,
+        mostrar_fig=mostrar_fig,
         limpiar_svg_con_scour=False
     )
 
